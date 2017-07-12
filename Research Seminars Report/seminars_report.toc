@@ -1,0 +1,12 @@
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {2}Career development}{3}
+\contentsline {section}{\numberline {3}General reproducibility aspects }{4}
+\contentsline {section}{\numberline {4}Data Management}{4}
+\contentsline {section}{\numberline {5}Ethical issues}{4}
+\contentsline {section}{\numberline {6}Intellectual Property}{4}
+\contentsline {section}{\numberline {7}Computing needs}{4}
+\contentsline {section}{\numberline {8}Scientific and general disseminations}{4}
+\contentsline {section}{\numberline {9}Gender}{4}

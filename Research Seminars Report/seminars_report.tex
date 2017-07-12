@@ -1,0 +1,181 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thesis Proposal
+%
+% Francesc Wilhelmi Roca
+% Boris Bellala, Cristina Cano, Anders Jonsson
+% Wireless Networking Research Group
+% Universitat Pompeu Fabra
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt, a4paper,twoside]{article}
+%\usepackage[latin1]{inputenc}
+\usepackage[catalan,english]{babel}
+\usepackage[cam,a4,center,frame]{crop}
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage{makeidx}
+\usepackage{url}
+\usepackage{subcaption}
+
+%% Tikz libraries
+\usepackage{tikz}
+\usepackage{tkz-tab}
+\usetikzlibrary{automata,arrows,positioning,calc}
+\usetikzlibrary{shapes,snakes}
+
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{fullpage}
+\usepackage{algorithmic}
+\DeclareMathOperator*{\argmin}{argmin}
+\algsetup{linenosize=\small}
+%\usepackage[table,xcdraw]{xcolor}
+\usepackage{multirow}
+\usepackage[super]{nth}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[labelformat=simple]{subcaption}
+\usepackage{setspace}
+\usepackage{textcomp}
+\usepackage{xspace}
+\usepackage{siunitx}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\usepackage{soul}
+\usepackage{url}
+\usepackage{tablefootnote}
+\DeclareMathOperator{\E}{\mathbb{E}} % Expectation Symbol
+\usepackage[linesnumbered,ruled]{algorithm2e}
+\usepackage{booktabs}
+\usepackage{pgfgantt}
+\usepackage[catalan,english]{babel}
+\pagestyle{plain}
+\selectlanguage{english}
+
+\title{Seminars Report}
+\author{Francesc Wilhelmi}
+
+\begin{document}
+
+	\maketitle
+	
+	\selectlanguage{english}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% INTRODUCTION       								   %%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Introduction}
+	\label{section:introduction}	
+	
+		Please do not write for the sake of writing. Just be concise, bullet points are ok, and avoi general statements. - Just report on what you plan to do on each topic (example: data - data you plan to use (type, quantities); if you plan to collect on your own, use data already available to the community - then check licenses, copyright issues, ethics, the technical details and / or timing needed for it in your planning, etc - or data from collaborators - then check that you can use them, they went through correct ethical processes, etc - ; the way you plan to process / handle / store; if you plan to release them, where, under which license; if they are specially valuable, if you plan to have a specific publication about them or ways you plan to promote their use, etc; if you do not plan to release them, justifiy why, etc..) - As you already have submitted the ethical part, this does not need to be included again (unless of course you would like to make modifications) The sooner you send it, the better 
+		
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Career development       								   %%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Career development}
+	\label{section:career}
+	Career paths - Impact of research - Indicators and tools 
+	
+	website: \url{https://www.upf.edu/web/fwilhelmi}
+	scholar: \url{https://scholar.google.es/citations?user=4EHXj4UAAAAJ&hl=ca&citsig=AMstHGShG4ofYlHpMmt1o34BA0qt08UFxQ}
+	orcid: \url{http://orcid.org/0000-0003-3936-535X}
+		
+	Where to publish
+	
+	Reviews
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% General reproducibility aspects        								   %%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{General reproducibility aspects }
+	\label{section:reproducibility}	
+	
+	To properly share the generated knowledge, and with the aim of making reproducible the production derived from research the activity, we have created a Github account for the Wireless Networking Research Group.\footnote{\url{https://github.com/orgs/wn-upf/dashboard}}
+	
+	... EXPLAIN GUIDELINES
+	
+	RESEARCH COMPENDIUM provided under the MdM excellence unit.
+			
+	Code should be properly commented in order to be readable. Clean Architecture is followed.	
+	
+	Scenarios are very important (path-loss models, type of devices, etc.).
+		
+	What should be provided:
+	\begin{itemize}
+		\item The code used for simulations
+		\item Instructions for running the code and input parameters 
+		\item Support material (slides, complementary information, etc.)
+		\item LaTeX files (or similar) that build the Research Paper
+	\end{itemize}		
+			
+	For instance, for the conference publication submitted to PIMRC \cite{wilhelmi2017implications}, we provided the source code used for simulations, specifying the concrete commit for the provided results. In addition, the code is prepared in a such way that simulation can be easily executed to reproduce similar results\footnote{Results may slightly vary due to the randomness added to the proposed scenario} to the ones shown in the publication.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Data Management       								   %%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Data Management}
+	\label{section:data_mgm}	
+
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Ethical issues       								   %%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Ethical issues}
+	\label{section:ethical}		
+	Most of the activities planned for this Theses involve using analytical models and simulated data related to wireless communications. Therefore, personal data is not expected to be manipulated. However, as the WNRG is getting involved into a collaboration with FON\footnote{\url{www.fon.com}}, there is some data to be used that may indirectly tell something about someone. For that, it becomes necessary to make some actions: ask permission to use the data, ask permission to publish the data, as well as the results, etc.
+	
+	For that, an internal review committee should evaluate the sensitivity of the data and approve if it is used properly according to the provided rights. At UPF, we can find the CIREP committee, whose aim is to improve ethical standards and advice researchers / lecturers on (a part of) ethical issues and (personal) data protection. Ethical issues checklist
+	
+	Consent + Data protection (encrypt data, pseudonymous...).
+		
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Intellectual Property       								   %%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Intellectual Property}
+	\label{section:intellectual}	
+	
+	There are some other cases in which knowledge cannot be freely shared, so more restrictive license must be applied to the research output generated. This is the case of an enterprise collaboration ...
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Computing needs       								   %%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Computing needs}
+	\label{section:computing}		
+	To the proper development of the experimental part of some of the ongoing projects involved in the Thesis, it is required a strong computational power. A really useful available tool is the (HPC)\footnote{\url{http://hpc.dtic.upf.edu/}}, which is composed by 15 nodes that provide high-performance calculation support to the DTIC community. 
+	
+	In order to make use of the HPC, we have spiked on running advanced jobs in parallel. Some of our latest results (\cite{wilhelmi2017implications}) have been obtained from HPC executions with the Matlab parallel toolbox. In addition, to bring the usage of the HPC to the WNRG, we have created specific instructive material\footnote{Material available in \url{https://drive.google.com/file/d/0BzOhuzdX0br5b3pWMEFUZ3JDVUk/view?usp=sharing}.} to fulfil the needs of the group. Thus, HPC is introduced so that it can be rapidly used.	
+		
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Scientific and general dissemination   	    %%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Scientific and general disseminations}
+	\label{section:dissemination}			
+	The main activity performed so far regarding scientific dissemination is the participation on the 5th EITIC Doctoral Workshop\footnote{\url{https://www.upf.edu/web/etic_doctoral_workshop}}, which was held at UPF the last March, 5th 2017. In this event, we presented \cite{wilhelmi2017improving}, an introduction to the wireless networks coexistence issues and the techniques that we aim to study along the Thesis to solve them. The poster was prepared in order to be simple, readable and eye-catching, so that a diverse audience can comprehend the problem and get interested on it.
+	
+	In parallel to the main research activity, we have also participated in the following dissemination activities:
+	\begin{itemize}
+		\item Teaching staff in ``Descobrint l'Internet de les Coses a través d'Arduino": introductory course about the Internet of Things (IoT) through Arduino. Held at UPF (Campus Junior) from 10th to 14th July, 2017.
+		\item Jury member in the ``XI Award to Research Project in Applied Engineering and Mathematics"\footnote{\url{https://www.upf.edu/en/web/etic/research_project_award}}.
+	\end{itemize}
+	Both activities aim to disseminate Engineering to teenagers in order to help them determine their academic career.
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Scientific and general dissemination   	    %%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Gender}
+	\label{section:gender}	
+	Regarding the unfortunate gender imbalance that also reaches the scientific field, it is very important to be conscious of the problem and act in consequence to favour equality. For that, the most obvious act that we are able to do in research, is to cite papers indiscriminately of the authors gender, which seems very natural but for many people is not. To the matter of our Thesis, we find several women researchers that stand out, and which work is not only worth to be mentioned, but a must: 
+	\begin{itemize}
+		\item Cristina Cano: \url{https://scholar.google.es/citations?user=3fpyaLkAAAAJ&hl=es}
+		\item Konstantina Papagiannaki: \url{https://scholar.google.es/citations?user=xuVXDXkAAAAJ&hl=ca}
+		\item Setareh Maghsudi: \url{http://dblp.uni-trier.de/pers/hd/m/Maghsudi:Setareh}
+	\end{itemize}	
+			
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% BIBLIOGRAPHY					      				   %%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	\bibliographystyle{unsrt}
+	\bibliography{bib}
+
+\end{document}
