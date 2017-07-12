@@ -1,0 +1,492 @@
+\begin{thebibliography}{10}
+
+\bibitem{akella2007self}
+Aditya Akella, Glenn Judd, Srinivasan Seshan, and Peter Steenkiste.
+\newblock Self-management in chaotic wireless deployments.
+\newblock {\em Wireless Networks}, 13(6):737--755, 2007.
+
+\bibitem{zhong2015issues}
+Zhenzhe Zhong, Parag Kulkarni, Fengming Cao, Zhong Fan, and Simon Armour.
+\newblock Issues and challenges in dense wifi networks.
+\newblock In {\em Wireless Communications and Mobile Computing Conference
+  (IWCMC), 2015 International}, pages 947--951. IEEE, 2015.
+
+\bibitem{balachandran2002characterizing}
+Anand Balachandran, Geoffrey~M Voelker, Paramvir Bahl, and P~Venkat Rangan.
+\newblock Characterizing user behavior and network performance in a public
+  wireless lan.
+\newblock In {\em ACM SIGMETRICS Performance Evaluation Review}, volume~30,
+  pages 195--205. ACM, 2002.
+
+\bibitem{papadopouli2005modeling}
+Maria Papadopouli, Haipeng Shen, and Manolis Spanakis.
+\newblock Modeling client arrivals at access points in wireless campus-wide
+  networks.
+\newblock In {\em LANMAN}, 2005.
+
+\bibitem{sobrinho2005rts}
+Jo{\~a}o~L Sobrinho, Roland De~Haan, and Jos{\'e}~M Brazio.
+\newblock Why rts-cts is not your ideal wireless lan multiple access protocol.
+\newblock In {\em Wireless Communications and Networking Conference, 2005
+  IEEE}, volume~1, pages 81--87. IEEE, 2005.
+
+\bibitem{bellalta2016ieee}
+Boris Bellalta.
+\newblock Ieee 802.11 ax: High-efficiency wlans.
+\newblock {\em IEEE Wireless Communications}, 23(1):38--46, 2016.
+
+\bibitem{ling2006joint}
+Xiang Ling and Kwan~Lawrence Yeung.
+\newblock Joint access point placement and channel assignment for 802.11
+  wireless lans.
+\newblock {\em IEEE Transactions on Wireless Communications}, 5(10):2705--2711,
+  2006.
+
+\bibitem{wertz2004automatic}
+P~Wertz, M~Sauter, FA~Landstorfer, G~Wolfle, and R~Hoppe.
+\newblock Automatic optimization algorithms for the planning of wireless local
+  area networks.
+\newblock In {\em Vehicular Technology Conference, 2004. VTC2004-Fall. 2004
+  IEEE 60th}, volume~4, pages 3010--3014. IEEE, 2004.
+
+\bibitem{chieochan2010channel}
+Surachai Chieochan, Ekram Hossain, and Jeffrey Diamond.
+\newblock Channel assignment schemes for infrastructure-based 802.11 wlans: A
+  survey.
+\newblock {\em IEEE Communications Surveys \& Tutorials}, 12(1), 2010.
+
+\bibitem{hills2001large}
+Alex Hills.
+\newblock Large-scale wireless lan design.
+\newblock {\em IEEE Communications Magazine}, 39(11):98--107, 2001.
+
+\bibitem{mahonen2004automatic}
+Petri Mahonen, Janne Riihijarvi, and Marina Petrova.
+\newblock Automatic channel allocation for small wireless local area networks
+  using graph colouring algorithm approach.
+\newblock In {\em Personal, Indoor and Mobile Radio Communications, 2004. PIMRC
+  2004. 15th IEEE International Symposium on}, volume~1, pages 536--539. IEEE,
+  2004.
+
+\bibitem{riihijarvi2005frequency}
+Janne Riihijarvi, Marina Petrova, and Petri Mahonen.
+\newblock Frequency allocation for wlans using graph colouring techniques.
+\newblock In {\em Wireless On-demand Network Systems and Services, 2005. WONS
+  2005. Second Annual Conference on}, pages 216--222. IEEE, 2005.
+
+\bibitem{riihijarvi2006performance}
+Janne Riihijarvi, Marina Petrova, Petri Mahonen, and Jovander De~Almeida
+  Barbosa.
+\newblock Performance evaluation of automatic channel assignment mechanism for
+  ieee 802.11 based on graph colouring.
+\newblock In {\em Personal, Indoor and Mobile Radio Communications, 2006 IEEE
+  17th International Symposium on}, pages 1--5. IEEE, 2006.
+
+\bibitem{lee2002optimization}
+Youngseok Lee, Kyoungae Kim, and Yanghee Choi.
+\newblock Optimization of ap placement and channel assignment in wireless lans.
+\newblock In {\em Local Computer Networks, 2002. Proceedings. LCN 2002. 27th
+  Annual IEEE Conference on}, pages 831--836. IEEE, 2002.
+
+\bibitem{eisenblatter2007integrated}
+Andreas Eisenblatter, Hans-Florian Geerdes, and Iana Siomina.
+\newblock Integrated access point placement and channel assignment for wireless
+  lans in an indoor office environment.
+\newblock In {\em World of Wireless, Mobile and Multimedia Networks, 2007.
+  WoWMoM 2007. IEEE International Symposium on a}, pages 1--10. IEEE, 2007.
+
+\bibitem{mishra2006client}
+Arunesh Mishra, Vladimir Brik, Suman Banerjee, Aravind Srinivasan, and
+  William~A Arbaugh.
+\newblock A client-driven approach for channel management in wireless lans.
+\newblock In {\em Infocom}, 2006.
+
+\bibitem{chen2007improved}
+Jeremy~K Chen, Gustavo De~Veciana, and Theodore~S Rappaport.
+\newblock Improved measurement-based frequency allocation algorithms for
+  wireless networks.
+\newblock In {\em Global Telecommunications Conference, 2007. GLOBECOM'07.
+  IEEE}, pages 4790--4795. IEEE, 2007.
+
+\bibitem{achanta2004method}
+Murali Achanta.
+\newblock Method and apparatus for least congested channel scan for wireless
+  access points, October~5 2004.
+\newblock US Patent App. 10/959,446.
+
+\bibitem{leung2003frequency}
+Kin~K Leung and B-J Kim.
+\newblock Frequency assignment for ieee 802.11 wireless networks.
+\newblock In {\em Vehicular Technology Conference, 2003. VTC 2003-Fall. 2003
+  IEEE 58th}, volume~3, pages 1422--1426. IEEE, 2003.
+
+\bibitem{yu2006dynamic}
+Ming Yu, Hui Luo, and Kin~K Leung.
+\newblock A dynamic radio resource management technique for multiple aps in
+  wlans.
+\newblock {\em IEEE Transactions on Wireless Communications}, 5(7):1910--1919,
+  2006.
+
+\bibitem{yu2004adaptive}
+Ming Yu and Hui Luo.
+\newblock An adaptive radio resource management technique for aps in wlans.
+\newblock In {\em Networks, 2004.(ICON 2004). Proceedings. 12th IEEE
+  International Conference on}, volume~1, pages 85--91. IEEE, 2004.
+
+\bibitem{mishra2005weighted}
+Arunesh Mishra, Suman Banerjee, and William Arbaugh.
+\newblock Weighted coloring based channel assignment for wlans.
+\newblock {\em ACM SIGMOBILE Mobile Computing and Communications Review},
+  9(3):19--31, 2005.
+
+\bibitem{akl2007dynamic}
+Robert Akl and Anurag Arepally.
+\newblock Dynamic channel assignment in ieee 802.11 networks.
+\newblock In {\em Portable Information Devices, 2007. PORTABLE07. IEEE
+  International Conference on}, pages 1--5. IEEE, 2007.
+
+\bibitem{haidar2007channel}
+Mohamad Haidar, Robert Akl, Hussain Al-Rizzo, and Yupo Chan.
+\newblock Channel assignment and load distribution in a power-managed wlan.
+\newblock In {\em Personal, Indoor and Mobile Radio Communications, 2007. PIMRC
+  2007. IEEE 18th International Symposium on}, pages 1--5. IEEE, 2007.
+
+\bibitem{al2007enhanced}
+Hussain Al-Rizzo, Mohamad Haidar, Robert Akl, and Yupo Chan.
+\newblock Enhanced channel assignment and load distribution in ieee 802.11
+  wlans.
+\newblock In {\em Signal Processing and Communications, 2007. ICSPC 2007. IEEE
+  International Conference on}, pages 768--771. IEEE, 2007.
+
+\bibitem{mishra2006distributed}
+Arunesh Mishra, Vivek Shrivastava, Dheeraj Agrawal, Suman Banerjee, and Samrat
+  Ganguly.
+\newblock Distributed channel management in uncoordinated wireless
+  environments.
+\newblock In {\em Proceedings of the 12th annual international conference on
+  Mobile computing and networking}, pages 170--181. ACM, 2006.
+
+\bibitem{baid2015understanding}
+Akash Baid and Dipankar Raychaudhuri.
+\newblock Understanding channel selection dynamics in dense wi-fi networks.
+\newblock {\em IEEE Communications Magazine}, 53(1):110--117, 2015.
+
+\bibitem{brelaz1979new}
+Daniel Br{\'e}laz.
+\newblock New methods to color the vertices of a graph.
+\newblock {\em Communications of the ACM}, 22(4):251--256, 1979.
+
+\bibitem{villegas2009frequency}
+Eduard~Garcia Villegas, Rafael~Vidal Ferr{\'e}, and Josep Paradells.
+\newblock Frequency assignments in ieee 802.11 wlans with efficient spectrum
+  sharing.
+\newblock {\em Wireless Communications and Mobile Computing}, 9(8):1125--1140,
+  2009.
+
+\bibitem{raniwala2004centralized}
+Ashish Raniwala, Kartik Gopalan, and Tzi-cker Chiueh.
+\newblock Centralized channel assignment and routing algorithms for
+  multi-channel wireless mesh networksrancesc.
+\newblock {\em ACM SIGMOBILE Mobile Computing and Communications Review},
+  8(2):50--65, 2004.
+
+\bibitem{herzen2013distributed}
+Julien Herzen, Ruben Merz, and Patrick Thiran.
+\newblock Distributed spectrum assignment for home {WLANs}.
+\newblock In {\em INFOCOM, 2013 Proceedings IEEE}, pages 1573--1581. IEEE,
+  2013.
+
+\bibitem{tgax2016draft}
+{IEEE} p802.11ax/d1.0, November 2016.
+
+\bibitem{kawadia2005principles}
+Vikas Kawadia and PR~Kumar.
+\newblock Principles and protocols for power control in wireless ad hoc
+  networks.
+\newblock {\em IEEE journal on selected areas in Communications}, 23(1):76--88,
+  2005.
+
+\bibitem{agarwal2001distributed}
+Sharad Agarwal, Randy~H Katz, Srikanth~V Krishnamurthy, and Son~K Dao.
+\newblock Distributed power control in ad-hoc wireless networks.
+\newblock In {\em Personal, Indoor and Mobile Radio Communications, 2001 12th
+  IEEE International Symposium on}, volume~2, pages F--F. IEEE, 2001.
+
+\bibitem{karn1990maca}
+Phil Karn.
+\newblock {MACA}-a new channel access method for packet radio.
+\newblock In {\em ARRL/CRRL Amateur radio 9th computer networking conference},
+  volume 140, pages 134--140, 1990.
+
+\bibitem{ebert1999combined}
+J-P Ebert and Adam Wolisz.
+\newblock Combined tuning of rf power and medium access control for wlans.
+\newblock In {\em Mobile Multimedia Communications, 1999.(MoMuC'99) 1999 IEEE
+  International Workshop on}, pages 74--82. IEEE, 1999.
+
+\bibitem{pursley2000energy}
+Michael~B Pursley, Harlan~B Russell, and Jeffrey~S Wysocarski.
+\newblock Energy-efficient transmission and routing protocols for wireless
+  multiple-hop networks and spread-spectrum radios.
+\newblock In {\em EUROCOMM 2000. Information Systems for Enhanced Public Safety
+  and Security. IEEE/AFCEA}, pages 1--5. IEEE, 2000.
+
+\bibitem{jung2002power}
+Eun-Sun Jung and Nitin~H Vaidya.
+\newblock A power control {MAC} protocol for ad hoc networks.
+\newblock In {\em Proceedings of the 8th annual international conference on
+  Mobile computing and networking}, pages 36--47. ACM, 2002.
+
+\bibitem{lei2015performance}
+Xiaoying Lei and Seung~Hyong Rhee.
+\newblock Performance enhancement of overlapping bsss via dynamic transmit
+  power control.
+\newblock {\em EURASIP Journal on Wireless Communications and Networking},
+  2015(1):8, 2015.
+
+\bibitem{chaves2014adaptive}
+Fabiano~S Chaves, Andre~M Cavalcante, Erika~PL Almeida, Fuad~M Abinader,
+  Robson~D Vieira, Sayantan Choudhury, and Klaus Doppler.
+\newblock Adaptive transmit power for wi-fi dense deployments.
+\newblock In {\em Vehicular Technology Conference (VTC Fall), 2014 IEEE 80th},
+  pages 1--6. IEEE, 2014.
+
+\bibitem{oteri2013advanced}
+Oghenekome Oteri, Pengfei Xia, Frank LaSita, and Robert Olesen.
+\newblock Advanced power control techniques for interference mitigation in
+  dense 802.11 networks.
+\newblock In {\em Wireless Personal Multimedia Communications (WPMC), 2013 16th
+  International Symposium on}, pages 1--7. IEEE, 2013.
+
+\bibitem{gandarillas2014dynamic}
+Carlos Gandarillas, Carlos Mart{\'\i}n-Enge{\~n}os, H{\'e}ctor~L{\'o}pez Pombo,
+  and Antonio~G Marques.
+\newblock Dynamic transmit-power control for wifi access points based on
+  wireless link occupancy.
+\newblock In {\em Wireless Communications and Networking Conference (WCNC),
+  2014 IEEE}, pages 1093--1098. IEEE, 2014.
+
+\bibitem{tang2014joint}
+Suhua Tang, Hiroyuki Yomo, Akio Hasegawa, Tatsuo Shibata, and Masayoshi Ohashi.
+\newblock Joint transmit power control and rate adaptation for wireless lans.
+\newblock {\em Wireless personal communications}, 74(2):469--486, 2014.
+
+\bibitem{elbatt2000power}
+Tamer~A ElBatt, Srikanth~V Krishnamurthy, Dennis Connors, and Son Dao.
+\newblock Power management for throughput enhancement in wireless ad-hoc
+  networks.
+\newblock In {\em Communications, 2000. ICC 2000. 2000 IEEE International
+  Conference on}, volume~3, pages 1506--1513. IEEE, 2000.
+
+\bibitem{ebert2000energy}
+Jean-Pierre Ebert, Bj{\"o}rn Stremmel, Eckhardt Wiederhold, and Adam Wolisz.
+\newblock An energy-efficient power control approach for wlans.
+\newblock {\em Journal of Communications and Networks}, 2(3):197--206, 2000.
+
+\bibitem{broustis2010measurement}
+Ioannis Broustis, Konstantina Papagiannaki, Srikanth~V Krishnamurthy, Michalis
+  Faloutsos, and Vivek~P Mhatre.
+\newblock Measurement-driven guidelines for 802.11 wlan design.
+\newblock {\em IEEE/ACM Transactions on Networking (TON)}, 18(3):722--735,
+  2010.
+
+\bibitem{jamil2014improving}
+Imad Jamil, Laurent Cariou, and Jean-Francois Helard.
+\newblock Improving the capacity of future {IEEE} 802.11 high efficiency
+  {WLANs}.
+\newblock In {\em Telecommunications (ICT), 2014 21st International Conference
+  on}, pages 303--307. IEEE, 2014.
+
+\bibitem{zhu2004leveraging}
+Jing Zhu, Xingang Guo, L~Lily Yang, and W~Steven Conner.
+\newblock Leveraging spatial reuse in 802.11 mesh networks with enhanced
+  physical carrier sensing.
+\newblock In {\em Communications, 2004 IEEE International Conference on},
+  volume~7, pages 4004--4011. IEEE, 2004.
+
+\bibitem{afifi2016throughput}
+Wessam Afifi, Enrico-Henrik Rantala, Esa Tuomaala, Sayantan Choudhury, and
+  Marwan Krunz.
+\newblock Throughput-fairness tradeoff evaluation for next-generation wlans
+  with adaptive clear channel assessment.
+\newblock In {\em Communications (ICC), 2016 IEEE International Conference on},
+  pages 1--6. IEEE, 2016.
+
+\bibitem{selinis2016evaluation}
+Ioannis Selinis, Marcin Filo, Seiamak Vahid, Jonathan Rodriguez, and Rahim
+  Tafazolli.
+\newblock Evaluation of the dsc algorithm and the bss color scheme in dense
+  cellular-like ieee 802.11 ax deployments.
+\newblock In {\em Personal, Indoor, and Mobile Radio Communications (PIMRC),
+  2016 IEEE 27th Annual International Symposium on}, pages 1--7. IEEE, 2016.
+
+\bibitem{zhong2016promise}
+Zhenzhe Zhong, Fengming Cao, Parag Kulkarni, and Zhong Fan.
+\newblock Promise and perils of dynamic sensitivity control in ieee 802.11 ax
+  wlans.
+\newblock In {\em Wireless Communication Systems (ISWCS), 2016 International
+  Symposium on}, pages 439--444. IEEE, 2016.
+
+\bibitem{kulkarni2015taming}
+Parag Kulkarni and Fengming Cao.
+\newblock Taming the densification challenge in next generation wireless lans:
+  An investigation into the use of dynamic sensitivity control.
+\newblock In {\em Wireless and Mobile Computing, Networking and Communications
+  (WiMob), 2015 IEEE 11th International Conference on}, pages 860--867. IEEE,
+  2015.
+
+\bibitem{smith2015dynamic}
+G~Smith.
+\newblock Dynamic sensitivity control-v2.
+\newblock {\em IEEE}, 802:802--11, 2015.
+
+\bibitem{afaqui2015evaluation}
+M~Shahwaiz Afaqui, Eduard Garcia-Villegas, Elena Lopez-Aguilera, Graham Smith,
+  and Daniel Camps.
+\newblock Evaluation of dynamic sensitivity control algorithm for {IEEE} 802.11
+  ax.
+\newblock In {\em Wireless Communications and Networking Conference (WCNC),
+  2015 IEEE}, pages 1060--1065. IEEE, 2015.
+
+\bibitem{afaqui2016dynamic}
+M~Shahwaiz Afaqui, Eduard Garcia-Villegas, Elena Lopez-Aguilera, and Daniel
+  Camps-Mur.
+\newblock Dynamic sensitivity control of access points for {IEEE} 802.11 ax.
+\newblock In {\em Communications (ICC), 2016 IEEE International Conference on},
+  pages 1--7. IEEE, 2016.
+
+\bibitem{afaqui2016rtscts}
+M~Shahwaiz Afaqui, Eduard Garcia-Villegas, and Elena Lopez-Aguilera.
+\newblock Dynamic sensitivity control algorithm leveraging adaptive {RTS/CTS}
+  for {IEEE} 802.11 ax.
+\newblock In {\em Wireless Communications and Networking Conference (WCNC),
+  2016 IEEE}, pages 1--6. IEEE, 2016.
+
+\bibitem{oteri2015improved}
+Oghenekome Oteri, Frank La~Sita, Rui Yang, Monisha Ghosh, and Robert Olesen.
+\newblock Improved spatial reuse for dense 802.11 wlans.
+\newblock In {\em Globecom Workshops (GC Wkshps), 2015 IEEE}, pages 1--6. IEEE,
+  2015.
+
+\bibitem{jamil2015preserving}
+Imad Jamil, Laurent Cariou, and Jean-Fran{\c{c}}ois H{\'e}lard.
+\newblock Preserving fairness in super dense {WLANs}.
+\newblock In {\em Communication Workshop (ICCW), 2015 IEEE International
+  Conference on}, pages 2276--2281. IEEE, 2015.
+
+\bibitem{kim2006improving}
+Tae-Suk Kim, Hyuk Lim, and Jennifer~C Hou.
+\newblock Improving spatial reuse through tuning transmit power, carrier sense
+  threshold, and data rate in multihop wireless networks.
+\newblock In {\em Proceedings of the 12th annual international conference on
+  Mobile computing and networking}, pages 366--377. ACM, 2006.
+
+\bibitem{mhatre2007interference}
+Vivek~P Mhatre, Konstantina Papagiannaki, and Francois Baccelli.
+\newblock Interference mitigation through power control in high density 802.11
+  {WLANs}.
+\newblock In {\em INFOCOM 2007. 26th IEEE International Conference on Computer
+  Communications. IEEE}, pages 535--543. IEEE, 2007.
+
+\bibitem{li2010competitive}
+Husheng Li and Zhu Han.
+\newblock Competitive spectrum access in cognitive radio networks: Graphical
+  game and learning.
+\newblock In {\em Wireless Communications and Networking Conference (WCNC),
+  2010 IEEE}, pages 1--6. IEEE, 2010.
+
+\bibitem{maghsudi2015channel}
+Setareh Maghsudi and S{\l}awomir Sta{\'n}czak.
+\newblock Channel selection for network-assisted {D2D} communication via
+  no-regret bandit learning with calibrated forecasting.
+\newblock {\em IEEE Transactions on Wireless Communications}, 14(3):1309--1322,
+  2015.
+
+\bibitem{nie1999q}
+Junhong Nie and Simon Haykin.
+\newblock A q-learning-based dynamic channel assignment technique for mobile
+  communication systems.
+\newblock {\em IEEE Transactions on Vehicular Technology}, 48(5):1676--1687,
+  1999.
+
+\bibitem{bennis2010q}
+Mehdi Bennis and Dusit Niyato.
+\newblock A q-learning based approach to interference avoidance in
+  self-organized femtocell networks.
+\newblock In {\em GLOBECOM Workshops (GC Wkshps), 2010 IEEE}, pages 706--710.
+  IEEE, 2010.
+
+\bibitem{maghsudi2015joint}
+Setareh Maghsudi and S{\l}awomir Sta{\'n}czak.
+\newblock Joint channel selection and power control in infrastructureless
+  wireless networks: A multiplayer multiarmed bandit framework.
+\newblock {\em IEEE Transactions on Vehicular Technology}, 64(10):4565--4578,
+  2015.
+
+\bibitem{jamil2016novel}
+Imad Jamil, Laurent Cariou, and Jean-Fran{\c{c}}ois H{\'e}lard.
+\newblock Novel learning-based spatial reuse optimization in dense {WLAN}
+  deployments.
+\newblock {\em EURASIP Journal on Wireless Communications and Networking},
+  2016(1):184, 2016.
+
+\bibitem{wilhelmi2017implications}
+Francesc Wilhelmi, Boris Bellalta, Cristina Cano, and Anders Jonsson.
+\newblock Implications of decentralized {Q}-learning resource allocation in
+  wireless networks.
+\newblock {\em arXiv preprint arXiv:1705.10508}, 2017.
+
+\bibitem{wilhelmi2017enhancing}
+Francesc Wilhelmi, Boris Bellalta, Jonsson Anders Neu~Gergely Cano, Cristina,
+  and Sergio Barrachina.
+\newblock Enhancing spatial reuse in wireless networks through decentralised
+  multi-armed bandits: Possibilities, challenges and perils.
+\newblock {\em arXiv preprint arXiv:1705.10508}, 2017.
+
+\bibitem{bellalta2017learning}
+Cano Cristina Jonsson Anders Gómez Vicenç Neu Gergely Barrachina Sergio
+  Wilhelmi~Francesc Bellalta, Boris and Maddalena Nurchis.
+\newblock Learning from experience in future wireless networks: Big challenges
+  and opportunities.
+\newblock 2017.
+
+\bibitem{wilhelmi2017improving}
+Francesc Wilhelmi, Boris Bellalta, Cristina Cano, and Anders Jonsson.
+\newblock Improving spatial reuse in high-density wireless networks through
+  learning.
+\newblock {\em 5th EITIC Doctoral Workshop}, 2017.
+
+\bibitem{barrachina2017ctmn}
+Bellalta~Boris Barrachina, Sergio and Francesc Wilhelmi.
+\newblock Dynamic spectrum access in high-density wlans.
+\newblock 2017.
+
+\bibitem{bellalta2014throughput}
+Boris Bellalta, Alessandro Zocca, Cristina Cano, Alessandro Checco, Jaume
+  Barcelo, and Alexey Vinel.
+\newblock Throughput analysis in csma/ca networks using continuous time markov
+  networks: a tutorial.
+\newblock In {\em Wireless Networking for Moving Objects}, pages 115--133.
+  Springer, 2014.
+
+\bibitem{bianchi2000performance}
+Giuseppe Bianchi.
+\newblock Performance analysis of the ieee 802.11 distributed coordination
+  function.
+\newblock {\em IEEE Journal on selected areas in communications},
+  18(3):535--547, 2000.
+
+\bibitem{barrachina2017komondor}
+S.~Barrachina-Mu\~noz and F.~Wilhelmi.
+\newblock {Komondor network simulator}.
+\newblock {\em GitHub repository}, 2017.
+\newblock [Online] Available: \url{https://github.com/wn-upf/Komondor} (commit
+  ).
+
+\bibitem{chen2005sense}
+Gilbert Chen, Joel Branch, Michael Pflug, Lijuan Zhu, and Boleslaw Szymanski.
+\newblock Sense: a wireless sensor network simulator.
+\newblock {\em Advances in pervasive computing and networking}, pages 249--267,
+  2005.
+
+\end{thebibliography}
