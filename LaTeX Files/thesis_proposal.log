@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.12.1)  12 JUL 2017 13:31
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.12.1)  18 JUL 2017 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1296,17 +1296,7 @@ File: pgfcalendar.code.tex 2007/07/23 v3.0.1a (rcs-revision 1.11)
 \gtt@calendar@startofweek=\count291
 \gtt@left@slot=\count292
 \gtt@right@slot=\count293
-) (./thesis_proposal.aux
-
-LaTeX Warning: Label `fig:data_rate_table' multiply defined.
-
-
-LaTeX Warning: Label `fig:data_rate_table' multiply defined.
-
-
-LaTeX Warning: Label `fig:data_rate_table' multiply defined.
-
-)
+) (./thesis_proposal.aux)
 \openout1 = `thesis_proposal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
@@ -1323,7 +1313,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
 LaTeX Font Info:    ... okay on input line 66.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 66.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 66.
@@ -1387,14 +1378,19 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 
 ]
 Chapter 1.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 87.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Overfull \hbox (33.32574pt too wide) in paragraph at lines 87--88
+\OT1/ptm/m/n/12 tion (DCF), which ap-plies Car-rier Sense Mul-ti-ple Ac-cess wi
+th Col-li-sion Avoid-ance (CSMA/CA)
+ []
 
-Underfull \vbox (badness 1565) has occurred while \output is active []
-
- [3]
+[3]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
-
-[4]
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 96.
+ [4]
 Chapter 2.
 File: images/hidden_exposed.png Graphic file (type QTm)
 <use  "images/hidden_exposed.png" > [5
@@ -1406,13 +1402,7 @@ File: images/dcf_operation.png Graphic file (type QTm)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 131.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
 File: images/residential_ax_1.png Graphic file (type QTm)
-
 <use  "images/residential_ax_1.png" >
 File: images/residential_ax_2.png Graphic file (type QTm)
  <use  "images/residential_ax_2.png" >
@@ -1429,11 +1419,7 @@ File: images/residential_large_ax.png Graphic file (type QTm)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9] [10]
+[8] [9] [10]
 Chapter 3.
 File: images/channelisation_wifi.png Graphic file (type QTm)
 <use  "images/channelisation_wifi.png" >
@@ -1443,39 +1429,48 @@ File: images/WLAN-802-11-spectrum-mask.jpg Graphic file (type QTm)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [11
 
 
 ]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 238.
+               Default added (so using `tbp') on input line 246.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 256.
+               Default added (so using `tbp') on input line 264.
 
-
-Underfull \vbox (badness 1735) has occurred while \output is active []
-
- [12]
-[13] [14]
+[12] [13] [14]
 Missing character: There is no   in font cmr12!
 File: images/saw_alg.png Graphic file (type QTm)
- <use  "images/saw_alg.png" > [15] [16]
+ <use  "images/saw_alg.png" >
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15] [16]
 File: images/basic.png Graphic file (type QTm)
  <use  "images/basic.png" >
 File: images/pcm.png Graphic file (type QTm)
+ <use  "images/pcm.png" >
 
-<use  "images/pcm.png" > [17]
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17]
 File: images/fcsma.png Graphic file (type QTm)
  <use  "images/fcsma.png" > [18] [19]
 File: images/jamil2014_1.png Graphic file (type QTm)
-
-<use  "images/jamil2014_1.png" >
+ <use  "images/jamil2014_1.png" >
 File: images/jamil2014_2.png Graphic file (type QTm)
- <use  "images/jamil2014_2.png" >
-Overfull \hbox (16.26877pt too wide) in paragraph at lines 404--419
+
+<use  "images/jamil2014_2.png" >
+Overfull \hbox (16.26877pt too wide) in paragraph at lines 412--427
 \OT1/ptm/m/n/12 where $[]$ is the STA's trans-mis-sion power in dBm at the an-t
 enna con-nec-tor, and $[][]$
  []
@@ -1484,87 +1479,55 @@ enna con-nec-tor, and $[][]$
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[21]
 File: images/DSC.png Graphic file (type QTm)
-<use  "images/DSC.png" > [21] [22]
+ <use  "images/DSC.png" > [22]
+File: images/dsc_problems.png Graphic file (type QTm)
+ <use  "images/dsc_problems.png" >
 
-LaTeX Warning: Reference `fig:TGax_scenario' on page 23 undefined on input line
- 448.
-
-File: images/enhanced_DSC.png Graphic file (type QTm)
-<use  "images/enhanced_DSC.png" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Reference `fig:enhanced_dsc' on page 23 undefined on input line 
+452.
 
 [23] [24]
+File: images/tx_cca_relation.png Graphic file (type QTm)
+ <use  "images/tx_cca_relation.png" >
 
-LaTeX Warning: Reference `section:power_control' on page 25 undefined on input 
-line 500.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25]
+[25] [26]
 Missing character: There is no   in font ptmr7t!
-File: images/cca_tpc_adaptation_simple.png Graphic file (type QTm)
- <use  "images/cca_tpc_adaptation_simple.png" >
-File: images/scenario_tpc_cca_adaptation_cellular.png Graphic file (type QTm)
+ [27]
+File: images/rl_scenario.png Graphic file (type QTm)
+ <use  "images/rl_scenario.png" >
+File: images/rl_types.png Graphic file (type QTm)
+ <use  "images/rl_types.png" >
 
-<use  "images/scenario_tpc_cca_adaptation_cellular.png" >
-File: images/results_tpc_cca_adaptation_simple.png Graphic file (type QTm)
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<use  "images/results_tpc_cca_adaptation_simple.png" > [26]
+[28]
+File: images/rl_control_types.png Graphic file (type QTm)
+ <use  "images/rl_control_types.png" >
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[29]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 545.
-File: images/data_rate_table.png Graphic file (type QTm)
-
-<use  "images/data_rate_table.png" > [27]
-File: images/algorithm1.png Graphic file (type QTm)
- <use  "images/algorithm1.png" >
-File: images/algorithm2.png Graphic file (type QTm)
-
-<use  "images/algorithm2.png" >
-File: images/algorithm3.png Graphic file (type QTm)
- <use  "images/algorithm3.png" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[28] [29]
-File: images/gibbs_results.png Graphic file (type QTm)
- <use  "images/gibbs_results.png" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[30]
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 611.
+ [30]
 Missing character: There is no ’ in font ptmr7t!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [31]
-File: images/results_bandits_d2d.png Graphic file (type QTm)
- <use  "images/results_bandits_d2d.png" >
 File: images/neural_network_topology.png Graphic file (type QTm)
 
-<use  "images/neural_network_topology.png" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[32]
-File: images/entire_procedure_ANN.png Graphic file (type QTm)
- <use  "images/entire_procedure_ANN.png" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `section:cca_tpc_adaptation_fairness' on page 33 undef
-ined on input line 709.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[33] [34]
-Chapter 4.
-[35
+<use  "images/neural_network_topology.png" > [32] [33] [34
 
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 752.
+Chapter 4.
+[35]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 669.
 
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -1576,14 +1539,20 @@ Missing character: There is no   in font ptmr7t!
 
 ]
 Chapter 5.
+
+Overfull \hbox (40.79134pt too wide) in paragraph at lines 697--701
+\OT1/ptm/m/n/12 * Met-rics * What do we want to do? * In which sce-nar-ios? * C
+en-tralised/Decentralised/Uncoordinated... 
+ []
+
 [39]
-Overfull \hbox (0.28032pt too wide) in paragraph at lines 818--819
+Overfull \hbox (0.28032pt too wide) in paragraph at lines 744--745
 []\OT1/ptm/m/n/12 Provide a wire-less net-works sim-u-la-tor that in-cludes nov
 el fea-tures in IEEE 802.11ax
  []
 
 (./thesis_proposal.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2486) has occurred while \output is active []
 
  [40]
 Overfull \vbox (142.6329pt too high) has occurred while \output is active []
@@ -1593,26 +1562,23 @@ Overfull \vbox (142.6329pt too high) has occurred while \output is active []
 
 
 ] [43]
-Underfull \hbox (badness 1838) in paragraph at lines 105--110
+Underfull \hbox (badness 1838) in paragraph at lines 111--116
 []\OT1/ptm/m/n/12 Jeremy K Chen, Gus-tavo De Ve-ciana, and Theodore S Rap-pa-po
 rt.  Im-proved
  []
 
-[44] [45] [46] [47]
+[44] [45] [46] [47] [48]
 Missing character: There is no ó in font ptmr7t!
 Missing character: There is no ç in font ptmr7t!
 
-Underfull \hbox (badness 1163) in paragraph at lines 447--452
+Underfull \hbox (badness 1163) in paragraph at lines 493--498
 []\OT1/ptm/m/n/12 Cano Cristina Jon-s-son An-ders Gmez Vi-cen Neu Gergely Bar-r
 achina Ser-gio Wil-
  []
 
-[48]) [49] (./thesis_proposal.aux)
+) [49] (./thesis_proposal.aux)
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
 
  )
 (\end occurred inside a group at level 1)
@@ -1621,12 +1587,12 @@ LaTeX Warning: There were multiply-defined labels.
 ### bottom level
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
- 30941 strings out of 493591
- 666769 string characters out of 6143546
- 737472 words of memory out of 5000000
- 33759 multiletter control sequences out of 15000+600000
- 23998 words of font info for 72 fonts, out of 8000000 for 9000
+ 30917 strings out of 493591
+ 666190 string characters out of 6143546
+ 738644 words of memory out of 5000000
+ 33750 multiletter control sequences out of 15000+600000
+ 21777 words of font info for 64 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 55i,17n,77p,10385b,3158s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,17n,77p,10385b,3155s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on thesis_proposal.pdf (51 pages).

@@ -4,40 +4,45 @@ The top-level auxiliary file: thesis_proposal.aux
 The style file: unsrt.bst
 Database file #1: bib.bib
 Warning--entry type for "tgax2016draft" isn't style-file defined
---line 297 of file bib.bib
-Repeated entry---line 406 of file bib.bib
+--line 362 of file bib.bib
+Repeated entry---line 471 of file bib.bib
  : @inproceedings{balachandran2002characterizing
  :                                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 417 of file bib.bib
+Repeated entry---line 482 of file bib.bib
  : @inproceedings{papadopouli2005modeling
  :                                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 608 of file bib.bib
+Repeated entry---line 673 of file bib.bib
  : @inproceedings{riihijarvi2005frequency
  :                                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 628 of file bib.bib
+Repeated entry---line 693 of file bib.bib
  : @article{mishra2005weighted
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 784 of file bib.bib
+Repeated entry---line 808 of file bib.bib
+ : @inproceedings{bennis2011distributed
+ :                                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 867 of file bib.bib
  : @inproceedings{agarwal2001distributed
  :                                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 910 of file bib.bib
+Repeated entry---line 993 of file bib.bib
  : @article{kawadia2005principles
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 921 of file bib.bib
+Repeated entry---line 1004 of file bib.bib
  : @article{mishra2005weighted
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 972 of file bib.bib
+Repeated entry---line 1055 of file bib.bib
  : @article{raniwala2004centralized
  :                                 ,
 I'm skipping whatever remains of this entry
 Warning--can't use both volume and number fields in balachandran2002characterizing
+Warning--can't use both volume and number fields in sutton1998reinforcement
 Too many commas in name 3 of "Wilhelmi, Francesc and Bellalta, Boris and Cano, Cristina, Jonsson, Anders, Neu, Gergely and Barrachina, Sergio" for entry wilhelmi2017enhancing
 while executing---line 944 of file unsrt.bst
 Too many commas in name 3 of "Wilhelmi, Francesc and Bellalta, Boris and Cano, Cristina, Jonsson, Anders, Neu, Gergely and Barrachina, Sergio" for entry wilhelmi2017enhancing
@@ -70,45 +75,45 @@ Warning--empty journal in bellalta2017learning
 Too many commas in name 1 of "Barrachina, Sergio, Bellalta, Boris and Wilhelmi, Francesc" for entry barrachina2017ctmn
 while executing---line 944 of file unsrt.bst
 Warning--empty journal in barrachina2017ctmn
-You've used 75 entries,
+You've used 83 entries,
             1791 wiz_defined-function locations,
-            834 strings with 19137 characters,
-and the built_in function-call counts, 22890 in all, are:
-= -- 2256
-> -- 847
-< -- 53
-+ -- 310
-- -- 235
-* -- 1427
-:= -- 3227
-add.period$ -- 265
-call.type$ -- 75
-change.case$ -- 75
+            874 strings with 20319 characters,
+and the built_in function-call counts, 24823 in all, are:
+= -- 2447
+> -- 904
+< -- 56
++ -- 333
+- -- 250
+* -- 1540
+:= -- 3507
+add.period$ -- 291
+call.type$ -- 83
+change.case$ -- 81
 chr.to.int$ -- 0
-cite$ -- 78
-duplicate$ -- 1134
-empty$ -- 2238
-format.name$ -- 235
-if$ -- 5461
+cite$ -- 87
+duplicate$ -- 1233
+empty$ -- 2438
+format.name$ -- 250
+if$ -- 5913
 int.to.chr$ -- 0
-int.to.str$ -- 75
-missing$ -- 73
-newline$ -- 377
-num.names$ -- 74
-pop$ -- 316
+int.to.str$ -- 83
+missing$ -- 83
+newline$ -- 417
+num.names$ -- 82
+pop$ -- 346
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 662
+skip$ -- 712
 stack$ -- 0
-substring$ -- 1688
-swap$ -- 468
-text.length$ -- 53
+substring$ -- 1826
+swap$ -- 500
+text.length$ -- 56
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 243
-width$ -- 77
-write$ -- 864
-(There were 23 error messages)
+warning$ -- 4
+while$ -- 263
+width$ -- 85
+write$ -- 952
+(There were 24 error messages)

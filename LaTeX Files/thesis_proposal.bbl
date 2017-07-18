@@ -11,6 +11,12 @@ Zhenzhe Zhong, Parag Kulkarni, Fengming Cao, Zhong Fan, and Simon Armour.
 \newblock In {\em Wireless Communications and Mobile Computing Conference
   (IWCMC), 2015 International}, pages 947--951. IEEE, 2015.
 
+\bibitem{herzen2015csma}
+Julien Herzen, Albert Banchs, Vsevolod Shneer, and Patrick Thiran.
+\newblock Csma/ca in time and frequency domains.
+\newblock In {\em Network Protocols (ICNP), 2015 IEEE 23rd International
+  Conference on}, pages 256--266. IEEE, 2015.
+
 \bibitem{balachandran2002characterizing}
 Anand Balachandran, Geoffrey~M Voelker, Paramvir Bahl, and P~Venkat Rangan.
 \newblock Characterizing user behavior and network performance in a public
@@ -297,13 +303,6 @@ Imad Jamil, Laurent Cariou, and Jean-Francois Helard.
 \newblock In {\em Telecommunications (ICT), 2014 21st International Conference
   on}, pages 303--307. IEEE, 2014.
 
-\bibitem{zhu2004leveraging}
-Jing Zhu, Xingang Guo, L~Lily Yang, and W~Steven Conner.
-\newblock Leveraging spatial reuse in 802.11 mesh networks with enhanced
-  physical carrier sensing.
-\newblock In {\em Communications, 2004 IEEE International Conference on},
-  volume~7, pages 4004--4011. IEEE, 2004.
-
 \bibitem{afifi2016throughput}
 Wessam Afifi, Enrico-Henrik Rantala, Esa Tuomaala, Sayantan Choudhury, and
   Marwan Krunz.
@@ -311,29 +310,6 @@ Wessam Afifi, Enrico-Henrik Rantala, Esa Tuomaala, Sayantan Choudhury, and
   with adaptive clear channel assessment.
 \newblock In {\em Communications (ICC), 2016 IEEE International Conference on},
   pages 1--6. IEEE, 2016.
-
-\bibitem{selinis2016evaluation}
-Ioannis Selinis, Marcin Filo, Seiamak Vahid, Jonathan Rodriguez, and Rahim
-  Tafazolli.
-\newblock Evaluation of the dsc algorithm and the bss color scheme in dense
-  cellular-like ieee 802.11 ax deployments.
-\newblock In {\em Personal, Indoor, and Mobile Radio Communications (PIMRC),
-  2016 IEEE 27th Annual International Symposium on}, pages 1--7. IEEE, 2016.
-
-\bibitem{zhong2016promise}
-Zhenzhe Zhong, Fengming Cao, Parag Kulkarni, and Zhong Fan.
-\newblock Promise and perils of dynamic sensitivity control in ieee 802.11 ax
-  wlans.
-\newblock In {\em Wireless Communication Systems (ISWCS), 2016 International
-  Symposium on}, pages 439--444. IEEE, 2016.
-
-\bibitem{kulkarni2015taming}
-Parag Kulkarni and Fengming Cao.
-\newblock Taming the densification challenge in next generation wireless lans:
-  An investigation into the use of dynamic sensitivity control.
-\newblock In {\em Wireless and Mobile Computing, Networking and Communications
-  (WiMob), 2015 IEEE 11th International Conference on}, pages 860--867. IEEE,
-  2015.
 
 \bibitem{smith2015dynamic}
 G~Smith.
@@ -348,6 +324,29 @@ M~Shahwaiz Afaqui, Eduard Garcia-Villegas, Elena Lopez-Aguilera, Graham Smith,
 \newblock In {\em Wireless Communications and Networking Conference (WCNC),
   2015 IEEE}, pages 1060--1065. IEEE, 2015.
 
+\bibitem{zhong2016promise}
+Zhenzhe Zhong, Fengming Cao, Parag Kulkarni, and Zhong Fan.
+\newblock Promise and perils of dynamic sensitivity control in ieee 802.11 ax
+  wlans.
+\newblock In {\em Wireless Communication Systems (ISWCS), 2016 International
+  Symposium on}, pages 439--444. IEEE, 2016.
+
+\bibitem{selinis2016evaluation}
+Ioannis Selinis, Marcin Filo, Seiamak Vahid, Jonathan Rodriguez, and Rahim
+  Tafazolli.
+\newblock Evaluation of the dsc algorithm and the bss color scheme in dense
+  cellular-like ieee 802.11 ax deployments.
+\newblock In {\em Personal, Indoor, and Mobile Radio Communications (PIMRC),
+  2016 IEEE 27th Annual International Symposium on}, pages 1--7. IEEE, 2016.
+
+\bibitem{kulkarni2015taming}
+Parag Kulkarni and Fengming Cao.
+\newblock Taming the densification challenge in next generation wireless lans:
+  An investigation into the use of dynamic sensitivity control.
+\newblock In {\em Wireless and Mobile Computing, Networking and Communications
+  (WiMob), 2015 IEEE 11th International Conference on}, pages 860--867. IEEE,
+  2015.
+
 \bibitem{afaqui2016dynamic}
 M~Shahwaiz Afaqui, Eduard Garcia-Villegas, Elena Lopez-Aguilera, and Daniel
   Camps-Mur.
@@ -361,6 +360,20 @@ M~Shahwaiz Afaqui, Eduard Garcia-Villegas, and Elena Lopez-Aguilera.
   for {IEEE} 802.11 ax.
 \newblock In {\em Wireless Communications and Networking Conference (WCNC),
   2016 IEEE}, pages 1--6. IEEE, 2016.
+
+\bibitem{zhu2004leveraging}
+Jing Zhu, Xingang Guo, L~Lily Yang, and W~Steven Conner.
+\newblock Leveraging spatial reuse in 802.11 mesh networks with enhanced
+  physical carrier sensing.
+\newblock In {\em Communications, 2004 IEEE International Conference on},
+  volume~7, pages 4004--4011. IEEE, 2004.
+
+\bibitem{thorpe2014survey}
+Christina Thorpe and Liam Murphy.
+\newblock A survey of adaptive carrier sensing mechanisms for ieee 802.11
+  wireless networks.
+\newblock {\em IEEE Communications Surveys \& Tutorials}, 16(3):1266--1293,
+  2014.
 
 \bibitem{oteri2015improved}
 Oghenekome Oteri, Frank La~Sita, Rui Yang, Monisha Ghosh, and Robert Olesen.
@@ -388,19 +401,31 @@ Vivek~P Mhatre, Konstantina Papagiannaki, and Francois Baccelli.
 \newblock In {\em INFOCOM 2007. 26th IEEE International Conference on Computer
   Communications. IEEE}, pages 535--543. IEEE, 2007.
 
-\bibitem{li2010competitive}
-Husheng Li and Zhu Han.
-\newblock Competitive spectrum access in cognitive radio networks: Graphical
-  game and learning.
-\newblock In {\em Wireless Communications and Networking Conference (WCNC),
-  2010 IEEE}, pages 1--6. IEEE, 2010.
+\bibitem{sutton1998reinforcement}
+Richard~S Sutton and Andrew~G Barto.
+\newblock {\em Reinforcement learning: An introduction}, volume~1.
+\newblock MIT press Cambridge, 1998.
 
-\bibitem{maghsudi2015channel}
-Setareh Maghsudi and S{\l}awomir Sta{\'n}czak.
-\newblock Channel selection for network-assisted {D2D} communication via
-  no-regret bandit learning with calibrated forecasting.
-\newblock {\em IEEE Transactions on Wireless Communications}, 14(3):1309--1322,
-  2015.
+\bibitem{szepesvari2010algorithms}
+Csaba Szepesv{\'a}ri.
+\newblock Algorithms for reinforcement learning.
+\newblock {\em Synthesis lectures on artificial intelligence and machine
+  learning}, 4(1):1--103, 2010.
+
+\bibitem{robert2004monte}
+Christian~P Robert.
+\newblock {\em Monte carlo methods}.
+\newblock Wiley Online Library, 2004.
+
+\bibitem{sutton1988learning}
+Richard~S Sutton.
+\newblock Learning to predict by the methods of temporal differences.
+\newblock {\em Machine learning}, 3(1):9--44, 1988.
+
+\bibitem{abramson2004active}
+Yotam Abramson and Yoav Freund.
+\newblock Active learning for visual object recognition.
+\newblock {\em Technical report, UCSD}, 2004.
 
 \bibitem{nie1999q}
 Junhong Nie and Simon Haykin.
@@ -409,6 +434,13 @@ Junhong Nie and Simon Haykin.
 \newblock {\em IEEE Transactions on Vehicular Technology}, 48(5):1676--1687,
   1999.
 
+\bibitem{li2009multi}
+Husheng Li.
+\newblock Multi-agent q-learning of channel selection in multi-user cognitive
+  radio systems: A two by two case.
+\newblock In {\em Systems, Man and Cybernetics, 2009. SMC 2009. IEEE
+  International Conference on}, pages 1893--1898. IEEE, 2009.
+
 \bibitem{bennis2010q}
 Mehdi Bennis and Dusit Niyato.
 \newblock A q-learning based approach to interference avoidance in
@@ -416,11 +448,25 @@ Mehdi Bennis and Dusit Niyato.
 \newblock In {\em GLOBECOM Workshops (GC Wkshps), 2010 IEEE}, pages 706--710.
   IEEE, 2010.
 
+\bibitem{bennis2011distributed}
+Mehdi Bennis, Sudarshan Guruacharya, and Dusit Niyato.
+\newblock Distributed learning strategies for interference mitigation in
+  femtocell networks.
+\newblock In {\em Global Telecommunications Conference (GLOBECOM 2011), 2011
+  IEEE}, pages 1--5. IEEE, 2011.
+
 \bibitem{maghsudi2015joint}
 Setareh Maghsudi and S{\l}awomir Sta{\'n}czak.
 \newblock Joint channel selection and power control in infrastructureless
   wireless networks: A multiplayer multiarmed bandit framework.
 \newblock {\em IEEE Transactions on Vehicular Technology}, 64(10):4565--4578,
+  2015.
+
+\bibitem{maghsudi2015channel}
+Setareh Maghsudi and S{\l}awomir Sta{\'n}czak.
+\newblock Channel selection for network-assisted {D2D} communication via
+  no-regret bandit learning with calibrated forecasting.
+\newblock {\em IEEE Transactions on Wireless Communications}, 14(3):1309--1322,
   2015.
 
 \bibitem{jamil2016novel}

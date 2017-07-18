@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.12.1)  10 JUL 2017 09:09
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.12.1)  14 JUL 2017 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1329,18 +1329,17 @@ File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
 \c__siunitx_mathtt_int=\count294
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
-Missing character: There is no   in font ptmr7t!
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 80.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 81.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (4.44353pt too wide) in paragraph at lines 80--83
+Overfull \hbox (4.44353pt too wide) in paragraph at lines 81--84
 []\OT1/ptm/m/n/12 website: $\OT1/pcr/m/n/12 https : / / www . upf . edu / web /
  fwilhelmi$ \OT1/ptm/m/n/12 scholar: $\OT1/pcr/m/n/12 https : / / scholar .
  []
 
 
-Overfull \hbox (159.03185pt too wide) in paragraph at lines 80--83
+Overfull \hbox (159.03185pt too wide) in paragraph at lines 81--84
 \OT1/pcr/m/n/12 google . es / citations ? user = 4EHXj4UAAAAJ & hl = ca & citsi
 g = AMstHGShG4ofYlHpMmt1o34BA0qt08UFxQ$
  []
@@ -1352,26 +1351,22 @@ LaTeX Font Info:    Try loading font information for TS1+ptm on input line 106.
 
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [2]
-Overfull \hbox (14.04094pt too wide) in paragraph at lines 147--147
+)
+File: images/gnu_license.png Graphic file (type QTm)
+
+<use  "images/gnu_license.png" >
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 139--140
+ [][] 
+ []
+
+[2]
+Overfull \hbox (14.04094pt too wide) in paragraph at lines 151--151
 [][]\OT1/ptm/m/n/10 Material avail-able in $\OT1/pcr/m/n/10 https : / / drive .
  google . com / file / d / 0BzOhuzdX0br5b3pWMEFUZ3JDVUk /
  []
 
 Missing character: There is no é in font ptmr7t!
-
-Overfull \hbox (37.51765pt too wide) in paragraph at lines 170--171
-[]\OT1/ptm/m/n/12 Cristina Cano: $\OT1/pcr/m/n/12 https : / / scholar . google 
-. es / citations ? user = 3fpyaLkAAAAJ &
- []
-
-[3]
-Overfull \hbox (37.06963pt too wide) in paragraph at lines 171--172
-[]\OT1/ptm/m/n/12 Setareh Magh-sudi: $\OT1/pcr/m/n/12 http : / / dblp . uni-[]t
-rier . de / pers / hd / m / Maghsudi : Setareh$ 
- []
-
-(./seminars_report.bbl)
+[3] (./seminars_report.bbl)
 
 Package caption Warning: Unused \captionsetup[sub] on input line 39.
 See the caption package documentation for explanation.
@@ -1383,12 +1378,12 @@ See the caption package documentation for explanation.
 ### bottom level
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
- 29981 strings out of 493591
- 647310 string characters out of 6143546
- 677603 words of memory out of 5000000
- 32859 multiletter control sequences out of 15000+600000
+ 29998 strings out of 493591
+ 647528 string characters out of 6143546
+ 677612 words of memory out of 5000000
+ 32872 multiletter control sequences out of 15000+600000
  17613 words of font info for 59 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 55i,11n,76p,10385b,2780s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,77p,10385b,2926s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on seminars_report.pdf (4 pages).

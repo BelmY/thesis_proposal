@@ -82,7 +82,14 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\chapter{Motivation}
 	\label{section:introduction}	
-		Due to the growing popularity of wireless deployments (especially the ones based in the IEEE 802.11 standard), it is very common to find overlapping Wireless Networks (WNs) that squander the bandwidth resources. This is mostly provoked by a lack of organization and/or agreement at sharing it, and the problem scales up as the number of overlapping nodes increases. A prominent example about the harmfulness of such type of coexistence is that the default power level of devices in a WN is typically set to the maximum, regardless of the distance between nodes and the channel occupancy \cite{akella2007self}. Moreover, according to \cite{zhong2015issues}, the network performance is severely deteriorated as density increases, specially if the number of Overlapping Basic Service Sets (OBSSs) is greater than 1. If we consider dense scenarios such as stadiums, trains or apartment buildings, then the combination of bad performance and high density entails to provide challenging solutions. For that, the IEEE 802.11ax-2019 standard is being developed by the Task Group AX (TGax). The standard emphasises on spatial reuse to fulfil , in addition to include many other novel mechanisms such as Orthogonal Frequency-Division Multiple Access (OFDMA), Dynamic Channel Bonding (DCB), and Multi-User Multiple Input Multiple Output (MU-MIMO). Spatial reuse aims to reduce the interference level in an overlapping scenario, so that the area throughput can be maximised. To enhance spatial reuse, we highlight Transmission Power Control (TPC), Carrier Sense Threshold (CST) adjustment, and beamforming. 
+		Due to the growing popularity of wireless deployments (especially the ones based in the IEEE 802.11 standard), it is very common to find overlapping Wireless Networks (WNs) that squander the bandwidth resources. This is mostly provoked by a lack of organization and/or agreement at sharing it, and the problem scales up as the number of overlapping nodes increases. A prominent example about the harmfulness of such type of coexistence is that the default power level of devices in a WN is typically set to the maximum, regardless of the distance between nodes and the channel occupancy \cite{akella2007self}. Moreover, according to \cite{zhong2015issues}, the network performance is severely deteriorated as density increases, specially if the number of Overlapping Basic Service Sets (OBSSs) is greater than 1. If we consider dense scenarios such as stadiums, trains or apartment buildings, then the combination of bad performance and high density entails to provide challenging solutions. Three domains are mainly being studied to enhance the performance in a WN:
+		\begin{itemize}
+			\item \textbf{Time:} current IEEE 802.11 WLANs are governed by the Distributed Coordination Function (DCF), which applies Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA) to grant temporal channel access. However, this approach is well-known to generate performance issues that lead to starvation and/or collisions. An interesting alternative to CSMA is presented in \cite{herzen2015csma}, which proposes Time Frequency CSMA/CA (TF-CSMA/CA), an algorithm that schedules packets in both time and frequency domains. Thus, a station performs backoff also in the frequency domain, which increases the channel utilisation. However, it requires self-organization to find appropriate spectrum bands to minimise interference.
+			\item \textbf{Frequency:} spectrum access and channel allocation are the main areas of interest for the frequency domain. The aim is to maximise the channel utilisation without suffering interference. For that, we find Dynamic Channel Bonding (DCB), which is promising technique for dynamically increase the width of the utilised spectrum for transmissions. Moreover, to even maximise the channel utilisation, Dynamic Spectrum Access (DSA) is focused in finding reliable free spectrum patterns.
+			\item \textbf{Space:} the spatial domain considers the transmission range at which the transmitter is able to reach due to the strength of its transmission power, as well as the sensitivity area at which the receiver is able to detect incoming transmissions. If both transmission range and sensitivity area are within the same space, and both transmitter and receiver are in different WNs, the sensed power is considered as interference. Due to the DCF operation, this leads to starvation or collisions, according to the situation. If the interfered node is in a position to send a packet, it must contend its transmission in case of , while if it is receiving data from another node, it can suffer a collision.
+		\end{itemize}
+		
+		To the matter of this thesis, we highlight the enhancement of spatial reuse, which is specially emphasised in the IEEE 802.11ax-2019 standard that is being developed by the Task Group AX (TGax). Spatial reuse aims to reduce the interference level in an overlapping scenario, so that the area throughput can be maximised. To enhance spatial reuse, we highlight Transmission Power Control (TPC), Carrier Sense Threshold (CST) adjustment, and beamforming. The IEEE 802.11ax-2019 also includes many other novel mechanisms such as Orthogonal Frequency-Division Multiple Access (OFDMA), Dynamic Channel Bonding (DCB), and Multi-User Multiple Input Multiple Output (MU-MIMO). 
 		
 		In addition to the coexistence issues (further described in Section \ref{section:coexistence_issues}) resulting from new requirements, the variability in wireless networks in terms of user arrivals and departures entails another challenge to the resource allocation problem. Thus, adaptable and fast-convergence solutions must be provided, which even increases their complexity. Henceforth, the dynamic adjustment of parameters such as the frequency channel, the transmit power, or the sensitivity, appears to suit properly in the Reinforcement Learning (RL) paradigm. In RL, input signals are used to determine the behaviour of a given system, so that historical events are considered for decision-making. To validate a real-time solution, it is very important to build an accurate model that takes into account the users behaviour. Thus, considering arrivals and departures is key for designing a solution, which is required to be provided before the environment changes. In both \cite{balachandran2002characterizing} and \cite{papadopouli2005modeling}, user arrivals are modelled as time-varying Poisson processes, such that the users arrival rate ($\lambda$) depends on the time. On these works, it is studied the users' behaviour in fully controlled environments such as University Campus or Conferences, but the mean time between user arrivals varies according to the scenario and many other factors. In particular, in the second case it is considered a two-state Markov-Modulated Poisson Process (MMPP) with mean inter-arrival times of 38 seconds and 6 minutes for accessing and leaving the system, respectively, which provides us a first idea about the maximum allowed convergence time for the developed solutions. In addition to scenarios diversification, it should be considered what will be the users behaviour in the future, as well as the algorithms to be designed must operate in the long term. 
 		
@@ -184,12 +191,8 @@
 		% SPATIAL REUSE										     %%%%%%%%%%%%%
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%			
 		\section{Spatial Reuse in Overlapping IEEE 802.11 WLANs}
-		\label{section:spatial_reuse}		
-			To deal with the aforementioned problems caused by coexistence, spatial reuse turns out to be key, so as to improve the area throughput. The first step to enhance spatial reuse is to properly allocate frequency channels among coexisting nodes, so that interference is minimised. Due to the traffic and users fluctuation, Dynamic Channel Allocation (DCA) is required to maximise the performance of the wireless networks in dense environments. DCA aims to properly allocate the available frequency range among the overlapping devices. Several approaches can be found for DCA according to the needs, and there is a strong discussion about which requirements must be accomplished. While some approaches aim to provide fairness (\cite{ling2006joint}), some others try to grant more resources to nodes with higher traffic demands (\cite{wertz2004automatic}). 
-			
-			Another mechanism of interest to improve spatial reuse is Transmission Power Control (TPC), which can also help at reducing energy consumption. By adjusting the transmit power, the number of exposed nodes can be minimised, allowing a higher number of parallel transmissions within the same range. But there is an important consideration at tuning the power transmitted, which is that data rate directly depends on the SINR sensed at the receiver (the less power transmitted, the less experienced data rate received). Thus, adjusting TPC poses the trade-off between the number of parallel transmissions and the quality of them. Moreover, an insufficient transmit power may be unheard at the receiver, leading into packet losses. 
-			
-			Finally, Carrier Sense Threshold (CST) adjustment may also help to increase the number of parallel transmissions and minimizing the collisions probability by hidden-node. However, modifying the CST entails several consequences. For instance, decreasing the CST may rise probability of finding hidden nodes (the less is listened, the less is known). Table \ref{tbl:cca_tpc_effects} summarises the effects of TPC and CST adaptation.			
+		\label{section:spatial_reuse}	
+			Spatial reuse can be enhanced by using Transmission Power Control (TPC), Carrier Sense Threshold (CST) adjustment, and beamforming. TPC, in addition to be useful for improving spatial reuse, can also help at reducing energy consumption. By adjusting the transmit power, the number of exposed nodes can be minimised, allowing a higher number of parallel transmissions within the same range. But there is an important consideration at tuning the power transmitted, which is that data rate directly depends on the SINR sensed at the receiver (the less power transmitted, the less experienced data rate received). Thus, adjusting TPC poses the trade-off between the number of parallel transmissions and the quality of them. Moreover, an insufficient transmit power may be unheard at the receiver, leading into packet losses. Furthermore, Carrier Sense Threshold (CST) adjustment may also help to increase the number of parallel transmissions and minimizing the collisions probability by hidden-node. However, modifying the CST entails several consequences. For instance, decreasing the CST may rise probability of finding hidden nodes (the less is listened, the less is known). Table \ref{tbl:cca_tpc_effects} summarises the effects of TPC and CST adaptation.			
 			\begin{table}[h!]
 				\centering
 				\begin{tabular}{|c|c|c|c|c|}
@@ -205,21 +208,26 @@
 				\label{tbl:cca_tpc_effects}
 			\end{table}
 			
-			The modification of channel, transmit power and CCA may provide enormous enhancements to spatial reuse, but finding the optimal solution for a given Wireless Network is NP-hard. For that, we put special emphasis on Reinforcement Learning (RL) for improving the spatial reuse. RL turns out to be a convenient paradigm for allowing independent devices to improve their own performance through an observations-based learning process. Therefore, the main concern of this work is to let WNs to self-adjust both frequency channel and transmit power through a learning approach that uses only local information. On one hand, this allows avoiding the extra overhead that may be generated by the communication between WNs (which may be counter productive in terms of throughput). On the other hand, learning in WNs using only local information presents a number of challenges that must be faced in order to approach the resource allocation problem, which is also of relevance for this work.		
-
+			The modification of the transmit power and the CST may provide enormous enhancements to spatial reuse, but finding the optimal solution for a given Wireless Network is NP-hard. For that, we put special emphasis on Reinforcement Learning (RL) for improving the spatial reuse. RL turns out to be a convenient paradigm for allowing independent devices to improve their own performance through an observations-based learning process. Therefore, the main concern of this work is to let WNs to self-adjust both frequency channel and transmit power through a learning approach that uses only local information. On one hand, this allows avoiding the extra overhead that may be generated by the communication between WNs (which may be counter productive in terms of throughput). On the other hand, learning in WNs using only local information presents a number of challenges that must be faced in order to approach the resource allocation problem, which is also of relevance for this work.		
+			
+			Finally, to even improve spatial reuse we find adaptive beamforming...			
+			
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% STATE OF THE ART				                 %%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 	\chapter{State of the Art}
 	\label{section:state_of_the_art}
-		This Section describes the previous related work to enhance spatial reuse in Wireless Networks regarding channel, transmit power and sensitivity adjustment. Furthermore, it introduces previous research in dynamic resource allocation in WNs through Reinforcement Learning.		
+		This Section describes the previous related work to enhance spatial reuse in Wireless Networks regarding channel allocation, TPC, CST adjustment and beamforming. Since one of the main purposes of this thesis is to study the feasibility of RL application into spatial reuse in wireless networks, we also provide some notions on what RL is, and which kind of problems it can solve. Furthermore, in this Section we also introduce previous research in dynamic resource allocation in WNs through Reinforcement Learning. 
 			
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		% SoA DCA										          %%%%%%%%%%%%%
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%				
 		\section{Dynamic Channel Allocation}		
 		\label{section:dca}
-			The Industrial, Scientific and Medical (ISM) band is shared by multiple technologies such as IEEE 802.11, IEEE 802.15 and Unlicensed Long Term Evolution (U-LTE). In particular, most of the Wi-Fi standards use the 2.4 GHz	and 5 GHz bands, which have different number of channels. For the 2.4 GHz case, there are 14 overlapping channels of 22 MHz (refer to Figure \ref{fig:channelisation_wifi}), so that adjacent channel utilisation ($\pm$ 11 MHz) is affected by a 30 dB signal drop (shown in Figure \ref{fig:80211ad_mask}). Similarly, the 5 GHz band is composed by three subbands, each one containing four non-overlapping channels. For using this band it is required to implement some mechanisms such as Dynamic Frequency Selection (DFS) or Transmit Power Control (TPC).
+					
+			Despite Dynamic Channel Allocation (DCA) is within the frequency domain, it is worth to study it in order to relax the spatial reuse problem. DCA aims to properly allocate the available frequency range among the overlapping devices, so that the interference can be notably reduced and . Henceforth, DCA turns out to be necessary because of the high traffic and users fluctuation experienced in wireless networks. Several DCA approaches can be found according to the needs, and there is a strong discussion about which requirements must be accomplished. While some approaches aim to provide fairness (\cite{ling2006joint}), some others try to grant more resources to nodes with higher traffic demands (\cite{wertz2004automatic}). 	
+		
+			The Industrial, Scientific and Medical (ISM) band is shared by multiple technologies such as IEEE 802.11, IEEE 802.15 and Unlicensed Long Term Evolution (U-LTE). In particular, most of the Wi-Fi standards use the 2.4 GHz	and 5 GHz bands, which have different number of channels. For the 2.4 GHz case, there are 14 overlapping channels of 22 MHz (refer to Figure \ref{fig:channelisation_wifi}), so that adjacent channel utilisation ($\pm$ 11 MHz) is affected by a 30 dB signal drop (shown in Figure \ref{fig:80211ad_mask}). Similarly, the 5 GHz band is composed by three subbands, each one containing four non-overlapping channels. For using this band it is required to implement some mechanisms such as Dynamic Frequency Selection (DFS) or TPC.
 			\begin{figure}[h!]
 				\centering
 				\epsfig{file=images/channelisation_wifi.png, width=15cm}
@@ -292,7 +300,7 @@
 			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 			% SoA TPC											      %%%%%%%%%%%%%
 			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%			
-			\section{Previous Work in Transmit Power Control}
+			\section{Transmit Power Control}
 			\label{section:tpc}
 				Adjusting the transmit power is another technique considered in the IEEE 802.11ax standard. In the first version of the draft \cite{tgax2016draft}, a set of regulations is provided for TPC usage. In particular, when a STA chooses a specific power detection level ($\text{OBSS\_PD}_{level}$), the maximum transmit power is given by:						
 				\begin{scriptsize}
@@ -416,8 +424,14 @@
 				\caption{IEEE 802.11ax specification for the sensitivity per channel width}
 				\label{tbl:sensitivity_channel_width}
 			\end{table}			
+	
+	
+			\textcolor{red}{TODO: Add CST adjustment approaches}
+			
+			\textcolor{red}{TODO: Review \cite{afifi2016throughput}}
+					
 		
-			The most important approach seen so far for adjusting the CST in IEEE 802.11 WLANs is the Dynamic Sensitivity Control (DSC) algorithm, which has been proposed by the TGax \cite{smith2015dynamic}. The DSC algorithm aims to distributively find an appropriate level of CST in each non-AP station of a WLAN, with the aim of maximizing the number of parallel transmissions and the aggregate throughput. DSC periodically adjusts the CST of a wireless device given the information retrieved from Received Signal Strength Indicator (RSSI) measurements. The operation mode of DSC is graphically represented in Figure \ref{fig:dsc_flowchart}.				
+			In addition to the already reviewed work, the most important emerging approach for adjusting CST in IEEE 802.11 WLANs is the Dynamic Sensitivity Control (DSC) algorithm, which has been proposed by the TGax \cite{smith2015dynamic}. The DSC algorithm aims to distributively find an appropriate level of CST in each non-AP station of a WLAN, in order to maximise the number of parallel transmissions and, thus the aggregate throughput. DSC periodically adjusts the CST of a wireless device given the information retrieved from Received Signal Strength Indicator (RSSI) measurements. The operation mode of DSC is graphically represented in Figure \ref{fig:dsc_flowchart}.				
 			\begin{figure}[t!]
 				\centering
 				\epsfig{file=images/DSC.png, width=9cm}
@@ -425,309 +439,212 @@
 				\label{fig:dsc_flowchart}
 			\end{figure}
 		
-			In particular, a station accumulates the Received Signal Strength Indication (RSSI) of  each  sensed  beacon until the \textit{UpdatePeriod} is reached. An average of the RSSI (\textit{AvgRSSI}) is maintained for adjusting the CST later. In parallel, it is counted the number of beacons missed during an \textit{UpdatePeriod}. At each Beacon Interval (BI) it is compared the number of lost beacons (\textit{BeaconCount}) with a maximum threshold (\textit{BeaconCountLimit}). In case \textit{BeaconCount} is greater than \textit{BeaconCountLimit}, the average RSSI is decreased by a default value (\textit{RSSIDecrement}) with the aim of decreasing the CST and thus listen further away to receive more beacons. Finally, after the \textit{UpdatePeriod} is reached, it is computed the new CST value between a minimum and a maximum boundaries (\textit{LowerLimit} and \textit{UpperLimit}, respectively). The CST is computed as \textit{AvgRSSI} minus a margin, which is a positive number (typically from 5 to 25).
-					
-			An evaluation of the DSC algorithm is provided in \cite{afaqui2015evaluation}, which 
-			applies to non-AP stations in the residential scenario introduced by the TGax. On the one hand, it is shown that the overall throughput can be increased up to a 20\% with respect to legacy networks if using DSC. On the other hand, the application of DSC at uncoordinated WNs may generate a significant increase in the number of hidden nodes, which can potentially harm the overall throughput due to collisions. In fact, the increase in hidden nodes is measured to be the 60\% in the best of the cases, and the 160\% in the worst situation. Best results are obtained by using smart channel selection and fixed modulation coding scheme, while the worst results are obtained by using randomising both parameters. With that, we see that DSC allows enhancing the overall throughput by allowing a higher number of parallel transmission without adding signalling. However, it potentially increases the number of hidden-nodes within an overlapping WLAN, which may be counter productive if the effects of packet collisions result into a worse throughput performance.
+			In DSC, a station accumulates the Received Signal Strength Indication (RSSI) of  each  sensed  beacon until the \textit{UpdatePeriod} is reached. An average of the RSSI (\textit{AvgRSSI}) is maintained for adjusting the CST later. In parallel, it is counted the number of beacons missed during an \textit{UpdatePeriod}. At each Beacon Interval (BI) the STA compares the number of lost beacons (\textit{BeaconCount}) with a maximum threshold (\textit{BeaconCountLimit}). In case \textit{BeaconCount} is greater than \textit{BeaconCountLimit}, the average RSSI is decreased by a default value (\textit{RSSIDecrement}) with the aim of decreasing the CST and, thus listen further away to receive more beacons. Finally, after the \textit{UpdatePeriod} is reached, it is computed the new CST value between the \textit{LowerLimit} and \textit{UpperLimit} boundaries. The CST is computed as \textit{AvgRSSI} minus a margin, which is a positive number (typically from 5 to 25). An evaluation of the DSC algorithm is provided in \cite{afaqui2015evaluation}, which applies to non-AP stations in the residential scenario introduced by the TGax. On the one hand, it is shown that the overall throughput can be increased up to a 20\% with respect to legacy networks if using DSC. On the other hand, the application of DSC at uncoordinated WNs may generate a significant increase in the number of hidden nodes, which can potentially harm the overall throughput due to collisions. In fact, the increase in hidden nodes is measured to be the 60\% in the best of the cases, and the 160\% in the worst situation. Best results are obtained by using smart channel selection and fixed modulation coding scheme, while the worst results are obtained by using randomising both parameters. DSC is also evaluated in \cite{zhong2016promise}, where the Indoor Small BSSs Scenario is used for simulations. In this case, setting a low margin is substantially harmful for the overall throughput due to a very high number of collisions. Moreover, for very far distances between APs, a fixed CST behaves similarly than for using well-performing margins for DSC. In terms of fairness, the lowest margin also provides the best results (specially in the densest case). Similar results are provided in \cite{selinis2016evaluation, kulkarni2015taming} for larger scenarios.
 			
-			
-						
-	
-						
-			
-			
-			A further extension of DSC can be found in \cite{afaqui2016dynamic}, which intends to cover both UL and DL situations by also adjusting CST on the APs, as well as the initial DSC approach does not take into account that starvation in APs may occur during DL transmissions. Figure \ref{fig:enhanced_dsc} shows the flowchart of the process described above.The DSC-AP algorithm works as follow:
-			\begin{itemize}
-				\item The AP records the RSSI of the received frames (either data packets or ACKs) during a period called \textit{UpdatePeriod}. The collected frames come from both associated stations and neighboring APs.
-				\item A moving maximum RSSI ($max\mathrm{RSSI}$) is maintained for the frames received from other APs, in order to know which is the most interfering coexistent WLAN.
-				\item Similarly, a minimum RSSI ($min\mathrm{RSSI}$) is maintained for the frames received from the STAs within the WLAN, in order to detect the farthest STA (in fact, the STA from which the AP receives the poorest signal).
-				\item When the \textit{UpdatePeriod} is reached, a new CST between specific boundaries (\textit{LowerLimit} and \textit{UpperLimit}) is computed:
-				$\mathrm{CST}_{AP} = min(max(min\mathrm{RSSI},max\mathrm{RSSI})-Margin,min\mathrm{RSSI})$, where \textit{Margin} is a value between 18 and 25 dB for indoor scenarios (path-loss factor ($\alpha$) is 0.3). 
-			\end{itemize}
-			
-			A set of simulations is used to show the benefits of using DSC-AP (in APs) in combination with DSC (in non-AP stations). Note that the scenario used is the same as for DSC evaluation seen in \cite{afaqui2015evaluation} (refer to Figure \ref{fig:TGax_scenario}). Among different settings (asymmetric traffic, ), we highlight the application of the algorithms together with optimal channel selection, so that an improvement of the 32\% in the overall throughput is achieved with respect to legacy IEEE 802.11 performance. In addition, fairness is increased up to 16\% because of the reduction of exposed nodes, which supposes noticing less starvation situations. The derived problems of using DSC-AP are also related to the increase of hidden nodes and collisions probability. But again, for the particular presented scenario, the obtained throughput is better despite the significant increase of the Frame Error Rate (FER).	
+			With that, we saw that DSC allows enhancing the overall throughput by allowing a higher number of parallel transmission without adding signalling. However, it potentially increases the number of hidden-nodes within an overlapping WLAN, which may be counter productive if the effects of packet collisions result into a worse throughput performance. Furthermore, it may generate fairness issues, since nodes with an advantageous geographical position may have more chances for accessing to the channel. Figure \ref{fig:dsc_problems} shows the fairness issue in a scenario in which DSC is applied.
 			\begin{figure}[h!]
 				\centering
-				\epsfig{file=images/enhanced_DSC.png, width=9cm}
-				\caption{DSC-AP flowchart}
-				\label{fig:enhanced_dsc}
+				\epsfig{file=images/dsc_problems.png, width=9cm}
+				\caption{DSC Fairness Issues. Client2 should have Client1 to suspend its tx, but DSC modifies its CST in order to dismiss Client2. Image retrieved from \cite{zhong2016promise}.}
+				\label{fig:dsc_problems}
 			\end{figure}
+				
+			A further extension of DSC (so called DSC-AP) can be found in \cite{afaqui2016dynamic}, which intends to cover both UL and DL situations by also adjusting CST on the APs, as well as the initial DSC approach does consider the starvation problem in APs during DL transmissions. Figure \ref{fig:enhanced_dsc} shows the flowchart of the process described above. Similarly to DSC, In DSC-AP the AP records the RSSI of the received frames (either data packets or ACKs) during a period called \textit{UpdatePeriod}. The collected frames come from both associated stations and neighbouring APs. With the RSSI's information, a moving maximum RSSI ($max\mathrm{RSSI}$) is maintained for the frames received from other APs, in order to know which is the most interfering coexistent WLAN. In addition, the minimum RSSI ($min\mathrm{RSSI}$) is maintained for the frames received from the STAs within the WLAN, so that the AP can detect the farthest STA (in fact, the STA from which the AP receives the poorest signal). When the \textit{UpdatePeriod} is reached, a new CST between specific boundaries (\textit{LowerLimit} and \textit{UpperLimit}) is computed as:
+			\begin{equation}
+				\mathrm{CST}_{AP} = min(max(min\mathrm{RSSI}, max\mathrm{RSSI})- \text{margin}, min\mathrm{RSSI}),
+				\nonumber
+			\end{equation}
+			where \textit{margin} is a value determined to be between 18 and 25 dB for indoor scenarios in which the path-loss factor ($\alpha$) is 0.3. The DSC-AP algorithm is shown to improve a 32\% the overall throughput with respect to legacy IEEE 802.11 performance. In addition, fairness is increased up to 16\% because of the reduction of exposed nodes, which supposes noticing less starvation situations. The derived problems of using DSC-AP are also related to the increase of hidden nodes and collisions probability. But again, for the particular presented scenario, the obtained throughput is better despite the significant increase of the Frame Error Rate (FER).	
 			
-			Another contribution of Afaqui et al. on sensitivity adjustment is \cite{afaqui2016rtscts}, which consists in combining DSC with RTS/CTS activation in stations. In particular, three approaches for enabling RTS/CTS in a given station are shown in combination with DSC:	
-			\begin{itemize}
-				\item \textbf{Method 1:} a set of devices within a WLAN is decided to use RTS/CTS according to a given threshold of FER, which is based in the average FER of the network ($\mathrm{FER}_{Thresh} = \delta \times \mathrm{FER}_{avg}$). Then, an AP maintains the usage of RTS/CTS for each of its associated STA according to their FER information ($f_i$). In particular, RTS/CST is activated for a given STA $i$ if $f_i$ is equal or higher than the $\mathrm{FER}_{Thresh}$. Otherwise, RTS/CST is disabled. 
-				Note that the AP of a given WLAN needs to know the FER information of its associated STAs, which implies adding communication overhead (also for activation/deactivation of RTS/CTS for each pair of nodes when required). In this case, the necessary information to carry out this operation is assumed to be known by the nodes in the network.
-				\item \textbf{Method 2:} To avoid using the extra overhead for maintaining the $\mathrm{FER}_{avg}$, in this method the AP selects a fixed percentage $\eta$ of STAs and activates RTS/CTS in the ones that have higher FER. The way $\eta$ is chosen is not described, but this approach may lead to many problems because it can easily underestimate/overestimate the number of nodes that need to use RTS/CTS, which may lead to collisions and unnecessary overhead, respectively. 
-				\item \textbf{Method 3:} In this case, all the APs use the number of hidden nodes noticed in all of their STAs to select a percentage $\gamma$ of nodes to use RTS/CTS (the ones with higher number of hidden nodes are selected). In this case, not only communication overhead is added, but extra computation in all the nodes to find hidden nodes (which probably cannot be done with complete accuracy).
-			\end{itemize}
+			To further improve the hidden nodes issues generated by DSC, another contribution of Afaqui et al. on sensitivity adjustment (\cite{afaqui2016rtscts}) attempts to combine DSC with RTS/CTS activation in stations. In particular, three approaches for enabling RTS/CTS in a given station are shown in combination with DSC. As for previous work, the IEEE 802.11ax Residential scenario is used for simulations. The maximum improvement shows an increase of approximately 55\% in the overall throughput with respect to legacy IEEE 802.11 performance. In addition, the FER is reduced almost a 40\% and fairness is increased in a 30\%. The fact of enabling RTS/CTS dynamically allows reducing the effects of hidden nodes in terms of collisions without adding too many overhead due to RTS/CTS transmissions, as well as it is only used in nodes that really require it. In opposite, many communication overhead is added to decide which nodes must use RTS/CTS, which has not been quantified for showing the resulting throughput when using this approach.
 			
-			Simulations done in this case contemplate the same scenario seen in Subsections \cite{afaqui2015evaluation} and \cite{afaqui2016dynamic}. As Method 1 with $\delta = 0.6$ is shown to perform better in terms of throughput improvement, it is used along all the simulations. Henceforth, the maximum improvement shown in the simulations is an increase of approximately 55\% in the overall throughput with respect to legacy IEEE 802.11 performance when using frames of size 2302 Bytes. In this setting, the FER is reduced almost 40\% and fairness is increased in 30\%. Using smaller frames (1000 and 1600 Bytes) it is shown a higher reduction of the FER, but a lower increase of the throughput (15\% and 25\%, respectively) and a decrease of the fairness (4\% and 9\%, respectively).	The fact of enabling RTS/CTS dynamically allows reducing the effects of hidden nodes in terms of collisions without adding too many overhead due to RTS/CTS transmissions, as well as it is only used in nodes that really require it. In opposite, many communication overhead is added to decide which nodes must use RTS/CTS, which has not been quantified for showing the resulting throughput when using this approach.
-	
-			
-			\cite{afifi2016throughput} \textcolor{red}{TODO} In this paper, we provide a theoretical framework to evaluate the aforementioned tradeoff. We also propose a centralized fairness mechanism (CFM), in which STAs switch between an adaptive phase (CCA adaptation is allowed) and a fixed phase (legacy and HE STAs use the same CCA threshold). We formulate an optimization problem with the objective of determining the optimal switching strategy that maximizes the network throughput while maintaining a lower bound on per-STA throughput. Finally, we validate the proposed mechanism using simulations.		
-			
-			
-			
-			
-			\textcolor{red}{TODO: review \cite{selinis2016evaluation, zhong2016promise, kulkarni2015taming} for DSC evaluation.}
-	
-	
-	
-			\textcolor{red}{TODO: Table 2: CST adjustment}
+			A summary of the most remarkable work in CST adjustment in shown in Table \ref{tbl:cca}.			
 			\begin{table}[h!]
 				\centering
-				\begin{tabular}{|l|l|l|l|l|}
+				\resizebox{\textwidth}{!}{\begin{tabular}{|c|l|c|l|l|}				
 					\hline
-					\textbf{Work} & \textbf{Main Purpose} & \textbf{Centralised / Decentralised} & \textbf{Benefits} & \textbf{Drawbacks} \\ \hline
-					{[}1{]} &  &  &  &  \\ \hline
-					{[}2{]} &  &  &  &  \\ \hline
-					{[}3{]} &  &  &  &  \\ \hline
-				\end{tabular}
+					\multicolumn{1}{|c|}{\textbf{Work}} & \multicolumn{1}{c|}{\textbf{Presented Approach}} & \textbf{\begin{tabular}[c]{@{}c@{}}Centralised/\\ Decentralised\end{tabular}} & \multicolumn{1}{c|}{\textbf{Positive Aspects}} & \multicolumn{1}{c|}{\textbf{Negative Aspects}} \\ \hline
+					\cite{smith2015dynamic} & \begin{tabular}[c]{@{}l@{}}Dynamic Sensitivity Control\\ to increase the number \\of parallel transmissions\end{tabular} & Decentralised & \begin{tabular}[c]{@{}l@{}}$\bullet$ Fully decentralised \\(no signalling required) \\ $\bullet$ Easy for implementation\\ $\bullet$ Proposed by the TGax\end{tabular}  &  \begin{tabular}[c]{@{}l@{}} $\bullet$ It potentially increases \\ the number of hidden nodes \\ $\bullet$ Setting the \textit{margin} parameter \\is not clear and does not suit \\different scenarios\end{tabular}\\ \hline
+					 &  &  &  &  \\ \hline
+					 &  &  &  &  \\ \hline
+				\end{tabular}}
 				\caption{Carrier Sense Threshold Adjustment State-of-the-Art}
 				\label{tbl:cca}
 			\end{table}
 		
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		% TPC & CCA RELATIONSHIP		            %%%%%%%%%%%%%
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%				
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
 		\section{TPC and CCA Relationship}
 		\label{section:tpc_cst_relationship}
+			As previously seen in Sections \ref{section:tpc} and \ref{section:cca}, adjusting either the transmit power or the CST can help to improve spatial reuse, but presents a set of trade-offs. To even improve networks performance, there is a research line that argues a relationship between the power transmitted and the sensitivity threshold, which is based on the naive principle ``to shout, you need to listen more carefully". According to \cite{thorpe2014survey}, by using free space path loss, the average Received Signal Strength (RSS) can be computed as a function of the distance between the transmitter and the receiver:		
+			\begin{equation}
+				RSS = \overline{RSS} \Big( \frac{\overline{d}}{d_{(tx,rx)}} \Big)^{\delta}
+				\nonumber
+			\end{equation}
+			where RSS is the signal strength at the receiving node, $\overline{RSS}$ is the power of the signal received at the defined distance $\overline{d}$ (typically 1 meter), $d_{(tx,rx)}$ is the distance between the transmitter and the receiver, and $\delta$ is the path-loss exponent (often set between 2 and 4, according to the environment).  Thus, the reception range $D_{tx}$ and the carrier sense range $D_{cs}$ can be defined as:
+			\begin{equation}
+				D_{cs} = \overline{d} \Big( \frac{\overline{RSS}}{T_{cs}} \Big)^\frac{1}{\delta}, 				D_{rx} = \overline{d} \Big( \frac{\overline{RSS}}{T_{rx}} \Big)^\frac{1}{\delta}
+				\nonumber
+			\end{equation}
+			Since the correct reception of data in a given node is subject to the RSS received (must be greater than the CST) and the SINR (must be greater than the capture effect), it is worth to compute the interference range $D_{I_{tx,rx}}$ as:					
+			\begin{equation}
+				D_{I_{tx,rx}} = d_{(tx,rx)} \times \alpha ^{\frac{1}{\delta}}
+				\nonumber
+			\end{equation}			
+			where $\alpha$ is the minimum SINR required to achieve a correct decoding of the signal at the receiving node. The interference range is the greatest distance from which a node can be affected by another transmitting node. Figure \ref{fig:tx_cca_relation} shows the relationship between $D_{cs}$ and $D_{I_{tx,rx}}$ . 
+			\begin{figure}[h!]
+				\centering
+				\epsfig{file=images/tx_cca_relation.png, width=9cm}
+				\caption{Transmit power and CST relationship.$D_{I_{tx,rx}}$ is represented by the smaller circle with the solid line, and $D_{cs}$ is depicted by the larger circle with the broken line. Nodes $n_h$ and $n_e$ are hidden and exposed nodes, respectively. Image retrieved from \cite{thorpe2014survey}.}
+				\label{fig:tx_cca_relation}
+			\end{figure}	
 		
-		
-			There is a direct relationship between the CST, the distance between overlapping nodes, and the transmit power used. This is attempted to be capture in \cite{zhu2004leveraging}, where CST at devices in a mesh WNs is computed as a function of the distance between nodes, and assuming that the same transmit power is used. In particular, different CST equations are provided for grid and line topologies, since the interference pattern varies. In this case, all the devices are considered to be placed symmetrically. Thus, an ideal situation is proposed for planned and interference-free deployments (e.g. a rural sensors deployment). However, this approach turns out to be unrealistic in chaotic wireless deployments.
+			Another reason to perform CST adjustment in combination with TPC relies in the asymmetries provoked by a modification of the transmit power in an overlapping environment. The fact of creating asymmetric links generates starvation and collisions by hidden node with a higher probability, which can result into a poorer performance than if using always the same configuration \cite{kawadia2005principles}. In relation to these performance anomalies, \cite{mhatre2007interference} defends that tuning TPC and CST together is a must for improving spatial reuse in WLANs. For that, it shows that links remain symmetric in a situation in which the power transmitted and the sensitivity threshold are adjusted together. Moreover, it proposes a method based on Gibbs sampling for distributively adjusting both TPC and CCA. The algorithm is tested in dense scenarios (72 APs and 288 clients), showing remarkable improvements in the average throughput (it is increased by a $290\%$) after convergence occurs. Interestingly, from results it is derived that the power transmitted per AP is inversely proportional to the sensitivity.				
 			
-			
-			As seen in Sections \ref{section:power_control} and \ref{section:cca}, adjusting either the transmit power or the CST can help to improve spatial reuse, but presents a set of trade-offs. To even improve them usage, there is a research line that argues a relationship between the power transmitted and the sensitivity threshold, which is based on the naive principle ``to shout, you need to listen more carefully".
-			
-			\textcolor{red}{TODO: references that show a relationship between CST and TPC}			
-			
-			\cite{oteri2015improved}
-			
-			TODO:  \cite{jamil2014improving} \cite{zhu2004leveraging}
-			
-			A very simple mechanism to adjust both TPC and CCA is shown in \cite{jamil2015preserving}, in which fairness improvement is the main goal (although the overall throughput is also enhanced). The behaviour of the mechanism just attempts to modify TPC and CCA as follows:
-			\begin{itemize}
-				\item Each time a beacon is received in a STA, it is measured a parameter to adapt both CST and transmit power: $\Delta_x = Rx_p - M - PCS_{default}$, where $Rx_p$ is the power received (depends on the power transmit and the attenuation loss), $M$ is a margin (in this case it is set to 20 dB), and $PCS_{default}$ is the default minimum CST (for channels of width 20 MHz, $PCS_{default}$ is -82 dBm).
-				\item The difference of CCA and TPC is computed from $\Delta_x$ and a given ratio:
-				$$\Delta_{TPC} = ratio \times \Delta_x$$
-				$$\Delta_{CCA} = \Delta_x - \Delta_{TPC}$$
-				\item Finally, the TPC and the CCA are modified by increasing/decreasing the obtained adaptation values:
-				$$TPC = TPC - \Delta_{TPC}$$
-				$$CCA = CCA + \Delta_{CCA}$$
-			\end{itemize}	
-			A representation of the algorithm is shown in the following image:	
-			\begin{figure}[h!]
-				\centering
-				\epsfig{file=images/cca_tpc_adaptation_simple.png, width=7cm}
-				\caption{Jamil et al. CCA and TPC adaptation algorithm}
-				\label{fig:jamil_et_at_algorithm}
-			\end{figure}
-			
-			The $ratio$ determines how much is adapted CCA and/or TPC, as setting it to 0 means only CCA adaptation, while setting it to 1 adjusts only the TPC. To adapt both CCA and TPC, so-called Balanced TPC and PCS Adaptation (BTPA), the chosen $ratio$ is 0.5, but during the simulations it is also shown the results of adapting CCA and TPC separately. The scenario consists in a cellular network composed by 7 APs that transmit data to 8 STAs each one.	The results are quite interesting, as the average throughput is increased by a 4 factor while preserving the fairness coefficient to 1:	
-			\begin{figure}[t!]
-				\centering
-				\begin{subfigure}[b]{0.3\textwidth}
-					\includegraphics[width=\textwidth]{images/scenario_tpc_cca_adaptation_cellular}
-					\caption{Simulation Scenario}
-					\label{fig:jamil_et_al_scenario}
-				\end{subfigure}
-				\begin{subfigure}[b]{0.3\textwidth}
-					\includegraphics[width=\textwidth]{images/results_tpc_cca_adaptation_simple}
-					\caption{Results}
-					\label{fig:jamil_et_al_results}
-				\end{subfigure}		
-				\caption{Jamil et al. simulation scenario and results of CCA and TPC adaptation mechanism}
-				\label{fig:jamil_et_al_scenario_and_results}
-			\end{figure}	
-			
-			Despite being very simple, this mechanism allows improving the spatial reuse while preserving fairness. It would be interesting to test this proposal into denser and more chaotic scenarios, such as residential Wi-Fi deployments, to properly test its effectiveness and performance bounds.		
-	
-			\subsection{Tuning TPC, CCA and Data Rate in Multi-hop Wireless Networks}
-			In \cite{kim2006improving} we also see the desire of finding a relation between the power transmitted and the CST, but it this case it is also considered the trade-off between the increase of the spatial reuse and the decrease of the data rate (directly related with the power transmitted). Thus, the aim of that work is to find a power/carrier sense threshold in which the network capacity is maximized, and the relation between the transmit power and the CST. Therefore, it is presented a decentralized algorithm that adjusts power and rate control at a node given its interference level it perceives. The goal is also to keep the highest possible data rate, while keeping minimal the generated interference towards neighbouring WLANs. To do so, first it is required to determine the minimum power to be used so that the receiver can properly decode the message, which is given by the following equation:
+			Many other works exploit the relationship between the transmit power and the CST to enhance fairness and throughput performance in wireless networks. In \cite{jamil2015preserving}, fairness improvement is the main goal (although the overall throughput is also enhanced). To achieve that, each time a beacon is received in a STA, it is measured a parameter to adapt both CST and transmit power: $\Delta_x = Rx_p - M - PCS_{default}$, where $Rx_p$ is the power received (depends on the power transmit and the attenuation loss), $M$ is a margin (in this case it is set to 20 dB), and $PCS_{default}$ is the default minimum CST (for channels of width 20 MHz, $PCS_{default}$ is -82 dBm). Then, the difference of CST and TPC is computed from $\Delta_x$ and a given ratio
 			\begin{equation}
-			P^{min} \geq \frac{SINR_{r[1]}^{th}}{SINR} \cdot P^{max},
+				\Delta_{TPC} = ratio \times \Delta_x, \Delta_{CCA} = \Delta_x - \Delta_{TPC}
+				\nonumber
 			\end{equation}
-			where $SINR_{r[i]}^{th}$ is the required SINR at the received to sustain rate $r[i]$. The data rate depends of the SINR, and its values are defined at the table below:	
-			\begin{figure}[h!]
-				\centering
-				\epsfig{file=images/data_rate_table.png, width=8cm}
-				\caption{Relation between SINR and data rate}
-				\label{fig:data_rate_table}
-			\end{figure}	
-			Once the power transmitted is set, the CST should be set as the minimum value at which the incoming signal is sensed, which depends on the perceived interference:
-			\begin{equation}
-			I_{RX} \leq \frac{P^{min}_{tx}}{R^{\theta}_{max} \cdot SINR_{r[1]}^{th}},
-			\end{equation}
-			where $R^{\theta}_{max}$ is the maximum distance at which power $P^{min}_{tx}$ is sensed. The main problem is that the transmitter does not know the interference level $I_{RX}$ at the receiver. To deal this, the authors propose to set the CST at the transmitter as:
-			\begin{equation}
-			T_{CS}=\frac{P^{min}}{R^{\theta}_{max} \cdot \bigg( 1+(SINR_{r[1]}^{th})^{\frac{1}{\theta}} \bigg)^\theta},
-			\end{equation}
-			With that, it is ensured that the interference at the receiver will be at most $\frac{P^{min}_{tx}}{R^{\theta}_{max} \cdot SINR_{r[1]}^{th}}$, and that the minimal data rate will be sustained. Finally, to increase the power transmitted, it is presented an algorithm (\textit{Power and Rate Control, PRC}), which relies on finding the maximum SINR level to be achieved with a given tx power: if $SINR_{r[i]}^{th \geq SINR^{max}_{RX}}$ then data rate $r[i]$ is used. In particular the PRC starts when a node attempts to start a transmission. At that moment, the interference is monitored until it goes below the CST (channel is clear), which implementation details are shown in the image below:	
-			\begin{figure}[h!]
-				\centering
-				\epsfig{file=images/algorithm1.png, width=8cm}
-				\caption{Relation between SINR and data rate}
-				\label{fig:data_rate_table}
-			\end{figure}	
-			Then, the transmit power and the data rate are determined by the PRC algorithm:	
-			\begin{figure}[h!]
-				\centering
-				\epsfig{file=images/algorithm2.png, width=8cm}
-				\caption{Relation between SINR and data rate}
-				\label{fig:data_rate_table}
-			\end{figure}	
-			As other transmissions may start during the current ongoing transmission, the power transmit and the data rate must be adjusted dynamically as shown in the image below:	
-			\begin{figure}[h!]
-				\centering
-				\epsfig{file=images/algorithm3.png, width=8cm}
-				\caption{Relation between SINR and data rate}
-				\label{fig:data_rate_table}
-			\end{figure}	
-			To monitor the variation of the interference level it is used the consecutive successful ($N^{th}_s$) and failed ($N^{th}_f$) transmissions. The demonstration of the algorithm's performance is shown through a set of simulations in ns-2 for different nodes densities (3, 10, 20, 30 and 50 transmitter-receiver pairs in a 300m $\times$ 300m area). The results show a significant increase with respect to the static setting on the aggregate throughput (up to 22\%) and the average saved power (up to 50\%).
+			Finally, the TPC and the CST are modified by increasing/decreasing the obtained adaptation values ($TPC = TPC - \Delta_{TPC}$ and $CCA = CCA + \Delta_{CCA}$, respectively). The $ratio$ determines how much CST and TPC are adapted (setting the ratio to 0 entails only CST adaptation, while setting it to 1, only TPC). To adapt both CST and TPC, so-called Balanced TPC and PCS Adaptation (BTPA), the chosen $ratio$ is 0.5, but during the simulations it is also shown the results of adapting CST and TPC separately. The scenario consists in a cellular network composed by 7 APs that transmit data to 8 STAs each one.	The results are quite interesting, as the average throughput is increased by a 4 factor while preserving the fairness coefficient to 1. Despite being very simple, this mechanism allows improving the spatial reuse while preserving fairness. 
 			
-			\subsection{Gibbs Sampler for Power Control}
-			\label{section:gibbs_sampler_power_control}		
-			It is well-known that modifying the TPC may result into asymmetries in the coexistence networks that may generate starvation in a higher probability than if using always the same configuration \cite{kawadia2005principles}. In consequence, in \cite{mhatre2007interference} it is defended that tuning TPC and CCA is a must if the goal is to improve spatial reuse in WLANs. For that, it is 
-			shown how network links in a coexistence situation can remain symmetric if the power transmitted and the sensitivity threshold are adjusted together. Considering that the sensitivity $C_i$ of a given node for a given transmission must be $C_i =(\alpha_i + 1)N_0$, where $N_0$ is the floor noise level and $\alpha_i >>1$ is a variable that takes into account the shadow fading variations\footnote{In the 2.4 and 5.2 GHz frequency range, there variations are on the order of 10-14 dB [10]}, the relationship between the power transmitted $P_i$ and $\alpha_i$ prevents to generate starvation only if links are considered to be symmetric:
-			\begin{equation}
-			N_0 + P_j d_{i,j} \geq C_i \rightarrow \frac{d_{i,j}}{N_0} \geq \frac{\alpha_i}{P_j} \iff 
-			N_0 + P_i d_{i,j} \geq C_j \rightarrow \frac{d_{i,j}}{N_0} \geq \frac{\alpha_j}{P_i}
-			\end{equation}	
-			The above inequalities show that a higher power entails sensitivity to be lower (\textit{if you want to shout, you need to listen more carefully}). Then, it is shown the objective function to determine the optimum settings (with respect to network capacity) for the constant C. As the goal is to minimize the sum of the potential delays of all users in the network (which is the inverse of long term throughput [8]), the objective function is:
-			\begin{equation}
-			\mathcal{F}(\boldsymbol{P,C})=\sum_{\text{All APs } i}  \bigg[ \sum_{\text{client } u \in \text{cell } i} \frac{1}{r_u(i)} \bigg],
-			\end{equation}
-			where $r_u(i)$ is the rate experienced by node $u$ in WLAN $i$, which depends on the experienced SINR. The previous function is approximated to:	
-			\begin{equation}
-			\mathcal{F}(\boldsymbol{\alpha},\mathcal{C})\equiv \sum_{i}  \text{U}_i^2 \cdot D_i(\alpha_i, \mathcal{C}) \cdot \bigg( 1 + \sum_{j\neq i}  1_{\Big\{ \frac{c_{d_{ji}}}{\alpha_j}  \geq \alpha_i N_0 \Big\}} \bigg) = \mathcal{E}(\boldsymbol{\alpha},\mathcal{C}),
-			\end{equation}
-			where $\text{U}_i$ is the number of clients in cell $i$, and $D_i(\alpha_i, \mathcal{C})$ is the average delay experienced by nodes in WLAN $i$. The second part of the equation represents the share of the channel with other WLANs and, thus the transmissions opportunities. So, the goal is to minimize $\mathcal{E}(\boldsymbol{\alpha},\mathcal{C})$ by tuning $\alpha$ and $\mathcal{C}$, representing the power transmitted and the sensitivity, which is done in a distributed manner through the Gibbs sampler. The algorithm implementation does the following steps after the timer of AP $i$ expires at time $t$ (the timer is an exponentially distributed variable with average $t_a$):
-			\begin{itemize}
-				\item Compute the temperature parameter as $T=\frac{K}{log_2(2+t)}$
-				\item For each possible state $x \in Q_i$, compute the local energy as 
-				$$\mathcal{E}(x,Z_i) = \text{U}_i^2 \cdot D_i(x) + \sum_{j:j\neq i} \Big\{ \text{U}_i^2 \cdot D_i(x) + \text{U}_j^2 \cdot D_j(X_j)\Big\} 1_{\Big\{ c_{ji}  \geq X_j + x \Big\} }$$
-				\item Compute the corresponding state probability
-				$$\pi(x) = \frac{e^{-\frac{\epsilon_i(x,Z_i)}{T}}}{\sum_{l:y\in Q_i} e^{-\frac{\epsilon_i(y,Z_i)}{T}}}$$	
-				\item Sample a random variable according to $\pi(.)$ and select the resulting state
-			\end{itemize}
+			The authors in \cite{kim2006improving} also consider the TPC and CCA relationship, but put special emphasis on the trade-off between increasing spatial reuse and decreasing individual transmissions data rate. Thus, they present a decentralized algorithm that adjusts power and rate control at a node given its interference level it perceives. The goal is also to keep the highest possible data rate, while keeping minimal the generated interference towards neighbouring WLANs. To do so, it first determines the minimum power to be used so that the receiver can properly decode the message. Then, the CST is set to the minimum value at which the incoming signal is sensed, which depends on the perceived interference. To solve the problem in which the transmitter does not know the interference level $I_{RX}$ at the receiver, the authors propose propose to set the CST at the transmitter as a function of the SINR. The provided adjustment function ensures that the interference at the receiver is not higher than a given threshold that depends on the power transmitted, and that the minimal data rate is sustained. The key is to restrict the transmit power based on the estimated distance between the transmitter and the interfering node. Through simulations in different scenarios (from low to high density), it is shown a significant improvement at both aggregate throughput and average saved power (up to 22\% and 50\%, respectively).
 			
-			Finally, the power control algorithm is tested with OPNET simulator by focusing on 8 APs and 26 clients from a total of 72 APs and 288 clients (4 per AP). The reason of placing so much devices and then sub-sampling them is for randomly represent a plausible scenario and to take a representative proportion of it. For the Gibbs sampler time-ticks it is used the beacon intervals (100 ms), so that it is shown that the algorithm converges within 300 BI ($=30 s$). With that, it is shown how the average throughput is increased by a $290\%$. The interesting thing is that the initial premise is hold, since the power transmitted per AP is inversely proportional to the sensitivity.
+			TODO:  Review \cite{oteri2015improved} \cite{jamil2014improving} \cite{zhu2004leveraging}
 			
-			\begin{figure}[h!]
-				\centering
-				\epsfig{file=images/gibbs_results.png, width=8cm}
-				\caption{Power transmitted and sensitivity per AP after applying Gibbs sampler}
-				\label{fig:gibbs_results}
-			\end{figure}
-		
-			\textcolor{red}{TODO: Table 3: all together}
+			A more rigid approach for fully controlled networks is presented in \cite{zhu2004leveraging}, where the CST to be used by devices in a mesh WN is computed as a function of the distance between nodes, and assuming that the same transmit power is used. In particular, different CST equations are provided for grid and line topologies, since the interference pattern varies. In this case, all the devices are considered to be placed symmetrically. Thus, an ideal situation is proposed for planned and interference-free deployments (e.g. a rural sensors deployment). However, this approach turns out to be unrealistic in chaotic wireless deployments.
+			
+			To summarise the most remarkable work in CST adjustment in combination with TPC, in Table \ref{tbl:tpc_cca} we show the key features of each work reviewed in this section.			
 			\begin{table}[h!]
 				\centering
-				\begin{tabular}{|l|l|l|l|l|}
-					\hline
-					\textbf{Work} & \textbf{Main Purpose} & \textbf{Centralised / Decentralised} & \textbf{Benefits} & \textbf{Drawbacks} \\ \hline
-					{[}1{]} &  &  &  &  \\ \hline
-					{[}2{]} &  &  &  &  \\ \hline
-					{[}3{]} &  &  &  &  \\ \hline
-				\end{tabular}
+				\resizebox{\textwidth}{!}{\begin{tabular}{|c|l|c|l|l|}				
+						\hline
+						\multicolumn{1}{|c|}{\textbf{Work}} & \multicolumn{1}{c|}{\textbf{Presented Approach}} & \textbf{\begin{tabular}[c]{@{}c@{}}Centralised/\\ Decentralised\end{tabular}} & \multicolumn{1}{c|}{\textbf{Positive Aspects}} & \multicolumn{1}{c|}{\textbf{Negative Aspects}} \\ \hline
+						\cite{mhatre2007interference} & \begin{tabular}[c]{@{}l@{}} Gibbs sampler to \\adjust both TPC and CCA\end{tabular} & Decentralised & \begin{tabular}[c]{@{}l@{}}$\bullet$ Dense scenarios are\\ considered \\$\bullet$ Significant improvements\\in the average throughput\end{tabular}  &  \begin{tabular}[c]{@{}l@{}} $\bullet$ Complex implementation\end{tabular}\\ \hline						
+						\cite{jamil2015preserving} & \begin{tabular}[c]{@{}l@{}} TPC and CCA adjustment\\ in WLANs to improve\\ fairness\end{tabular} & Decentralised & \begin{tabular}[c]{@{}l@{}}$\bullet$ Very simple\\$\bullet$ Significant improvements\\in the average throughput\end{tabular}  &  \begin{tabular}[c]{@{}l@{}} $\bullet$ Simulation scenarios \\are too rigid\end{tabular}\\ \hline
+						\cite{kim2006improving} & \begin{tabular}[c]{@{}l@{}} TPC and CCA adjustment\\in D2D networks\end{tabular} &  Decentralised & \begin{tabular}[c]{@{}l@{}}$\bullet$ Very simple\\$\bullet$ Significant improvements\\in the average throughput\end{tabular}  &  \begin{tabular}[c]{@{}l@{}} $\bullet$ Simulation scenarios \\are too rigid\\$\bullet$ The power limitation \\ may entail performance \\issues to many scenarios\end{tabular}\\ \hline
+						\cite{zhu2004leveraging} & \begin{tabular}[c]{@{}l@{}} CCA adjustment according \\to the distance between \\nodes and the transmit \\power \end{tabular} & Centralised  &  \begin{tabular}[c]{@{}l@{}} $\bullet$ Great enhancements are \\achieved\end{tabular} & \begin{tabular}[c]{@{}l@{}} $\bullet$ Only applicable to \\fully controlled networks\\ $\bullet$ Only rigid topologies\\ are allowed\\ $\bullet$ The same transmit power\\must be used by all the\\ devices\end{tabular} \\ \hline
+				\end{tabular}}
 				\caption{TPC and CCA Relationship State-of-the-Art}
 				\label{tbl:tpc_cca}
 			\end{table}
-	
+		
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		% RL FOR SPATIAL REUSE 							%%%%%%%%%%%%%
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		\section{Reinforcement Learning for improving Spatial Reuse}
-
-	
-			\subsection{Graphical Games and Nash Equilibria in WNs}
+		% SoA BEAMFORMING						         %%%%%%%%%%%%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%						
+		\section{Beamforming}
+		\label{section:beamforming}
 		
-				Graphical Games \cite{li2010competitive}
+			TODO
 		
-			\subsection{Previous Work in RL for WNs}		
-		
-				\textcolor{red}{TODO: include \cite{maghsudi2015channel}, \cite{nie1999q}, \cite{bennis2010q}}
-					
-				In \cite{maghsudi2015joint} it is faced the channel and power selection in infrastructureless networks through Reinforcement Learning, more specifically through Multi Armed Bandits (MAB). The problem is modelled by considering $\mathcal{K}=\{1,...,K\}$ transmitter-receiver pairs being able to choose from $\mathcal{N}'_k$ orthogonal channels and from $\mathcal{N}''_k$ power levels, which joint action selection at time $t$ leads to the joint action profile $\textbf{I}_t$, consisting in a pair $(\textbf{I}'_t,\textbf{I}''_t)$. For a given joint action profile \textbf{I}, the average reward that a player $k$ experiences is:
-				
-				$$f_t^{(k)}(\textbf{I})=\text{log}_2 \Bigg( \frac{I''^{(k)} |h_{kk',t,I'^{(k)}}|^2}{\sum_{q \in \mathcal{Q}^{(k)}} I''^{(q)} |h_{qk',t,I'^{(qk}}|^2 + N_0 } \Bigg) - \alpha \cdot I''^{(k)}$$
-				
-				Then, in order to show that the external regret of each user asymptotically decays with time, and that players’ actions converge into a equilibrium, two decentralized minimization strategies are presented: \textit{No-Regret Bandit Exponential-Based Weighted Average strategy} and \textit{No-Regret Bandit Follow the Perturbed Leader strategy}.
-				
-				\paragraph{No-Regret Bandit Exponential-Based Weighted Average strategy (NR-BEWAS):} Each action is selected by some probability that depends on the accumulated reward of that action (the best performance an action shows, the higher will be its associated probability). Thus, the reward of an action $i$ is estimated to be:
-				
-				$$ \tilde{g}_t^{(k)}(i)=\frac{g_t^{(k)}(I_t^{(k)})}{p_{i,t}^{(k)}}, \text{if } i=I_t^{(k)} $$
-				
-				The estimated reward is going to be useful for calculating the regret of any other chosen action. Basically, the algorithm makes a D2D pair to play an arm and define a so-called parameter $\delta_{(i \rightarrow j),t}^{(k)}$ according to the experienced regret (which depends on the others' actions):
-				
-				$$ \delta_{(i \rightarrow j),t}^{(k)} = \frac{\text{exp}\Big(\eta_t \tilde{R}_{(i \rightarrow j),t-1}^{(k)}\Big)} {\sum_{(m \rightarrow l):m \neq l} \text{exp}\Big(\eta_t \tilde{R}_{(i \rightarrow j),t-1}^{(k)}\Big)} $$ 
-				
-				With that it can be updated the probability distribution of possible actions, which will affect the next action selection. \textit{If all players play according to NR-BEWAS, then the empirical joint frequencies of the game converge to the set of correlated equilibria}.
-				
-				\paragraph{No-Regret Bandit Follow the Perturbed Leader strategy (NR-BFPLS):} In this case, the action with minimum regret is chosen, but a random perturbation is added to avoid falling into a deterministic setting. Similarly to the previous approach, actions are chosen according to the current probability distribution, which is being updated at each iteration. In this case, the reward is computed by including a perturbation $\mu_t$, which is a two-sided exponential distribution with width $\epsilon_n$:
-				
-				$$\text{argmax}\bigg\{ \tilde{R}_{(i \rightarrow j),t-1}^{(k)} + \mu_{(i \rightarrow j),t}\bigg\}$$
-				
-				Finally, the algorithms are tested in a simulation scenario composed by two transmitter-receiver pairs that share two orthogonal channels. By using the two abovementioned action selection strategies, the optimal configuration is rapidly achieved by both users (approximately with 500 iterations for the NR-BFPLS strategy). A further extension of the simulations is carried out for a wireless network consisting in five transmitted-receiver pairs competing for three orthogonal channels and by using two possible power levels. The obtained reward for each of the approached along the simulation is shown in the following image:	
-				\begin{figure}[h!]
-					\centering
-					\epsfig{file=images/results_bandits_d2d.png, width=5cm}
-					\caption{Average regret experienced by each of the action selection algorithms}
-					\label{fig:bandits_results_d2d}
-				\end{figure}
+			Beamforming or spatial filtering is a signal processing technique used in sensor arrays for directional signal transmission or reception.[1][2] This is achieved by combining elements in an antenna array in such a way that signals at particular angles experience constructive interference while others experience destructive interference. Beamforming can be used at both the transmitting and receiving ends in order to achieve spatial selectivity. The improvement compared with omnidirectional reception/transmission is known as the directivity of the array.
 			
-
-				In \cite{jamil2016novel} it is presented a centralized solution to adapt the transmission power and the carrier sense threshold of all the devices in a wireless network, with the aim of enhancing the spatial reuse while keeping a fair distribution of the average throughput. For that purpose it is used an Artificial Neural Network (ANN) with three layers (the input layer, one hidden layer, and the output layer). The number of inputs is two times the number $k$ of nodes to be manipulated, as well as each input represents the chosen value by each node for TPC and CCA parameters. The output in this case represents the throughput experienced by each node, so there are just $k$ neurons. 	
+			Beamforming can be used for radio or sound waves. It has found numerous applications in radar, sonar, seismology, wireless communications, radio astronomy, acoustics and biomedicine. Adaptive beamforming is used to detect and estimate the signal-of-interest at the output of a sensor array by means of optimal (e.g. least-squares) spatial filtering and interference rejection.
+	
+		
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		% RL							    							%%%%%%%%%%%%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\section{Reinforcement Learning}
+		\label{section:rl}				
+			Reinforcement Learning frames the problem in which an agent learns by interacting with the environment (which can be dynamic), with the aim of maximising a long-term objective function. Typically, a RL problem can be modelled through a Markov Decision Process (MDP), which is defined as a tuple $\mathcal{M} = \langle \mathcal{S}, \mathcal{A}, R, T\rangle$:
+			\begin{itemize}
+				\item $\mathcal{S}$ is the set of possible states in which the agent can be.
+				\item $\mathcal{A}$ is the set of possible actions that the agent can do.
+				\item $R_{a,s}$ is the reward generated by the environment  when the agent makes an action $a \in \mathcal{A}$ when being in the state $s \in \mathcal{S}$.
+				\item $T(s,a,s')$ is the probability of transitioning from state $s$ to $s'$ after doing action $a$.
+			\end{itemize}
+			The goal of the agent is to learn the policy that allows maximising the total reward (Figure \ref{fig:rl_scenario}). 
+			\begin{figure}[h!]
+				\centering
+				\epsfig{file=images/rl_scenario.png, width=8cm}
+				\caption{Basic RL scenario. Image retrieved from \cite{sutton1998reinforcement}}
+				\label{fig:rl_scenario}
+			\end{figure}		
+		
+			Many RL problem formulations can be found according to the desired performance (long-term or short-term reward) and the data collection process (full or partial information). The most important RL problems are modelled through Markov Decision Processes (MDPs), so that the transition between states is carried out after doing actions. Value iteration methods are often used to solve MDPs, except for large-scale problems and scenarios in which full information of the model is not available. 
+			Although RL problems are often categorised into Batch (learn the entire training data) and Online learning (learn progressively), in \cite{szepesvari2010algorithms} we find a nice categorisation of RL problem types and approaches, which are summarised in Figure \ref{fig:rl_types}.			
+			\begin{figure}[h!]
+				\centering
+				\epsfig{file=images/rl_types.png, width=5cm}
+				\caption{Types of RL problems and approaches. Image retrieved from \cite{szepesvari2010algorithms}}
+				\label{fig:rl_types}
+			\end{figure}
+					
+			The first group (Prediction), considers state-dependent problems, so that the value function is estimated by the learner. In practice, prediction methods describe, after ending the learning process, the expected reward when making actions from a given state. Monte-Carlo methods \cite{robert2004monte} are the basic form of value prediction, since them estimate the average value over multiple independent simulations. However, these kind of methods often perform poorly because they do not consider the variance between experiments. In addition, the fact of starting from the same state results to be infeasible in many occasions. To solve that, Temporal difference (TD) learning was firstly introduced in \cite{sutton1988learning}. TD aims to maintain an estimate of the value in a given state by means of considering past information. For that, it includes the notion of the step-size sequence ($\alpha_t$), which are non-negative numbers that regulate the importance of past information in a given step $t$. Moreover, and to cover a large space of states (i.e., states do not fit in memory), function approximation methods are required. In this case, a feature extraction method is used to model a given state to a $d$-dimensional vector (e.g., with a polynomial function, state $x$ can be converted into $\varphi(x) = (1, x, x^2, ..., x^d-1)$).  Among function approximation methods, we find gradient descend (e.g., GTD2 and TDC), and least-squares methods (e.g., LSTD($\lambda$) and $\lambda$-LSPE).
+			
+			Regarding Control methods, the aim is to find a policy that maximises the reward given a set of states. To do so, we find three main approaches: 
+			\begin{itemize}
+				\item \textbf{Value iteration:} computes the expected utility of each state by using information of the neighbouring states. Thus, since value iteration is only interested in finding the optimal value, a single optimal policy is obtained if recursively applying the Bellman Equation.
+				\item \textbf{Policy iteration:} a value function is used to model the expected return of a given action-state pair, so that the immediate reward is used in combination with the discounted value of the next state\footnote{This method is so-called \textit{bootstrapping}}). Some examples of policy iteration techniques are Q-learning, TD-learning, SARSA and QV-learning. Finally, in policy search, no value function is used, but only the parametrised policy is stored. With that, it is sought to find the optimal parameters of the policy.
+				\item \textbf{Policy search:} it is mainly used in robotics, and some well-known techniques follow Episodic (e.g., Relative Entropy Policy Search, REPS) and Evolutionary strategies (e.g., Covariance Matrix Adaptation Evolution Strategy, CMA-ES).
+			\end{itemize}   
+			Control methods can be categorised according to the interaction that the agent maintains with the environment (see Figure \ref{fig:rl_control_types}). If the learner can actively influence the observations, we are in the context of interactive learning. Otherwise, with no interaction, the learner can just attempt to learn the model by only making observations.			
+			\begin{figure}[h!]
+				\centering
+				\epsfig{file=images/rl_control_types.png, width=6cm}
+				\caption{Types of RL problems and approaches. Image retrieved from \cite{szepesvari2010algorithms}}
+				\label{fig:rl_control_types}
+			\end{figure}
+			
+			Since wireless networks strongly interact with the environment, from here onwards we only focus on interactive learning problems. The performance in such type of problems can be measured in many ways (sum of rewards, quantification of the mistakes done, etc.), and it is strongly related to exploration. In online learning the learner obtains data in a sequential order, so that it can be used to predict future optimal actions. Online learning is useful in case that training a entire dataset is infeasible. Moreover, it is also useful to capture dynamic environments that require self-adjusting mechanisms to perform properly over the time. State of the art algorithms in online learning are mainly given for bandits (one-state MDPs) and MDPs. Finally, in active learning, the learner can maximise the probability of finding a good policy by asking for information to the user or to a database. Unlike supervised learning, here the agent actively asks for the unknown samples. Active learning turns out to be useful when a lot of training data is available, but labelling all the samples is expensive. It is often used in the pattern recognition field (e.g. pedestrian recognition \cite{abramson2004active}).
+					
+			Table \ref{tbl:soa_rl} shows a set of RL families of methods, as well as their main characteristics.			
+			\begin{table}[h!]
+				\centering
+				\begin{tabular}{|c|c|c|c|l|}
+					\hline
+					\textbf{Method} & \textbf{\begin{tabular}[c]{@{}c@{}}Prediction/\\ Control\end{tabular}} & \textbf{Type} & \textbf{\begin{tabular}[c]{@{}c@{}}State-\\ dependent\end{tabular}} & \multicolumn{1}{c|}{\textbf{Popular Applications}} \\ \hline
+					Monte-Carlo & Prediction & Offline & Yes & Black Jack \\ \hline
+					TD & Prediction & Online & Yes & TDGammon \\ \hline
+					Bandits & Control & Online & No & \begin{tabular}[c]{@{}l@{}}Ranking, Resource allocation, \\ Online advertising, Routing\end{tabular} \\ \hline
+					Q-learning & Control & \begin{tabular}[c]{@{}c@{}}Offline/\\ Online\end{tabular} & Yes & \begin{tabular}[c]{@{}l@{}}Inventory management, Financial\\ Trading Systems\end{tabular} \\ \hline
+					SARSA & Control & Online & Yes & Gridworld, Reluctant walk \\ \hline
+				\end{tabular}
+				\caption{Families of RL methods}
+				\label{tbl:soa_rl}
+			\end{table}
+					
+			In general, modelling the resource allocation problem in WNs is complex, and only partial information can be obtained. Thus, we are mostly interested in model-free learning procedures, which in fact attempt to approximate value functions. In addition, the learning procedure must be carried out in an online mode, as well as there is a high variability in WNs, specially in dense environments. For that, we envision MABs to be the most suitable technique for the resource allocation problem in overlapping WNs, but we are completely open to explore other techniques.
+		
+			\subsection{Reinforcement Learning for improving Spatial Reuse in WNs}		
+			\label{tbl:rl_to_wns}
+				The current literature shows an upward trend on applying RL for solving many problems in the wireless communications fields. It is on our interest to study the cases in which RL is used to improve spatial reuse in WNs, so we first focus on \cite{nie1999q}, which uses real-time Q-learning for DCA in the context of mobile communications. To do so, states for each cell are defined as the channel selected and the available channels at time $t$. Thus, the state of a given cell depends on the states of the others. Actions are considered to be the transition between available channels, so the reward is computed as a functions that considers the channel utilisation (distance between cells is considered). Despite the discount factor is deterministically set to 0.5, the learning rate is defined for each state-action pair $(s,a)$, so that it is inversely proportional to the frequency $(s,a)$ is visited. Q-learning is implemented distributively, so that each cell is responsible for channel assignment. However, exchanging data is required to let cells know channel-status information between neighbouring base stations. The overhead of such communication is not considered. Q-learning is also used in \cite{li2009multi} for channel selection in wireless networks. In this case, considerations on multi-user environments are done, so that Multi-Agent Reinforcement Learning (MARL) is applied in a scenario composed by two devices. It is shown that using Q-learning in a such competitive environment allows doing a proper distribution of the resources (in this case, frequency channels). A further extension of the previous work applying Q-learning to the channel selection problem, is presented in \cite{bennis2010q}. In this case, self-organised femtocell networks are focused to solve both carrier and power allocation problems. The former is approach through Q-learning, while the latter is formulated using the gradient method once channel allocation is done. Contrary to previous work, the authors propose a rewarding system based on the SINR. A simulation scenario with 2 cells and 5 subcarriers is used for simulation, which compares the Q-learning performance to the random and static strategies. Again, Q-learning parameters are deterministically set to $\alpha = 0.5$ and $\gamma = 0.9$.	An extension of this is presented in \cite{bennis2011distributed}, which puts the focus on coordinated systems in order to improve the performance. A cooperative Q-learning approach is developed to show a higher performance and a faster convergence than uncoordinated systems.
+					
+				MABs are also becoming a popular tool in the WNs field, so in \cite{maghsudi2015joint} we find a distributed channel selection and transmit power approach for Device-to-Device (D2D) communications. The problem is modelled by considering $\mathcal{K}=\{1,...,K\}$ transmitter-receiver pairs being able to choose from $\mathcal{N}'_k$ orthogonal channels and from $\mathcal{N}''_k$ power levels. The joint action selection at time $t$ leads to the joint action profile $\textbf{I}_t$, consisting in a pair $(\textbf{I}'_t,\textbf{I}''_t)$. Thus, a reward is computed for a given joint action profile \textbf{I}. In order to show that the external regret of each user asymptotically decays with time, and that players’ actions converge into a equilibrium, two decentralized minimization strategies are presented: \textit{No-Regret Bandit Exponential-Based Weighted Average strategy} and \textit{No-Regret Bandit Follow the Perturbed Leader strategy}. For the former, each action is selected by some probability that depends on the accumulated reward of that action (the best performance an action shows, the higher will be its associated probability). The estimated reward is useful for calculating the regret of any other chosen action. Basically, the algorithm makes a D2D pair to play an arm and define a so-called parameter $\delta_{(i \rightarrow j),t}^{(k)}$ according to the experienced regret (which depends on the others' actions). With that, the probability distribution of possible actions is updated, which affects to the next action. If all players play according to NR-BEWAS, then the game converges to a correlated equilibria. In the NR-BFPLS case, the action with minimum regret is chosen, but a random perturbation is added to avoid falling into a deterministic setting. Similarly to the previous approach, actions are chosen according to the current probability distribution, which is being updated at each iteration. In this case, the reward is computed by including a perturbation, which is a two-sided exponential distribution. Simulations are carried out for two transmitter-receiver pairs that share two orthogonal channels. By using the two abovementioned action selection strategies, the optimal configuration is rapidly achieved by both users (approximately with 500 iterations for the NR-BFPLS strategy). Further simulations are done for a wireless network consisting in five transmitted-receiver pairs competing for three orthogonal channels with two possible power levels. The obtained reward for each of the approaches is shown to converge rapidly to the optimal. Furthermore, in \cite{maghsudi2015channel},  Maghsudi and Sta{\'n}czak also approach the D2D channel selection problem through Bandits, but in this case it is included a calibrated predictor (referred in the work as \textit{forecaster}) to infer the behaviour of the other devices in order to counter act their actions. At each agent, the information of the forecaster is used to choose the action with highest reward with a certain probability, while the rest of the times a random action is selected. Henceforth, assuming that all the networks use a strategy $\mathcal{X}$, fast convergence is ensured. The experimental part consists in two D2D users that must share two orthogonal channels, which shows that both users end up knowing the behaviour of the other. Thus, channel resources are optimally distributed in a very few time through a fully decentralised algorithm that does not require any kind of coordination.
+			
+				Finally, \cite{jamil2016novel} presents a centralized solution to adapt the transmission power and the carrier sense threshold of all the devices in a wireless network, with the aim of enhancing the spatial reuse while keeping a fair distribution of the average throughput. For that purpose it is used an Artificial Neural Network (ANN) with three layers (the input layer, one hidden layer, and the output layer). The number of inputs is two times the number $k$ of nodes to be manipulated, as well as each input represents the chosen value by each node for TPC and CCA parameters. The output in this case represents the throughput experienced by each node, so there are just $k$ neurons. 	
 				\begin{figure}[h!]
 					\centering
-					\epsfig{file=images/neural_network_topology.png, width=8cm}
+					\epsfig{file=images/neural_network_topology.png, width=10cm}
 					\caption{Topology of the ANN}
 					\label{fig:neural_network_topology}
 				\end{figure}	
-				Since the main goal is to enhance the fairness experienced at the network as a whole, the following minimization function is used:
-				\begin{equation}
-					Cost_{fairness} = 1 - \frac{(\sum_{i=1}^{K}x_i)^2}{K\sum_{i=1}^{K}x_i^2}
-				\end{equation}		
-				In addition, it is sought to guarantee a minimum throughput $X_T$, so the following expression is also attempted to be minimized:
-				\begin{equation}
-					Cost_T = \sum_{i=1}^{K} \frac{(X_T - x_i)^2}{X_T}
-				\end{equation}	
-				Thus, the final cost used to evaluate the performance of the ANN is given by:
-				\begin{equation}
-					Cost_{tot} = Cost_{fairness}  + 1 \frac{1}{\sum_{i=1}^{K}X_T} \cdot Cost_T 
-				\end{equation}	
-				
-				In the work it is also described the processes of data collection, training, testing and optimization, as well as the update phase. Basically, information for training/testing is constantly being updated to run the optimization, which error results are backpropagated to the previous levels. In case that the MSE (Mean Squared Error) and the desired fail number ratio ($\text{FNr}_{des}$) are below the expected results, the changes are applied and the process ends. Otherwise, both MSE and learning rate $\mu$ are decreased before running a new iteration (or epoch) of the whole process.
-				
-				\begin{figure}[h!]
-					\centering
-					\epsfig{file=images/entire_procedure_ANN.png, width=10cm}
-					\caption{Overall flow of the proposed ANN utilizations}
-					\label{fig:entire_procedure_ANN}
-				\end{figure}
-				
-				The results of using the ANN to adjust both TPC and CCA in a centralized manner, are shown at three different scenarios created at the OPNET simulator: exposed-node and hidden-node situations, and a high-density cellular scenario composed by 7 APs and 8 STAs per AP (the same scenario as for the mechanism revisited in Section \ref{section:cca_tpc_adaptation_fairness}). In all the cases, both aggregate throughput and fairness are enhanced after few epochs. In the high-density case, the gain noticed in the aggregate throughput exceeds the 45\%, while fairness starts from 0.5 and ends up to 0.7.
+				Since the main goal is to enhance the fairness experienced at the network as a whole, the minimization function used considers both performance and fairness. The authors also described the processes of data collection, training, testing and optimization, as well as the update phase. Basically, information for training/testing is constantly being updated to run the optimization, which error results are back-propagated to the previous levels. In case that the MSE (Mean Squared Error) and the desired fail number ratio ($\text{FNr}_{des}$) are below the expected results, the changes are applied and the process ends. Otherwise, both MSE and learning rate $\mu$ are decreased before running a new iteration (or epoch) of the whole process. Simulations show the performance of the ANN approach in three different scenarios: exposed-node,  hidden-node, and high-density (7 APs and 8 STAs per AP). In all the cases, both aggregate throughput and fairness are shown to be enhanced after few epochs. In the high-density case, the gain noticed in the aggregate throughput exceeds the 45\%, while fairness starts from 0.5 and ends up to 0.7.
 
-				\textcolor{red}{TODO: Table 4: learning in WNs}
+				Table \ref{tbl:rl_wns} shows a summary of the State-of-the-art in RL applied to spatial reuse in WNs.
 				\begin{table}[h!]
-					\centering
-					\begin{tabular}{|l|l|l|l|l|}
+				\centering
+				\resizebox{\textwidth}{!}{\begin{tabular}{|c|l|c|l|l|}				
 						\hline
-						\textbf{Work} & \textbf{Main Purpose} & \textbf{Centralised / Decentralised} & \textbf{Benefits} & \textbf{Drawbacks} \\ \hline
-						{[}1{]} &  &  &  &  \\ \hline
-						{[}2{]} &  &  &  &  \\ \hline
-						{[}3{]} &  &  &  &  \\ \hline
-					\end{tabular}
-					\caption{Reinforcement Learning in WNs State-of-the-Art}
-					\label{tbl:rl_wns}
-				\end{table}			
+						\multicolumn{1}{|c|}{\textbf{Work}} & \multicolumn{1}{c|}{\textbf{Presented Approach}} & \textbf{\begin{tabular}[c]{@{}c@{}}Centralised/\\ Decentralised\end{tabular}} & \multicolumn{1}{c|}{\textbf{Positive Aspects}} & \multicolumn{1}{c|}{\textbf{Negative Aspects}} \\ \hline
+						\cite{nie1999q} & \begin{tabular}[c]{@{}l@{}}Q-learning for channel\\assignment in mobile\\ communications\end{tabular} & \begin{tabular}[c]{@{}l@{}}Decentralized\end{tabular}  &  \begin{tabular}[c]{@{}l@{}}$\bullet$  Partially decentralised\\$\bullet$ Shows learning feasibility\\in WNs\end{tabular} & \begin{tabular}[c]{@{}l@{}}$\bullet$ Communication overhead\\is not considered\\ $\bullet$ Q-learning parameters \\are deterministically set\end{tabular}  \\ \hline	
+						\cite{li2009multi} & \begin{tabular}[c]{@{}l@{}}Q-learning for channel\\assignment in multi-agent\\environments\end{tabular} & \begin{tabular}[c]{@{}l@{}}Decentralized\end{tabular}  &  \begin{tabular}[c]{@{}l@{}}$\bullet$  Fully decentralised\\$\bullet$ Considers multi-agent\\scenarios\end{tabular} & \begin{tabular}[c]{@{}l@{}}$\bullet$ Very limited scenario\\$\bullet$ Equilibrium is easy\\ to reach\end{tabular}  \\ \hline	
+						\cite{bennis2010q} & \begin{tabular}[c]{@{}l@{}}Q-learning for channel\\assignment in femtocell\\networks\end{tabular} & \begin{tabular}[c]{@{}l@{}}Decentralized\end{tabular}  &  \begin{tabular}[c]{@{}l@{}}$\bullet$  Fully decentralised\\$\bullet$ The rewarding system\\is more accurate for\\wireless communications\end{tabular} & \begin{tabular}[c]{@{}l@{}}$\bullet$ Very limited scenario\\$\bullet$ Q-learning parameters \\are deterministically set\end{tabular}  \\ \hline		
+						\cite{maghsudi2015joint} & \begin{tabular}[c]{@{}l@{}}MABs for D2D \\channel allocation\\ and transmit power\\adjustment\end{tabular} & Decentralised & \begin{tabular}[c]{@{}l@{}} $\bullet$ Proves regret minimisation \end{tabular}  &  \begin{tabular}[c]{@{}l@{}} $\bullet$ Simple scenario\\ $\bullet$ Cases in which correlated\\equilibria cannot be reached\\are not studied \end{tabular}\\ \hline	
+						\cite{maghsudi2015channel} & \begin{tabular}[c]{@{}l@{}}MABs for D2D \\channel allocation\end{tabular} & Decentralised & \begin{tabular}[c]{@{}l@{}}$\bullet$ Interesting approach \\for inferring the others'\\behaviour \end{tabular}  &  \begin{tabular}[c]{@{}l@{}} $\bullet$ Simple scenario \\$\bullet$ Convergence can be easily\\ reached \end{tabular}\\ \hline					
+						\cite{jamil2016novel} & \begin{tabular}[c]{@{}l@{}}ANN for adjusting the \\transmit power and the \\carrier sense threshold \\of all the devices in a \\wireless network\end{tabular} &  Centralised & \begin{tabular}[c]{@{}l@{}}$\bullet$ Powerful method \\to improve network\\ performance\end{tabular}  &  \begin{tabular}[c]{@{}l@{}} $\bullet$ Full control is required\\ $\bullet$ Only applicable to fully \\centralised scenarios\end{tabular}\\ \hline	
+				\end{tabular}}
+				\caption{State-of-the-Art of Reinforcement Learning for spatial reuse in Wireless Networks}
+				\label{tbl:rl_wns}
+			\end{table}	
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% ONGOING WORK			        					   %%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 	\chapter{Current Contributions and Ongoing Work}
 	\label{section:contributions}
-	
 		In this Section we describe the current contributions done, as well as the ongoing research tasks.
 
 		\section{Wireless Networking Through Learning}
@@ -773,6 +690,15 @@
 	\chapter{Planning and Future Work}
 	\label{section:future_work}
 
+
+		
+\section{Considerations for building a solution}
+\label{section:considerations}
+* Metrics
+* What do we want to do?
+* In which scenarios?
+* Centralised/Decentralised/Uncoordinated...
+
 		We have put forward a range of objectives to be accomplished during the development of the research activities related to this Thesis, which are listed below together with the involved tasks:
 		\begin{itemize}
 			\item \textbf{Objective 1 (O1):} Understanding the dynamics of coexistent WNs when competing for bandwidth resources.
@@ -788,7 +714,7 @@
 				\item Komondor simulator: launch versions 2.1 (KM1) and 2.2 (KM2) that include intelligent agents to boost the network performance. Also, write a technical report to be published (KM3).
 				\item CTMN framework collaboration with Barrachina: provide a framework to compute network throughput through the CTMN model (CTMN1).
 			\end{itemize}
-			\item \textbf{Objective 4 (O4):} Studying channel estimation and inference techniques to devise the behaviour of an overlapping WN from a decentralised point of view.
+			\item \textbf{Objective 4 (O4):} Studying channel estimation and inference techniques to envision the behaviour of an overlapping WN from a decentralised point of view.
 			\begin{itemize}
 				\item Internship in Mexico (UNAM): Reinforcement Learning with Neighbouring Performance Inference for Resource Allocation in High-Density WLANs (UN1).
 			\end{itemize}		
