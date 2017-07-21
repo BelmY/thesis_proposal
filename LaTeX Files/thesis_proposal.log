@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.12.1)  18 JUL 2017 16:07
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.12.1)  19 JUL 2017 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1494,9 +1494,7 @@ File: images/tx_cca_relation.png Graphic file (type QTm)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25] [26]
-Missing character: There is no   in font ptmr7t!
- [27]
+[25] [26] [27]
 File: images/rl_scenario.png Graphic file (type QTm)
  <use  "images/rl_scenario.png" >
 File: images/rl_types.png Graphic file (type QTm)
@@ -1512,7 +1510,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [29]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 611.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 607.
  [30]
 Missing character: There is no ’ in font ptmr7t!
 
@@ -1527,26 +1525,33 @@ File: images/neural_network_topology.png Graphic file (type QTm)
 ]
 Chapter 4.
 [35]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 669.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 671.
 
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 Missing character: There is no   in font ptmr7t!
  [36]
-[37] [38
+File: images/e_1_a1_g095.eps Graphic file (type eps)
 
+<images/e_1_a1_g095.eps>
+File: images/e_1_a1_g095_avg_tpt.eps Graphic file (type eps)
+ <images/e_1_a1_g095_avg_tpt.eps>
+File: images/e_1_a1_g095_ind_tpt.eps Graphic file (type eps)
 
-]
+<images/e_1_a1_g095_ind_tpt.eps> [37] [38]
 Chapter 5.
 
-Overfull \hbox (40.79134pt too wide) in paragraph at lines 697--701
+Overfull \hbox (40.79134pt too wide) in paragraph at lines 712--716
 \OT1/ptm/m/n/12 * Met-rics * What do we want to do? * In which sce-nar-ios? * C
 en-tralised/Decentralised/Uncoordinated... 
  []
 
-[39]
-Overfull \hbox (0.28032pt too wide) in paragraph at lines 744--745
+[39
+
+
+]
+Overfull \hbox (0.28032pt too wide) in paragraph at lines 759--760
 []\OT1/ptm/m/n/12 Provide a wire-less net-works sim-u-la-tor that in-cludes nov
 el fea-tures in IEEE 802.11ax
  []
@@ -1587,12 +1592,12 @@ LaTeX Warning: There were undefined references.
 ### bottom level
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
- 30917 strings out of 493591
- 666190 string characters out of 6143546
- 738644 words of memory out of 5000000
- 33750 multiletter control sequences out of 15000+600000
+ 30929 strings out of 493591
+ 666451 string characters out of 6143546
+ 738785 words of memory out of 5000000
+ 33759 multiletter control sequences out of 15000+600000
  21777 words of font info for 64 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 55i,17n,77p,10385b,3155s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,17n,77p,10385b,3154s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on thesis_proposal.pdf (51 pages).

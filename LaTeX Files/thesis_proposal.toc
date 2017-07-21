@@ -18,7 +18,7 @@
 \contentsline {chapter}{\numberline {4}{\MakeUppercase { Current Contributions and Ongoing Work}}}{35}
 \contentsline {section}{\numberline {4.1}Wireless Networking Through Learning}{35}
 \contentsline {section}{\numberline {4.2}Other Projects}{35}
-\contentsline {subsection}{\numberline {4.2.1}Analytical Models and Simulators}{35}
+\contentsline {subsection}{\numberline {4.2.1}Analytical Models and Simulators}{36}
 \contentsline {subsection}{\numberline {4.2.2}Development of an IEEE 802.11ax Event-Based Simulator}{36}
 \contentsline {subsection}{\numberline {4.2.3}AP Association and Self-Managed Networks through Learning}{36}
 \contentsline {section}{\numberline {4.3}Preliminary Results}{37}

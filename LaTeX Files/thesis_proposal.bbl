@@ -361,13 +361,6 @@ M~Shahwaiz Afaqui, Eduard Garcia-Villegas, and Elena Lopez-Aguilera.
 \newblock In {\em Wireless Communications and Networking Conference (WCNC),
   2016 IEEE}, pages 1--6. IEEE, 2016.
 
-\bibitem{zhu2004leveraging}
-Jing Zhu, Xingang Guo, L~Lily Yang, and W~Steven Conner.
-\newblock Leveraging spatial reuse in 802.11 mesh networks with enhanced
-  physical carrier sensing.
-\newblock In {\em Communications, 2004 IEEE International Conference on},
-  volume~7, pages 4004--4011. IEEE, 2004.
-
 \bibitem{thorpe2014survey}
 Christina Thorpe and Liam Murphy.
 \newblock A survey of adaptive carrier sensing mechanisms for ieee 802.11
@@ -375,11 +368,12 @@ Christina Thorpe and Liam Murphy.
 \newblock {\em IEEE Communications Surveys \& Tutorials}, 16(3):1266--1293,
   2014.
 
-\bibitem{oteri2015improved}
-Oghenekome Oteri, Frank La~Sita, Rui Yang, Monisha Ghosh, and Robert Olesen.
-\newblock Improved spatial reuse for dense 802.11 wlans.
-\newblock In {\em Globecom Workshops (GC Wkshps), 2015 IEEE}, pages 1--6. IEEE,
-  2015.
+\bibitem{mhatre2007interference}
+Vivek~P Mhatre, Konstantina Papagiannaki, and Francois Baccelli.
+\newblock Interference mitigation through power control in high density 802.11
+  {WLANs}.
+\newblock In {\em INFOCOM 2007. 26th IEEE International Conference on Computer
+  Communications. IEEE}, pages 535--543. IEEE, 2007.
 
 \bibitem{jamil2015preserving}
 Imad Jamil, Laurent Cariou, and Jean-Fran{\c{c}}ois H{\'e}lard.
@@ -394,12 +388,18 @@ Tae-Suk Kim, Hyuk Lim, and Jennifer~C Hou.
 \newblock In {\em Proceedings of the 12th annual international conference on
   Mobile computing and networking}, pages 366--377. ACM, 2006.
 
-\bibitem{mhatre2007interference}
-Vivek~P Mhatre, Konstantina Papagiannaki, and Francois Baccelli.
-\newblock Interference mitigation through power control in high density 802.11
-  {WLANs}.
-\newblock In {\em INFOCOM 2007. 26th IEEE International Conference on Computer
-  Communications. IEEE}, pages 535--543. IEEE, 2007.
+\bibitem{oteri2015improved}
+Oghenekome Oteri, Frank La~Sita, Rui Yang, Monisha Ghosh, and Robert Olesen.
+\newblock Improved spatial reuse for dense 802.11 wlans.
+\newblock In {\em Globecom Workshops (GC Wkshps), 2015 IEEE}, pages 1--6. IEEE,
+  2015.
+
+\bibitem{zhu2004leveraging}
+Jing Zhu, Xingang Guo, L~Lily Yang, and W~Steven Conner.
+\newblock Leveraging spatial reuse in 802.11 mesh networks with enhanced
+  physical carrier sensing.
+\newblock In {\em Communications, 2004 IEEE International Conference on},
+  volume~7, pages 4004--4011. IEEE, 2004.
 
 \bibitem{sutton1998reinforcement}
 Richard~S Sutton and Andrew~G Barto.

@@ -192,7 +192,7 @@
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%			
 		\section{Spatial Reuse in Overlapping IEEE 802.11 WLANs}
 		\label{section:spatial_reuse}	
-			Spatial reuse can be enhanced by using Transmission Power Control (TPC), Carrier Sense Threshold (CST) adjustment, and beamforming. TPC, in addition to be useful for improving spatial reuse, can also help at reducing energy consumption. By adjusting the transmit power, the number of exposed nodes can be minimised, allowing a higher number of parallel transmissions within the same range. But there is an important consideration at tuning the power transmitted, which is that data rate directly depends on the SINR sensed at the receiver (the less power transmitted, the less experienced data rate received). Thus, adjusting TPC poses the trade-off between the number of parallel transmissions and the quality of them. Moreover, an insufficient transmit power may be unheard at the receiver, leading into packet losses. Furthermore, Carrier Sense Threshold (CST) adjustment may also help to increase the number of parallel transmissions and minimizing the collisions probability by hidden-node. However, modifying the CST entails several consequences. For instance, decreasing the CST may rise probability of finding hidden nodes (the less is listened, the less is known). Table \ref{tbl:cca_tpc_effects} summarises the effects of TPC and CST adaptation.			
+			Spatial reuse aims to efficiently use the spectrum available, specially in dense wireless deployments. It can be enhanced by using Transmission Power Control (TPC), Carrier Sense Threshold (CST) adjustment, and beamforming. TPC, in addition to be useful for improving spatial reuse, can also help at reducing energy consumption. By adjusting the transmit power, the number of exposed nodes can be minimised, allowing a higher number of parallel transmissions within the same range. But there is an important consideration at tuning the power transmitted, which is that data rate directly depends on the SINR sensed at the receiver (the less power transmitted, the less experienced data rate received). Thus, adjusting TPC poses the trade-off between the number of parallel transmissions and the quality of them. Moreover, an insufficient transmit power may be unheard at the receiver, leading into packet losses. Furthermore, Carrier Sense Threshold (CST) adjustment may also help to increase the number of parallel transmissions and minimizing the collisions probability by hidden-node. However, modifying the CST entails several consequences. For instance, decreasing the CST may rise probability of finding hidden nodes (the less is listened, the less is known). Table \ref{tbl:cca_tpc_effects} summarises the effects of TPC and CST adaptation.			
 			\begin{table}[h!]
 				\centering
 				\begin{tabular}{|c|c|c|c|c|}
@@ -509,11 +509,7 @@
 			\end{equation}
 			Finally, the TPC and the CST are modified by increasing/decreasing the obtained adaptation values ($TPC = TPC - \Delta_{TPC}$ and $CCA = CCA + \Delta_{CCA}$, respectively). The $ratio$ determines how much CST and TPC are adapted (setting the ratio to 0 entails only CST adaptation, while setting it to 1, only TPC). To adapt both CST and TPC, so-called Balanced TPC and PCS Adaptation (BTPA), the chosen $ratio$ is 0.5, but during the simulations it is also shown the results of adapting CST and TPC separately. The scenario consists in a cellular network composed by 7 APs that transmit data to 8 STAs each one.	The results are quite interesting, as the average throughput is increased by a 4 factor while preserving the fairness coefficient to 1. Despite being very simple, this mechanism allows improving the spatial reuse while preserving fairness. 
 			
-			The authors in \cite{kim2006improving} also consider the TPC and CCA relationship, but put special emphasis on the trade-off between increasing spatial reuse and decreasing individual transmissions data rate. Thus, they present a decentralized algorithm that adjusts power and rate control at a node given its interference level it perceives. The goal is also to keep the highest possible data rate, while keeping minimal the generated interference towards neighbouring WLANs. To do so, it first determines the minimum power to be used so that the receiver can properly decode the message. Then, the CST is set to the minimum value at which the incoming signal is sensed, which depends on the perceived interference. To solve the problem in which the transmitter does not know the interference level $I_{RX}$ at the receiver, the authors propose propose to set the CST at the transmitter as a function of the SINR. The provided adjustment function ensures that the interference at the receiver is not higher than a given threshold that depends on the power transmitted, and that the minimal data rate is sustained. The key is to restrict the transmit power based on the estimated distance between the transmitter and the interfering node. Through simulations in different scenarios (from low to high density), it is shown a significant improvement at both aggregate throughput and average saved power (up to 22\% and 50\%, respectively).
-			
-			TODO:  Review \cite{oteri2015improved} \cite{jamil2014improving} \cite{zhu2004leveraging}
-			
-			A more rigid approach for fully controlled networks is presented in \cite{zhu2004leveraging}, where the CST to be used by devices in a mesh WN is computed as a function of the distance between nodes, and assuming that the same transmit power is used. In particular, different CST equations are provided for grid and line topologies, since the interference pattern varies. In this case, all the devices are considered to be placed symmetrically. Thus, an ideal situation is proposed for planned and interference-free deployments (e.g. a rural sensors deployment). However, this approach turns out to be unrealistic in chaotic wireless deployments.
+			The authors in \cite{kim2006improving} also consider the TPC and CCA relationship, but put special emphasis on the trade-off between increasing spatial reuse and decreasing individual transmissions data rate. Thus, they present a decentralized algorithm that adjusts power and rate control at a node given its interference level it perceives. The goal is also to keep the highest possible data rate, while keeping minimal the generated interference towards neighbouring WLANs. To do so, it first determines the minimum power to be used so that the receiver can properly decode the message. Then, the CST is set to the minimum value at which the incoming signal is sensed, which depends on the perceived interference. To solve the problem in which the transmitter does not know the interference level $I_{RX}$ at the receiver, the authors propose propose to set the CST at the transmitter as a function of the SINR. The provided adjustment function ensures that the interference at the receiver is not higher than a given threshold that depends on the power transmitted, and that the minimal data rate is sustained. The key is to restrict the transmit power based on the estimated distance between the transmitter and the interfering node. Through simulations in different scenarios (from low to high density), it is shown a significant improvement at both aggregate throughput and average saved power (up to 22\% and 50\%, respectively). As in previous works, \cite{oteri2015improved} shows the benefits of using both TPC and CCA adaptation in the context of IEEE 802.11ax WLANs. Furthermore, it provides evidences that different results may be obtained according to the scenario (due to path-loss effects in presence of walls). Finally, a rigid approach for fully controlled networks is presented in \cite{zhu2004leveraging}, where the CST to be used by devices in a mesh WN is computed as a function of the distance between nodes, and assuming that the same transmit power is used. In particular, different CST equations are provided for grid and line topologies, since the interference pattern varies. In this case, all the devices are considered to be placed symmetrically. Thus, an ideal situation is proposed for planned and interference-free deployments (e.g. a rural sensors deployment). However, this approach turns out to be unrealistic in chaotic wireless deployments.
 			
 			To summarise the most remarkable work in CST adjustment in combination with TPC, in Table \ref{tbl:tpc_cca} we show the key features of each work reviewed in this section.			
 			\begin{table}[h!]
@@ -645,44 +641,65 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 	\chapter{Current Contributions and Ongoing Work}
 	\label{section:contributions}
-		In this Section we describe the current contributions done, as well as the ongoing research tasks.
+		In this Section we describe the current contributions done during the first year, as well as the ongoing research activity and the preliminary results.
 
 		\section{Wireless Networking Through Learning}
 		\label{section:mdm}		
-			Through the \textit{Wireless Networking Through Learning} project, which is under the Mar\'ia de Maeztu excellence program, the following contributions have been done:
+			Through the \textit{Wireless Networking Through Learning} project, which is under the \textit{Mar\'ia de Maeztu excellence program}, the following contributions have been done:
 			\begin{itemize}
-				\item Conference paper submitted to the IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC) \cite{wilhelmi2017implications}.
-				\item Journal article submitted to ...\textcolor{red}{TODO} \cite{wilhelmi2017enhancing}.
-				\item Journal article in construction together with the Artificial Intelligence and Machine-Learning Research Group (AI-ML) \cite{bellalta2017learning}.
-				\item Participation in the PhD Doctoral Workshop \cite{wilhelmi2017improving}.
-				\item Collaboration in a Journal article in construction \cite{barrachina2017ctmn}.
-				\item Inference of the coexistent devices configurations for allowing intelligent self-adjustment in dense WNs. This work is intended to be the result of a collaboration with the Wireless Communications department at Universidad Aut\'onoma Nacional de M\'exico (UNAM).
-				\item Extension of \cite{wilhelmi2017enhancing} and \cite{wilhelmi2017implications} for exploring centralized approaches.
+				\item A conference paper was submitted to the IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC) \cite{wilhelmi2017implications}.
+				\item A journal article was prepared for future submission to ...\textcolor{red}{TODO} \cite{wilhelmi2017enhancing}.
+				\item An extension of \cite{wilhelmi2017enhancing} and \cite{wilhelmi2017implications} is being developed for exploring centralized approaches and to provide a more realistic simulation.
+				\item A journal article in collaboration with the Artificial Intelligence and Machine-Learning Research Group (AI-ML) is under construction \cite{bellalta2017learning}.
+				\item A poster was presented on the 5th PhD Doctoral Workshop, held at the UPF \cite{wilhelmi2017improving}.
+				\item We are actively collaborating in a journal article \cite{barrachina2017ctmn}.
+				\item A collaboration agreement was achieved with the Wireless Communications department at Universidad Aut\'onoma Nacional de M\'exico (UNAM). The subject of this collaboration is to work in a publication that considers the inference of the coexistent devices configurations for allowing intelligent self-adjustment in dense WNs.
 			\end{itemize}	
 			
 		\section{Other Projects}
 		\label{section:other_projects}	
+			To support the main research activity, some other projects are being under development, which are detailed in this section.
+			
 			\subsection{Analytical Models and Simulators}
 			\label{section:validation}	
-				In addition to the projects directly related to the main research activity, a fundamental task for this Thesis is to properly understand and/or develop the required simulation tools, which will allow us validating the results obtained from the research activity. One of the most important analytical model to compute the throughput in an overlapping network is the Continuous Time Markov Networks (CTMN) model \cite{bellalta2014throughput}, which captures the operation of the CSMA/CA protocol. In relation to this, we have started a collaboration for building a CTMN framework that builds the Markov chains according to the nodes input, which is leaded by Sergio Barrachina \cite{barrachina2017ctmn}. 
+				A fundamental task for this Thesis is to properly understand and/or develop the most suitable simulation tools, which will allow us validating the results obtained from the research activity. One of the most important analytical models to compute the throughput in an overlapping network is the Continuous Time Markov Networks (CTMNs) model \cite{bellalta2014throughput}, which captures the operation of the CSMA/CA protocol. In relation to CTMNs, we have started a collaboration for developing a framework that is able to build the Markov chains for analytical throughput calculation, according to the nodes input (many features such as the position, the power transmitted or the channel bonding policy are taken into consideration). The project is leaded by Sergio Barrachina \cite{barrachina2017ctmn}. Another important analytical model for throughput calculation in overlapping WLANs is the Bianchi's model \cite{bianchi2000performance}. The Bianchi's model is a benchmark in the current literature that we aim to use for validating the Komondor simulator (further described in Section \ref{section:cisco_project}).				
 				
-				Regarding simulators, we highlight ns-3, which is widely spread in the wireless community. However, the learning curve is high and many novel features are not yet supported. Since implementing them is a complex and time-consuming task, we are also building the Komondor simulator\footnote{\url{https://github.com/wn-upf/Komondor}}, as a result of a CISCO-UPF collaboration (further described in Section described in Section \ref{section:cisco_project}). Moreover, we are also interested in the Bianchi's model \cite{bianchi2000performance} for throughput computation in overlapping WLANs. The Bianchi's model is a benchmark in the current literature that we aim to use for validating the Komondor simulator.	
-
+				Regarding network simulators, we highlight ns-3 \cite{}, which is widely spread in the wireless community. However, the learning curve is high and many novel features are not yet supported. 	Other available simulators are OPNET... \textcolor{red}{TODO: add some other simulators}
+				
 			\subsection{Development of an IEEE 802.11ax Event-Based Simulator}
-			\label{section:cisco_project}	
-				In order to perform simulations based on the IEEE 802.11ax standard, we have started building our own event-based simulator for WLANs, which has been called Komondor \cite{barrachina2017komondor}. Besides being a useful tool for supporting most of the research activity performed along the Thesis, the Komondor simulator is also the result of a collaboration with Cisco. Komondor is built on top of COST \cite{chen2005sense}, which provides the baseline for synchronised messages exchanging. The decision of building a simulator, apart from the Cisco's collaboration, lies in the impediments shown by other simulators like Network Simulator 3 (ns-3), which does not include many of the novel features provided by the IEEE 802.11ax standard, and which are the main matter of this Thesis. Moreover, building these functionalities in ns-3 is a extremely costly task, not only because of the complexity of the program, but for the significant learning curve.
-				
-				At the present time, Komondor v1.0 has been released and successfully validated against the well-known Bianchi's model for overlapping WLANs. Its main features are the Request to Send / Clear to Send (RTS/CTS) IEEE 802.11 mechanism, CSMA/CA with exponential slotted binary backoff (BEB), configurable packet traffic generation, collision type identification through logical events, and detailed statistics for metrics of interest such as average throughput per WLAN or detected hidden nodes. 			
+			\label{section:cisco_project}				
+				In order to perform simulations based on the IEEE 802.11ax standard, we have started building our own event-based simulator for WLANs, which has been called Komondor \cite{barrachina2017komondor}. Besides being a useful tool for supporting most of the research activity performed along the Thesis, the Komondor simulator is also the result of a collaboration with Cisco. Komondor is built on top of COST \cite{chen2005sense}, which provides the baseline for synchronised messages exchanging. The decision of building a simulator, apart from the Cisco's collaboration, lies in the impediments shown by other simulators such as Network Simulator 3 (ns-3), which does not include many of the novel features provided by the IEEE 802.11ax standard, and which are the main matter of this Thesis. Moreover, building these functionalities in ns-3 is an extremely costly task, not only because of the complexity of the program, but for the significant learning curve. At the present time, Komondor v1.0 has been released and successfully validated against the well-known Bianchi's model for overlapping WLANs. Its main features are the Request to Send / Clear to Send (RTS/CTS) IEEE 802.11 mechanism, CSMA/CA with exponential slotted binary backoff (BEB), configurable packet traffic generation, collision type identification through logical events, and detailed statistics for metrics of interest such as average throughput per WLAN or detected hidden nodes. The code\footnote{\url{https://github.com/wn-upf/Komondor}} is open for dissemination and improvement requests.
 				
 			\subsection{AP Association and Self-Managed Networks through Learning}
 			\label{section:fon_project}	
-				We are also expected to contribute in the collaboration Fon-UPF, which is based in two main projects for improving network performance in coexistent wireless scenarios. Fon is a company that has built the world's largest network made up of people sharing their Wi-Fi. Due to new requirements in wireless networks and the increasing density in their main deployment scenario (residential buildings), Fon aims to enhance the AP association and autonomous management processes through Machine Learning techniques. For the former, a mobile application provided to users is used to gather information about the surrounding Fon networks, which is sent to a central unit. The latter must decide which is the best network for making user association.
-				
-				Secondly, to further improve network performance, an autonomous system for management is aimed to be provided. In this case, the gathered information for decision-making is also retrieved from the APs. The core idea is to empower the system with the necessary intelligence to allow self-adjustment in the Wi-Fi networks, so that the interference can be minimised along the network.
+				We are also expected to contribute in the collaboration Fon-UPF, which is based in two main projects for improving network performance in coexistent wireless scenarios. Fon is a company that has built the world's largest network made up of people sharing their Wi-Fi. Due to new requirements in wireless networks and the increasing density in their main deployment scenario (residential buildings), Fon aims to enhance the AP association and autonomous management processes through Machine Learning techniques. For the former, a mobile application provided to users is used to gather information about the surrounding Fon networks, which is sent to a central unit. The latter must decide which is the best network for making user association. Secondly, to further improve networks performance, an autonomous system for management is aimed to be developed. In this case, the gathered information for decision-making is also retrieved from the APs. The core idea is to empower the system with the necessary intelligence to allow self-adjustment in the Wi-Fi networks, so that the interference can be minimised along the network, thus maximising fairness and throughput.
 			
 		\section{Preliminary Results}
 		\label{section:preliminary_results}	
-			The preliminary results obtained during the first year are focused on understanding network interactions, as well as to open discussion about the usage of RL in WNs. In \cite{wilhelmi2017implications}, we saw applying Q-learning in a decentralised manner to the resource allocation problem in dense WNs allows finding the best-performing actions that enhance the aggregate throughput. However, there is high variability in the throughput experienced by the individual networks. We identified the cause of this variability as the adversarial setting of our setup, in which the most played actions provide intermittent good/poor performance depending on the neighbouring decisions. An extension of \cite{wilhelmi2017implications} is provided in \cite{wilhelmi2017enhancing}, in which several Multi-Armed Bandits techniques are compared to solve the decentralised resource allocation problem in dense WNs. Each of the Bandits variations is extensively analysed to study the actual role of each of their parameters into networks performance and interactions.
+			The research activity performed during the first year was mainly focused on understanding network interactions (emphasising dense deployments), as well as to open discussion about the usage of RL in WNs. In \cite{wilhelmi2017implications}, we applied Q-learning in a decentralised manner to the resource allocation problem in dense WNs. We showed that the best-performing actions that enhance the aggregate throughput can be found through RL. In the presented adversarial scenario (4 WNs compete for accessing to 2 overlapping channels), the most probable actions after applying Q-learning turn to be the ones that use a higher transmit power (Figure \ref{fig:ql_actions}). Despite resulting into a fair resources distribution (Figure \ref{fig:ql_avg_tpt}), such aggressive adversarial setting leads to a high variability in the throughput experienced by the individual networks (Figure \ref{fig:ql_performance}). Hence, the favourite actions provide intermittent good/poor performance depending on the neighbouring decisions. 		
+			\begin{figure}[h!]
+				\centering
+				\epsfig{file=images/e_1_a1_g095.eps, width=8cm}
+				\caption{Probability of choosing an action in each overlapping WN \cite{wilhelmi2017implications}}
+				\label{fig:ql_actions}
+			\end{figure}
+			\begin{figure}[t!]
+				\centering
+				\begin{subfigure}[b]{0.4\textwidth}
+					\includegraphics[width=\textwidth]{images/e_1_a1_g095_avg_tpt}
+					\caption{Average throughput}
+					\label{fig:ql_avg_tpt}
+				\end{subfigure}
+				\begin{subfigure}[b]{0.4\textwidth}
+					\includegraphics[width=\textwidth]{images/e_1_a1_g095_ind_tpt}
+					\caption{Temporal throughput}
+					\label{fig:ql_temporal_tpt}
+				\end{subfigure}		
+				\caption{Individual performance experienced by each overlapping WN \cite{wilhelmi2017implications}}
+				\label{fig:ql_performance}
+			\end{figure}
+		
+			An extension of \cite{wilhelmi2017implications} is provided in \cite{wilhelmi2017enhancing}, in which several Multi-Armed Bandits techniques are compared to solve the same situation. Each algorithm is extensively analysed to study the actual role of each parameter (exploration, learning rate...) into network performance and interactions. Furthermore, it is shown that maximizing the individual throughput based on local information only, leads to a solution very close to the optimal proportional fairness.				
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% FUTURE WORK										   %%%%%%%%%%%%%
@@ -690,14 +707,12 @@
 	\chapter{Planning and Future Work}
 	\label{section:future_work}
 
-
-		
-\section{Considerations for building a solution}
-\label{section:considerations}
-* Metrics
-* What do we want to do?
-* In which scenarios?
-* Centralised/Decentralised/Uncoordinated...
+		\section{Considerations for building a solution}
+		\label{section:considerations}
+			* Metrics
+			* What do we want to do?
+			* In which scenarios?
+			* Centralised/Decentralised/Uncoordinated...
 
 		We have put forward a range of objectives to be accomplished during the development of the research activities related to this Thesis, which are listed below together with the involved tasks:
 		\begin{itemize}
