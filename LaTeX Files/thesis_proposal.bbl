@@ -30,6 +30,18 @@ Maria Papadopouli, Haipeng Shen, and Manolis Spanakis.
   networks.
 \newblock In {\em LANMAN}, 2005.
 
+\bibitem{ekici2008ieee}
+Ozgur Ekici and Abbas Yongacoglu.
+\newblock Ieee 802.11 a throughput performance with hidden nodes.
+\newblock {\em IEEE Communications Letters}, 12(6), 2008.
+
+\bibitem{jang2012ieee}
+Beakcheol Jang and Mihail~L Sichitiu.
+\newblock Ieee 802.11 saturation throughput analysis in the presence of hidden
+  terminals.
+\newblock {\em IEEE/ACM Transactions on Networking (TON)}, 20(2):557--570,
+  2012.
+
 \bibitem{sobrinho2005rts}
 Jo{\~a}o~L Sobrinho, Roland De~Haan, and Jos{\'e}~M Brazio.
 \newblock Why rts-cts is not your ideal wireless lan multiple access protocol.

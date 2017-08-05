@@ -67,57 +67,43 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Introduction}
 	\label{section:introduction}		
-		The main purpose of this Thesis is to explore the applicability of Reinforcement Learning into the Spatial Reuse problem in Wireless Networks. Due to the variability in terms of user activity suffered at the kind of scenarios we aim to mostly focus (residential buildings, shopping malls, stadiums, trains, etc.), real-time mechanisms turn out to be necessary to dynamically configure devices so as to adjust parameters such as the frequency channel, the transmit power or the sensitivity threshold. To provide a reliable and flexible solution, we focus on Reinforcement Learning, so that wireless networks are empowered to act autonomously according to their requirements and possibilities.
-	
-		Please do not write for the sake of writing. Just be concise, bullet points are ok, and avoid general statements. - Just report on what you plan to do on each topic (example: data - data you plan to use (type, quantities); if you plan to collect on your own, use data already available to the community - then check licenses, copyright issues, ethics, the technical details and / or timing needed for it in your planning, etc - or data from collaborators - then check that you can use them, they went through correct ethical processes, etc - ; the way you plan to process / handle / store; if you plan to release them, where, under which license; if they are specially valuable, if you plan to have a specific publication about them or ways you plan to promote their use, etc; if you do not plan to release them, justify why, etc..) 
+	The main purpose of this Thesis is to explore the applicability of Reinforcement Learning into the Spatial Reuse problem in Wireless Networks. Due to the variability in terms of user activity suffered at the kind of scenarios we aim to mostly focus (residential buildings, shopping malls, stadiums, trains, etc.), real-time mechanisms turn out to be necessary to dynamically configure devices so as to adjust parameters such as the frequency channel, the transmit power or the sensitivity threshold. To provide a reliable and flexible solution, we focus on Reinforcement Learning, so that wireless networks are empowered to act autonomously according to their requirements and possibilities.
 		
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Career development       								   %%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Career development}
 	\label{section:career}
-	Career paths - Impact of research - Indicators and tools 
-	
-	website: \url{https://www.upf.edu/web/fwilhelmi}
-	scholar: \url{https://scholar.google.es/citations?user=4EHXj4UAAAAJ&hl=ca&citsig=AMstHGShG4ofYlHpMmt1o34BA0qt08UFxQ}
-	orcid: \url{http://orcid.org/0000-0003-3936-535X}
-		
-	Where to publish
-	
-	Reviews
+	In order to be active in the research community, we have created the following profiles:
+	\begin{itemize}
+		\item Website: \url{https://www.upf.edu/web/fwilhelmi}
+		\item Scholar: \url{https://scholar.google.es/citations?user=4EHXj4UAAAAJ&hl=ca&citsig=AMstHGShG4ofYlHpMmt1o34BA0qt08UFxQ}
+		\item Orcid: \url{http://orcid.org/0000-0003-3936-535X}
+	\end{itemize}		
+	For a proper career development, we attempt to generate valuable and rigorous work in order to publish in relevant journals (e.g. Computer Networks\footnote{\url{https://www.journals.elsevier.com/computer-networks/}}, IEEE Intelligent Systems\footnote{\url{http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&punumber=9670}}, etc.). Furthermore, working with other researchers is fundamental to constantly improve and gain knowledge. Finally, another important aspect for a proper career development in research, is to be an active reviewer. Hence, during the first year we have participated in some reviews, and even acting as TPC in the 2nd Workshop on Data Science for Internet of Things.\footnote{\url{https://ds-iot.org/}}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% General reproducibility aspects        								   %%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{General reproducibility aspects }
 	\label{section:reproducibility}		
-	To properly share the generated knowledge, and with the aim of making reproducible the production derived from research the activity, we have created a Github account for the Wireless Networking Research Group.\footnote{\url{https://github.com/orgs/wn-upf/dashboard}}
-	
-	... EXPLAIN GUIDELINES
-	
-	RESEARCH COMPENDIUM provided under the MdM excellence unit.
-			
-	Code should be properly commented in order to be readable. Clean Architecture is followed.	
-	
-	Scenarios are very important (path-loss models, type of devices, etc.).
-		
-	What should be provided:
+	To properly share the generated knowledge, and with the aim of making reproducible the production derived from our research activity, we have created a Github account for the Wireless Networking Research Group.\footnote{\url{https://github.com/orgs/wn-upf/dashboard}}. Furthermore, in relation to the research compendium provided under the MdM excellence unit, we have established a set of guidelines for reproducibility:
 	\begin{itemize}
-		\item The code used for simulations
-		\item Instructions for running the code and input parameters 
-		\item Support material (slides, complementary information, etc.)
-		\item LaTeX files (or similar) that build the Research Paper
-	\end{itemize}		
-			
-	For instance, for the conference publication submitted to PIMRC \cite{wilhelmi2017implications}, we provided the source code used for simulations, specifying the concrete commit for the provided results. In addition, the code is prepared in a such way that simulation can be easily executed to reproduce similar results\footnote{Results may slightly vary due to the randomness added to the proposed scenario} to the ones shown in the publication.
+		\item Publish the papers in arXiv for openness.
+		\item Publish the code in Github. Furthermore, we follow the Clean Architecture, so that our code can be completely understood by a third party.
+		\item Publish the experiments in Github together with the code. 
+		\item Attach \textit{readme} files. In many occasions, it is required to provide some guidelines about how to run the code, as well as the accepted input parameters. In addition, it is worth to share other features of the simulation, such as the type of scenario used (including path-loss models, type of devices, traffic model, etc.).
+	\end{itemize}				
+	As an example, for the conference publication submitted to PIMRC \cite{wilhelmi2017implications}, we provided the source code used for simulations, specifying the concrete commit for the provided results. In addition, the code was prepared in a such way that simulations can be easily executed to reproduce similar results\footnote{Results may slightly vary due to the randomness added to the proposed scenario} to the ones shown in the publication.
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Data Management       								   %%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Data Management}
 	\label{section:data_mgm}	
+	The majority of the data I will use during the thesis will be generated by us through pro- grams and real testbeds. However, we expect some real data from FON, which may include some requirements regarding confidentiality that must be considered when the agreement is finished.
+	We expect to manage huge amounts of data. Thus, in the high performance computing (HPC) cluster, I will order and labeled data properly not only to facilitate the collaboration with group members, but also the work of the administrators. Similarly I continuously use both the personal and group’s GitHub account. In there, we are aimed to properly comment every piece of code and support material. Also, we use the issues functionality for tracking the updates on the different projects, asking for help, proposing new approaches, etc.
 
-	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Ethical issues       								   %%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -130,25 +116,21 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Intellectual Property}
 	\label{section:intellectual}		
-	There are some other cases in which knowledge cannot be freely shared, so more restrictive license must be applied to the research output generated. This is the case of an enterprise collaboration ...
-	
-	https://opensource.guide/legal/
-	
+	As a general rule, the research knowledge generated is aimed to be completely open, so that it can be freely used by other researchers. For that purpose, the contents generated in each project are published in Github under the GNU license (see Figure \ref{fig:gnu_license}), which provides a large range of permissions in exchange for using the same license. 
 	\begin{figure}[t!]
 		\centering
 		\epsfig{file=images/gnu_license.png, width=16cm}
 		\caption{GNU License}
 		\label{fig:gnu_license}
-	\end{figure}
-	
+	\end{figure}	
+	However, there are some other cases in which knowledge cannot be freely shared, so a more restrictive licensing must be applied to the generated research output. This is the case the collaboration with FON, which requires setting the scene before making any publication.	
+
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Computing needs       								   %%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Computing needs}
 	\label{section:computing}		
-	To the proper development of the experimental part of some of the ongoing projects involved in the Thesis, it is required a strong computational power. A really useful available tool is the (HPC)\footnote{\url{http://hpc.dtic.upf.edu/}}, which is composed by 15 nodes that provide high-performance calculation support to the DTIC community. 
-	
-	In order to make use of the HPC, we have spiked on running advanced jobs in parallel. Some of our latest results (\cite{wilhelmi2017implications}) have been obtained from HPC executions with the Matlab parallel toolbox. In addition, to bring the usage of the HPC to the WNRG, we have created specific instructive material\footnote{Material available in \url{https://drive.google.com/file/d/0BzOhuzdX0br5b3pWMEFUZ3JDVUk/view?usp=sharing}.} to fulfil the needs of the group. Thus, HPC is introduced so that it can be rapidly used.	
+	To the proper development of the experimental part of some of the ongoing projects involved in the Thesis, it is required a strong computational power. A really useful available tool is the (HPC)\footnote{\url{http://hpc.dtic.upf.edu/}}, which is composed by 15 nodes that provide high-performance calculation support to the DTIC community. In order to make use of the HPC, we have spiked on running advanced jobs in parallel. Some of our latest results (\cite{wilhelmi2017implications}) have been obtained from HPC executions with the Matlab parallel toolbox. In addition, to bring the usage of the HPC to the WNRG, we have created specific instructive material\footnote{Material available in \url{https://drive.google.com/file/d/0BzOhuzdX0br5b3pWMEFUZ3JDVUk/view?usp=sharing}.} to fulfil the needs of the group. Thus, HPC is introduced so that it can be rapidly used for the practical purposes of the Wireless Networking Research Group.	
 		
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Scientific and general dissemination   	    %%%%%%%%%%%%%
@@ -169,7 +151,7 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Gender}
 	\label{section:gender}	
-	Regarding the unfortunate gender imbalance that also reaches the scientific field, it is very important to be conscious of the problem and act in consequence to favour equality. For that, the most obvious act that we are able to do in research is to cite papers indiscriminately of the authors gender, which seems very natural but for many people is not. To the matter of our Thesis, we find several women researchers that stand out, and which work is not only worth to be mentioned, but a must: 
+	Regarding the unfortunate gender imbalance that also reaches the scientific field, it is very important to be conscious of the problem and act in consequence to favour equality. For that, the most obvious act that we are able to do in research is to cite papers indiscriminately of the authors gender, which seems very natural but for many people is not. To the matter of our Thesis, we find several women researchers that stand out, which work is not only worth to be mentioned, but a must: 
 	\begin{itemize}
 		\item Cristina Cano\footnote{\url{https://scholar.google.es/citations?user=3fpyaLkAAAAJ&hl=es}}
 		\item Konstantina Papagiannaki\footnote{\url{https://scholar.google.es/citations?user=xuVXDXkAAAAJ&hl=ca}}

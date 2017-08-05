@@ -93,8 +93,7 @@
 		
 		In addition to the coexistence issues (further described in Section \ref{section:coexistence_issues}) resulting from new requirements, the variability in wireless networks in terms of user arrivals and departures entails another challenge to the resource allocation problem. Thus, adaptable and fast-convergence solutions must be provided, which even increases their complexity. Henceforth, the dynamic adjustment of parameters such as the frequency channel, the transmit power, or the sensitivity, appears to suit properly in the Reinforcement Learning (RL) paradigm. In RL, input signals are used to determine the behaviour of a given system, so that historical events are considered for decision-making. To validate a real-time solution, it is very important to build an accurate model that takes into account the users behaviour. Thus, considering arrivals and departures is key for designing a solution, which is required to be provided before the environment changes. In both \cite{balachandran2002characterizing} and \cite{papadopouli2005modeling}, user arrivals are modelled as time-varying Poisson processes, such that the users arrival rate ($\lambda$) depends on the time. On these works, it is studied the users' behaviour in fully controlled environments such as University Campus or Conferences, but the mean time between user arrivals varies according to the scenario and many other factors. In particular, in the second case it is considered a two-state Markov-Modulated Poisson Process (MMPP) with mean inter-arrival times of 38 seconds and 6 minutes for accessing and leaving the system, respectively, which provides us a first idea about the maximum allowed convergence time for the developed solutions. In addition to scenarios diversification, it should be considered what will be the users behaviour in the future, as well as the algorithms to be designed must operate in the long term. 
 		
-		\section{Document Structure}
-			The remainder of this documents is structured as follows: Section \ref{section:research_problem} presents the Research Problem, as well as open challenges regarding the spatial reuse problem in WNs. The related work is shown in Section \ref{section:state_of_the_art}, as well as the current literature in the application of Reinforcement Learning (RL) to Wireless Communications. Then, Section \ref{section:contributions} presents the ongoing work and the current contributions. Finally, the working plan and the expected goals are provided in Section \ref{section:future_work}.
+		The remainder of this documents is structured as follows: Section \ref{section:research_problem} presents the Research Problem, as well as open challenges regarding the spatial reuse problem in WNs. The related work is shown in Section \ref{section:state_of_the_art}, as well as the current literature in the application of Reinforcement Learning (RL) to Wireless Communications. Then, Section \ref{section:contributions} presents the ongoing work and the current contributions. Finally, the working plan and the expected goals are provided in Section \ref{section:future_work}.
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% RESEARCH PROBLEM							      %%%%%%%%%%%%%
@@ -118,7 +117,7 @@
 				\label{fig:hidden_exposed}
 			\end{figure}		
 			
-			In order to minimise the hidden-terminal problem, the IEEE 802.11 amendment includes the optional Request-to-Send / Clear-to-Send (RTS/CTS) mechanism. It basically consists in pre-allocating the channel before performing a data transmission. To do so, both source and destination interchange RTS and CTS frames in case the channel is sensed as free from both locations. Thus, potential hidden nodes go into a virtual carrier-sensing mode in case of listening any of the two frames. The Network Allocation Vector (NAV) is responsible to handle this virtual sensing. Figure \ref{fig:dcf_operation} shows the DCF operation with RTS/CTS.					
+			The hidden-terminal problem has been previously studied in \cite{ekici2008ieee, jang2012ieee}, which show performance loss in typical wireless deployments with moderate traffic. In order to minimise the hidden-terminal problem, the IEEE 802.11 amendment includes the optional Request-to-Send / Clear-to-Send (RTS/CTS) mechanism. It basically consists in pre-allocating the channel before performing a data transmission. To do so, both source and destination interchange RTS and CTS frames in case the channel is sensed as free from both locations. Thus, potential hidden nodes go into a virtual carrier-sensing mode in case of listening any of the two frames. The Network Allocation Vector (NAV) is responsible to handle this virtual sensing. Figure \ref{fig:dcf_operation} shows the DCF operation with RTS/CTS.					
 			\begin{figure}[h!]
 				\centering
 				\epsfig{file=images/dcf_operation.png, width=12cm}
@@ -477,7 +476,7 @@
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
 		\section{TPC and CCA Relationship}
 		\label{section:tpc_cst_relationship}
-			As previously seen in Sections \ref{section:tpc} and \ref{section:cca}, adjusting either the transmit power or the CST can help to improve spatial reuse, but presents a set of trade-offs. To even improve networks performance, there is a research line that argues a relationship between the power transmitted and the sensitivity threshold, which is based on the naive principle ``to shout, you need to listen more carefully". According to \cite{thorpe2014survey}, by using free space path loss, the average Received Signal Strength (RSS) can be computed as a function of the distance between the transmitter and the receiver:		
+			As previously seen in Sections \ref{section:tpc} and \ref{section:cca}, adjusting either the transmit power or the CST can help to improve spatial reuse, but presents several trade-offs. To even improve networks performance, there is a research line that argues a relationship between the power transmitted and the sensitivity threshold, which is based on the naive principle ``to shout, you need to listen more carefully". According to \cite{thorpe2014survey}, by using free space path loss, the average Received Signal Strength (RSS) can be computed as a function of the distance between the transmitter and the receiver:		
 			\begin{equation}
 				RSS = \overline{RSS} \Big( \frac{\overline{d}}{d_{(tx,rx)}} \Big)^{\delta}
 				\nonumber
@@ -499,10 +498,10 @@
 				\caption{Transmit power and CST relationship.$D_{I_{tx,rx}}$ is represented by the smaller circle with the solid line, and $D_{cs}$ is depicted by the larger circle with the broken line. Nodes $n_h$ and $n_e$ are hidden and exposed nodes, respectively. Image retrieved from \cite{thorpe2014survey}.}
 				\label{fig:tx_cca_relation}
 			\end{figure}	
-		
+			
 			Another reason to perform CST adjustment in combination with TPC relies in the asymmetries provoked by a modification of the transmit power in an overlapping environment. The fact of creating asymmetric links generates starvation and collisions by hidden node with a higher probability, which can result into a poorer performance than if using always the same configuration \cite{kawadia2005principles}. In relation to these performance anomalies, \cite{mhatre2007interference} defends that tuning TPC and CST together is a must for improving spatial reuse in WLANs. For that, it shows that links remain symmetric in a situation in which the power transmitted and the sensitivity threshold are adjusted together. Moreover, it proposes a method based on Gibbs sampling for distributively adjusting both TPC and CCA. The algorithm is tested in dense scenarios (72 APs and 288 clients), showing remarkable improvements in the average throughput (it is increased by a $290\%$) after convergence occurs. Interestingly, from results it is derived that the power transmitted per AP is inversely proportional to the sensitivity.				
 			
-			Many other works exploit the relationship between the transmit power and the CST to enhance fairness and throughput performance in wireless networks. In \cite{jamil2015preserving}, fairness improvement is the main goal (although the overall throughput is also enhanced). To achieve that, each time a beacon is received in a STA, it is measured a parameter to adapt both CST and transmit power: $\Delta_x = Rx_p - M - PCS_{default}$, where $Rx_p$ is the power received (depends on the power transmit and the attenuation loss), $M$ is a margin (in this case it is set to 20 dB), and $PCS_{default}$ is the default minimum CST (for channels of width 20 MHz, $PCS_{default}$ is -82 dBm). Then, the difference of CST and TPC is computed from $\Delta_x$ and a given ratio
+			Many other works exploit the relationship between the transmit power and the CST to enhance fairness and throughput performance in wireless networks. In \cite{jamil2015preserving}, improving fairness is the main goal (although the overall throughput is also enhanced). To achieve that, each time a beacon is received in a STA, it is measured a parameter to adapt both CST and transmit power: $\Delta_x = Rx_p - M - PCS_{default}$, where $Rx_p$ is the power received (depends on the power transmit and the attenuation loss), $M$ is a margin (in this case it is set to 20 dB), and $PCS_{default}$ is the default minimum CST (for channels of width 20 MHz, $PCS_{default}$ is -82 dBm). Then, the difference of CST and TPC is computed from $\Delta_x$ and a given ratio
 			\begin{equation}
 				\Delta_{TPC} = ratio \times \Delta_x, \Delta_{CCA} = \Delta_x - \Delta_{TPC}
 				\nonumber
@@ -695,11 +694,29 @@
 					\caption{Temporal throughput}
 					\label{fig:ql_temporal_tpt}
 				\end{subfigure}		
-				\caption{Individual performance experienced by each overlapping WN \cite{wilhelmi2017implications}}
+				\caption{Individual performance experienced by each overlapping WN on applying decentralised Q-learning \cite{wilhelmi2017implications}}
 				\label{fig:ql_performance}
 			\end{figure}
 		
-			An extension of \cite{wilhelmi2017implications} is provided in \cite{wilhelmi2017enhancing}, in which several Multi-Armed Bandits techniques are compared to solve the same situation. Each algorithm is extensively analysed to study the actual role of each parameter (exploration, learning rate...) into network performance and interactions. Furthermore, it is shown that maximizing the individual throughput based on local information only, leads to a solution very close to the optimal proportional fairness.				
+			An extension of \cite{wilhelmi2017implications} is provided in \cite{wilhelmi2017enhancing}, in which several Multi-Armed Bandits techniques are compared to solve the same situation. Each algorithm is extensively analysed to study the actual role of each parameter (exploration, learning rate...) into network performance and interactions. Furthermore, it is shown that maximizing the individual throughput based on local information only, leads to a solution very close to the optimal proportional fairness.			
+			
+			Finally, to cover the centralised case, we have repeated the same experiments but using a shared reward, so that convergence can be speeded up. For that, some preliminary simulations are carried out to consider the proportional fairness\footnote{The proportional fairness is the logarithmic sum of the individual throughputs of each node.} as the reward used by all the overlapping nodes. As shown in Figure \ref{fig:ql_performance_centralised}, the variation of the temporal throughput is much lower (\ref{fig:proportional_fairness_qlearning_ind_tpt}), at the expense of providing a lower fairness (\ref{fig:proportional_fairness_qlearning_avg_tpt}). However, the fact of suffering a certain unfairness may result acceptable, specially in asymmetric scenarios where few nodes are in a less favourable position.
+			\begin{figure}[t!]
+				\centering
+				\begin{subfigure}[b]{0.4\textwidth}
+					\includegraphics[width=\textwidth]{images/proportional_fairness_qlearning_avg_tpt}
+					\caption{Average throughput}
+					\label{fig:proportional_fairness_qlearning_avg_tpt}
+				\end{subfigure}
+				\begin{subfigure}[b]{0.4\textwidth}
+					\includegraphics[width=\textwidth]{images/proportional_fairness_qlearning_ind_tpt}
+					\caption{Temporal throughput}
+					\label{fig:proportional_fairness_qlearning_ind_tpt}
+				\end{subfigure}		
+				\caption{Individual performance experienced by each overlapping WN on applying centralised Q-learning}
+				\label{fig:ql_performance_centralised}
+			\end{figure}
+			
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% FUTURE WORK										   %%%%%%%%%%%%%
@@ -713,94 +730,68 @@
 			* What do we want to do?
 			* In which scenarios?
 			* Centralised/Decentralised/Uncoordinated...
-
+			
+		\section{Objectives and Tasks}
+		\label{section:objectives}
 		We have put forward a range of objectives to be accomplished during the development of the research activities related to this Thesis, which are listed below together with the involved tasks:
 		\begin{itemize}
-			\item \textbf{Objective 1 (O1):} Understanding the dynamics of coexistent WNs when competing for bandwidth resources.
+			\item \textbf{Objective 1 (O1):} Understanding the dynamics of coexistent WNs when competing for bandwidth resources, as well as obtaining an extensive knowledge on the current techniques used for improving the spatial reuse in wireless networks.
 			\begin{itemize}
 				\item Extension of the current work in decentralised learning implications (DL1): Application of CTMN Framework to the work presented in \cite{wilhelmi2017implications}. Extend it to provide the centralised perspective.
-			\end{itemize}
-			\item \textbf{Objective 2 (O2):} Obtaining an extensive knowledge on the current techniques used for improving the spatial reuse in wireless networks.
-			\begin{itemize}
 				\item Make a publication collecting these techniques to provide an State-of-the-Art to the resource allocation problem in wireless networks (SOA1).
+				\item Internship in Mexico (UNAM): Reinforcement Learning with Neighbouring Performance Inference for Resource Allocation in High-Density WLANs (UN1), which aims to study channel estimation and inference techniques to envision the behaviour of an overlapping WN from a decentralised point of view.
+				\item Extrapolate the work done regarding RL in WNs in order to capture dynamics in terms of user and traffic variability (RL2). Understanding network dynamics and future requirements for dense wireless networks.
 			\end{itemize}
-			\item \textbf{Objective 3 (O3):} Understanding analytical and simulation tools for WNs performance computation.
+			\item \textbf{Objective 2 (O2):} Understanding analytical and simulation tools for WNs performance computation.
 			\begin{itemize}
 				\item Komondor simulator: launch versions 2.1 (KM1) and 2.2 (KM2) that include intelligent agents to boost the network performance. Also, write a technical report to be published (KM3).
 				\item CTMN framework collaboration with Barrachina: provide a framework to compute network throughput through the CTMN model (CTMN1).
-			\end{itemize}
-			\item \textbf{Objective 4 (O4):} Studying channel estimation and inference techniques to envision the behaviour of an overlapping WN from a decentralised point of view.
-			\begin{itemize}
-				\item Internship in Mexico (UNAM): Reinforcement Learning with Neighbouring Performance Inference for Resource Allocation in High-Density WLANs (UN1).
-			\end{itemize}		
-			\item \textbf{Objective 5 (O5):} Understanding the RL techniques, as well as Game Theoretical and Adversarial settings basics, that better suit the resource allocation problem in WNs. 
+			\end{itemize}	
+			\item \textbf{Objective 3 (O3):} Understanding the RL techniques that better suit the resource allocation problem in WNs. Study also the basics on Game Theoretical and Adversarial settings.
 			\begin{itemize}
 				\item Make a publication reviewing several techniques to prove their efficiency when applied in the wireless communications field (RL1).
-			\end{itemize}		
-			\item \textbf{Objective 6 (O6):} Understanding network dynamics and future requirements for dense wireless networks.
-			\begin{itemize}
-				\item Extrapolate the work done regarding RL in WNs in order to capture dynamics in terms of user and traffic variability (RL2). 
-			\end{itemize}		
-			\item \textbf{Objective 7 (O7):} Providing ML-based solutions to the resource allocation problem in future WLANs.
-			\begin{itemize}
-				\item Make a publication summarizing all the work done during the Thesis, which provides a ML-based solution to the resource allocation problem in future WLANs (ML1).
-			\end{itemize}		
-		\end{itemize}
-	
-		In parallel, and for the proper development of other, we define a set of objectives that differ from the main research line of this Thesis, but which provide complementary knowledge and enrich the degree of expertise in other fields.
-		\begin{itemize}
-			\item \textbf{Extra Objective 1 (EO1): FON collaboration} 
+				\item Make a publication summarizing all the work done during the Thesis, which provides a ML-based solution to the resource allocation problem in future WLANs (RL2). Providing ML-based solutions to the resource allocation problem in future WLANs.
+			\end{itemize}	
+			\item \textbf{Objective 4 (O4):} In parallel, through the FON collaboration, we find a set of tasks that differ from the main research line of this Thesis, but which provide complementary knowledge and enrich the degree of expertise in other fields.
 			\begin{itemize}
 				\item Acquire the necessary knowledge to face the AP association problem in WNs from both decentralised and centralised perspectives. Thus, provide a State-of-the-Art in the field (FON1).
 				\item Acquire the necessary knowledge for self-adjustment in WNs Thus, provide a State-of-the-Art in the field (FON2).
-			\end{itemize}
-			\item \textbf{Extra Objective 2 (EO2): Cisco collaboration} 
-			\begin{itemize}
-				\item Provide a wireless networks simulator that includes novel features in IEEE 802.11ax (CISCO1).
-			\end{itemize}
+			\end{itemize}		
 		\end{itemize}
 	
-		The Gantt diagram below places the aforementioned tasks to be done along the next two years:	
-	
-		\noindent\resizebox{\textwidth}{!}{
-			\begin{tikzpicture}[x=.5cm, y=1cm]
-				\begin{ganttchart}[vgrid,hgrid]{1}{24}
-					\gantttitle{2017}{3} \gantttitle{2018}{12} \gantttitle{2019}{9}\\
-					\gantttitlelist{10,...,12}{1} \gantttitlelist{1,...,12}{1} \gantttitlelist{1,...,9}{1} \\
-					% 
-					\ganttgroup{O1}{1}{5} \\
-					\ganttmilestone{DL1}{5} \ganttnewline
-					% 
-					\ganttgroup{O2}{1}{8} \\
-					\ganttmilestone{SOA1}{2} \ganttnewline
-					%
-					\ganttgroup{O3}{1}{8} \\
-					\ganttmilestone{KM1}{2} \ganttnewline
-					\ganttmilestone{KM2}{8} \ganttnewline
-					\ganttmilestone{KM3}{3} \ganttnewline
-					\ganttmilestone{CTMN1}{5} \ganttnewline				
-					% 
-					\ganttgroup{O4}{3}{8} \\
-					\ganttmilestone{UN1}{8} \ganttnewline
-					% 
-					\ganttgroup{O5}{9}{10} \\
-					\ganttmilestone{RL1}{10} \ganttnewline
-					%
-					\ganttgroup{O6}{9}{10} \\
-					\ganttmilestone{RL2}{10} \ganttnewline
-					%			
-					\ganttgroup{O7}{9}{10} \\
-					\ganttmilestone{ML1}{10} \ganttnewline
-					%
-					\ganttgroup{EO1}{9}{10} \\
-					\ganttmilestone{FON1}{10} \ganttnewline
-					\ganttmilestone{FON2}{10} \ganttnewline
-					%
-					\ganttgroup{EO2}{9}{10} \\
-					\ganttmilestone{CISCO1}{10} \ganttnewline
-				\end{ganttchart}
-			\end{tikzpicture}
-		}	
+%		\section{Gantt Diagram}
+%		\label{section:gantt}
+%		To provide a better visualization of the development of the tasks presented in Section \ref{section:objectives}, we provide the following Gantt diagram:
+%			
+%		\noindent\resizebox{\textwidth}{!}{
+%			\begin{tikzpicture}[x=.5cm, y=1cm]
+%				\begin{ganttchart}[vgrid,hgrid]{1}{24}
+%					\gantttitle{2017}{3} \gantttitle{2018}{12} \gantttitle{2019}{9}\\
+%					\gantttitlelist{10,...,12}{1} \gantttitlelist{1,...,12}{1} \gantttitlelist{1,...,9}{1} \\
+%					% 
+%					\ganttgroup{DL1}{1}{5} \\
+%					\ganttgroup{SOA1}{1}{5} \\
+%					\ganttgroup{UN1}{1}{5} \\
+%					\ganttgroup{RL1}{1}{5} \\
+%					\ganttmilestone{O1}{5} \ganttnewline
+%					% 
+%					\ganttgroup{KM1}{1}{2} \\
+%					\ganttgroup{KM2}{1}{2} \\
+%					\ganttgroup{KM3}{1}{2} \\
+%					\ganttgroup{CTMN1}{1}{2} \\
+%					\ganttmilestone{O2}{2} \\		
+%					% 
+%					\ganttgroup{ML1}{1}{2} \\
+%					\ganttgroup{ML2}{1}{2} \\
+%					\ganttmilestone{O3}{2} \\		
+%					% 
+%					\ganttgroup{FON1}{3}{8} \\
+%					\ganttgroup{FON2}{3}{8} \\
+%					\ganttmilestone{O4}{8} \ganttnewline
+%					% 
+%				\end{ganttchart}
+%			\end{tikzpicture}
+%		}	
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% BIBLIOGRAPHY					      				   %%%%%%%%%%%%%

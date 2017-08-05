@@ -2,7 +2,6 @@
 \select@language {english}
 \select@language {english}
 \contentsline {chapter}{\numberline {1}{\MakeUppercase { Motivation}}}{3}
-\contentsline {section}{\numberline {1.1}Document Structure}{4}
 \contentsline {chapter}{\numberline {2}{\MakeUppercase { Research Problem}}}{5}
 \contentsline {section}{\numberline {2.1}Coexistence Issues in IEEE 802.11 WLANs}{5}
 \contentsline {section}{\numberline {2.2}Scenarios}{6}
@@ -24,3 +23,4 @@
 \contentsline {section}{\numberline {4.3}Preliminary Results}{37}
 \contentsline {chapter}{\numberline {5}{\MakeUppercase { Planning and Future Work}}}{39}
 \contentsline {section}{\numberline {5.1}Considerations for building a solution}{39}
+\contentsline {section}{\numberline {5.2}Objectives and Tasks}{39}

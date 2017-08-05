@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.12.1)  19 JUL 2017 17:21
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.12.1)  1 AUG 2017 16:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1387,11 +1387,10 @@ Overfull \hbox (33.32574pt too wide) in paragraph at lines 87--88
 th Col-li-sion Avoid-ance (CSMA/CA)
  []
 
-[3]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 96.
- [4]
+[3] [4]
 Chapter 2.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 108.
 File: images/hidden_exposed.png Graphic file (type QTm)
 <use  "images/hidden_exposed.png" > [5
 
@@ -1402,20 +1401,22 @@ File: images/dcf_operation.png Graphic file (type QTm)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-File: images/residential_ax_1.png Graphic file (type QTm)
-<use  "images/residential_ax_1.png" >
-File: images/residential_ax_2.png Graphic file (type QTm)
- <use  "images/residential_ax_2.png" >
 [6]
+File: images/residential_ax_1.png Graphic file (type QTm)
+ <use  "images/residential_ax_1.png" >
+File: images/residential_ax_2.png Graphic file (type QTm)
+
+<use  "images/residential_ax_2.png" >
 File: images/enterprise_ax_1.png Graphic file (type QTm)
  <use  "images/enterprise_ax_1.png" >
 File: images/enterprise_ax_2.png Graphic file (type QTm)
- <use  "images/enterprise_ax_2.png" >
-[7]
+
+<use  "images/enterprise_ax_2.png" > [7]
 File: images/large_ax.png Graphic file (type QTm)
  <use  "images/large_ax.png" >
 File: images/residential_large_ax.png Graphic file (type QTm)
- <use  "images/residential_large_ax.png" >
+
+<use  "images/residential_large_ax.png" >
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1438,11 +1439,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 246.
+               Default added (so using `tbp') on input line 245.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 264.
+               Default added (so using `tbp') on input line 263.
 
 [12] [13] [14]
 Missing character: There is no   in font cmr12!
@@ -1470,7 +1471,7 @@ File: images/jamil2014_1.png Graphic file (type QTm)
 File: images/jamil2014_2.png Graphic file (type QTm)
 
 <use  "images/jamil2014_2.png" >
-Overfull \hbox (16.26877pt too wide) in paragraph at lines 412--427
+Overfull \hbox (16.26877pt too wide) in paragraph at lines 411--426
 \OT1/ptm/m/n/12 where $[]$ is the STA's trans-mis-sion power in dBm at the an-t
 enna con-nec-tor, and $[][]$
  []
@@ -1486,7 +1487,7 @@ File: images/dsc_problems.png Graphic file (type QTm)
  <use  "images/dsc_problems.png" >
 
 LaTeX Warning: Reference `fig:enhanced_dsc' on page 23 undefined on input line 
-452.
+451.
 
 [23] [24]
 File: images/tx_cca_relation.png Graphic file (type QTm)
@@ -1510,7 +1511,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [29]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 607.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 606.
  [30]
 Missing character: There is no ’ in font ptmr7t!
 
@@ -1525,7 +1526,7 @@ File: images/neural_network_topology.png Graphic file (type QTm)
 ]
 Chapter 4.
 [35]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 671.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 670.
 
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -1539,10 +1540,18 @@ File: images/e_1_a1_g095_avg_tpt.eps Graphic file (type eps)
  <images/e_1_a1_g095_avg_tpt.eps>
 File: images/e_1_a1_g095_ind_tpt.eps Graphic file (type eps)
 
-<images/e_1_a1_g095_ind_tpt.eps> [37] [38]
+<images/e_1_a1_g095_ind_tpt.eps>
+File: images/proportional_fairness_qlearning_avg_tpt.eps Graphic file (type eps
+)
+
+<images/proportional_fairness_qlearning_avg_tpt.eps>
+File: images/proportional_fairness_qlearning_ind_tpt.png Graphic file (type QTm
+)
+
+<use  "images/proportional_fairness_qlearning_ind_tpt.png" > [37] [38]
 Chapter 5.
 
-Overfull \hbox (40.79134pt too wide) in paragraph at lines 712--716
+Overfull \hbox (40.79134pt too wide) in paragraph at lines 729--733
 \OT1/ptm/m/n/12 * Met-rics * What do we want to do? * In which sce-nar-ios? * C
 en-tralised/Decentralised/Uncoordinated... 
  []
@@ -1550,38 +1559,25 @@ en-tralised/Decentralised/Uncoordinated...
 [39
 
 
+] (./thesis_proposal.bbl [40] [41
+
+
 ]
-Overfull \hbox (0.28032pt too wide) in paragraph at lines 759--760
-[]\OT1/ptm/m/n/12 Provide a wire-less net-works sim-u-la-tor that in-cludes nov
-el fea-tures in IEEE 802.11ax
- []
-
-(./thesis_proposal.bbl
-Underfull \vbox (badness 2486) has occurred while \output is active []
-
- [40]
-Overfull \vbox (142.6329pt too high) has occurred while \output is active []
-
-
-[41] [42
-
-
-] [43]
-Underfull \hbox (badness 1838) in paragraph at lines 111--116
+Underfull \hbox (badness 1838) in paragraph at lines 123--128
 []\OT1/ptm/m/n/12 Jeremy K Chen, Gus-tavo De Ve-ciana, and Theodore S Rap-pa-po
 rt.  Im-proved
  []
 
-[44] [45] [46] [47] [48]
+[42] [43] [44] [45] [46]
 Missing character: There is no ó in font ptmr7t!
 Missing character: There is no ç in font ptmr7t!
 
-Underfull \hbox (badness 1163) in paragraph at lines 493--498
+Underfull \hbox (badness 1163) in paragraph at lines 505--510
 []\OT1/ptm/m/n/12 Cano Cristina Jon-s-son An-ders Gmez Vi-cen Neu Gergely Bar-r
 achina Ser-gio Wil-
  []
 
-) [49] (./thesis_proposal.aux)
+) [47] (./thesis_proposal.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1592,12 +1588,12 @@ LaTeX Warning: There were undefined references.
 ### bottom level
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
- 30929 strings out of 493591
- 666451 string characters out of 6143546
- 738785 words of memory out of 5000000
- 33759 multiletter control sequences out of 15000+600000
+ 30340 strings out of 493591
+ 653550 string characters out of 6143546
+ 690405 words of memory out of 5000000
+ 33168 multiletter control sequences out of 15000+600000
  21777 words of font info for 64 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 55i,17n,77p,10385b,3154s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,17n,77p,10385b,3030s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis_proposal.pdf (51 pages).
+Output written on thesis_proposal.pdf (49 pages).
