@@ -1,26 +1,30 @@
 \select@language {english}
 \select@language {english}
 \select@language {english}
-\contentsline {chapter}{\numberline {1}{\MakeUppercase { Motivation}}}{3}
-\contentsline {chapter}{\numberline {2}{\MakeUppercase { Research Problem}}}{5}
-\contentsline {section}{\numberline {2.1}Coexistence Issues in IEEE 802.11 WLANs}{5}
-\contentsline {section}{\numberline {2.2}Scenarios}{6}
-\contentsline {section}{\numberline {2.3}Spatial Reuse in Overlapping IEEE 802.11 WLANs}{9}
-\contentsline {chapter}{\numberline {3}{\MakeUppercase { State of the Art}}}{11}
-\contentsline {section}{\numberline {3.1}Dynamic Channel Allocation}{11}
-\contentsline {section}{\numberline {3.2}Transmit Power Control}{16}
-\contentsline {section}{\numberline {3.3}Carrier Sense Threshold Adjustment}{20}
-\contentsline {section}{\numberline {3.4}TPC and CCA Relationship}{25}
-\contentsline {section}{\numberline {3.5}Beamforming}{27}
-\contentsline {section}{\numberline {3.6}Reinforcement Learning}{28}
-\contentsline {subsection}{\numberline {3.6.1}Reinforcement Learning for improving Spatial Reuse in WNs}{30}
-\contentsline {chapter}{\numberline {4}{\MakeUppercase { Current Contributions and Ongoing Work}}}{35}
-\contentsline {section}{\numberline {4.1}Wireless Networking Through Learning}{35}
-\contentsline {section}{\numberline {4.2}Other Projects}{35}
-\contentsline {subsection}{\numberline {4.2.1}Analytical Models and Simulators}{36}
-\contentsline {subsection}{\numberline {4.2.2}Development of an IEEE 802.11ax Event-Based Simulator}{36}
-\contentsline {subsection}{\numberline {4.2.3}AP Association and Self-Managed Networks through Learning}{36}
-\contentsline {section}{\numberline {4.3}Preliminary Results}{37}
-\contentsline {chapter}{\numberline {5}{\MakeUppercase { Planning and Future Work}}}{39}
-\contentsline {section}{\numberline {5.1}Considerations for building a solution}{39}
-\contentsline {section}{\numberline {5.2}Objectives and Tasks}{39}
+\contentsline {chapter}{\numberline {1}{\MakeUppercase { Introduction}}}{3}
+\contentsline {section}{\numberline {1.1}Motivation}{3}
+\contentsline {section}{\numberline {1.2}Open Challenges}{4}
+\contentsline {section}{\numberline {1.3}Contributions}{4}
+\contentsline {chapter}{\numberline {2}{\MakeUppercase { Research Problem}}}{7}
+\contentsline {section}{\numberline {2.1}Coexistence Issues in IEEE 802.11 WLANs}{7}
+\contentsline {section}{\numberline {2.2}Scenarios}{9}
+\contentsline {section}{\numberline {2.3}Spatial Reuse in Overlapping IEEE 802.11 WLANs}{11}
+\contentsline {section}{\numberline {2.4}Autonomous Management in Wireless Networks}{13}
+\contentsline {chapter}{\numberline {3}{\MakeUppercase { State of the Art}}}{15}
+\contentsline {section}{\numberline {3.1}Dynamic Channel Allocation}{15}
+\contentsline {section}{\numberline {3.2}Transmit Power Control}{20}
+\contentsline {section}{\numberline {3.3}Carrier Sense Threshold Adjustment}{24}
+\contentsline {subsection}{\numberline {3.3.1}Dynamic Sensitivity Threshold}{25}
+\contentsline {subsection}{\numberline {3.3.2}Previous work in CST adjustment}{28}
+\contentsline {section}{\numberline {3.4}TPC and CCA Relationship}{29}
+\contentsline {section}{\numberline {3.5}Beamforming}{31}
+\contentsline {section}{\numberline {3.6}Reinforcement Learning}{32}
+\contentsline {subsection}{\numberline {3.6.1}Reinforcement Learning for improving Spatial Reuse in WNs}{35}
+\contentsline {chapter}{\numberline {4}{\MakeUppercase { Current Contributions and Ongoing Work}}}{39}
+\contentsline {section}{\numberline {4.1}Wireless Networking Through Learning}{39}
+\contentsline {section}{\numberline {4.2}Other Projects}{40}
+\contentsline {subsection}{\numberline {4.2.1}Analytical Models and Simulators}{40}
+\contentsline {subsection}{\numberline {4.2.2}Development of an IEEE 802.11ax Event-Based Simulator}{40}
+\contentsline {subsection}{\numberline {4.2.3}AP Association and Self-Managed Networks through Learning}{41}
+\contentsline {section}{\numberline {4.3}Preliminary Results}{41}
+\contentsline {chapter}{\numberline {5}{\MakeUppercase { Planning and Future Work}}}{43}

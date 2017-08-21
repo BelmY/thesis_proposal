@@ -1,9 +1,4 @@
-\begin{thebibliography}{10}
-
-\bibitem{akella2007self}
-Aditya Akella, Glenn Judd, Srinivasan Seshan, and Peter Steenkiste.
-\newblock Self-management in chaotic wireless deployments.
-\newblock {\em Wireless Networks}, 13(6):737--755, 2007.
+\begin{thebibliography}{100}
 
 \bibitem{zhong2015issues}
 Zhenzhe Zhong, Parag Kulkarni, Fengming Cao, Zhong Fan, and Simon Armour.
@@ -11,24 +6,22 @@ Zhenzhe Zhong, Parag Kulkarni, Fengming Cao, Zhong Fan, and Simon Armour.
 \newblock In {\em Wireless Communications and Mobile Computing Conference
   (IWCMC), 2015 International}, pages 947--951. IEEE, 2015.
 
+\bibitem{akella2007self}
+Aditya Akella, Glenn Judd, Srinivasan Seshan, and Peter Steenkiste.
+\newblock Self-management in chaotic wireless deployments.
+\newblock {\em Wireless Networks}, 13(6):737--755, 2007.
+
 \bibitem{herzen2015csma}
 Julien Herzen, Albert Banchs, Vsevolod Shneer, and Patrick Thiran.
 \newblock Csma/ca in time and frequency domains.
 \newblock In {\em Network Protocols (ICNP), 2015 IEEE 23rd International
   Conference on}, pages 256--266. IEEE, 2015.
 
-\bibitem{balachandran2002characterizing}
-Anand Balachandran, Geoffrey~M Voelker, Paramvir Bahl, and P~Venkat Rangan.
-\newblock Characterizing user behavior and network performance in a public
-  wireless lan.
-\newblock In {\em ACM SIGMETRICS Performance Evaluation Review}, volume~30,
-  pages 195--205. ACM, 2002.
-
-\bibitem{papadopouli2005modeling}
-Maria Papadopouli, Haipeng Shen, and Manolis Spanakis.
-\newblock Modeling client arrivals at access points in wireless campus-wide
-  networks.
-\newblock In {\em LANMAN}, 2005.
+\bibitem{wang2012combating}
+Lu~Wang, Kaishun Wu, and Mounir Hamdi.
+\newblock Combating hidden and exposed terminal problems in wireless networks.
+\newblock {\em IEEE Transactions on Wireless Communications},
+  11(11):4204--4213, 2012.
 
 \bibitem{ekici2008ieee}
 Ozgur Ekici and Abbas Yongacoglu.
@@ -52,6 +45,50 @@ Jo{\~a}o~L Sobrinho, Roland De~Haan, and Jos{\'e}~M Brazio.
 Boris Bellalta.
 \newblock Ieee 802.11 ax: High-efficiency wlans.
 \newblock {\em IEEE Wireless Communications}, 23(1):38--46, 2016.
+
+\bibitem{balachandran2002characterizing}
+Anand Balachandran, Geoffrey~M Voelker, Paramvir Bahl, and P~Venkat Rangan.
+\newblock Characterizing user behavior and network performance in a public
+  wireless lan.
+\newblock In {\em ACM SIGMETRICS Performance Evaluation Review}, volume~30,
+  pages 195--205. ACM, 2002.
+
+\bibitem{papadopouli2005modeling}
+Maria Papadopouli, Haipeng Shen, and Manolis Spanakis.
+\newblock Modeling client arrivals at access points in wireless campus-wide
+  networks.
+\newblock In {\em LANMAN}, 2005.
+
+\bibitem{littman1993distributed}
+Michael Littman and Justin Boyan.
+\newblock A distributed reinforcement learning scheme for network routing.
+\newblock In {\em Proceedings of the international workshop on applications of
+  neural networks to telecommunications}, pages 45--51. Psychology Press, 1993.
+
+\bibitem{bojovic2011supervised}
+Biljana Bojovic, Nicola Baldo, Jaume Nin-Guerrero, and Paolo Dini.
+\newblock A supervised learning approach to cognitive access point selection.
+\newblock In {\em GLOBECOM Workshops (GC Wkshps), 2011 IEEE}, pages 1100--1105.
+  IEEE, 2011.
+
+\bibitem{bojovic2012neural}
+Biljana Bojovic, Nicola Baldo, and Paolo Dini.
+\newblock A neural network based cognitive engine for ieee 802.11 wlan access
+  point selection.
+\newblock In {\em Consumer Communications and Networking Conference (CCNC),
+  2012 IEEE}, pages 864--868. IEEE, 2012.
+
+\bibitem{combes2014optimal}
+Richard Combes, Alexandre Proutiere, Donggyu Yun, Jungseul Ok, and Yung Yi.
+\newblock Optimal rate sampling in 802.11 systems.
+\newblock In {\em INFOCOM, 2014 Proceedings IEEE}, pages 2760--2767. IEEE,
+  2014.
+
+\bibitem{miozzo2015distributed}
+Marco Miozzo, Lorenza Giupponi, Michele Rossi, and Paolo Dini.
+\newblock Distributed q-learning for energy harvesting heterogeneous networks.
+\newblock In {\em Communication Workshop (ICCW), 2015 IEEE International
+  Conference on}, pages 2006--2011. IEEE, 2015.
 
 \bibitem{ling2006joint}
 Xiang Ling and Kwan~Lawrence Yeung.
@@ -126,6 +163,30 @@ Jeremy~K Chen, Gustavo De~Veciana, and Theodore~S Rappaport.
 \newblock In {\em Global Telecommunications Conference, 2007. GLOBECOM'07.
   IEEE}, pages 4790--4795. IEEE, 2007.
 
+\bibitem{baid2015understanding}
+Akash Baid and Dipankar Raychaudhuri.
+\newblock Understanding channel selection dynamics in dense wi-fi networks.
+\newblock {\em IEEE Communications Magazine}, 53(1):110--117, 2015.
+
+\bibitem{brelaz1979new}
+Daniel Br{\'e}laz.
+\newblock New methods to color the vertices of a graph.
+\newblock {\em Communications of the ACM}, 22(4):251--256, 1979.
+
+\bibitem{villegas2009frequency}
+Eduard~Garcia Villegas, Rafael~Vidal Ferr{\'e}, and Josep Paradells.
+\newblock Frequency assignments in ieee 802.11 wlans with efficient spectrum
+  sharing.
+\newblock {\em Wireless Communications and Mobile Computing}, 9(8):1125--1140,
+  2009.
+
+\bibitem{raniwala2004centralized}
+Ashish Raniwala, Kartik Gopalan, and Tzi-cker Chiueh.
+\newblock Centralized channel assignment and routing algorithms for
+  multi-channel wireless mesh networksrancesc.
+\newblock {\em ACM SIGMOBILE Mobile Computing and Communications Review},
+  8(2):50--65, 2004.
+
 \bibitem{achanta2004method}
 Murali Achanta.
 \newblock Method and apparatus for least congested channel scan for wireless
@@ -183,30 +244,6 @@ Arunesh Mishra, Vivek Shrivastava, Dheeraj Agrawal, Suman Banerjee, and Samrat
   environments.
 \newblock In {\em Proceedings of the 12th annual international conference on
   Mobile computing and networking}, pages 170--181. ACM, 2006.
-
-\bibitem{baid2015understanding}
-Akash Baid and Dipankar Raychaudhuri.
-\newblock Understanding channel selection dynamics in dense wi-fi networks.
-\newblock {\em IEEE Communications Magazine}, 53(1):110--117, 2015.
-
-\bibitem{brelaz1979new}
-Daniel Br{\'e}laz.
-\newblock New methods to color the vertices of a graph.
-\newblock {\em Communications of the ACM}, 22(4):251--256, 1979.
-
-\bibitem{villegas2009frequency}
-Eduard~Garcia Villegas, Rafael~Vidal Ferr{\'e}, and Josep Paradells.
-\newblock Frequency assignments in ieee 802.11 wlans with efficient spectrum
-  sharing.
-\newblock {\em Wireless Communications and Mobile Computing}, 9(8):1125--1140,
-  2009.
-
-\bibitem{raniwala2004centralized}
-Ashish Raniwala, Kartik Gopalan, and Tzi-cker Chiueh.
-\newblock Centralized channel assignment and routing algorithms for
-  multi-channel wireless mesh networksrancesc.
-\newblock {\em ACM SIGMOBILE Mobile Computing and Communications Review},
-  8(2):50--65, 2004.
 
 \bibitem{herzen2013distributed}
 Julien Herzen, Ruben Merz, and Patrick Thiran.
@@ -315,14 +352,6 @@ Imad Jamil, Laurent Cariou, and Jean-Francois Helard.
 \newblock In {\em Telecommunications (ICT), 2014 21st International Conference
   on}, pages 303--307. IEEE, 2014.
 
-\bibitem{afifi2016throughput}
-Wessam Afifi, Enrico-Henrik Rantala, Esa Tuomaala, Sayantan Choudhury, and
-  Marwan Krunz.
-\newblock Throughput-fairness tradeoff evaluation for next-generation wlans
-  with adaptive clear channel assessment.
-\newblock In {\em Communications (ICC), 2016 IEEE International Conference on},
-  pages 1--6. IEEE, 2016.
-
 \bibitem{smith2015dynamic}
 G~Smith.
 \newblock Dynamic sensitivity control-v2.
@@ -373,6 +402,56 @@ M~Shahwaiz Afaqui, Eduard Garcia-Villegas, and Elena Lopez-Aguilera.
 \newblock In {\em Wireless Communications and Networking Conference (WCNC),
   2016 IEEE}, pages 1--6. IEEE, 2016.
 
+\bibitem{thorpe2009ieee802}
+Christina Thorpe, Sean Murphy, and Liam Murphy.
+\newblock Ieee802. 11k enabled adaptive physical carrier sense mechanism for
+  wireless networks (k-apcs).
+\newblock In {\em Proceedings of the 4th ACM workshop on Performance monitoring
+  and measurement of heterogeneous wireless and wired networks}, pages
+  209--215. ACM, 2009.
+
+\bibitem{thorpe2011ieee802}
+Christina Thorpe, Sean Murphy, and Liam Murphy.
+\newblock Ieee802. 11k enabled adaptive carrier sense management mechanism
+  (kapcs2).
+\newblock In {\em Integrated Network Management (IM), 2011 IFIP/IEEE
+  International Symposium on}, pages 509--515. IEEE, 2011.
+
+\bibitem{ieee2002ieee}
+IEEE Computer Society LAN/MAN~Standards Committee et~al.
+\newblock Ieee standard for information technology telecommuni-cations and
+  information exchange between systems-local and metropolitan area
+  networks-specific requirements part 11: Wireless lan medium-access control
+  (mac) and physical layer (phy) specifications.
+\newblock {\em IEEE Std 802.11\^{}< TM>-2007}, 2002.
+
+\bibitem{zhu2006adaptive}
+Jing Zhu, Benjamin Metzler, Xingang Guo, and York Liu.
+\newblock Adaptive csma for scalable network capacity in high-density wlan: A
+  hardware prototyping approach.
+\newblock In {\em Infocom}, 2006.
+
+\bibitem{afifi2016throughput}
+Wessam Afifi, Enrico-Henrik Rantala, Esa Tuomaala, Sayantan Choudhury, and
+  Marwan Krunz.
+\newblock Throughput-fairness tradeoff evaluation for next-generation wlans
+  with adaptive clear channel assessment.
+\newblock In {\em Communications (ICC), 2016 IEEE International Conference on},
+  pages 1--6. IEEE, 2016.
+
+\bibitem{hua2009cooperative}
+Yao Hua, Qian Zhang, and Zhisheng Niu.
+\newblock A cooperative mac protocol with virtual-antenna array support in a
+  multi-ap wlan system.
+\newblock {\em IEEE transactions on wireless communications}, 8(9), 2009.
+
+\bibitem{hua2009distributed}
+Yao Hua, Qian Zhang, and Zhisheng Niu.
+\newblock Distributed physical carrier sensing adaptation scheme in cooperative
+  map wlan.
+\newblock In {\em Global Telecommunications Conference, 2009. GLOBECOM 2009.
+  IEEE}, pages 1--6. IEEE, 2009.
+
 \bibitem{thorpe2014survey}
 Christina Thorpe and Liam Murphy.
 \newblock A survey of adaptive carrier sensing mechanisms for ieee 802.11
@@ -412,6 +491,73 @@ Jing Zhu, Xingang Guo, L~Lily Yang, and W~Steven Conner.
   physical carrier sensing.
 \newblock In {\em Communications, 2004 IEEE International Conference on},
   volume~7, pages 4004--4011. IEEE, 2004.
+
+\bibitem{van1988beamforming}
+Barry~D Van~Veen and Kevin~M Buckley.
+\newblock Beamforming: A versatile approach to spatial filtering.
+\newblock {\em IEEE assp magazine}, 5(2):4--24, 1988.
+
+\bibitem{athan2004antenna}
+RAMRAMAN ATHAN.
+\newblock Antenna beamforming and power control for ad hoc networks.
+\newblock {\em Mobile ad hoc networking}, page 139, 2004.
+
+\bibitem{ramanathan2001performance}
+Ram Ramanathan.
+\newblock On the performance of ad hoc networks with beamforming antennas.
+\newblock In {\em Proceedings of the 2nd ACM international symposium on Mobile
+  ad hoc networking \& computing}, pages 95--105. ACM, 2001.
+
+\bibitem{spyropoulos2003capacity}
+Akis Spyropoulos and Cauligi~S Raghavendra.
+\newblock Capacity bounds for ad-hoc networks using directional antennas.
+\newblock In {\em Communications, 2003. ICC'03. IEEE International Conference
+  on}, volume~1, pages 348--352. IEEE, 2003.
+
+\bibitem{yi2003capacity}
+Su~Yi, Yong Pei, and Shivkumar Kalyanaraman.
+\newblock On the capacity improvement of ad hoc wireless networks using
+  directional antennas.
+\newblock In {\em Proceedings of the 4th ACM international symposium on Mobile
+  ad hoc networking \& computing}, pages 108--116. ACM, 2003.
+
+\bibitem{alawieh2009improving}
+Basel Alawieh, Yongning Zhang, Chadi Assi, and Hussein Mouftah.
+\newblock Improving spatial reuse in multihop wireless networks-a survey.
+\newblock {\em IEEE Communications Surveys \& Tutorials}, 11(3), 2009.
+
+\bibitem{choudhury2005performance}
+Romit~Roy Choudhury and Nitin~H Vaidya.
+\newblock Performance of ad hoc routing using directional antennas.
+\newblock {\em Ad Hoc Networks}, 3(2):157--173, 2005.
+
+\bibitem{arora2004directional}
+Aman Arora, Marwan Krunz, and Alaa Muqattash.
+\newblock Directional medium access protocol (dmap) with power control for
+  wireless ad hoc networks.
+\newblock In {\em Global Telecommunications Conference, 2004. GLOBECOM'04.
+  IEEE}, volume~5, pages 2797--2801. IEEE, 2004.
+
+\bibitem{wang2005syn}
+Jianfeng Wang, Yuguang Fang, and Dapeng Wu.
+\newblock Syn-dmac: A directional mac protocol for ad hoc networks with
+  synchronization.
+\newblock In {\em Military Communications Conference, 2005. MILCOM 2005. IEEE},
+  pages 2258--2263. IEEE, 2005.
+
+\bibitem{fahmy2002ad}
+Nader~S Fahmy, Terence~D Todd, and Vytas Kezys.
+\newblock Ad hoc networks with smart antennas using ieee 802.11-based
+  protocols.
+\newblock In {\em Communications, 2002. ICC 2002. IEEE International Conference
+  on}, volume~5, pages 3144--3148. IEEE, 2002.
+
+\bibitem{nasipuri2002power}
+Asis Nasipuri, Kai Li, and Uma~Reddy Sappidi.
+\newblock Power consumption and throughput in mobile ad hoc networks using
+  directional antennas.
+\newblock In {\em Computer Communications and Networks, 2002. Proceedings.
+  Eleventh International Conference on}, pages 620--626. IEEE, 2002.
 
 \bibitem{sutton1998reinforcement}
 Richard~S Sutton and Andrew~G Barto.
@@ -533,6 +679,28 @@ Giuseppe Bianchi.
   function.
 \newblock {\em IEEE Journal on selected areas in communications},
   18(3):535--547, 2000.
+
+\bibitem{carneiro2010ns}
+Gustavo Carneiro.
+\newblock Ns-3: Network simulator 3.
+\newblock In {\em UTM Lab Meeting April}, volume~20, 2010.
+
+\bibitem{issariyakul2011introduction}
+Teerawat Issariyakul and Ekram Hossain.
+\newblock {\em Introduction to network simulator NS2}.
+\newblock Springer Science \& Business Media, 2011.
+
+\bibitem{modeler2009opnet}
+OPNET Modeler.
+\newblock Opnet technologies inc, 2009.
+
+\bibitem{varga2008overview}
+Andr{\'a}s Varga and Rudolf Hornig.
+\newblock An overview of the omnet++ simulation environment.
+\newblock In {\em Proceedings of the 1st international conference on Simulation
+  tools and techniques for communications, networks and systems \& workshops},
+  page~60. ICST (Institute for Computer Sciences, Social-Informatics and
+  Telecommunications Engineering), 2008.
 
 \bibitem{barrachina2017komondor}
 S.~Barrachina-Mu\~noz and F.~Wilhelmi.

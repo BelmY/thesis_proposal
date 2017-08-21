@@ -4,40 +4,40 @@ The top-level auxiliary file: thesis_proposal.aux
 The style file: unsrt.bst
 Database file #1: bib.bib
 Warning--entry type for "tgax2016draft" isn't style-file defined
---line 383 of file bib.bib
-Repeated entry---line 492 of file bib.bib
+--line 392 of file bib.bib
+Repeated entry---line 501 of file bib.bib
  : @inproceedings{balachandran2002characterizing
  :                                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 503 of file bib.bib
+Repeated entry---line 512 of file bib.bib
  : @inproceedings{papadopouli2005modeling
  :                                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 694 of file bib.bib
+Repeated entry---line 765 of file bib.bib
  : @inproceedings{riihijarvi2005frequency
  :                                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 714 of file bib.bib
+Repeated entry---line 785 of file bib.bib
  : @article{mishra2005weighted
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 829 of file bib.bib
+Repeated entry---line 975 of file bib.bib
  : @inproceedings{bennis2011distributed
  :                                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 888 of file bib.bib
+Repeated entry---line 1034 of file bib.bib
  : @inproceedings{agarwal2001distributed
  :                                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1014 of file bib.bib
+Repeated entry---line 1267 of file bib.bib
  : @article{kawadia2005principles
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1025 of file bib.bib
+Repeated entry---line 1278 of file bib.bib
  : @article{mishra2005weighted
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1076 of file bib.bib
+Repeated entry---line 1329 of file bib.bib
  : @article{raniwala2004centralized
  :                                 ,
 I'm skipping whatever remains of this entry
@@ -75,45 +75,45 @@ Warning--empty journal in bellalta2017learning
 Too many commas in name 1 of "Barrachina, Sergio, Bellalta, Boris and Wilhelmi, Francesc" for entry barrachina2017ctmn
 while executing---line 944 of file unsrt.bst
 Warning--empty journal in barrachina2017ctmn
-You've used 85 entries,
+You've used 112 entries,
             1791 wiz_defined-function locations,
-            885 strings with 20593 characters,
-and the built_in function-call counts, 25219 in all, are:
-= -- 2484
-> -- 920
-< -- 56
-+ -- 339
-- -- 254
-* -- 1568
-:= -- 3572
-add.period$ -- 297
-call.type$ -- 85
-change.case$ -- 83
+            1010 strings with 25805 characters,
+and the built_in function-call counts, 33456 in all, are:
+= -- 3311
+> -- 1186
+< -- 77
++ -- 438
+- -- 326
+* -- 2023
+:= -- 4690
+add.period$ -- 393
+call.type$ -- 112
+change.case$ -- 109
 chr.to.int$ -- 0
-cite$ -- 89
-duplicate$ -- 1250
-empty$ -- 2477
-format.name$ -- 254
-if$ -- 5999
+cite$ -- 116
+duplicate$ -- 1692
+empty$ -- 3304
+format.name$ -- 326
+if$ -- 8017
 int.to.chr$ -- 0
-int.to.str$ -- 85
-missing$ -- 85
-newline$ -- 427
-num.names$ -- 84
-pop$ -- 348
+int.to.str$ -- 112
+missing$ -- 112
+newline$ -- 561
+num.names$ -- 111
+pop$ -- 481
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 721
+skip$ -- 997
 stack$ -- 0
-substring$ -- 1851
-swap$ -- 502
-text.length$ -- 56
+substring$ -- 2432
+swap$ -- 702
+text.length$ -- 77
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 267
-width$ -- 87
-write$ -- 974
+while$ -- 347
+width$ -- 115
+write$ -- 1284
 (There were 24 error messages)
