@@ -85,25 +85,34 @@
 	
 		\section{Motivation}
 		\label{section:motivation}
-			Due to the growing popularity of wireless deployments, specially the ones based in the IEEE 802.11 standard, it is very common to find overlapping Wireless Networks (WNs) that squander the bandwidth resources. This is mostly provoked by a lack of organization and/or agreement at sharing the available spectrum, and the problem scales up as the number of overlapping nodes increases. According to \cite{zhong2015issues}, the network performance is severely deteriorated as density increases, specially if the number of Overlapping Basic Service Sets (OBSSs) is greater than 1. A clear evidence about neighbours disregarding can be found in the power level at which devices transmit, which is typically set to the maximum by default, regardless of the distance between nodes and the channel occupancy \cite{akella2007self}. If we consider dense scenarios such as stadiums, trains or apartment buildings, minimising coexistence issues results to be a challenging task. Three domains are mainly being studied to enhance the performance in a WN:
+			Due to the growing popularity of wireless deployments, specially the ones based in the IEEE 802.11 standard, it is very common to find overlapping Wireless Networks (WNs) that squander the bandwidth resources. This is mostly provoked by a lack of organization and/or agreement at sharing the available spectrum, and the problem scales up as the number of overlapping networks increases. According to \cite{zhong2015issues}, the network performance is severely deteriorated as density increases, specially if two or more Overlapping Basic Service Sets (OBSSs) coexist. A clear evidence about neighbours disregarding can be found in the power level at which devices transmit, which is typically set to the maximum by default, regardless of the distance between nodes and the channel occupancy \cite{akella2007self}. If we consider dense scenarios such as stadiums, trains or apartment buildings, minimising coexistence issues results to be a challenging task. Three domains are mainly being studied to enhance the performance in a WN:
 			\begin{itemize}
 				\item \textbf{Time:} current IEEE 802.11 WLANs are governed by the Distributed Coordination Function (DCF), which applies Carrier Sense Multiple Access with Collision Avoidance (CSMA/ CA) to grant temporal channel access. However, this approach is well-known to generate performance issues that lead to starvation and/or collisions. An interesting alternative to CSMA is presented in \cite{herzen2015csma}, which proposes Time Frequency CSMA/CA (TF-CSMA/CA), an algorithm that schedules packets in both time and frequency domains. Thus, a station performs backoff also in the frequency domain, which increases the channel utilisation. However, it requires a high self-organization degree to find appropriate spectrum bands that allow minimising the interference. Another approach is presented in \cite{wang2012combating}, which aims to identify hidden and exposed nodes at MAC, and transmit control information at PHY.			
-				\item \textbf{Frequency:} spectrum access and channel allocation are the main areas of interest in the frequency domain. The aim is to maximise the channel utilisation while minimising the interference. For that, we find Dynamic Channel Bonding (DCB), which is promising technique for dynamically increase the width of the utilised spectrum during transmissions. Moreover, to even maximise the channel utilisation, Dynamic Spectrum Access (DSA) is focused in finding reliable free spectrum patterns.
-				\item \textbf{Space:} the spatial domain considers the transmission range at which a given transmitter is able to reach due to the strength of its transmission power, as well as the sensitivity area in which the receiver is able to detect incoming transmissions. If both transmission range and sensitivity area are within the same space, and both transmitter and receiver are in different WNs, the sensed power is considered as interference. Due to the DCF operation, overlapping transmissions lead to starvation or collisions, according to the situation. If a node suffering from interference is about to send a packet, it must contend its transmission in case of sensing the channel idle (exposed node problem). Similarly, if the node was also receiving data from another device, it can suffer a collision if the sensed interference is higher than its capture effect (hidden terminal problem).
+				\item \textbf{Frequency:} spectrum management is the main area of interest in the frequency domain. The aim is to maximise the channel utilisation while minimising the interference. For that, we find Dynamic Channel Bonding (DCB), which is a promising technique for dynamically increase the width of the utilised spectrum during transmissions. Moreover, to even maximise the channel utilisation, Dynamic Spectrum Access (DSA) is focused in finding reliable free spectrum patterns.
+				\item \textbf{Space:} the spatial domain considers the transmission range at which a given transmitter is able to reach due to the strength of its transmission power, as well as the sensitivity area in which the receiver is able to detect incoming transmissions. If both transmission range and sensitivity area are within the same space, and both transmitter and receiver are in different WNs, the sensed power is considered as interference. Due to the DCF operation, overlapping transmissions lead to starvation or collisions, according to the situation. If a node suffering from interference is about to send a packet, it must defer its transmission in case of sensing the channel busy (exposed node problem). Similarly, if the node was also receiving data from another device, it can suffer a collision if the sensed interference is higher than its capture effect (hidden terminal problem).
 			\end{itemize}		
 				
 		\section{Open Challenges}
 		\label{section:open_challenges}
-			To the matter of this thesis, we highlight the enhancement of spatial reuse, which is specially emphasised in the IEEE 802.11ax-2019 standard that is being developed by the Task Group ax (TGax). Spatial reuse aims to reduce the interference level in an overlapping scenario, so that the area throughput can be maximised. To enhance spatial reuse, we focus on Transmission Power Control (TPC), Carrier Sense Threshold (CST) adjustment, and beamforming. The open challenges for spatial reuse enhancement in future WLANs are:
+			To the matter of this thesis, we highlight the enhancement of spatial reuse, which is specially emphasised in the IEEE 802.11ax-2019 standard that is being developed by the Task Group ax (TGax). Spatial reuse aims to reduce the interference level in an overlapping scenario, so that the area throughput can be maximised. To enhance spatial reuse, we focus on Transmission Power Control (TPC), Carrier Sense Threshold (CST) adjustment, and single and multi-user beamforming. The open challenges for spatial reuse enhancement in future WLANs are:
 			\begin{itemize}
-				\item Bandwidth requirements: there is an increasing trend in new applications of relying in communications to deliver their content.
-				\item Underutilisation of the l
-				imited spectrum: typically, WLANs fail to take full advantage of frequency resources (idle periods, collisions, spatial reuse, etc.). The rigidity of devices' configuration prevents a proper self-adaptation to deal with changes in the environment.				
-				\item High-density environments: the irruption of new mobile results in new scenarios, so that coexistence presents unprecedented challenges. Henceforth, novel mechanisms and architectures are required to confront the over-population of mobile devices. 
+				\item Bandwidth requirements: there is an increasing trend in new applications of relying in communications to deliver their content, as well as bandwidth consuming applications increasingly rely in the computational power of the cloud.
+				\item High-density environments: the irruption of new mobile devices results in new scenarios, so that coexistence presents unprecedented challenges. Henceforth, novel mechanisms and architectures are required to confront the over-population of mobile devices. 
+				\item Underutilisation of the limited spectrum: typically, WLANs fail to take full advantage of frequency resources (idle periods, collisions, spatial reuse, etc.). The rigidity of devices' configuration prevents a proper self-adaptation to deal with changes in the environment.		
 				\item Network variability: not only the users arrivals and departures entails a challenge for a WN, but the bandwidth requirements variability imply real-time solutions to accommodate the available resources.
 				\item Chaotic deployments: in addition to density, another open challenge is to face chaotic deployments in which several BSS compete for the same resources in an uncoordinated manner. Collaboration between independent BSSs turns out to be another important challenge to solve the resource allocation problem.
 			\end{itemize}
-			To face the abovementioned open challenges, many techniques have been developed, which are summarised in Figure \ref{fig:techniques_wns}.
+			To face the abovementioned open challenges, many techniques have been developed, which are summarised in Figure \ref{fig:techniques_wns}:
+			\begin{itemize}
+				\item Contention Window (CW) Adaptation: in order to make a more efficient use of the channel in terms of time, adapting the CW aims to minimise the number of empty slots. However, a too small CW may lead to collisions, harming the network throughput.
+				\item Scheduled approaches: a step further in empty slots minimisation is found in scheduled approaches. In them, the access to the channel is managed through a central unit or a coordinated set of devices. 
+				\item Dynamic Spectrum Access (DSC): due to the scarcity of the available spectrum, making a good channel allocation is useful to improve the performance in dense environments. Henceforth, to maximise the spectral reuse, it is necessary to assign channels in a such way that interference is minimised.
+				\item Dynamic Channel Bonding (DCB): occupying more than one channel for a single transmission is also an interesting technique to maximise the throughput of a wireless network. However, it is not trivial to establish a channel bonding policy, since using more than one channel may harm the overall throughput in overlapping scenarios. In addition, the transmission power is reduced proportionally with the number of channels used, which also complicates the DCB decision.
+				\item Transmission Power Control (TPC): increasing and decreasing the power transmitted is useful to reach larger distances or reducing the generated interference, respectively. For the latter, it is worth to mention that spatial reuse can be enhanced if short communications use the necessary transmission power. Thus, interference is minimised and the number of parallel transmissions can be increased.
+				\item Sensitivity adjustment: adjusting the sensitivity in a given device allows increasing the transmission range or reducing it, according to the situation. For the former, decreasing the sensitivity allows listening to farther devices. However, it also leads to a lower spatial reuse, thus minimising the number of parallel transmissions. Furthermore, increasing the sensitivity is useful to restrict the transmission range, leading to a higher number of shorter transmissions. Nevertheless, the collisions probability by hidden nodes is increased.
+				\item Directional transmissions: to even improve spatial reuse, directional transmissions reduce the interference area of a given transmission. The fact of directing the beam of energy towards the receiver allows reducing the number of exposed nodes, thus maximising the number of parallel transmissions.
+				\item Interference cancellation: a step further in spatial reuse maximisation is found in interference cancellation, which aims to extract an interference-free signal from a set of incoming transmissions. Interference cancellation allows multiple simultaneous transmissions.
+			\end{itemize}
 			\begin{figure}[h!]
 				\centering
 				\epsfig{file=images/techniques_wns.png, width=10cm}
@@ -114,15 +123,18 @@
 		
 		\section{Contributions}
 		\label{section:contributions}
-			Given the problems regarding future WNs, the expected contributions of this thesis are:
+			Given the problems regarding future WNs, the expected contributions of this thesis are:	
 			\begin{itemize}
-				\item Understanding the challenges and limitations in future WLANs, thus allowing other researchers to deeply understand the subject and provide new solutions.
-				\item Exploring the feasibility of applying Artificial Intelligence (AI) techniques into the spatial reuse problem in WNs.
-				\item For the previous contribution, it is also expected to provide a simulation tool that allows the usage of intelligent agents.
-				\item Providing solutions to the spatial reuse problem through learning approaches.
+				\item Understanding the challenges and limitations in future WLANs, thus allowing researchers to deeply understand the subject and provide new solutions. For that, we also aim to perform an exhaustive analysis of the state-of-the-art in spatial reuse, as well as in the usage of Artificial Intelligence (AI) in WNs.  			
+				\item Exploring the feasibility of applying AI techniques into the spatial reuse problem in WNs, i.e., studying its practicality to show if they allow improving the performance of a given WN. In addition, we aim to show the benefits and limitations of applying a set of techniques for different architectures (e.g., fully centralised, uncoordinated, etc.). Regarding the network architecture, it is important to deeply analyse in which devices must a candidate solution be implemented, as well as in which of the protocols layer (e.g., PHY, MAC, Network, etc.). For the latter, the decision must be done according to the available input information in each level and the impact on the network performance.					
+				\item Designing decentralised ML-based solutions for the spatial reuse problem, so that WNs become autonomous systems through self-configuration. Moreover, it is also of importance to provide real-time approaches that can satisfy the variability in a WN. We aim to explore both coordinated and uncoordinated approach, motivated by chaotic scenarios in which several independent WNs coexist (e.g., residential buildings).
+				\item As a extension of the previous point, we also aim to provide centralised ML-based solutions, so that many other fully controlled scenarios (e.g., university campus, airport, etc.) are covered. In such environments, it is important to analyse the trade-off between the optimality of the solution and the required time to obtain it.
+				\item Integrating the abovementioned solutions with others, such as Dynamic Channel Bonding, to provide a higher improvement in WNs performance.
 			\end{itemize}		
 			
-		The remainder of this document is structured as follows: Section \ref{section:research_problem} presents the Research Problem, as well as open challenges regarding the spatial reuse problem in WNs. The related work is shown in Section \ref{section:state_of_the_art}, which also includes the current literature in the application of Reinforcement Learning (RL) to Wireless Communications. Then, Section \ref{section:current_contributions} presents the ongoing work and the current contributions to the matter of this thesis. Finally, the working plan and the expected goals are provided in Section \ref{section:future_work}.
+		\section{Document Structure}
+		\label{section:document_structure}
+			The remainder of this document is structured as follows: Section \ref{section:research_problem} presents the Research Problem, as well as open challenges regarding the spatial reuse problem in WNs. The related work is shown in Section \ref{section:state_of_the_art}, which also includes the current literature in the application of Reinforcement Learning (RL) to Wireless Communications. Then, Section \ref{section:current_contributions} presents the ongoing work and the current contributions to the matter of this thesis. Finally, the working plan and the expected goals are provided in Section \ref{section:future_work}.
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% RESEARCH PROBLEM							      %%%%%%%%%%%%%
@@ -264,7 +276,7 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 	\chapter{State of the Art}
 	\label{section:state_of_the_art}
-		This Section describes the current literature on spatial reuse enhancement in Wireless Networks, which embraces channel allocation, TPC, CST adjustment and beamforming. Since one of the main purposes of this thesis is to study the feasibility of RL application into spatial reuse in wireless networks, we also provide some notions on what RL is, and which kind of problems it can solve. Furthermore, in this Section we also introduce previous research in dynamic resource allocation in WNs through RL. 
+		This Section describes the current literature on spatial reuse enhancement in Wireless Networks, which embraces channel allocation, TPC, CST adjustment and beamforming. Since one of the main purposes of this thesis is to study the feasibility of RL application into spatial reuse in wireless networks, we also provide some notions on what RL is, and which kind of problems it can solve. Moreover, in this Section we also introduce previous research in dynamic resource allocation in WNs through RL. 
 			
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		% SoA DCA										          %%%%%%%%%%%%%
@@ -322,7 +334,7 @@
 				\label{tbl:channel_assignment_uncoordinated}
 			\end{table}
 			
-			Centralised approaches have been shown to be very effective at maximising network performance in overlapping environments by providing a proper channel allocation. However, several limitations are found in real world. Firstly, many overlapping wireless deployments are independent, so they cannot be managed by a central entity. In addition, the required underlying communication adds a higher degree of complexity, which solution may lead to counter productive overhead. For that, we aim to focus on decentralised approaches (with and without communication), which allow facing the channel allocation problem in a simpler way in terms of synchronisation. Furthermore, for the cases in which communication is required, we are interested in quantifying the generated overhead in order to notice the actual improvements achieved. Regarding decentralised mechanisms for channel assignment, we first focus on \cite{mishra2005weighted}, which presents a weighted colouring approach to improve the resources sharing problem in overlapping WNs. In particular, two techniques are provided, which are $i)$ fully decentralised and $ii)$ based on messaging passing. Again, the channel assignment problem in WLANs is approached through graph colouring, providing edges to nodes that suffer from neighbouring interference. The goal is to assign colours (i.e., channels) to nodes, so that adjacent nodes use different channels, and at the same time their usage is minimised. The fact of experiencing co-channel interference makes from this a weighted colouring problem, so an objective function is provided. This function aims to minimise the interference suffered by devices in an overlapping network. To allow decentralisation, the algorithm can only attempt to minimise the interference of a given AP, which ends up to reducing the total interference if the network progressively adjusts itself as a whole. A step further to provide fast-convergence and better results in terms of interference, is to centralise the algorithm by considering the aggregate interference. For that, a reliable communication between APs must be carried out. Notwithstanding, the implication of this communication is not even mentioned in this work, so it is not possible to determine if the presented method is practical due to the overhead or even feasible. Furthermore, \cite{herzen2013distributed} shows that minimising the interference through an objective function is only worth for very dense scenarios, which lacks of flexibility for maximising the throughput area. To improve that, the authors present a fully decentralized approach through a minimisation function that takes into account the total sensed interference and a cost associated to the bandwidth utilisation. The sum of both measurements is referred as the \textit{energy}:
+			Centralised approaches have been shown to be very effective at maximising network performance in overlapping environments by providing a proper channel allocation. However, several limitations are found in real world. Firstly, many overlapping wireless deployments are independent, so they cannot be managed by a central entity. In addition, the required underlying communication adds a higher degree of complexity, which solution may lead to counter productive overhead. For that, we aim to focus on decentralised approaches (with and without communication), which allow facing the channel allocation problem in a simpler way in terms of synchronisation. Additionally, for the cases in which communication is required, we are interested in quantifying the generated overhead in order to notice the actual improvements achieved. Regarding decentralised mechanisms for channel assignment, we first focus on \cite{mishra2005weighted}, which presents a weighted colouring approach to improve the resources sharing problem in overlapping WNs. In particular, two techniques are provided, which are $i)$ fully decentralised and $ii)$ based on messaging passing. Again, the channel assignment problem in WLANs is approached through graph colouring, providing edges to nodes that suffer from neighbouring interference. The goal is to assign colours (i.e., channels) to nodes, so that adjacent nodes use different channels, and at the same time their usage is minimised. The fact of experiencing co-channel interference makes from this a weighted colouring problem, so an objective function is provided. This function aims to minimise the interference suffered by devices in an overlapping network. To allow decentralisation, the algorithm can only attempt to minimise the interference of a given AP, which ends up to reducing the total interference if the network progressively adjusts itself as a whole. A step further to provide fast-convergence and better results in terms of interference, is to centralise the algorithm by considering the aggregate interference. For that, a reliable communication between APs must be carried out. Notwithstanding, the implication of this communication is not even mentioned in this work, so it is not possible to determine if the presented method is practical due to the overhead or even feasible. Furthermore, \cite{herzen2013distributed} shows that minimising the interference through an objective function is only worth for very dense scenarios, which lacks of flexibility for maximising the throughput area. To improve that, the authors present a fully decentralized approach through a minimisation function that takes into account the total sensed interference and a cost associated to the bandwidth utilisation. The sum of both measurements is referred as the \textit{energy}:
 			\begin{equation}
 			\mathcal{E} (\textbf{F},\textbf{B}) = \sum_{A \in \mathcal{A}} \sum_{B \in \mathcal{N}_A} I_A (B) + \sum_{A \in \mathcal{A}} cost_A (b_A)
 			\end{equation}
@@ -360,20 +372,20 @@
 					\item Increases the transmission range, which is helpful for connectivity with the receiver but harmful for the overlapping nodes due to the generated interference.
 					\item Increases the energy consumption.\footnote{Energy consumption is affected by the type of power consumption (power transmission, power idle, power sleep, power amplifier and power reception) and the devices involved in the communication. To apply a policy for saving power is strictly related to them, which is out of the scope of this Thesis.}
 				\end{itemize}				
-				Furthermore, TPC may create unidirectional links, which unleashes fairness issues within overlapping nodes. In fact, acknowledgements (ACKs) and RTS/CTS frames assume bidirectional links. To properly implement TPC, the first question to be asked is where should power control be done in the network architecture. This question is presented in \cite{kawadia2005principles}, which, in addition to devising that the network level should be in charge of power control, presents a guideline of its impact on several performance measures (end to end delay, packet losses, routing overhead, etc.). The authors claim that global optimization is carried out by TPC approaches acting in the network layer, rather than in the MAC layer. The latter only solves the transmit power control problem locally (usually, SINR is used to adjust power). Furthermore, TPC approaches acting in the MAC layer only aim to adjust power at the immediate hop, so that the next optimal hop problem is not considered (this is a very common issue in ad-hoc WNs).
+				Furthermore, TPC may create unidirectional links, which unleashes fairness issues within overlapping nodes. In fact, acknowledgements (ACKs) and RTS/CTS frames assume bidirectional links. To properly implement TPC, the first question to be asked is where should power control be done in the network architecture. This question is presented in \cite{kawadia2005principles}, which, in addition to devising that the network level should be in charge of power control, presents a guideline of its impact on several performance measures (end to end delay, packet losses, routing overhead, etc.). The authors claim that global optimization is carried out by TPC approaches acting in the network layer, rather than in the MAC layer. The latter only solves the transmit power control problem locally (usually, SINR is used to adjust power). Besides, TPC approaches acting in the MAC layer only aim to adjust power at the immediate hop, so that the next optimal hop problem is not considered (this is a very common issue in ad-hoc WNs).
 				
 				The first literature that proposes TPC is mainly focused on energy saving. Despite this topic is out of the scope of this work, it is interesting to study the kind of mechanisms used and the implementations done for that purpose. In \cite{agarwal2001distributed, karn1990maca} there are presented several power control schemes relying on the RTS/CTS mechanism. In them, these management packets are used to measure the power transmitted by the overlapping wireless devices. Thus, TPC can be done in such way that the number of parallel transmissions increases whilst collisions are minimised. However, it is known that these kind of schemes can degrade the network throughput and may even incur into a higher energy consumption \cite{ebert1999combined}. To solve that, \cite{pursley2000energy} proposes to adjust the transmit power only during data transmissions. It is used the minimum necessary to successfully carry out the transmission, which is also computed through the RTS/CTS frames. Furthermore, to avoid collisions, the devices in a wireless network have to use the maximum power ($p_{max}$) when transmitting either an RTS or a CTS frame. In particular, RTS/CTS frames are modified to include the current and the desired power transmitted at the transmitter and at the receiver, respectively. The desired power ($p_{desired}$) is adjusted as $p_{desired} = p_{max} \times Rx_{Thresh} \times c$, where $Rx_{Thresh}$ is the minimum necessary received signal strength and $c$ is a constant (which in this case is set to 1). Figure \ref{fig:basic_tpc} shows the behaviour of the power control scheme introduced in \cite{pursley2000energy}.	
 				\begin{figure}[h!]
 					\centering
-					\epsfig{file=images/basic.png, width=8cm}
-					\caption{Pursley et al. Power Control Scheme}
+					\epsfig{file=images/basic.png, width=10cm}
+					\caption{Pursley et al. Power Control Scheme. Image retrieved from \cite{pursley2000energy}.}
 					\label{fig:basic_tpc}
 				\end{figure}				
 				A further extension of this work is presented in \cite{jung2002power}, as well as the power control scheme shown in \cite{pursley2000energy} may potentially decrease the throughput and increase energy consumption in some scenarios. The main root cause points out the collisions that may occur due to the Hidden-Node problem, since neither CTS nor RTS frames may not be listened by some interfering nodes. Therefore, the new proposed scheme, which is named Power Control MAC (PCM), deals with the aforementioned kind of asynchronies by forcing nodes to transmit periodically DATA at the maximum power. Figure \ref{fig:pcm} shows the power used during a DATA/ACK transmission if using PCM, which is set to $p_{max}$ during $20 \mu s$ every $190 \mu s$. These values are predefined because the EIFS value specified by the DCF is equal to $212 \mu s$ when the data rate is 2 Mbps. Thus, power level during DATA transmission is increased once in each EIFS interval.
 				\begin{figure}[h!]
 					\centering
 					\epsfig{file=images/pcm.png, width=16cm}
-					\caption{PCM Scheme}
+					\caption{Power Control MAC (PCM) scheme. Image retrieved from \cite{pursley2000energy}.}
 					\label{fig:pcm}
 				\end{figure}
 				This power control scheme has been validated for several network topologies, so that remarkable improvements are shown at saving energy. In particular, savings of about 10\% are achieved whilst obtaining very similar throughput values with respect to current IEEE 802.11 operation. Despite the main goal of the PCM scheme used is to reduce energy consumption, it implicitly allows improving the spatial reuse, which shows that using the necessary power during a wireless transmission can be beneficial for the network capacity. Similarly to previous reviewed approaches that make use of RTS/CTS frames, the authors in \cite{lei2015performance} attempt to improve the throughput of OBSSs by using an RTS/CTS modification that incorporates different Network Allocation Vector (NAV) timers. Thus, despite RTS and CTS packets are transmitted at the maximum power, a higher number of parallel transmissions can be carried out, since the new NAV timers only captures the RTS/CTS operation. However, this solutions appears to be quite rigid and to behave properly only in few situations.
@@ -460,16 +472,15 @@
 				\label{tbl:sensitivity_channel_width}
 			\end{table}			
 		
-			\subsection{Dynamic Sensitivity Threshold}
+			\subsection{Dynamic Sensitivity Control}
 			\label{section:dsc}		
 				In addition to previous work related to CST adjustment (further described in Section \ref{section:other_cst}), the most important emerging approach for IEEE 802.11 WLANs is the Dynamic Sensitivity Control (DSC) algorithm, which has been proposed by the TGax \cite{smith2015dynamic}. The DSC algorithm aims to distributively find an appropriate level of CST in each non-AP station of a WLAN, in order to maximise the number of parallel transmissions and, thus the aggregate throughput. DSC periodically adjusts the CST of a wireless device given the information retrieved from Received Signal Strength Indicator (RSSI) measurements. The operation mode of DSC is graphically represented in Figure \ref{fig:dsc_flowchart}.				
 				\begin{figure}[t!]
 					\centering
 					\epsfig{file=images/DSC.png, width=9cm}
-					\caption{Dynamic Sensitivity Control operational mode. Image retrieved from \cite{afaqui2015evaluation}.}
+					\caption{Dynamic Sensitivity Control (DSC) operational mode. Image retrieved from \cite{afaqui2015evaluation}.}
 					\label{fig:dsc_flowchart}
 				\end{figure}
-			
 				In DSC, a station accumulates the Received Signal Strength Indication (RSSI) of  each  sensed  beacon until the \textit{UpdatePeriod} is reached. An average of the RSSI (\textit{AvgRSSI}) is maintained for adjusting the CST later. In parallel, it is counted the number of beacons missed during an \textit{UpdatePeriod}. At each Beacon Interval (BI) the STA compares the number of lost beacons (\textit{BeaconCount}) with a maximum threshold (i.e., \textit{BeaconCountLimit}). In case \textit{BeaconCount} is greater than \textit{BeaconCountLimit}, the average RSSI is decreased by a default value (\textit{RSSIDecrement}) with the aim of decreasing the CST and, thus listen further away to receive more beacons. Finally, after the \textit{UpdatePeriod} is reached, it is computed the new CST value between the \textit{LowerLimit} and \textit{UpperLimit} boundaries. The CST is computed as \textit{AvgRSSI} minus a margin, which is a positive number (typically from 5 to 25). An evaluation of the DSC algorithm is provided in \cite{afaqui2015evaluation}, which applies to non-AP stations in the residential scenario introduced by the TGax. On the one hand, it is shown that the overall throughput can be increased up to a 20\% with respect to legacy networks if using DSC. On the other hand, the application of DSC at uncoordinated WNs may generate a significant increase in the number of hidden nodes, which can potentially harm the overall throughput due to collisions. In fact, the increase in hidden nodes is measured to be the 60\% in the best of the cases, and the 160\% in the worst situation. Best results are obtained by using smart channel selection and fixed modulation coding scheme, while the worst results are obtained by using randomising both parameters. DSC is also evaluated in \cite{zhong2016promise}, where the Indoor Small BSSs Scenario is used for simulations. In this case, setting a low margin is substantially harmful for the overall throughput due to a very high number of collisions. Moreover, for very far distances between APs, a fixed CST behaves similarly than for using well-performing margins for DSC. In terms of fairness, the lowest margin also provides the best results (specially in the densest case). Similar results are provided in \cite{selinis2016evaluation, kulkarni2015taming} for other scenarios. While the former shows DSC performance in large-scale scenarios, the latter defends that the magnitude of the gains depends on the topology, the node distribution around the AP, the distance between overlapping cells, and the presence of cell-edge nodes. 
 				
 				 Without adding any kind of signalling, DSC allows enhancing the overall throughput by increasing the number of parallel transmission. However, it potentially increases the probability of collisions by hidden-node, which may be counter productive if the effects of packet losses result into worse throughput performance. Furthermore, it may generate fairness issues, since nodes with an advantageous geographical position may have more chances for accessing the channel. Figure \ref{fig:dsc_problems} shows the fairness issue in a scenario in which DSC is applied.
@@ -485,13 +496,15 @@
 					\mathrm{CST}_{AP} = min(max(min\mathrm{RSSI}, max\mathrm{RSSI})- \text{margin}, min\mathrm{RSSI}),
 					\nonumber
 				\end{equation}
-				where \textit{margin} is a value determined to be between 18 and 25 dB for indoor scenarios in which the path-loss factor ($\alpha$) is 0.3. The DSC-AP algorithm is shown to improve a 32\% the overall throughput with respect to legacy IEEE 802.11 performance. In addition, fairness is increased up to a 16\% because of the reduction of exposed nodes, which supposes noticing less starvation situations. The derived problems of using DSC-AP are also related to the increase of hidden nodes and collisions probability. But again, for the particular presented scenario, the obtained throughput is better despite the significant increase of the Frame Error Rate (FER).	To further improve the hidden nodes issues generated by DSC, another contribution of Afaqui et al. on sensitivity adjustment (\cite{afaqui2016rtscts}) attempts to combine DSC with RTS/CTS activation in stations. In particular, three approaches for enabling RTS/CTS in a given station are shown in combination with DSC. As for previous work, the IEEE 802.11ax Residential scenario is used for simulations. The maximum improvement shows an increase of approximately 55\% in the overall throughput with respect to legacy IEEE 802.11 performance. In addition, the FER is reduced almost a 40\% and fairness is increased in a 30\%. The fact of enabling RTS/CTS dynamically allows reducing the effects of hidden nodes in terms of collisions without adding too much overhead due to RTS/CTS transmissions, as well as it is only used in nodes that really require it. In opposite, many communication overhead is added to decide which nodes must use RTS/CTS, which has not been quantified for showing the resulting throughput when using this approach.
+				where \textit{margin} is a value determined to be between 18 and 25 dB for indoor scenarios in which the path-loss factor ($\alpha$) is 0.3. The DSC-AP algorithm is shown to improve a 32\% the overall throughput with respect to legacy IEEE 802.11 performance. In addition, fairness is increased up to a 16\% because of the reduction of exposed nodes, which supposes noticing less starvation situations. The derived problems of using DSC-AP are also related to the increase of hidden nodes and collisions probability. But again, for the particular presented scenario, the obtained throughput is better despite the significant increase of the Frame Error Rate (FER).	To further improve the hidden nodes issues generated by DSC, another contribution of Afaqui et al. on sensitivity adjustment (\cite{afaqui2016rtscts}) attempts to combine DSC with RTS/CTS activation in stations. In particular, three approaches for enabling RTS/CTS in a given station are shown in combination with DSC. As for previous work, the IEEE 802.11ax Residential scenario is used for simulations. The maximum improvement shows an increase of approximately 55\% in the overall throughput with respect to legacy IEEE 802.11 performance. In addition, the FER is reduced almost a 40\% and fairness is increased in a 30\%. The fact of enabling RTS/CTS dynamically allows reducing the effects of hidden nodes in terms of collisions without adding too much overhead due to RTS/CTS transmissions, as well as it is only used in nodes that really require it. In opposite, many communication overhead is added to decide which nodes must use RTS/CTS, which has not been quantified for showing the resulting throughput when using this approach. Similar results are shown in \cite{afaqui2017dynamic}, which presents a variation of DSC to be implemented at both APs and STAs.				
 			
 			\subsection{Previous work in CST adjustment}
 			\label{section:other_cst}
 				Regarding previous work that aims to adjust the CST for spatial reuse enhancement in WNs, we first focus on the work in \cite{thorpe2009ieee802, thorpe2011ieee802}, where single AP systems use the IEEE 802.11k standard \cite{ieee2002ieee} for CST adaptation. The 802.11k defines a set of mechanisms for exchanging information between nodes in a BSS, regarding the radio channel. Thus, by implementing this standard, a node measures MAC and PHY conditions, in order to share it. In \cite{thorpe2009ieee802}, an algorithm called K-APCS uses the information exchanged through the 802.11k standard to adjust the CST in real time. Motivated by the unfairness provided by K-APCS, the authors extended their work in \cite{thorpe2011ieee802}, where K-APCS2 is presented. In this case, the information exchanged by nodes is used to devise problem nodes, which are targeted by the CST optimisation algorithm. A similar approach is found in \cite{zhu2006adaptive}, which uses the Packet Error Rate (PER) locally to tune the CST in a given node. 
 				
 				A step further to CST adaptation is found in \cite{afifi2016throughput}, which faces the trade-off between increasing the network throughput and preserving the fairness in presence of legacy devices (i.e., devices that do not apply CST adjustment). To that purpose, the authors propose a centralised approach, Centralized Fairness Mechanism (CFM), that allow STAs to adapt their CCA according to network conditions. Thus, the AP implementing CFM, dynamically switches between the CCA adaptation phase, and the fixed phase. For the former, a new field is proposed to be included in beacons, which indicates if CCA adjustment is allowed or not. The decision of going into the CCA adaptation state is made by the AP according to the associated STAs, so that throughput can be maximised when no legacy devices are present.
+				
+				Additionally, an interesting approach regarding CST adjustment is found in \cite{park2009noncooperative}, which introduces the notion of non-cooperative game to represent uncoordinated environments. For that, each node maintains a utility function, defined as a non-decreasing concave function of the CST, which is used to maximise its performance. Since selfish strategies lead to an increased interference (each node wants to transmit as much as possible, so CST tends to be increased), a pricing function is defined as a constraint. A set of simulations are provided in order to show the effectiveness of their presented decentralised algorithm, in which devices update their CST every $\Delta$ seconds, according to the collisions experienced during the last interval. Results show a significant increase of the overall throughput with respect to the fixed CST strategy.
 				
 				In addition to the aforementioned works in CST adjustment, we find other Multiple AP (MAP) collaborative approaches. \cite{hua2009cooperative, hua2009distributed} propose a distributed mechanism for CST adjustment in MAP WLANs. To achieve a jointly operation, a central unit is required, which is only feasible at fully controlled environments in which the service provider has access to the entire network.
 			
@@ -652,7 +665,7 @@
 				Finally, \cite{jamil2016novel} presents a centralized solution to adapt the transmission power and the carrier sense threshold of all the devices in a wireless network, with the aim of enhancing the spatial reuse while keeping a fair distribution of the average throughput. For that purpose it is used an Artificial Neural Network (ANN) with three layers (the input layer, one hidden layer, and the output layer). The number of inputs is two times the number $k$ of nodes to be manipulated, as well as each input represents the chosen value by each node for TPC and CCA parameters. The output in this case represents the throughput experienced by each node, so there are just $k$ neurons. 	
 				\begin{figure}[h!]
 					\centering
-					\epsfig{file=images/neural_network_topology.png, width=10cm}
+					\epsfig{file=images/neural_network_topology.png, width=8cm}
 					\caption{Topology of the ANN}
 					\label{fig:neural_network_topology}
 				\end{figure}	
@@ -762,70 +775,70 @@
 	% FUTURE WORK										   %%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 	\chapter{Planning and Future Work}
-	\label{section:future_work}
+	\label{section:future_work}		
+		We have put forward a range of contributions to be accomplished during the development of the research activities related to this Thesis, which have been introduced in Section \ref{section:contributions}. Here we provide further details regarding contributions, involved tasks and expected outputs.
+
+		\section{Topic Understanding and State-of-the-Art Analysis}
+		\label{section:contribution1}				
+			\subsection{Involved Tasks}				
+				To properly understand the challenges and limitations of future WLANs, we will start understanding the dynamics of coexistent WNs when competing for bandwidth resources. Moreover, we are intended to extensively analyse the current techniques used for improving the spatial reuse in wireless networks. Additionally, to support the aforementioned tasks, we are aimed to understand and/or develop analytical and simulation tools for WNs performance computation.		
+			\subsection{Expected Outputs}
+				The resulting outputs from the abovementioned tasks are expected to be:
+				\begin{itemize}
+					\item A journal publication collecting these techniques to provide an State-of-the-Art to the resource allocation problem in wireless networks.
+					\item The launching of Komondor's versions 2.1 and 2.2, which include intelligent agents to boost the network performance. 
+					\item A Komondor's technical report publication.	
+					\item A collaboration with Barrachina on the CTMN framework, which culminates in a publication.				
+				\end{itemize}
 		
-		%\section{Objectives and Tasks}
-		%\label{section:objectives}
-		We have put forward a range of objectives to be accomplished during the development of the research activities related to this Thesis, which are listed below together with the involved tasks:
-		\begin{itemize}
-			\item \textbf{Objective 1 (O1):} Understanding the dynamics of coexistent WNs when competing for bandwidth resources, as well as obtaining an extensive knowledge on the current techniques used for improving the spatial reuse in wireless networks.
-			\begin{itemize}
-				\item Extension of the current work in decentralised learning implications (DL1): Application of CTMN Framework to the work presented in \cite{wilhelmi2017implications}. Extend it to provide the centralised perspective.
-				\item Make a publication collecting these techniques to provide an State-of-the-Art to the resource allocation problem in wireless networks (SOA1).
-				\item Internship in Mexico (UNAM): Reinforcement Learning with Neighbouring Performance Inference for Resource Allocation in High-Density WLANs (UN1), which aims to study channel estimation and inference techniques to envision the behaviour of an overlapping WN from a decentralised point of view.
-				\item Extrapolate the work done regarding RL in WNs in order to capture dynamics in terms of user and traffic variability (RL2). Understanding network dynamics and future requirements for dense wireless networks.
-			\end{itemize}
-			\item \textbf{Objective 2 (O2):} Understanding analytical and simulation tools for WNs performance computation.
-			\begin{itemize}
-				\item Komondor simulator: launch versions 2.1 (KM1) and 2.2 (KM2) that include intelligent agents to boost the network performance. Also, write a technical report to be published (KM3).
-				\item CTMN framework collaboration with Barrachina: provide a framework to compute network throughput through the CTMN model (CTMN1).
-			\end{itemize}	
-			\item \textbf{Objective 3 (O3):} Understanding the RL techniques that better suit the resource allocation problem in WNs. Study also the basics on Game Theoretical and Adversarial settings.
-			\begin{itemize}
-				\item Make a publication reviewing several techniques to prove their efficiency when applied in the wireless communications field (RL1).
-				\item Make a publication summarizing all the work done during the Thesis, which provides a ML-based solution to the resource allocation problem in future WLANs (RL2). Providing ML-based solutions to the resource allocation problem in future WLANs.
-			\end{itemize}	
-			\item \textbf{Objective 4 (O4):} In parallel, through the FON collaboration, we find a set of tasks that differ from the main research line of this Thesis, but which provide complementary knowledge and enrich the degree of expertise in other fields.
-			\begin{itemize}
-				\item Acquire the necessary knowledge to face the AP association problem in WNs from both decentralised and centralised perspectives. Thus, provide a State-of-the-Art in the field (FON1).
-				\item Acquire the necessary knowledge for self-adjustment in WNs Thus, provide a State-of-the-Art in the field (FON2).
-			\end{itemize}		
-		\end{itemize}
-	
-%		\section{Gantt Diagram}
-%		\label{section:gantt}
-%		To provide a better visualization of the development of the tasks presented in Section \ref{section:objectives}, we provide the following Gantt diagram:
-%			
-%		\noindent\resizebox{\textwidth}{!}{
-%			\begin{tikzpicture}[x=.5cm, y=1cm]
-%				\begin{ganttchart}[vgrid,hgrid]{1}{24}
-%					\gantttitle{2017}{3} \gantttitle{2018}{12} \gantttitle{2019}{9}\\
-%					\gantttitlelist{10,...,12}{1} \gantttitlelist{1,...,12}{1} \gantttitlelist{1,...,9}{1} \\
-%					% 
-%					\ganttgroup{DL1}{1}{5} \\
-%					\ganttgroup{SOA1}{1}{5} \\
-%					\ganttgroup{UN1}{1}{5} \\
-%					\ganttgroup{RL1}{1}{5} \\
-%					\ganttmilestone{O1}{5} \ganttnewline
-%					% 
-%					\ganttgroup{KM1}{1}{2} \\
-%					\ganttgroup{KM2}{1}{2} \\
-%					\ganttgroup{KM3}{1}{2} \\
-%					\ganttgroup{CTMN1}{1}{2} \\
-%					\ganttmilestone{O2}{2} \\		
-%					% 
-%					\ganttgroup{ML1}{1}{2} \\
-%					\ganttgroup{ML2}{1}{2} \\
-%					\ganttmilestone{O3}{2} \\		
-%					% 
-%					\ganttgroup{FON1}{3}{8} \\
-%					\ganttgroup{FON2}{3}{8} \\
-%					\ganttmilestone{O4}{8} \ganttnewline
-%					% 
-%				\end{ganttchart}
-%			\end{tikzpicture}
-%		}	
-	
+		\section{Studying the Learning Feasibility in WNs}
+		\label{section:contribution2}
+			\subsection{Involved Tasks}
+				Understanding the RL techniques that better suit the resource allocation problem in WNs. Study also the basics on Game Theoretical and Adversarial settings.				
+			\subsection{Expected Outputs}
+				The tasks related to study the learning feasibility in WNs and to deeply analyse its implications in different network architectures, are expected to generate the following output:
+				\begin{itemize}
+					\item A publication in which several RL techniques are applied to wireless communications.				
+					\item Extrapolate the work done regarding RL in WNs in order to capture dynamics in terms of user and traffic variability (RL2). Understanding network dynamics and future requirements for dense wireless networks.
+				\end{itemize}
+		
+		\section{Decentralised ML-based Solutions}
+		\label{section:contribution3}	
+			\subsection{Involved Tasks}		
+					We first aim to cover the decentralised case in wireless networks, so that ML-based solutions can be implemented in either cooperative and non-cooperative environments.  For that, we aim to extend our current work in decentralised learning implications \cite{wilhelmi2017implications, wilhelmi2017enhancing}, to explore more realistic scenarios through the CTMN framework. 
+					
+					In addition, we are also studying enhanced uncoordinated approaches in which WNs infer the behaviour of the coexisting devices. Thus, by using this extra knowledge, it is expected to obtain better results than for approaches using only local information. 
+					
+					Finally, it is expected to explore coordinated approaches for maximising the network throughput, whereby multiple devices will share a common goal (e.g., fairness maximisation). 
+			\subsection{Expected Outputs}		
+				Studying decentralised approaches for boosting the performance in WNs is expected to generate the following outputs:	
+				\begin{itemize}
+					\item A conference paper (or a letter) regarding the application of the CTMN Framework to the work presented in \cite{wilhelmi2017implications}. 
+					\item An internship in Mexico (UNAM) to study channel estimation and inference techniques to envision the behaviour of an overlapping WN from a decentralised point of view.
+					\item A journal publication resulting from the internship in Mexico.
+					\item A publication showing the trade-off in coordinated approaches, in terms of throughput enhancement and generated overhead (communication, hardware, etc.).
+				\end{itemize}
+				
+		\section{Centralised ML-based Solutions}
+		\label{section:contribution4}		
+			\subsection{Involved Tasks}		
+				Since many other typical scenarios are characterised by being composed of a central unit managing several APs, the idea of proposing centralised RL-based solutions turns out to be interesting in terms of achievable performance. Notwithstanding, it is critical to understand the trade-off between finding an optimal solution and the time it costs to be reached.
+			\subsection{Expected Outputs}
+				The generated output from the research activity regarding centralised ML-based is:
+				\begin{itemize}
+					\item A conference publication extending the work in decentralised learning implications \cite{wilhelmi2017implications, wilhelmi2017enhancing}. The work must cover the centralised point of view at devising optimal solutions.				
+				\end{itemize}
+		
+		\section{Integration with Other Solutions}
+		\label{section:contribution5}
+			\subsection{Involved Tasks}	
+				We aim to integrate the work done during this thesis with other novel solutions . More precisely, we aim to collaborate with Sergio Barrachina to merge the knowledge generated in his PhD Thesis with the one generated in ours.	
+			\subsection{Expected Outputs}
+				As a result of the unification of both thesis, the expected output is:
+				\begin{itemize}
+					\item A publication about novel mechanisms for improving the performance in future WNs.
+				\end{itemize}
+						
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% BIBLIOGRAPHY					      				   %%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	

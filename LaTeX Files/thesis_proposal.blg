@@ -13,35 +13,40 @@ Repeated entry---line 512 of file bib.bib
  : @inproceedings{papadopouli2005modeling
  :                                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 765 of file bib.bib
+You're missing a field name---line 595 of file bib.bib
+ :  booktitle={Ad Hoc Networks, Manuscript Draft ADHOC-D-17-262},
+ :                                                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 773 of file bib.bib
  : @inproceedings{riihijarvi2005frequency
  :                                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 785 of file bib.bib
+Repeated entry---line 793 of file bib.bib
  : @article{mishra2005weighted
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 975 of file bib.bib
+Repeated entry---line 983 of file bib.bib
  : @inproceedings{bennis2011distributed
  :                                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1034 of file bib.bib
+Repeated entry---line 1042 of file bib.bib
  : @inproceedings{agarwal2001distributed
  :                                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1267 of file bib.bib
+Repeated entry---line 1285 of file bib.bib
  : @article{kawadia2005principles
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1278 of file bib.bib
+Repeated entry---line 1296 of file bib.bib
  : @article{mishra2005weighted
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1329 of file bib.bib
+Repeated entry---line 1347 of file bib.bib
  : @article{raniwala2004centralized
  :                                 ,
 I'm skipping whatever remains of this entry
 Warning--can't use both volume and number fields in balachandran2002characterizing
+Warning--empty year in afaqui2017dynamic
 Warning--can't use both volume and number fields in sutton1998reinforcement
 Too many commas in name 3 of "Wilhelmi, Francesc and Bellalta, Boris and Cano, Cristina, Jonsson, Anders, Neu, Gergely and Barrachina, Sergio" for entry wilhelmi2017enhancing
 while executing---line 944 of file unsrt.bst
@@ -75,45 +80,45 @@ Warning--empty journal in bellalta2017learning
 Too many commas in name 1 of "Barrachina, Sergio, Bellalta, Boris and Wilhelmi, Francesc" for entry barrachina2017ctmn
 while executing---line 944 of file unsrt.bst
 Warning--empty journal in barrachina2017ctmn
-You've used 112 entries,
+You've used 114 entries,
             1791 wiz_defined-function locations,
-            1010 strings with 25805 characters,
-and the built_in function-call counts, 33456 in all, are:
-= -- 3311
-> -- 1186
+            1016 strings with 26062 characters,
+and the built_in function-call counts, 33831 in all, are:
+= -- 3335
+> -- 1211
 < -- 77
-+ -- 438
-- -- 326
-* -- 2023
-:= -- 4690
-add.period$ -- 393
-call.type$ -- 112
-change.case$ -- 109
++ -- 447
+- -- 333
+* -- 2048
+:= -- 4753
+add.period$ -- 399
+call.type$ -- 114
+change.case$ -- 111
 chr.to.int$ -- 0
-cite$ -- 116
-duplicate$ -- 1692
-empty$ -- 3304
-format.name$ -- 326
-if$ -- 8017
+cite$ -- 119
+duplicate$ -- 1712
+empty$ -- 3344
+format.name$ -- 333
+if$ -- 8099
 int.to.chr$ -- 0
-int.to.str$ -- 112
-missing$ -- 112
-newline$ -- 561
-num.names$ -- 111
-pop$ -- 481
+int.to.str$ -- 114
+missing$ -- 114
+newline$ -- 571
+num.names$ -- 113
+pop$ -- 490
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 997
+skip$ -- 1004
 stack$ -- 0
 substring$ -- 2432
-swap$ -- 702
+swap$ -- 705
 text.length$ -- 77
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 347
-width$ -- 115
-write$ -- 1284
-(There were 24 error messages)
+warning$ -- 5
+while$ -- 349
+width$ -- 117
+write$ -- 1304
+(There were 25 error messages)

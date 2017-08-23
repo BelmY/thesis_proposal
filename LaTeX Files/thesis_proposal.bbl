@@ -402,6 +402,11 @@ M~Shahwaiz Afaqui, Eduard Garcia-Villegas, and Elena Lopez-Aguilera.
 \newblock In {\em Wireless Communications and Networking Conference (WCNC),
   2016 IEEE}, pages 1--6. IEEE, 2016.
 
+\bibitem{afaqui2017dynamic}
+M~Shahwaiz Afaqui, Eduard Garcia-Villegas, and Elena Lopez-Aguilera.
+\newblock Dynamic sensitivity control for ieee 802.11ax.
+\newblock In {\em Ad Hoc Networks, Manuscript Draft ADHOC-D-17-262}.
+
 \bibitem{thorpe2009ieee802}
 Christina Thorpe, Sean Murphy, and Liam Murphy.
 \newblock Ieee802. 11k enabled adaptive physical carrier sense mechanism for
@@ -438,6 +443,11 @@ Wessam Afifi, Enrico-Henrik Rantala, Esa Tuomaala, Sayantan Choudhury, and
   with adaptive clear channel assessment.
 \newblock In {\em Communications (ICC), 2016 IEEE International Conference on},
   pages 1--6. IEEE, 2016.
+
+\bibitem{park2009noncooperative}
+Kyung-Joon Park, Jennifer~C Hou, Tamer Basar, and Hwangnam Kim.
+\newblock Noncooperative carrier sense game in wireless networks.
+\newblock {\em IEEE Transactions on Wireless Communications}, 8(10), 2009.
 
 \bibitem{hua2009cooperative}
 Yao Hua, Qian Zhang, and Zhisheng Niu.
