@@ -25,11 +25,11 @@
 \newlabel{section:motivation}{{1.1}{3}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}Open Challenges}{4}}
 \newlabel{section:open_challenges}{{1.2}{4}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.3}Contributions}{5}}
-\newlabel{section:contributions}{{1.3}{5}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Techniques to enhance WLANs performance\relax }}{6}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:techniques_wns}{{1.1}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}Contributions}{6}}
+\newlabel{section:contributions}{{1.3}{6}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.4}Document Structure}{7}}
 \newlabel{section:document_structure}{{1.4}{7}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {2}{\MakeUppercase  { Research Problem}}}{9}}
@@ -43,9 +43,9 @@
 \citation{jang2012ieee}
 \citation{sobrinho2005rts}
 \citation{bellalta2016ieee}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Exposed Terminal Problem: AP1 and AP2 could transmit simultaneously since STA1 and STA2 are enough away from the interference, but only a transmission at a time is allowed due to CSMA/CA. Hidden Terminal Problem: AP2 and AP3 may suffer collisions by hidden node because they are not in range each other, but STA2 and STA3 do.\relax }}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Exposed Terminal Problem: AP1 and AP2 could transmit simultaneously since STA1 and STA2 are far enough from the interference, but only a transmission at a time is allowed due to CSMA/CA. Hidden Terminal Problem: AP2 and AP3 may suffer collisions by hidden node because they are not in range of each other, but STA2 and STA3 sense both APs.\relax }}{10}}
 \newlabel{fig:hidden_exposed}{{2.1}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces DCF operation with RTS/CTS. After waiting 1 slot, STA2 sends an RTS frame to indicate that it wants to reserve the channel. A CTS frame is replied from the AP, so NAV is updated in STA1 to cover the entire transmission, as well as it operates at the same frequency channel.\relax }}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces DCF operation with RTS/CTS. After waiting one slot, STA2 sends an RTS frame to indicate the channel reservation. STA1, which is a contending node, sets the NAV to perform virtual carrier sensing. In case the receiver (AP) senses the channel free, a CTS frame is replied, so that NAV is updated in STA1 to cover the entire transmission.\relax }}{11}}
 \newlabel{fig:dcf_operation}{{2.2}{11}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.2}Scenarios}{11}}
 \newlabel{section:scenarios}{{2.2}{11}}
@@ -55,9 +55,6 @@
 \newlabel{sub@fig:floor}{{b}{11}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces IEEE 802.11ax Residential scenario\relax }}{11}}
 \newlabel{fig:ax_residential_scenario}{{2.3}{11}}
-\citation{balachandran2002characterizing}
-\citation{papadopouli2005modeling}
-\citation{papadopouli2005modeling}
 \newlabel{fig:offices}{{2.4a}{12}}
 \newlabel{sub@fig:offices}{{a}{12}}
 \newlabel{fig:cubicles}{{2.4b}{12}}
@@ -66,6 +63,9 @@
 \newlabel{fig:ax_enterprise_scenario}{{2.4}{12}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces IEEE 802.11ax Cell topologies\relax }}{12}}
 \newlabel{fig:large_ax}{{2.5}{12}}
+\citation{balachandran2002characterizing}
+\citation{papadopouli2005modeling}
+\citation{papadopouli2005modeling}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces IEEE 802.11ax Residential + Large Outdoor BSS scenario\relax }}{13}}
 \newlabel{fig:residential_large_ax}{{2.6}{13}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.3}Spatial Reuse in Overlapping IEEE 802.11 WLANs}{13}}
@@ -75,16 +75,141 @@
 \citation{bojovic2012neural}
 \citation{combes2014optimal}
 \citation{miozzo2015distributed}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Effects of TPC and CST adjustment. \textit  {*Adjusting CCA may indirectly affect to the energy consumption by requiring more/less power to be transmitted.}\relax }}{14}}
+\newlabel{tbl:cca_tpc_effects}{{2.1}{14}}
 \newlabel{fig:beamforming1}{{2.7a}{14}}
 \newlabel{sub@fig:beamforming1}{{a}{14}}
 \newlabel{fig:beamforming2}{{2.7b}{14}}
 \newlabel{sub@fig:beamforming2}{{b}{14}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Enhancement of the spatial reuse through adaptive beamforming\relax }}{14}}
 \newlabel{fig:beamforming}{{2.7}{14}}
-\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Effects of TPC and CST adjustment. \textit  {*Adjusting CCA may indirectly affect to the energy consumption by requiring more/less power to be transmitted.}\relax }}{14}}
-\newlabel{tbl:cca_tpc_effects}{{2.1}{14}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Autonomous Management in Wireless Networks}{15}}
-\newlabel{section:rl_vision}{{2.4}{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Autonomous Management in Wireless Networks}{14}}
+\newlabel{section:rl_vision}{{2.4}{14}}
+\citation{tgax2016draft}
+\citation{kawadia2005principles}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}{\MakeUppercase  { State of the Art}}}{17}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{section:state_of_the_art}{{3}{17}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Spatial Reuse}{17}}
+\newlabel{section:spatial_reuse_soa}{{3.1}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Transmit Power Control}{17}}
+\newlabel{section:tpc}{{3.1.1}{17}}
+\citation{agarwal2001distributed}
+\citation{karn1990maca}
+\citation{ebert1999combined}
+\citation{pursley2000energy}
+\citation{pursley2000energy}
+\citation{pursley2000energy}
+\citation{pursley2000energy}
+\citation{jung2002power}
+\citation{pursley2000energy}
+\citation{pursley2000energy}
+\citation{pursley2000energy}
+\citation{lei2015performance}
+\citation{chaves2014adaptive}
+\citation{oteri2013advanced}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Pursley et al. Power Control Scheme. Image retrieved from \cite  {pursley2000energy}.\relax }}{19}}
+\newlabel{fig:basic_tpc}{{3.1}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Power Control MAC (PCM) scheme. Image retrieved from \cite  {pursley2000energy}.\relax }}{19}}
+\newlabel{fig:pcm}{{3.2}{19}}
+\citation{gandarillas2014dynamic}
+\citation{tang2014joint}
+\citation{elbatt2000power}
+\citation{ebert2000energy}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces F-CMSA operation. AP1 uses a higher transmit power to reach its farthest STA (STA1.1). At the same time, AP2 transmits to a close device (STA2.1), so that transmit power does not affect the other ongoing transmission. This scheduling is provided by a central entity.\relax }}{20}}
+\newlabel{fig:fcsma}{{3.3}{20}}
+\citation{broustis2010measurement}
+\citation{oteri2013advanced}
+\citation{lei2015performance}
+\citation{gandarillas2014dynamic}
+\citation{tang2014joint}
+\citation{jamil2014improving}
+\citation{jamil2014improving}
+\citation{jamil2014improving}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces State-of-the-Art on Transmission Power Control\relax }}{21}}
+\newlabel{tbl:tpc}{{3.1}{21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Carrier Sense Threshold Adjustment}{21}}
+\newlabel{section:cca}{{3.1.2}{21}}
+\citation{tgax2016draft}
+\citation{thorpe2009ieee802}
+\citation{thorpe2011ieee802}
+\citation{ieee2002ieee}
+\citation{thorpe2009ieee802}
+\citation{thorpe2011ieee802}
+\citation{zhu2006adaptive}
+\newlabel{fig:jamil_2014_1}{{3.4a}{22}}
+\newlabel{sub@fig:jamil_2014_1}{{a}{22}}
+\newlabel{fig:jamil_2014_2}{{3.4b}{22}}
+\newlabel{sub@fig:jamil_2014_2}{{b}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces CST modification in an IEEE 802.11 WLANs. Images retrieved from \cite  {jamil2014improving}.\relax }}{22}}
+\newlabel{fig:jamil_2014}{{3.4}{22}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces IEEE 802.11ax specification for the sensitivity per channel width\relax }}{22}}
+\newlabel{tbl:sensitivity_channel_width}{{3.2}{22}}
+\@writefile{toc}{\contentsline {subsubsection}{Previous work in CST adjustment}{22}}
+\newlabel{section:other_cst}{{3.1.2}{22}}
+\citation{afifi2016throughput}
+\citation{park2009noncooperative}
+\citation{hua2009cooperative}
+\citation{hua2009distributed}
+\citation{smith2015dynamic}
+\citation{afaqui2015evaluation}
+\citation{afaqui2015evaluation}
+\@writefile{toc}{\contentsline {subsubsection}{Dynamic Sensitivity Control}{23}}
+\newlabel{section:dsc}{{3.1.2}{23}}
+\citation{afaqui2015evaluation}
+\citation{zhong2016promise}
+\citation{selinis2016evaluation}
+\citation{kulkarni2015taming}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Dynamic Sensitivity Control (DSC) operational mode. Image retrieved from \cite  {afaqui2015evaluation}.\relax }}{24}}
+\newlabel{fig:dsc_flowchart}{{3.5}{24}}
+\citation{zhong2016promise}
+\citation{zhong2016promise}
+\citation{afaqui2016dynamic}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces DSC Fairness Issues. Client2 should have Client1 to suspend its transmission, but DSC modifies its CST in order to dismiss Client2. Image retrieved from \cite  {zhong2016promise}.\relax }}{25}}
+\newlabel{fig:dsc_problems}{{3.6}{25}}
+\citation{afaqui2016rtscts}
+\citation{smith2015dynamic}
+\citation{thorpe2009ieee802}
+\citation{thorpe2011ieee802}
+\citation{afifi2016throughput}
+\citation{hua2009cooperative}
+\citation{hua2009distributed}
+\citation{thorpe2014survey}
+\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Carrier Sense Threshold Adjustment State-of-the-Art\relax }}{26}}
+\newlabel{tbl:cca}{{3.3}{26}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}TPC and CCA Relationship}{26}}
+\newlabel{section:tpc_cst_relationship}{{3.1.3}{26}}
+\citation{thorpe2014survey}
+\citation{thorpe2014survey}
+\citation{kawadia2005principles}
+\citation{mhatre2007interference}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Transmit power and CST relationship. $D_{I_{tx,rx}}$ is represented by the smaller circle with the solid line, and $D_{cs}$ is depicted by the larger circle with the broken line. Nodes $n_h$ and $n_e$ are hidden and exposed nodes, respectively. Image retrieved from \cite  {thorpe2014survey}.\relax }}{27}}
+\newlabel{fig:tx_cca_relation}{{3.7}{27}}
+\citation{jamil2015preserving}
+\citation{kim2006improving}
+\citation{oteri2015improved}
+\citation{zhu2004leveraging}
+\citation{mhatre2007interference}
+\citation{jamil2015preserving}
+\citation{kim2006improving}
+\citation{zhu2004leveraging}
+\citation{van1988beamforming}
+\citation{athan2004antenna}
+\citation{ramanathan2001performance}
+\citation{spyropoulos2003capacity}
+\citation{yi2003capacity}
+\citation{alawieh2009improving}
+\citation{choudhury2005performance}
+\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces TPC and CCA Relationship State-of-the-Art\relax }}{29}}
+\newlabel{tbl:tpc_cca}{{3.4}{29}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Beamforming}{29}}
+\newlabel{section:beamforming}{{3.1.4}{29}}
+\citation{arora2004directional}
+\citation{wang2005syn}
+\citation{fahmy2002ad}
+\citation{nasipuri2002power}
 \citation{ling2006joint}
 \citation{wertz2004automatic}
 \citation{chieochan2010channel}
@@ -98,13 +223,8 @@
 \citation{eisenblatter2007integrated}
 \citation{mishra2006client}
 \citation{chen2007improved}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}{\MakeUppercase  { State of the Art}}}{17}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{section:state_of_the_art}{{3}{17}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Dynamic Channel Allocation}{17}}
-\newlabel{section:dca}{{3.1}{17}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Dynamic Channel Allocation}{30}}
+\newlabel{section:dca}{{3.2}{30}}
 \citation{baid2015understanding}
 \citation{brelaz1979new}
 \citation{villegas2009frequency}
@@ -120,136 +240,19 @@
 \citation{mishra2006distributed}
 \citation{mishra2005weighted}
 \citation{herzen2013distributed}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Channelisation of the 2.4 GHz band\relax }}{18}}
-\newlabel{fig:channelisation_wifi}{{3.1}{18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces IEEE 802.11 mask\relax }}{18}}
-\newlabel{fig:80211ad_mask}{{3.2}{18}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Coordinated approaches for channel assignment\relax }}{19}}
-\newlabel{tbl:channel_assignment_coordinated}{{3.1}{19}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Uncoordinated approaches for channel assignment\relax }}{20}}
-\newlabel{tbl:channel_assignment_uncoordinated}{{3.2}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Channelisation of the 2.4 GHz band\relax }}{31}}
+\newlabel{fig:channelisation_wifi}{{3.8}{31}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces IEEE 802.11 mask\relax }}{31}}
+\newlabel{fig:80211ad_mask}{{3.9}{31}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Coordinated approaches for channel assignment\relax }}{32}}
+\newlabel{tbl:channel_assignment_coordinated}{{3.5}{32}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.6}{\ignorespaces Uncoordinated approaches for channel assignment\relax }}{33}}
+\newlabel{tbl:channel_assignment_uncoordinated}{{3.6}{33}}
 \citation{akl2007dynamic}
 \citation{chen2007improved}
 \citation{akl2007dynamic}
 \citation{chen2007improved}
-\citation{tgax2016draft}
-\newlabel{fig:saw_alg}{{\caption@xref {fig:saw_alg}{ on input line 346}}{21}}
-\citation{kawadia2005principles}
-\citation{agarwal2001distributed}
-\citation{karn1990maca}
-\citation{ebert1999combined}
-\citation{pursley2000energy}
-\citation{pursley2000energy}
-\citation{pursley2000energy}
-\citation{pursley2000energy}
-\citation{jung2002power}
-\citation{pursley2000energy}
-\citation{pursley2000energy}
-\citation{pursley2000energy}
-\citation{lei2015performance}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Transmit Power Control}{22}}
-\newlabel{section:tpc}{{3.2}{22}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Pursley et al. Power Control Scheme. Image retrieved from \cite  {pursley2000energy}.\relax }}{23}}
-\newlabel{fig:basic_tpc}{{3.3}{23}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Power Control MAC (PCM) scheme. Image retrieved from \cite  {pursley2000energy}.\relax }}{23}}
-\newlabel{fig:pcm}{{3.4}{23}}
-\citation{chaves2014adaptive}
-\citation{oteri2013advanced}
-\citation{gandarillas2014dynamic}
-\citation{tang2014joint}
-\citation{elbatt2000power}
-\citation{ebert2000energy}
-\citation{broustis2010measurement}
-\citation{oteri2013advanced}
-\citation{lei2015performance}
-\citation{gandarillas2014dynamic}
-\citation{tang2014joint}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces F-CMSA operation. AP1 uses a higher transmit power to reach its farthest STA (STA1.1). At the same time, AP2 transmits to a close device (STA2.1), so that transmit power does not affect the other ongoing transmission. This scheduling is provided by a central entity.\relax }}{25}}
-\newlabel{fig:fcsma}{{3.5}{25}}
-\citation{jamil2014improving}
-\citation{tgax2016draft}
-\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces State-of-the-Art on Transmission Power Control\relax }}{26}}
-\newlabel{tbl:tpc}{{3.3}{26}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Carrier Sense Threshold Adjustment}{26}}
-\newlabel{section:cca}{{3.3}{26}}
-\citation{smith2015dynamic}
-\citation{afaqui2015evaluation}
-\citation{afaqui2015evaluation}
-\citation{afaqui2015evaluation}
-\citation{zhong2016promise}
-\citation{selinis2016evaluation}
-\citation{kulkarni2015taming}
-\newlabel{fig:jamil_2014_1}{{3.6a}{27}}
-\newlabel{sub@fig:jamil_2014_1}{{a}{27}}
-\newlabel{fig:jamil_2014_2}{{3.6b}{27}}
-\newlabel{sub@fig:jamil_2014_2}{{b}{27}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces IEEE 802.11ax Residential scenario\relax }}{27}}
-\newlabel{fig:jamil_2014}{{3.6}{27}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces IEEE 802.11ax specification for the sensitivity per channel width\relax }}{27}}
-\newlabel{tbl:sensitivity_channel_width}{{3.4}{27}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Dynamic Sensitivity Control}{27}}
-\newlabel{section:dsc}{{3.3.1}{27}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Dynamic Sensitivity Control (DSC) operational mode. Image retrieved from \cite  {afaqui2015evaluation}.\relax }}{28}}
-\newlabel{fig:dsc_flowchart}{{3.7}{28}}
-\citation{zhong2016promise}
-\citation{zhong2016promise}
-\citation{afaqui2016dynamic}
-\citation{afaqui2016rtscts}
-\citation{afaqui2017dynamic}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces DSC Fairness Issues. Client2 should have Client1 to suspend its transmission, but DSC modifies its CST in order to dismiss Client2. Image retrieved from \cite  {zhong2016promise}.\relax }}{29}}
-\newlabel{fig:dsc_problems}{{3.8}{29}}
-\citation{thorpe2009ieee802}
-\citation{thorpe2011ieee802}
-\citation{ieee2002ieee}
-\citation{thorpe2009ieee802}
-\citation{thorpe2011ieee802}
-\citation{zhu2006adaptive}
-\citation{afifi2016throughput}
-\citation{park2009noncooperative}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Previous work in CST adjustment}{30}}
-\newlabel{section:other_cst}{{3.3.2}{30}}
-\citation{hua2009cooperative}
-\citation{hua2009distributed}
-\citation{smith2015dynamic}
-\citation{thorpe2009ieee802}
-\citation{thorpe2011ieee802}
-\citation{afifi2016throughput}
-\citation{hua2009cooperative}
-\citation{hua2009distributed}
-\citation{thorpe2014survey}
-\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Carrier Sense Threshold Adjustment State-of-the-Art\relax }}{31}}
-\newlabel{tbl:cca}{{3.5}{31}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}TPC and CCA Relationship}{31}}
-\newlabel{section:tpc_cst_relationship}{{3.4}{31}}
-\citation{thorpe2014survey}
-\citation{thorpe2014survey}
-\citation{kawadia2005principles}
-\citation{mhatre2007interference}
-\citation{jamil2015preserving}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Transmit power and CST relationship.$D_{I_{tx,rx}}$ is represented by the smaller circle with the solid line, and $D_{cs}$ is depicted by the larger circle with the broken line. Nodes $n_h$ and $n_e$ are hidden and exposed nodes, respectively. Image retrieved from \cite  {thorpe2014survey}.\relax }}{32}}
-\newlabel{fig:tx_cca_relation}{{3.9}{32}}
-\citation{kim2006improving}
-\citation{oteri2015improved}
-\citation{zhu2004leveraging}
-\citation{mhatre2007interference}
-\citation{jamil2015preserving}
-\citation{kim2006improving}
-\citation{zhu2004leveraging}
-\citation{van1988beamforming}
-\citation{athan2004antenna}
-\citation{ramanathan2001performance}
-\citation{spyropoulos2003capacity}
-\citation{yi2003capacity}
-\citation{alawieh2009improving}
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Beamforming}{33}}
-\newlabel{section:beamforming}{{3.5}{33}}
-\citation{choudhury2005performance}
-\citation{arora2004directional}
-\citation{wang2005syn}
-\citation{fahmy2002ad}
-\citation{nasipuri2002power}
-\@writefile{lot}{\contentsline {table}{\numberline {3.6}{\ignorespaces TPC and CCA Relationship State-of-the-Art\relax }}{34}}
-\newlabel{tbl:tpc_cca}{{3.6}{34}}
+\newlabel{fig:saw_alg}{{\caption@xref {fig:saw_alg}{ on input line 614}}{34}}
 \citation{sutton1998reinforcement}
 \citation{sutton1998reinforcement}
 \citation{szepesvari2010algorithms}
@@ -257,42 +260,42 @@
 \citation{szepesvari2010algorithms}
 \citation{robert2004monte}
 \citation{sutton1988learning}
-\@writefile{toc}{\contentsline {section}{\numberline {3.6}Reinforcement Learning}{35}}
-\newlabel{section:rl}{{3.6}{35}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Reinforcement Learning}{35}}
+\newlabel{section:rl}{{3.3}{35}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Basic RL scenario. Image retrieved from \cite  {sutton1998reinforcement}\relax }}{35}}
 \newlabel{fig:rl_scenario}{{3.10}{35}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Types of RL problems and approaches. Image retrieved from \cite  {szepesvari2010algorithms}\relax }}{35}}
+\newlabel{fig:rl_types}{{3.11}{35}}
 \citation{szepesvari2010algorithms}
 \citation{szepesvari2010algorithms}
 \citation{abramson2004active}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Types of RL problems and approaches. Image retrieved from \cite  {szepesvari2010algorithms}\relax }}{36}}
-\newlabel{fig:rl_types}{{3.11}{36}}
 \citation{nie1999q}
-\citation{li2009multi}
-\citation{bennis2010q}
-\citation{bennis2011distributed}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Types of RL problems and approaches. Image retrieved from \cite  {szepesvari2010algorithms}\relax }}{37}}
 \newlabel{fig:rl_control_types}{{3.12}{37}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.7}{\ignorespaces Families of RL methods\relax }}{37}}
 \newlabel{tbl:soa_rl}{{3.7}{37}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Reinforcement Learning for improving Spatial Reuse in WNs}{37}}
+\newlabel{tbl:rl_to_wns}{{3.3.1}{37}}
+\citation{li2009multi}
+\citation{bennis2010q}
+\citation{bennis2011distributed}
 \citation{maghsudi2015joint}
 \citation{maghsudi2015channel}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.1}Reinforcement Learning for improving Spatial Reuse in WNs}{38}}
-\newlabel{tbl:rl_to_wns}{{3.6.1}{38}}
 \citation{jamil2016novel}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces Topology of the ANN\relax }}{39}}
-\newlabel{fig:neural_network_topology}{{3.13}{39}}
 \citation{nie1999q}
 \citation{li2009multi}
 \citation{bennis2010q}
 \citation{maghsudi2015joint}
 \citation{maghsudi2015channel}
 \citation{jamil2016novel}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces Topology of the ANN\relax }}{39}}
+\newlabel{fig:neural_network_topology}{{3.13}{39}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.8}{\ignorespaces State-of-the-Art of Reinforcement Learning for spatial reuse in Wireless Networks\relax }}{40}}
 \newlabel{tbl:rl_wns}{{3.8}{40}}
 \citation{wilhelmi2017implications}
 \citation{wilhelmi2017enhancing}
-\citation{wilhelmi2017enhancing}
 \citation{wilhelmi2017implications}
+\citation{wilhelmi2017enhancing}
 \citation{bellalta2017learning}
 \citation{wilhelmi2017improving}
 \citation{barrachina2017ctmn}
@@ -350,31 +353,31 @@
 \newlabel{section:future_work}{{5}{45}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.1}Topic Understanding and State-of-the-Art Analysis}{45}}
 \newlabel{section:contribution1}{{5.1}{45}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Involved Tasks}{45}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Expected Outputs}{45}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Studying the Learning Feasibility in WNs}{45}}
-\newlabel{section:contribution2}{{5.2}{45}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Involved Tasks}{45}}
+\@writefile{toc}{\contentsline {paragraph}{Involved tasks:}{45}}
+\@writefile{toc}{\contentsline {paragraph}{Expected output:}{45}}
 \citation{wilhelmi2017implications}
 \citation{wilhelmi2017enhancing}
 \citation{wilhelmi2017implications}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Expected Outputs}{46}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Learning Feasibility in WNs}{46}}
+\newlabel{section:contribution2}{{5.2}{46}}
+\@writefile{toc}{\contentsline {paragraph}{Involved tasks:}{46}}
+\@writefile{toc}{\contentsline {paragraph}{Expected output:}{46}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.3}Decentralised ML-based Solutions}{46}}
 \newlabel{section:contribution3}{{5.3}{46}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Involved Tasks}{46}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Expected Outputs}{46}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Centralised ML-based Solutions}{46}}
-\newlabel{section:contribution4}{{5.4}{46}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Involved Tasks}{46}}
+\@writefile{toc}{\contentsline {paragraph}{Involved tasks:}{46}}
 \citation{wilhelmi2017implications}
 \citation{wilhelmi2017enhancing}
 \bibstyle{unsrt}
 \bibdata{bib}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Expected Outputs}{47}}
+\@writefile{toc}{\contentsline {paragraph}{Expected output:}{47}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Centralised ML-based Solutions}{47}}
+\newlabel{section:contribution4}{{5.4}{47}}
+\@writefile{toc}{\contentsline {paragraph}{Involved tasks:}{47}}
+\@writefile{toc}{\contentsline {paragraph}{Expected output:}{47}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.5}Integration with Other Solutions}{47}}
 \newlabel{section:contribution5}{{5.5}{47}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Involved Tasks}{47}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Expected Outputs}{47}}
+\@writefile{toc}{\contentsline {paragraph}{Involved tasks:}{47}}
+\@writefile{toc}{\contentsline {paragraph}{Expected output:}{47}}
 \bibcite{zhong2015issues}{1}
 \bibcite{akella2007self}{2}
 \bibcite{herzen2015csma}{3}
@@ -390,102 +393,101 @@
 \bibcite{bojovic2012neural}{13}
 \bibcite{combes2014optimal}{14}
 \bibcite{miozzo2015distributed}{15}
-\bibcite{ling2006joint}{16}
-\bibcite{wertz2004automatic}{17}
-\bibcite{chieochan2010channel}{18}
-\bibcite{hills2001large}{19}
-\bibcite{mahonen2004automatic}{20}
-\bibcite{riihijarvi2005frequency}{21}
-\bibcite{riihijarvi2006performance}{22}
-\bibcite{lee2002optimization}{23}
-\bibcite{eisenblatter2007integrated}{24}
-\bibcite{mishra2006client}{25}
-\bibcite{chen2007improved}{26}
-\bibcite{baid2015understanding}{27}
-\bibcite{brelaz1979new}{28}
-\bibcite{villegas2009frequency}{29}
-\bibcite{raniwala2004centralized}{30}
-\bibcite{achanta2004method}{31}
-\bibcite{leung2003frequency}{32}
-\bibcite{yu2006dynamic}{33}
-\bibcite{yu2004adaptive}{34}
-\bibcite{mishra2005weighted}{35}
-\bibcite{akl2007dynamic}{36}
-\bibcite{haidar2007channel}{37}
-\bibcite{al2007enhanced}{38}
-\bibcite{mishra2006distributed}{39}
-\bibcite{herzen2013distributed}{40}
-\bibcite{tgax2016draft}{41}
-\bibcite{kawadia2005principles}{42}
-\bibcite{agarwal2001distributed}{43}
-\bibcite{karn1990maca}{44}
-\bibcite{ebert1999combined}{45}
-\bibcite{pursley2000energy}{46}
-\bibcite{jung2002power}{47}
-\bibcite{lei2015performance}{48}
-\bibcite{chaves2014adaptive}{49}
-\bibcite{oteri2013advanced}{50}
-\bibcite{gandarillas2014dynamic}{51}
-\bibcite{tang2014joint}{52}
-\bibcite{elbatt2000power}{53}
-\bibcite{ebert2000energy}{54}
-\bibcite{broustis2010measurement}{55}
-\bibcite{jamil2014improving}{56}
-\bibcite{smith2015dynamic}{57}
-\bibcite{afaqui2015evaluation}{58}
-\bibcite{zhong2016promise}{59}
-\bibcite{selinis2016evaluation}{60}
-\bibcite{kulkarni2015taming}{61}
-\bibcite{afaqui2016dynamic}{62}
-\bibcite{afaqui2016rtscts}{63}
-\bibcite{afaqui2017dynamic}{64}
-\bibcite{thorpe2009ieee802}{65}
-\bibcite{thorpe2011ieee802}{66}
-\bibcite{ieee2002ieee}{67}
-\bibcite{zhu2006adaptive}{68}
-\bibcite{afifi2016throughput}{69}
-\bibcite{park2009noncooperative}{70}
-\bibcite{hua2009cooperative}{71}
-\bibcite{hua2009distributed}{72}
-\bibcite{thorpe2014survey}{73}
-\bibcite{mhatre2007interference}{74}
-\bibcite{jamil2015preserving}{75}
-\bibcite{kim2006improving}{76}
-\bibcite{oteri2015improved}{77}
-\bibcite{zhu2004leveraging}{78}
-\bibcite{van1988beamforming}{79}
-\bibcite{athan2004antenna}{80}
-\bibcite{ramanathan2001performance}{81}
-\bibcite{spyropoulos2003capacity}{82}
-\bibcite{yi2003capacity}{83}
-\bibcite{alawieh2009improving}{84}
-\bibcite{choudhury2005performance}{85}
-\bibcite{arora2004directional}{86}
-\bibcite{wang2005syn}{87}
-\bibcite{fahmy2002ad}{88}
-\bibcite{nasipuri2002power}{89}
-\bibcite{sutton1998reinforcement}{90}
-\bibcite{szepesvari2010algorithms}{91}
-\bibcite{robert2004monte}{92}
-\bibcite{sutton1988learning}{93}
-\bibcite{abramson2004active}{94}
-\bibcite{nie1999q}{95}
-\bibcite{li2009multi}{96}
-\bibcite{bennis2010q}{97}
-\bibcite{bennis2011distributed}{98}
-\bibcite{maghsudi2015joint}{99}
-\bibcite{maghsudi2015channel}{100}
-\bibcite{jamil2016novel}{101}
-\bibcite{wilhelmi2017implications}{102}
-\bibcite{wilhelmi2017enhancing}{103}
-\bibcite{bellalta2017learning}{104}
-\bibcite{wilhelmi2017improving}{105}
-\bibcite{barrachina2017ctmn}{106}
-\bibcite{bellalta2014throughput}{107}
-\bibcite{bianchi2000performance}{108}
-\bibcite{carneiro2010ns}{109}
-\bibcite{issariyakul2011introduction}{110}
-\bibcite{modeler2009opnet}{111}
-\bibcite{varga2008overview}{112}
-\bibcite{barrachina2017komondor}{113}
-\bibcite{chen2005sense}{114}
+\bibcite{tgax2016draft}{16}
+\bibcite{kawadia2005principles}{17}
+\bibcite{agarwal2001distributed}{18}
+\bibcite{karn1990maca}{19}
+\bibcite{ebert1999combined}{20}
+\bibcite{pursley2000energy}{21}
+\bibcite{jung2002power}{22}
+\bibcite{lei2015performance}{23}
+\bibcite{chaves2014adaptive}{24}
+\bibcite{oteri2013advanced}{25}
+\bibcite{gandarillas2014dynamic}{26}
+\bibcite{tang2014joint}{27}
+\bibcite{elbatt2000power}{28}
+\bibcite{ebert2000energy}{29}
+\bibcite{broustis2010measurement}{30}
+\bibcite{jamil2014improving}{31}
+\bibcite{thorpe2009ieee802}{32}
+\bibcite{thorpe2011ieee802}{33}
+\bibcite{ieee2002ieee}{34}
+\bibcite{zhu2006adaptive}{35}
+\bibcite{afifi2016throughput}{36}
+\bibcite{park2009noncooperative}{37}
+\bibcite{hua2009cooperative}{38}
+\bibcite{hua2009distributed}{39}
+\bibcite{smith2015dynamic}{40}
+\bibcite{afaqui2015evaluation}{41}
+\bibcite{zhong2016promise}{42}
+\bibcite{selinis2016evaluation}{43}
+\bibcite{kulkarni2015taming}{44}
+\bibcite{afaqui2016dynamic}{45}
+\bibcite{afaqui2016rtscts}{46}
+\bibcite{thorpe2014survey}{47}
+\bibcite{mhatre2007interference}{48}
+\bibcite{jamil2015preserving}{49}
+\bibcite{kim2006improving}{50}
+\bibcite{oteri2015improved}{51}
+\bibcite{zhu2004leveraging}{52}
+\bibcite{van1988beamforming}{53}
+\bibcite{athan2004antenna}{54}
+\bibcite{ramanathan2001performance}{55}
+\bibcite{spyropoulos2003capacity}{56}
+\bibcite{yi2003capacity}{57}
+\bibcite{alawieh2009improving}{58}
+\bibcite{choudhury2005performance}{59}
+\bibcite{arora2004directional}{60}
+\bibcite{wang2005syn}{61}
+\bibcite{fahmy2002ad}{62}
+\bibcite{nasipuri2002power}{63}
+\bibcite{ling2006joint}{64}
+\bibcite{wertz2004automatic}{65}
+\bibcite{chieochan2010channel}{66}
+\bibcite{hills2001large}{67}
+\bibcite{mahonen2004automatic}{68}
+\bibcite{riihijarvi2005frequency}{69}
+\bibcite{riihijarvi2006performance}{70}
+\bibcite{lee2002optimization}{71}
+\bibcite{eisenblatter2007integrated}{72}
+\bibcite{mishra2006client}{73}
+\bibcite{chen2007improved}{74}
+\bibcite{baid2015understanding}{75}
+\bibcite{brelaz1979new}{76}
+\bibcite{villegas2009frequency}{77}
+\bibcite{raniwala2004centralized}{78}
+\bibcite{achanta2004method}{79}
+\bibcite{leung2003frequency}{80}
+\bibcite{yu2006dynamic}{81}
+\bibcite{yu2004adaptive}{82}
+\bibcite{mishra2005weighted}{83}
+\bibcite{akl2007dynamic}{84}
+\bibcite{haidar2007channel}{85}
+\bibcite{al2007enhanced}{86}
+\bibcite{mishra2006distributed}{87}
+\bibcite{herzen2013distributed}{88}
+\bibcite{sutton1998reinforcement}{89}
+\bibcite{szepesvari2010algorithms}{90}
+\bibcite{robert2004monte}{91}
+\bibcite{sutton1988learning}{92}
+\bibcite{abramson2004active}{93}
+\bibcite{nie1999q}{94}
+\bibcite{li2009multi}{95}
+\bibcite{bennis2010q}{96}
+\bibcite{bennis2011distributed}{97}
+\bibcite{maghsudi2015joint}{98}
+\bibcite{maghsudi2015channel}{99}
+\bibcite{jamil2016novel}{100}
+\bibcite{wilhelmi2017implications}{101}
+\bibcite{wilhelmi2017enhancing}{102}
+\bibcite{bellalta2017learning}{103}
+\bibcite{wilhelmi2017improving}{104}
+\bibcite{barrachina2017ctmn}{105}
+\bibcite{bellalta2014throughput}{106}
+\bibcite{bianchi2000performance}{107}
+\bibcite{carneiro2010ns}{108}
+\bibcite{issariyakul2011introduction}{109}
+\bibcite{modeler2009opnet}{110}
+\bibcite{varga2008overview}{111}
+\bibcite{barrachina2017komondor}{112}
+\bibcite{chen2005sense}{113}
