@@ -756,7 +756,39 @@
 			To support the main research activity, some other projects are being under development, which are detailed in this section.
 			\subsection{Analytical Models and Simulators}
 			\label{section:validation}	
-				A fundamental task for this Thesis is to properly understand and/or develop the most suitable simulation tools, which will allow us validating the results obtained from the research activity. One of the most important analytical models to compute the throughput in an overlapping network is the Continuous Time Markov Networks (CTMNs) model \cite{bellalta2014throughput}, which captures the operation of the CSMA/CA protocol. In relation to CTMNs, we have started a collaboration for developing a framework that is able to build the Markov chains for analytical throughput calculation, according to the nodes input (many features such as the position, the power transmitted or the channel bonding policy are taken into consideration). The project is leaded by Sergio Barrachina \cite{barrachina2017ctmn}. Another important analytical model for throughput calculation in overlapping WLANs is the Bianchi's model \cite{bianchi2000performance}. The Bianchi's model is a benchmark in the current literature that we aim to use for validating the Komondor simulator (further described in Section \ref{section:cisco_project}).				
+				A fundamental task for this Thesis is to properly understand and/or develop the most suitable simulation tools, which will allow us validating the results obtained from the research activity. One of the most important analytical models to compute the throughput in an overlapping network is the Continuous Time Markov Networks (CTMNs) model \cite{bellalta2014throughput}, which captures the operation of the CSMA/CA protocol. In a CTMN, each state is represented by the number of nodes that are transmitting, so that transitions between states are determined by the time it costs for a node to access the channel and the time it takes for leaving it, respectively. As an example, the CTMN for a scenario in which direct interference prevents a node to transmit is shown in Figure \ref{fig:direct}. In particular, node B senses the channel busy if either A or C are transmitting. The throughput experienced by each node $\Gamma_i$ can be directly computed as:
+				\begin{equation}
+					\Gamma_i = L \sum_{s \in S} \mu_{n_{i,s}}\pi_s
+					\nonumber
+				\end{equation}
+				where $L$ is the data length, $\mu_{n_{i,s}}$ is the duration of a transmission for each state $s$, and $\pi_s$ is the fraction of time of each state, which is given by:
+				\begin{equation}
+					\pi_s = \frac{\prod_{i \in s}\frac{\lambda_i}{\mu_i}}{\sum_{s \in \Omega} \prod_{i \in s}\frac{\lambda_i}{\mu_i}}
+					\nonumber
+				\end{equation}
+				The probability of being in state 0 (i.e., nobody transmits) is given by:
+				\begin{equation}
+					\pi_0 = \frac{1}{\sum_{s \in \Omega} \prod_{i \in s}\frac{\lambda_i}{\mu_i}}
+					\nonumber
+				\end{equation}
+				\begin{figure}[t!]
+					\centering
+					\begin{subfigure}[b]{0.35\textwidth}
+						\includegraphics[width=\textwidth]{images/ctmn_direct}
+						\caption{Direct interference}
+						\label{fig:direct}
+					\end{subfigure}
+					\begin{subfigure}[b]{0.45\textwidth}
+						\includegraphics[width=\textwidth]{images/ctmn_additive}
+						\caption{Additive interference}
+						\label{fig:additive}
+					\end{subfigure}		
+					\caption{Markov chains for direct and additive interference schemes. Each state $S_i$ is represented by the nodes that are transmitting simultaneously. Transitions are ruled by the duration of a packet transmission ($\mu_i$) and the attempt rate ($\lambda_i$).}
+					\label{fig:ctmn}
+				\end{figure}			
+				However, this simple scenario is not likely to occur in real life, which increases the complexity of the problem for finding a solution. That is the case shown in Figure \ref{fig:additive}, in which node B is prevented to transmit if both A and C transmit at the same time. A direct consequence of this on the CTMN model is that the Markov chain become irreversible, which complicates the throughput calculation. Furthermore, there appear states in which the collisions probability increases, which must be taken into account. In particular, a transitions matrix must be computed to obtain the individual throughput of each node.
+				
+				In relation to CTMNs, we have started a collaboration for developing a framework that is able to build the Markov chains for analytical throughput calculation, according to the nodes input (many features such as the position, the power transmitted or the channel bonding policy are taken into consideration). The project is leaded by Sergio Barrachina \cite{barrachina2017ctmn}. Another important analytical model for throughput calculation in overlapping WLANs is the Bianchi's model \cite{bianchi2000performance}. The Bianchi's model is a benchmark in the current literature that we aim to use for validating the Komondor simulator (further described in Section \ref{section:cisco_project}).				
 				
 				Regarding network simulators, we highlight ns-3 \cite{carneiro2010ns}, which is widely spread in the wireless community. However, the learning curve is high and many novel features are not yet supported. 	Other available simulators are ns-2 \cite{issariyakul2011introduction}, OPNET \cite{modeler2009opnet} or Omnet++ \cite{varga2008overview}.
 				

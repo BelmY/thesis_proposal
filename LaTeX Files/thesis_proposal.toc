@@ -26,9 +26,9 @@
 \contentsline {section}{\numberline {4.1}Wireless Networking Through Learning}{41}
 \contentsline {section}{\numberline {4.2}Other Projects}{42}
 \contentsline {subsection}{\numberline {4.2.1}Analytical Models and Simulators}{42}
-\contentsline {subsection}{\numberline {4.2.2}Development of an IEEE 802.11ax Event-Based Simulator}{43}
-\contentsline {subsection}{\numberline {4.2.3}AP Association and Self-Managed Networks through Learning}{43}
-\contentsline {section}{\numberline {4.3}Preliminary Results}{43}
+\contentsline {subsection}{\numberline {4.2.2}Development of an IEEE 802.11ax Event-Based Simulator}{44}
+\contentsline {subsection}{\numberline {4.2.3}AP Association and Self-Managed Networks through Learning}{44}
+\contentsline {section}{\numberline {4.3}Preliminary Results}{44}
 \contentsline {chapter}{\numberline {5}{\MakeUppercase { Planning and Future Work}}}{47}
 \contentsline {section}{\numberline {5.1}Topic Understanding and State-of-the-Art Analysis}{47}
 \contentsline {paragraph}{Involved tasks:}{47}

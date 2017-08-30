@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.12.1)  30 AUG 2017 11:11
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.12.1)  30 AUG 2017 11:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1557,14 +1557,22 @@ Ns per-for-mance through learning-
  []
 
 [42]
-Missing character: There is no   in font ptmr7t!
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 773.
+File: images/ctmn_direct.png Graphic file (type QTm)
+ <use  "images/ctmn_direct.png" >
+File: images/ctmn_additive.png Graphic file (type QTm)
+ <use  "images/ctmn_additive.png" >
+Underfull \vbox (badness 1975) has occurred while \output is active []
 
- (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
+ [43]
+Missing character: There is no   in font ptmr7t!
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 805.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 773.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 805.
 File: images/e_1_a1_g095.eps Graphic file (type eps)
 
 <images/e_1_a1_g095.eps>
@@ -1572,7 +1580,7 @@ File: images/e_1_a1_g095_avg_tpt.eps Graphic file (type eps)
  <images/e_1_a1_g095_avg_tpt.eps>
 File: images/e_1_a1_g095_ind_tpt.eps Graphic file (type eps)
 
-<images/e_1_a1_g095_ind_tpt.eps> [43]
+<images/e_1_a1_g095_ind_tpt.eps> [44]
 File: images/proportional_fairness_qlearning_avg_tpt.eps Graphic file (type eps
 )
 
@@ -1580,19 +1588,19 @@ File: images/proportional_fairness_qlearning_avg_tpt.eps Graphic file (type eps
 File: images/proportional_fairness_qlearning_ind_tpt.png Graphic file (type QTm
 )
 
-<use  "images/proportional_fairness_qlearning_ind_tpt.png" > [44] [45] [46
+<use  "images/proportional_fairness_qlearning_ind_tpt.png" > [45] [46]
+Chapter 5.
+[47
 
 
 ]
-Chapter 5.
-[47]
-Overfull \hbox (7.16519pt too wide) in paragraph at lines 865--866
+Overfull \hbox (7.16519pt too wide) in paragraph at lines 897--898
 []\OT1/ptm/m/n/12 Finally, it is ex-pected to ex-plore co-or-di-nated ap-proach
 es for max-imis-ing the net-work through-
  []
 
 
-Overfull \hbox (4.1195pt too wide) in paragraph at lines 871--872
+Overfull \hbox (4.1195pt too wide) in paragraph at lines 903--904
 []\OT1/ptm/m/n/12 Extend pre-vi-ous work in de-cen-tralised learn-ing in or-der
  to pro-vide co-or-di-nated ap-proaches
  []
@@ -1622,10 +1630,10 @@ Missing character: There is no ç in font ptmr7t!
 ### bottom level
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
- 30414 strings out of 493591
- 654985 string characters out of 6143546
- 688791 words of memory out of 5000000
- 33235 multiletter control sequences out of 15000+600000
+ 30423 strings out of 493591
+ 655133 string characters out of 6143546
+ 688844 words of memory out of 5000000
+ 33242 multiletter control sequences out of 15000+600000
  21777 words of font info for 64 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  55i,17n,77p,10385b,3032s stack positions out of 5000i,500n,10000p,200000b,80000s
