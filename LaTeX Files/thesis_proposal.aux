@@ -14,6 +14,7 @@
 \@writefile{lot}{\select@language{english}}
 \citation{zhong2015issues}
 \citation{akella2007self}
+\citation{barcelo2009csma}
 \citation{herzen2015csma}
 \citation{wang2012combating}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}{\MakeUppercase  { Introduction}}}{3}}
@@ -43,48 +44,51 @@
 \citation{jang2012ieee}
 \citation{sobrinho2005rts}
 \citation{bellalta2016ieee}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Exposed Terminal Problem: AP1 and AP2 could transmit simultaneously since STA1 and STA2 are far enough from the interference, but only a transmission at a time is allowed due to CSMA/CA. Hidden Terminal Problem: AP2 and AP3 may suffer collisions by hidden node because they are not in range of each other, but STA2 and STA3 sense both APs.\relax }}{10}}
-\newlabel{fig:hidden_exposed}{{2.1}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces DCF operation with RTS/CTS. After waiting one slot, STA2 sends an RTS frame to indicate the channel reservation. STA1, which is a contending node, sets the NAV to perform virtual carrier sensing. In case the receiver (AP) senses the channel free, a CTS frame is replied, so that NAV is updated in STA1 to cover the entire transmission.\relax }}{11}}
-\newlabel{fig:dcf_operation}{{2.2}{11}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Scenarios}{11}}
-\newlabel{section:scenarios}{{2.2}{11}}
-\newlabel{fig:building}{{2.3a}{11}}
-\newlabel{sub@fig:building}{{a}{11}}
-\newlabel{fig:floor}{{2.3b}{11}}
-\newlabel{sub@fig:floor}{{b}{11}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces IEEE 802.11ax Residential scenario\relax }}{11}}
-\newlabel{fig:ax_residential_scenario}{{2.3}{11}}
-\newlabel{fig:offices}{{2.4a}{12}}
-\newlabel{sub@fig:offices}{{a}{12}}
-\newlabel{fig:cubicles}{{2.4b}{12}}
-\newlabel{sub@fig:cubicles}{{b}{12}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces IEEE 802.11ax Enterprise scenario\relax }}{12}}
-\newlabel{fig:ax_enterprise_scenario}{{2.4}{12}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces IEEE 802.11ax Cell topologies\relax }}{12}}
-\newlabel{fig:large_ax}{{2.5}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces DCF operation. After waiting one slot, STA2 transmits DATA to the AP, which replies with an ACK. STA1, which is a contending node, listens the ongoing transmission and defers its backoff countdown. Then, a collision is noticed because AP and STA1 end their backoff at the same time. An EIFS period is waited by the implicated nodes. Note as well that the transmitters wait for an extra slot (marked as *) before computing the new backoff.\relax }}{10}}
+\newlabel{fig:dcf_operation_1}{{2.1}{10}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Scenarios}{10}}
+\newlabel{section:scenarios}{{2.2}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Exposed Terminal Problem: AP1 and AP2 could transmit simultaneously since STA1 and STA2 are far enough from the interference, but only a transmission at a time is allowed due to CSMA/CA. Hidden Terminal Problem: AP2 and AP3 may suffer collisions by hidden node because they are not in range of each other, but STA2 and STA3 sense both APs.\relax }}{11}}
+\newlabel{fig:hidden_exposed}{{2.2}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces DCF operation with RTS/CTS. After waiting one slot, STA2 sends an RTS frame to indicate the channel reservation. STA1, which is a contending node, sets the NAV to perform virtual carrier sensing. In case the receiver (AP) senses the channel free, a CTS frame is replied, so that NAV is updated in STA1 to cover the entire transmission.\relax }}{11}}
+\newlabel{fig:dcf_operation}{{2.3}{11}}
 \citation{balachandran2002characterizing}
 \citation{papadopouli2005modeling}
 \citation{papadopouli2005modeling}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces IEEE 802.11ax Residential + Large Outdoor BSS scenario\relax }}{13}}
-\newlabel{fig:residential_large_ax}{{2.6}{13}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Spatial Reuse in Overlapping IEEE 802.11 WLANs}{13}}
-\newlabel{section:spatial_reuse}{{2.3}{13}}
+\newlabel{fig:building}{{2.4a}{12}}
+\newlabel{sub@fig:building}{{a}{12}}
+\newlabel{fig:floor}{{2.4b}{12}}
+\newlabel{sub@fig:floor}{{b}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces IEEE 802.11ax Residential scenario\relax }}{12}}
+\newlabel{fig:ax_residential_scenario}{{2.4}{12}}
+\newlabel{fig:offices}{{2.5a}{13}}
+\newlabel{sub@fig:offices}{{a}{13}}
+\newlabel{fig:cubicles}{{2.5b}{13}}
+\newlabel{sub@fig:cubicles}{{b}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces IEEE 802.11ax Enterprise scenario\relax }}{13}}
+\newlabel{fig:ax_enterprise_scenario}{{2.5}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces IEEE 802.11ax Cell topologies\relax }}{13}}
+\newlabel{fig:large_ax}{{2.6}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces IEEE 802.11ax Residential + Large Outdoor BSS scenario\relax }}{13}}
+\newlabel{fig:residential_large_ax}{{2.7}{13}}
+\citation{tgax2016draft}
 \citation{littman1993distributed}
 \citation{bojovic2011supervised}
 \citation{bojovic2012neural}
 \citation{combes2014optimal}
 \citation{miozzo2015distributed}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Spatial Reuse in Overlapping IEEE 802.11 WLANs}{14}}
+\newlabel{section:spatial_reuse}{{2.3}{14}}
 \@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Effects of TPC and CST adjustment. \textit  {*Adjusting CCA may indirectly affect to the energy consumption by requiring more/less power to be transmitted.}\relax }}{14}}
 \newlabel{tbl:cca_tpc_effects}{{2.1}{14}}
-\newlabel{fig:beamforming1}{{2.7a}{14}}
-\newlabel{sub@fig:beamforming1}{{a}{14}}
-\newlabel{fig:beamforming2}{{2.7b}{14}}
-\newlabel{sub@fig:beamforming2}{{b}{14}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Enhancement of the spatial reuse through adaptive beamforming\relax }}{14}}
-\newlabel{fig:beamforming}{{2.7}{14}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.4}Autonomous Management in Wireless Networks}{14}}
 \newlabel{section:rl_vision}{{2.4}{14}}
+\newlabel{fig:beamforming1}{{2.8a}{15}}
+\newlabel{sub@fig:beamforming1}{{a}{15}}
+\newlabel{fig:beamforming2}{{2.8b}{15}}
+\newlabel{sub@fig:beamforming2}{{b}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Enhancement of the spatial reuse through adaptive beamforming\relax }}{15}}
+\newlabel{fig:beamforming}{{2.8}{15}}
 \citation{tgax2016draft}
 \citation{kawadia2005principles}
 \@writefile{toc}{\contentsline {chapter}{\numberline {3}{\MakeUppercase  { State of the Art}}}{17}}
@@ -185,6 +189,7 @@
 \citation{thorpe2014survey}
 \citation{kawadia2005principles}
 \citation{mhatre2007interference}
+\citation{bremaud2013markov}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Transmit power and CST relationship. $D_{I_{tx,rx}}$ is represented by the smaller circle with the solid line, and $D_{cs}$ is depicted by the larger circle with the broken line. Nodes $n_h$ and $n_e$ are hidden and exposed nodes, respectively. Image retrieved from \cite  {thorpe2014survey}.\relax }}{27}}
 \newlabel{fig:tx_cca_relation}{{3.7}{27}}
 \citation{jamil2015preserving}
@@ -238,12 +243,12 @@
 \citation{haidar2007channel}
 \citation{al2007enhanced}
 \citation{mishra2006distributed}
-\citation{mishra2005weighted}
-\citation{herzen2013distributed}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Channelisation of the 2.4 GHz band\relax }}{31}}
 \newlabel{fig:channelisation_wifi}{{3.8}{31}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces IEEE 802.11 mask\relax }}{31}}
 \newlabel{fig:80211ad_mask}{{3.9}{31}}
+\citation{mishra2005weighted}
+\citation{herzen2013distributed}
 \@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Coordinated approaches for channel assignment\relax }}{32}}
 \newlabel{tbl:channel_assignment_coordinated}{{3.5}{32}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.6}{\ignorespaces Uncoordinated approaches for channel assignment\relax }}{33}}
@@ -252,7 +257,7 @@
 \citation{chen2007improved}
 \citation{akl2007dynamic}
 \citation{chen2007improved}
-\newlabel{fig:saw_alg}{{\caption@xref {fig:saw_alg}{ on input line 614}}{34}}
+\newlabel{fig:saw_alg}{{\caption@xref {fig:saw_alg}{ on input line 624}}{34}}
 \citation{sutton1998reinforcement}
 \citation{sutton1998reinforcement}
 \citation{szepesvari2010algorithms}
@@ -295,10 +300,9 @@
 \citation{wilhelmi2017implications}
 \citation{wilhelmi2017enhancing}
 \citation{wilhelmi2017implications}
-\citation{wilhelmi2017enhancing}
-\citation{bellalta2017learning}
-\citation{wilhelmi2017improving}
+\citation{wilhelmi2017implications}
 \citation{barrachina2017ctmn}
+\citation{bellalta2014throughput}
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}{\MakeUppercase  { Current Contributions and Ongoing Work}}}{41}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -306,6 +310,13 @@
 \newlabel{section:current_contributions}{{4}{41}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.1}Wireless Networking Through Learning}{41}}
 \newlabel{section:mdm}{{4.1}{41}}
+\citation{wilhelmi2017implications}
+\citation{wilhelmi2017enhancing}
+\citation{barrachina2017ctmn}
+\citation{bellalta2017learning}
+\citation{wilhelmi2017implications}
+\citation{wilhelmi2017enhancing}
+\citation{wilhelmi2017improving}
 \citation{bellalta2014throughput}
 \citation{barrachina2017ctmn}
 \citation{bianchi2000performance}
@@ -313,181 +324,183 @@
 \citation{issariyakul2011introduction}
 \citation{modeler2009opnet}
 \citation{varga2008overview}
-\citation{barrachina2017komondor}
-\citation{chen2005sense}
 \@writefile{toc}{\contentsline {section}{\numberline {4.2}Other Projects}{42}}
 \newlabel{section:other_projects}{{4.2}{42}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Analytical Models and Simulators}{42}}
 \newlabel{section:validation}{{4.2.1}{42}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Development of an IEEE 802.11ax Event-Based Simulator}{42}}
-\newlabel{section:cisco_project}{{4.2.2}{42}}
+\citation{barrachina2017komondor}
+\citation{chen2005sense}
 \citation{wilhelmi2017implications}
 \citation{wilhelmi2017implications}
 \citation{wilhelmi2017implications}
 \citation{wilhelmi2017implications}
 \citation{wilhelmi2017implications}
-\citation{wilhelmi2017implications}
-\citation{wilhelmi2017enhancing}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Development of an IEEE 802.11ax Event-Based Simulator}{43}}
+\newlabel{section:cisco_project}{{4.2.2}{43}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}AP Association and Self-Managed Networks through Learning}{43}}
 \newlabel{section:fon_project}{{4.2.3}{43}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.3}Preliminary Results}{43}}
 \newlabel{section:preliminary_results}{{4.3}{43}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Probability of choosing an action in each overlapping WN \cite  {wilhelmi2017implications}\relax }}{43}}
-\newlabel{fig:ql_actions}{{4.1}{43}}
-\newlabel{fig:ql_avg_tpt}{{4.2a}{44}}
-\newlabel{sub@fig:ql_avg_tpt}{{a}{44}}
-\newlabel{fig:ql_temporal_tpt}{{4.2b}{44}}
-\newlabel{sub@fig:ql_temporal_tpt}{{b}{44}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Individual performance experienced by each overlapping WN on applying decentralised Q-learning \cite  {wilhelmi2017implications}\relax }}{44}}
-\newlabel{fig:ql_performance}{{4.2}{44}}
-\newlabel{fig:proportional_fairness_qlearning_avg_tpt}{{4.3a}{44}}
-\newlabel{sub@fig:proportional_fairness_qlearning_avg_tpt}{{a}{44}}
-\newlabel{fig:proportional_fairness_qlearning_ind_tpt}{{4.3b}{44}}
-\newlabel{sub@fig:proportional_fairness_qlearning_ind_tpt}{{b}{44}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Individual performance experienced by each overlapping WN on applying centralised Q-learning\relax }}{44}}
-\newlabel{fig:ql_performance_centralised}{{4.3}{44}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}{\MakeUppercase  { Planning and Future Work}}}{45}}
+\citation{wilhelmi2017implications}
+\citation{wilhelmi2017enhancing}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Probability of choosing an action in each overlapping WN \cite  {wilhelmi2017implications}\relax }}{44}}
+\newlabel{fig:ql_actions}{{4.1}{44}}
+\newlabel{fig:ql_avg_tpt}{{4.2a}{45}}
+\newlabel{sub@fig:ql_avg_tpt}{{a}{45}}
+\newlabel{fig:ql_temporal_tpt}{{4.2b}{45}}
+\newlabel{sub@fig:ql_temporal_tpt}{{b}{45}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Individual performance experienced by each overlapping WN on applying decentralised Q-learning \cite  {wilhelmi2017implications}\relax }}{45}}
+\newlabel{fig:ql_performance}{{4.2}{45}}
+\newlabel{fig:proportional_fairness_qlearning_avg_tpt}{{4.3a}{45}}
+\newlabel{sub@fig:proportional_fairness_qlearning_avg_tpt}{{a}{45}}
+\newlabel{fig:proportional_fairness_qlearning_ind_tpt}{{4.3b}{45}}
+\newlabel{sub@fig:proportional_fairness_qlearning_ind_tpt}{{b}{45}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Individual performance experienced by each overlapping WN on applying centralised Q-learning\relax }}{45}}
+\newlabel{fig:ql_performance_centralised}{{4.3}{45}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}{\MakeUppercase  { Planning and Future Work}}}{47}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{section:future_work}{{5}{45}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Topic Understanding and State-of-the-Art Analysis}{45}}
-\newlabel{section:contribution1}{{5.1}{45}}
-\@writefile{toc}{\contentsline {paragraph}{Involved tasks:}{45}}
-\@writefile{toc}{\contentsline {paragraph}{Expected output:}{45}}
+\newlabel{section:future_work}{{5}{47}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Topic Understanding and State-of-the-Art Analysis}{47}}
+\newlabel{section:contribution1}{{5.1}{47}}
+\@writefile{toc}{\contentsline {paragraph}{Involved tasks:}{47}}
+\@writefile{toc}{\contentsline {paragraph}{Expected output:}{47}}
 \citation{wilhelmi2017implications}
 \citation{wilhelmi2017enhancing}
 \citation{wilhelmi2017implications}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Learning Feasibility in WNs}{46}}
-\newlabel{section:contribution2}{{5.2}{46}}
-\@writefile{toc}{\contentsline {paragraph}{Involved tasks:}{46}}
-\@writefile{toc}{\contentsline {paragraph}{Expected output:}{46}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Decentralised ML-based Solutions}{46}}
-\newlabel{section:contribution3}{{5.3}{46}}
-\@writefile{toc}{\contentsline {paragraph}{Involved tasks:}{46}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Learning Feasibility in WNs}{48}}
+\newlabel{section:contribution2}{{5.2}{48}}
+\@writefile{toc}{\contentsline {paragraph}{Involved tasks:}{48}}
+\@writefile{toc}{\contentsline {paragraph}{Expected output:}{48}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Decentralised ML-based Solutions}{48}}
+\newlabel{section:contribution3}{{5.3}{48}}
+\@writefile{toc}{\contentsline {paragraph}{Involved tasks:}{48}}
 \citation{wilhelmi2017implications}
 \citation{wilhelmi2017enhancing}
 \bibstyle{unsrt}
 \bibdata{bib}
-\@writefile{toc}{\contentsline {paragraph}{Expected output:}{47}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Centralised ML-based Solutions}{47}}
-\newlabel{section:contribution4}{{5.4}{47}}
-\@writefile{toc}{\contentsline {paragraph}{Involved tasks:}{47}}
-\@writefile{toc}{\contentsline {paragraph}{Expected output:}{47}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.5}Integration with Other Solutions}{47}}
-\newlabel{section:contribution5}{{5.5}{47}}
-\@writefile{toc}{\contentsline {paragraph}{Involved tasks:}{47}}
-\@writefile{toc}{\contentsline {paragraph}{Expected output:}{47}}
+\@writefile{toc}{\contentsline {paragraph}{Expected output:}{49}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Centralised ML-based Solutions}{49}}
+\newlabel{section:contribution4}{{5.4}{49}}
+\@writefile{toc}{\contentsline {paragraph}{Involved tasks:}{49}}
+\@writefile{toc}{\contentsline {paragraph}{Expected output:}{49}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Integration with Other Solutions}{49}}
+\newlabel{section:contribution5}{{5.5}{49}}
+\@writefile{toc}{\contentsline {paragraph}{Involved tasks:}{49}}
+\@writefile{toc}{\contentsline {paragraph}{Expected output:}{49}}
 \bibcite{zhong2015issues}{1}
 \bibcite{akella2007self}{2}
-\bibcite{herzen2015csma}{3}
-\bibcite{wang2012combating}{4}
-\bibcite{ekici2008ieee}{5}
-\bibcite{jang2012ieee}{6}
-\bibcite{sobrinho2005rts}{7}
-\bibcite{bellalta2016ieee}{8}
-\bibcite{balachandran2002characterizing}{9}
-\bibcite{papadopouli2005modeling}{10}
-\bibcite{littman1993distributed}{11}
-\bibcite{bojovic2011supervised}{12}
-\bibcite{bojovic2012neural}{13}
-\bibcite{combes2014optimal}{14}
-\bibcite{miozzo2015distributed}{15}
-\bibcite{tgax2016draft}{16}
-\bibcite{kawadia2005principles}{17}
-\bibcite{agarwal2001distributed}{18}
-\bibcite{karn1990maca}{19}
-\bibcite{ebert1999combined}{20}
-\bibcite{pursley2000energy}{21}
-\bibcite{jung2002power}{22}
-\bibcite{lei2015performance}{23}
-\bibcite{chaves2014adaptive}{24}
-\bibcite{oteri2013advanced}{25}
-\bibcite{gandarillas2014dynamic}{26}
-\bibcite{tang2014joint}{27}
-\bibcite{elbatt2000power}{28}
-\bibcite{ebert2000energy}{29}
-\bibcite{broustis2010measurement}{30}
-\bibcite{jamil2014improving}{31}
-\bibcite{thorpe2009ieee802}{32}
-\bibcite{thorpe2011ieee802}{33}
-\bibcite{ieee2002ieee}{34}
-\bibcite{zhu2006adaptive}{35}
-\bibcite{afifi2016throughput}{36}
-\bibcite{park2009noncooperative}{37}
-\bibcite{hua2009cooperative}{38}
-\bibcite{hua2009distributed}{39}
-\bibcite{smith2015dynamic}{40}
-\bibcite{afaqui2015evaluation}{41}
-\bibcite{zhong2016promise}{42}
-\bibcite{selinis2016evaluation}{43}
-\bibcite{kulkarni2015taming}{44}
-\bibcite{afaqui2016dynamic}{45}
-\bibcite{afaqui2016rtscts}{46}
-\bibcite{thorpe2014survey}{47}
-\bibcite{mhatre2007interference}{48}
-\bibcite{jamil2015preserving}{49}
-\bibcite{kim2006improving}{50}
-\bibcite{oteri2015improved}{51}
-\bibcite{zhu2004leveraging}{52}
-\bibcite{van1988beamforming}{53}
-\bibcite{athan2004antenna}{54}
-\bibcite{ramanathan2001performance}{55}
-\bibcite{spyropoulos2003capacity}{56}
-\bibcite{yi2003capacity}{57}
-\bibcite{alawieh2009improving}{58}
-\bibcite{choudhury2005performance}{59}
-\bibcite{arora2004directional}{60}
-\bibcite{wang2005syn}{61}
-\bibcite{fahmy2002ad}{62}
-\bibcite{nasipuri2002power}{63}
-\bibcite{ling2006joint}{64}
-\bibcite{wertz2004automatic}{65}
-\bibcite{chieochan2010channel}{66}
-\bibcite{hills2001large}{67}
-\bibcite{mahonen2004automatic}{68}
-\bibcite{riihijarvi2005frequency}{69}
-\bibcite{riihijarvi2006performance}{70}
-\bibcite{lee2002optimization}{71}
-\bibcite{eisenblatter2007integrated}{72}
-\bibcite{mishra2006client}{73}
-\bibcite{chen2007improved}{74}
-\bibcite{baid2015understanding}{75}
-\bibcite{brelaz1979new}{76}
-\bibcite{villegas2009frequency}{77}
-\bibcite{raniwala2004centralized}{78}
-\bibcite{achanta2004method}{79}
-\bibcite{leung2003frequency}{80}
-\bibcite{yu2006dynamic}{81}
-\bibcite{yu2004adaptive}{82}
-\bibcite{mishra2005weighted}{83}
-\bibcite{akl2007dynamic}{84}
-\bibcite{haidar2007channel}{85}
-\bibcite{al2007enhanced}{86}
-\bibcite{mishra2006distributed}{87}
-\bibcite{herzen2013distributed}{88}
-\bibcite{sutton1998reinforcement}{89}
-\bibcite{szepesvari2010algorithms}{90}
-\bibcite{robert2004monte}{91}
-\bibcite{sutton1988learning}{92}
-\bibcite{abramson2004active}{93}
-\bibcite{nie1999q}{94}
-\bibcite{li2009multi}{95}
-\bibcite{bennis2010q}{96}
-\bibcite{bennis2011distributed}{97}
-\bibcite{maghsudi2015joint}{98}
-\bibcite{maghsudi2015channel}{99}
-\bibcite{jamil2016novel}{100}
-\bibcite{wilhelmi2017implications}{101}
-\bibcite{wilhelmi2017enhancing}{102}
-\bibcite{bellalta2017learning}{103}
-\bibcite{wilhelmi2017improving}{104}
+\bibcite{barcelo2009csma}{3}
+\bibcite{herzen2015csma}{4}
+\bibcite{wang2012combating}{5}
+\bibcite{ekici2008ieee}{6}
+\bibcite{jang2012ieee}{7}
+\bibcite{sobrinho2005rts}{8}
+\bibcite{bellalta2016ieee}{9}
+\bibcite{balachandran2002characterizing}{10}
+\bibcite{papadopouli2005modeling}{11}
+\bibcite{tgax2016draft}{12}
+\bibcite{littman1993distributed}{13}
+\bibcite{bojovic2011supervised}{14}
+\bibcite{bojovic2012neural}{15}
+\bibcite{combes2014optimal}{16}
+\bibcite{miozzo2015distributed}{17}
+\bibcite{kawadia2005principles}{18}
+\bibcite{agarwal2001distributed}{19}
+\bibcite{karn1990maca}{20}
+\bibcite{ebert1999combined}{21}
+\bibcite{pursley2000energy}{22}
+\bibcite{jung2002power}{23}
+\bibcite{lei2015performance}{24}
+\bibcite{chaves2014adaptive}{25}
+\bibcite{oteri2013advanced}{26}
+\bibcite{gandarillas2014dynamic}{27}
+\bibcite{tang2014joint}{28}
+\bibcite{elbatt2000power}{29}
+\bibcite{ebert2000energy}{30}
+\bibcite{broustis2010measurement}{31}
+\bibcite{jamil2014improving}{32}
+\bibcite{thorpe2009ieee802}{33}
+\bibcite{thorpe2011ieee802}{34}
+\bibcite{ieee2002ieee}{35}
+\bibcite{zhu2006adaptive}{36}
+\bibcite{afifi2016throughput}{37}
+\bibcite{park2009noncooperative}{38}
+\bibcite{hua2009cooperative}{39}
+\bibcite{hua2009distributed}{40}
+\bibcite{smith2015dynamic}{41}
+\bibcite{afaqui2015evaluation}{42}
+\bibcite{zhong2016promise}{43}
+\bibcite{selinis2016evaluation}{44}
+\bibcite{kulkarni2015taming}{45}
+\bibcite{afaqui2016dynamic}{46}
+\bibcite{afaqui2016rtscts}{47}
+\bibcite{thorpe2014survey}{48}
+\bibcite{mhatre2007interference}{49}
+\bibcite{bremaud2013markov}{50}
+\bibcite{jamil2015preserving}{51}
+\bibcite{kim2006improving}{52}
+\bibcite{oteri2015improved}{53}
+\bibcite{zhu2004leveraging}{54}
+\bibcite{van1988beamforming}{55}
+\bibcite{athan2004antenna}{56}
+\bibcite{ramanathan2001performance}{57}
+\bibcite{spyropoulos2003capacity}{58}
+\bibcite{yi2003capacity}{59}
+\bibcite{alawieh2009improving}{60}
+\bibcite{choudhury2005performance}{61}
+\bibcite{arora2004directional}{62}
+\bibcite{wang2005syn}{63}
+\bibcite{fahmy2002ad}{64}
+\bibcite{nasipuri2002power}{65}
+\bibcite{ling2006joint}{66}
+\bibcite{wertz2004automatic}{67}
+\bibcite{chieochan2010channel}{68}
+\bibcite{hills2001large}{69}
+\bibcite{mahonen2004automatic}{70}
+\bibcite{riihijarvi2005frequency}{71}
+\bibcite{riihijarvi2006performance}{72}
+\bibcite{lee2002optimization}{73}
+\bibcite{eisenblatter2007integrated}{74}
+\bibcite{mishra2006client}{75}
+\bibcite{chen2007improved}{76}
+\bibcite{baid2015understanding}{77}
+\bibcite{brelaz1979new}{78}
+\bibcite{villegas2009frequency}{79}
+\bibcite{raniwala2004centralized}{80}
+\bibcite{achanta2004method}{81}
+\bibcite{leung2003frequency}{82}
+\bibcite{yu2006dynamic}{83}
+\bibcite{yu2004adaptive}{84}
+\bibcite{mishra2005weighted}{85}
+\bibcite{akl2007dynamic}{86}
+\bibcite{haidar2007channel}{87}
+\bibcite{al2007enhanced}{88}
+\bibcite{mishra2006distributed}{89}
+\bibcite{herzen2013distributed}{90}
+\bibcite{sutton1998reinforcement}{91}
+\bibcite{szepesvari2010algorithms}{92}
+\bibcite{robert2004monte}{93}
+\bibcite{sutton1988learning}{94}
+\bibcite{abramson2004active}{95}
+\bibcite{nie1999q}{96}
+\bibcite{li2009multi}{97}
+\bibcite{bennis2010q}{98}
+\bibcite{bennis2011distributed}{99}
+\bibcite{maghsudi2015joint}{100}
+\bibcite{maghsudi2015channel}{101}
+\bibcite{jamil2016novel}{102}
+\bibcite{wilhelmi2017implications}{103}
+\bibcite{wilhelmi2017enhancing}{104}
 \bibcite{barrachina2017ctmn}{105}
 \bibcite{bellalta2014throughput}{106}
-\bibcite{bianchi2000performance}{107}
-\bibcite{carneiro2010ns}{108}
-\bibcite{issariyakul2011introduction}{109}
-\bibcite{modeler2009opnet}{110}
-\bibcite{varga2008overview}{111}
-\bibcite{barrachina2017komondor}{112}
-\bibcite{chen2005sense}{113}
+\bibcite{bellalta2017learning}{107}
+\bibcite{wilhelmi2017improving}{108}
+\bibcite{bianchi2000performance}{109}
+\bibcite{carneiro2010ns}{110}
+\bibcite{issariyakul2011introduction}{111}
+\bibcite{modeler2009opnet}{112}
+\bibcite{varga2008overview}{113}
+\bibcite{barrachina2017komondor}{114}
+\bibcite{chen2005sense}{115}

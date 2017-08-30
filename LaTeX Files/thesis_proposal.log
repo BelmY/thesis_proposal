@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.12.1)  25 AUG 2017 12:48
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.12.1)  30 AUG 2017 11:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1380,19 +1380,15 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 Chapter 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 86.
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 90.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 92.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [3] [4]
-File: images/techniques_wns.png Graphic file (type QTm)
-
-<use  "images/techniques_wns.png" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [5]
-Overfull \hbox (1.3103pt too wide) in paragraph at lines 127--128
-[]\OT1/ptm/m/n/12 Understanding the chal-lenges and lim-i-ta-tions in fu-ture W
+File: images/techniques_wns.png Graphic file (type QTm)
+ <use  "images/techniques_wns.png" >
+Overfull \hbox (1.97038pt too wide) in paragraph at lines 129--130
+[]\OT1/ptm/m/n/12 Understanding the chal-lenges and lim-i-ta-tions of fu-ture W
 LANs, thus al-low-ing re-searchers
  []
 
@@ -1401,51 +1397,66 @@ LANs, thus al-low-ing re-searchers
 
 ]
 Chapter 2.
-File: images/hidden_exposed.png Graphic file (type QTm)
-<use  "images/hidden_exposed.png" > [9]
-File: images/dcf_operation.png Graphic file (type QTm)
- <use  "images/dcf_operation.png" >
+File: images/dcf_operation_1.png Graphic file (type QTm)
+<use  "images/dcf_operation_1.png" >
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+File: images/hidden_exposed.png Graphic file (type QTm)
+<use  "images/hidden_exposed.png" > [9]
 
-Underfull \vbox (badness 1242) has occurred while \output is active []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- [10]
+File: images/dcf_operation.png Graphic file (type QTm)
+<use  "images/dcf_operation.png" >
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 File: images/residential_ax_1.png Graphic file (type QTm)
-
 <use  "images/residential_ax_1.png" >
 File: images/residential_ax_2.png Graphic file (type QTm)
  <use  "images/residential_ax_2.png" >
-Overfull \hbox (0.20587pt too wide) in paragraph at lines 177--193
+Overfull \hbox (0.20587pt too wide) in paragraph at lines 185--201
 []\OT1/ptm/b/n/12 Residential Sce-nario: \OT1/ptm/m/n/12 this sce-nario aims to
  char-ac-terise a typ-i-cal un-co-or-di-nated WLANs
  []
 
+[10]
+Underfull \vbox (badness 3029) has occurred while \output is active []
+
+ [11]
 File: images/enterprise_ax_1.png Graphic file (type QTm)
+
 <use  "images/enterprise_ax_1.png" >
 File: images/enterprise_ax_2.png Graphic file (type QTm)
  <use  "images/enterprise_ax_2.png" >
-[11]
 File: images/large_ax.png Graphic file (type QTm)
- <use  "images/large_ax.png" >
-File: images/residential_large_ax.png Graphic file (type QTm)
- <use  "images/residential_large_ax.png" >
-[12]
+
+<use  "images/large_ax.png" >
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+File: images/residential_large_ax.png Graphic file (type QTm)
+<use  "images/residential_large_ax.png" >
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
 File: images/beamforming1.png Graphic file (type QTm)
+
 <use  "images/beamforming1.png" >
 File: images/beamforming2.png Graphic file (type QTm)
- <use  "images/beamforming2.png" > [13]
-[14] [15] [16
+ <use  "images/beamforming2.png" > [14]
+[15] [16
 
 
 ]
 Chapter 3.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 293.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 303.
 [17]
 File: images/basic.png Graphic file (type QTm)
  <use  "images/basic.png" >
@@ -1454,7 +1465,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: images/pcm.png Graphic file (type QTm)
 <use  "images/pcm.png" >
-Overfull \hbox (2.27618pt too wide) in paragraph at lines 327--328
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 337--338
  [][] 
  []
 
@@ -1470,11 +1481,11 @@ File: images/jamil2014_2.png Graphic file (type QTm)
 
 <use  "images/jamil2014_2.png" > [21]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 406.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 416.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 406.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 416.
 
-Overfull \hbox (16.26877pt too wide) in paragraph at lines 400--414
+Overfull \hbox (16.26877pt too wide) in paragraph at lines 410--424
 \OT1/ptm/m/n/12 where $[]$ is the STA's trans-mis-sion power in dBm at the an-t
 enna con-nec-tor, and $[][]$
  []
@@ -1503,18 +1514,15 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[31]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[31] [32]
+[32]
 Missing character: There is no   in font cmr12!
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [33]
 File: images/saw_alg.png Graphic file (type QTm)
-
-<use  "images/saw_alg.png" > [34]
+ <use  "images/saw_alg.png" > [34]
 File: images/rl_scenario.png Graphic file (type QTm)
  <use  "images/rl_scenario.png" >
 File: images/rl_types.png Graphic file (type QTm)
@@ -1531,15 +1539,11 @@ Missing character: There is no ’ in font ptmr7t!
 Underfull \vbox (badness 1360) has occurred while \output is active []
 
  [38]
-File: images/neural_network_topology.png Graphic file (type QTm)
+File: images/ANN.png Graphic file (type QTm)
 
-<use  "images/neural_network_topology.png" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[39] [40]
+<use  "images/ANN.png" > [39] [40]
 Chapter 4.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 736.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 745.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -1547,19 +1551,20 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 
 
 ]
+Overfull \hbox (0.54321pt too wide) in paragraph at lines 749--750
+\OT1/ptm/m/n/12 the fea-si-bil-ity of pro-vid-ing a no-table en-hance-ment of W
+Ns per-for-mance through learning-
+ []
+
+[42]
 Missing character: There is no   in font ptmr7t!
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 773.
 
-Underfull \vbox (badness 1436) has occurred while \output is active []
-
- [42]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 763.
-
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 763.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 773.
 File: images/e_1_a1_g095.eps Graphic file (type eps)
 
 <images/e_1_a1_g095.eps>
@@ -1575,54 +1580,54 @@ File: images/proportional_fairness_qlearning_avg_tpt.eps Graphic file (type eps
 File: images/proportional_fairness_qlearning_ind_tpt.png Graphic file (type QTm
 )
 
-<use  "images/proportional_fairness_qlearning_ind_tpt.png" > [44]
-Chapter 5.
-[45
+<use  "images/proportional_fairness_qlearning_ind_tpt.png" > [44] [45] [46
 
 
 ]
-Overfull \hbox (7.16519pt too wide) in paragraph at lines 855--856
+Chapter 5.
+[47]
+Overfull \hbox (7.16519pt too wide) in paragraph at lines 865--866
 []\OT1/ptm/m/n/12 Finally, it is ex-pected to ex-plore co-or-di-nated ap-proach
 es for max-imis-ing the net-work through-
  []
 
 
-Overfull \hbox (4.1195pt too wide) in paragraph at lines 861--862
+Overfull \hbox (4.1195pt too wide) in paragraph at lines 871--872
 []\OT1/ptm/m/n/12 Extend pre-vi-ous work in de-cen-tralised learn-ing in or-der
  to pro-vide co-or-di-nated ap-proaches
  []
 
-[46] (./thesis_proposal.bbl [47] [48
+[48] (./thesis_proposal.bbl [49] [50
 
 
-] [49] [50]
-Underfull \hbox (badness 1048) in paragraph at lines 181--186
+] [51] [52]
+Underfull \hbox (badness 1048) in paragraph at lines 188--193
 []\OT1/ptm/m/n/12 Ioannis Broustis, Kon-stantina Pa-pa-gian-naki, Srikanth V Kr
 -ish-na-murthy, Michalis
  []
 
-[51] [52] [53] [54]
-Underfull \hbox (badness 1342) in paragraph at lines 473--478
+[53] [54] [55] [56]
+Underfull \hbox (badness 1342) in paragraph at lines 486--491
 []\OT1/ptm/m/n/12 Jeremy K Chen, Gus-tavo De Ve-ciana, and Theodore S Rap-pa-po
 rt.  Im-proved
  []
 
-[55] [56]
+[57] [58]
 Missing character: There is no ó in font ptmr7t!
 Missing character: There is no ç in font ptmr7t!
-) [57] [58] (./thesis_proposal.aux) )
+ [59]) [60] (./thesis_proposal.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
- 30409 strings out of 493591
- 654923 string characters out of 6143546
- 691768 words of memory out of 5000000
- 33231 multiletter control sequences out of 15000+600000
+ 30414 strings out of 493591
+ 654985 string characters out of 6143546
+ 688791 words of memory out of 5000000
+ 33235 multiletter control sequences out of 15000+600000
  21777 words of font info for 64 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  55i,17n,77p,10385b,3032s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis_proposal.pdf (60 pages).
+Output written on thesis_proposal.pdf (62 pages).

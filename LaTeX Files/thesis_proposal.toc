@@ -8,8 +8,8 @@
 \contentsline {section}{\numberline {1.4}Document Structure}{7}
 \contentsline {chapter}{\numberline {2}{\MakeUppercase { Research Problem}}}{9}
 \contentsline {section}{\numberline {2.1}Coexistence Issues in IEEE 802.11 WLANs}{9}
-\contentsline {section}{\numberline {2.2}Scenarios}{11}
-\contentsline {section}{\numberline {2.3}Spatial Reuse in Overlapping IEEE 802.11 WLANs}{13}
+\contentsline {section}{\numberline {2.2}Scenarios}{10}
+\contentsline {section}{\numberline {2.3}Spatial Reuse in Overlapping IEEE 802.11 WLANs}{14}
 \contentsline {section}{\numberline {2.4}Autonomous Management in Wireless Networks}{14}
 \contentsline {chapter}{\numberline {3}{\MakeUppercase { State of the Art}}}{17}
 \contentsline {section}{\numberline {3.1}Spatial Reuse}{17}
@@ -26,22 +26,22 @@
 \contentsline {section}{\numberline {4.1}Wireless Networking Through Learning}{41}
 \contentsline {section}{\numberline {4.2}Other Projects}{42}
 \contentsline {subsection}{\numberline {4.2.1}Analytical Models and Simulators}{42}
-\contentsline {subsection}{\numberline {4.2.2}Development of an IEEE 802.11ax Event-Based Simulator}{42}
+\contentsline {subsection}{\numberline {4.2.2}Development of an IEEE 802.11ax Event-Based Simulator}{43}
 \contentsline {subsection}{\numberline {4.2.3}AP Association and Self-Managed Networks through Learning}{43}
 \contentsline {section}{\numberline {4.3}Preliminary Results}{43}
-\contentsline {chapter}{\numberline {5}{\MakeUppercase { Planning and Future Work}}}{45}
-\contentsline {section}{\numberline {5.1}Topic Understanding and State-of-the-Art Analysis}{45}
-\contentsline {paragraph}{Involved tasks:}{45}
-\contentsline {paragraph}{Expected output:}{45}
-\contentsline {section}{\numberline {5.2}Learning Feasibility in WNs}{46}
-\contentsline {paragraph}{Involved tasks:}{46}
-\contentsline {paragraph}{Expected output:}{46}
-\contentsline {section}{\numberline {5.3}Decentralised ML-based Solutions}{46}
-\contentsline {paragraph}{Involved tasks:}{46}
-\contentsline {paragraph}{Expected output:}{47}
-\contentsline {section}{\numberline {5.4}Centralised ML-based Solutions}{47}
+\contentsline {chapter}{\numberline {5}{\MakeUppercase { Planning and Future Work}}}{47}
+\contentsline {section}{\numberline {5.1}Topic Understanding and State-of-the-Art Analysis}{47}
 \contentsline {paragraph}{Involved tasks:}{47}
 \contentsline {paragraph}{Expected output:}{47}
-\contentsline {section}{\numberline {5.5}Integration with Other Solutions}{47}
-\contentsline {paragraph}{Involved tasks:}{47}
-\contentsline {paragraph}{Expected output:}{47}
+\contentsline {section}{\numberline {5.2}Learning Feasibility in WNs}{48}
+\contentsline {paragraph}{Involved tasks:}{48}
+\contentsline {paragraph}{Expected output:}{48}
+\contentsline {section}{\numberline {5.3}Decentralised ML-based Solutions}{48}
+\contentsline {paragraph}{Involved tasks:}{48}
+\contentsline {paragraph}{Expected output:}{49}
+\contentsline {section}{\numberline {5.4}Centralised ML-based Solutions}{49}
+\contentsline {paragraph}{Involved tasks:}{49}
+\contentsline {paragraph}{Expected output:}{49}
+\contentsline {section}{\numberline {5.5}Integration with Other Solutions}{49}
+\contentsline {paragraph}{Involved tasks:}{49}
+\contentsline {paragraph}{Expected output:}{49}

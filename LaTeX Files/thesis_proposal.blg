@@ -21,23 +21,23 @@ Repeated entry---line 785 of file bib.bib
  : @article{mishra2005weighted
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 975 of file bib.bib
+Repeated entry---line 984 of file bib.bib
  : @inproceedings{bennis2011distributed
  :                                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1034 of file bib.bib
+Repeated entry---line 1043 of file bib.bib
  : @inproceedings{agarwal2001distributed
  :                                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1277 of file bib.bib
+Repeated entry---line 1294 of file bib.bib
  : @article{kawadia2005principles
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1288 of file bib.bib
+Repeated entry---line 1305 of file bib.bib
  : @article{mishra2005weighted
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1339 of file bib.bib
+Repeated entry---line 1356 of file bib.bib
  : @article{raniwala2004centralized
  :                                 ,
 I'm skipping whatever remains of this entry
@@ -49,6 +49,9 @@ Too many commas in name 3 of "Wilhelmi, Francesc and Bellalta, Boris and Cano, C
 while executing---line 944 of file unsrt.bst
 Too many commas in name 3 of "Wilhelmi, Francesc and Bellalta, Boris and Cano, Cristina, Jonsson, Anders, Neu, Gergely and Barrachina, Sergio" for entry wilhelmi2017enhancing
 while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Barrachina, Sergio, Bellalta, Boris and Wilhelmi, Francesc" for entry barrachina2017ctmn
+while executing---line 944 of file unsrt.bst
+Warning--empty journal in barrachina2017ctmn
 Too many commas in name 1 of "Bellalta, Boris, Cano, Cristina, Jonsson, Anders, Gómez, Vicenç, Neu, Gergely, Barrachina, Sergio, Wilhelmi, Francesc and Nurchis, Maddalena" for entry bellalta2017learning
 while executing---line 944 of file unsrt.bst
 Too many commas in name 1 of "Bellalta, Boris, Cano, Cristina, Jonsson, Anders, Gómez, Vicenç, Neu, Gergely, Barrachina, Sergio, Wilhelmi, Francesc and Nurchis, Maddalena" for entry bellalta2017learning
@@ -72,48 +75,45 @@ while executing---line 944 of file unsrt.bst
 Too many commas in name 1 of "Bellalta, Boris, Cano, Cristina, Jonsson, Anders, Gómez, Vicenç, Neu, Gergely, Barrachina, Sergio, Wilhelmi, Francesc and Nurchis, Maddalena" for entry bellalta2017learning
 while executing---line 944 of file unsrt.bst
 Warning--empty journal in bellalta2017learning
-Too many commas in name 1 of "Barrachina, Sergio, Bellalta, Boris and Wilhelmi, Francesc" for entry barrachina2017ctmn
-while executing---line 944 of file unsrt.bst
-Warning--empty journal in barrachina2017ctmn
-You've used 113 entries,
+You've used 115 entries,
             1791 wiz_defined-function locations,
-            1013 strings with 25952 characters,
-and the built_in function-call counts, 33638 in all, are:
-= -- 3324
-> -- 1200
-< -- 77
-+ -- 443
-- -- 330
-* -- 2037
-:= -- 4724
-add.period$ -- 396
-call.type$ -- 113
-change.case$ -- 110
+            1021 strings with 26292 characters,
+and the built_in function-call counts, 34130 in all, are:
+= -- 3368
+> -- 1221
+< -- 79
++ -- 451
+- -- 336
+* -- 2064
+:= -- 4797
+add.period$ -- 403
+call.type$ -- 115
+change.case$ -- 111
 chr.to.int$ -- 0
-cite$ -- 117
-duplicate$ -- 1700
-empty$ -- 3319
-format.name$ -- 330
-if$ -- 8055
+cite$ -- 119
+duplicate$ -- 1727
+empty$ -- 3370
+format.name$ -- 336
+if$ -- 8173
 int.to.chr$ -- 0
-int.to.str$ -- 113
-missing$ -- 113
-newline$ -- 566
-num.names$ -- 112
-pop$ -- 482
+int.to.str$ -- 115
+missing$ -- 116
+newline$ -- 576
+num.names$ -- 114
+pop$ -- 494
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1001
+skip$ -- 1012
 stack$ -- 0
-substring$ -- 2432
-swap$ -- 703
-text.length$ -- 77
+substring$ -- 2448
+swap$ -- 712
+text.length$ -- 79
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 348
-width$ -- 116
-write$ -- 1295
+while$ -- 353
+width$ -- 118
+write$ -- 1318
 (There were 24 error messages)

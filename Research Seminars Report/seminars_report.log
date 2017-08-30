@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.12.1)  5 AUG 2017 19:19
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.12.1)  28 AUG 2017 10:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1346,22 +1346,21 @@ Overfull \hbox (8.5621pt too wide) in paragraph at lines 80--81
 [1
 
 ]
-Missing character: There is no ’ in font ptmr7t!
 File: images/gnu_license.png Graphic file (type QTm)
  <use  "images/gnu_license.png" >
-Overfull \hbox (2.27618pt too wide) in paragraph at lines 122--123
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 114--115
  [][] 
  []
 
-[2]
-Overfull \hbox (14.04094pt too wide) in paragraph at lines 133--133
+
+Overfull \hbox (14.04094pt too wide) in paragraph at lines 125--125
 [][]\OT1/ptm/m/n/10 Material avail-able in $\OT1/pcr/m/n/10 https : / / drive .
  google . com / file / d / 0BzOhuzdX0br5b3pWMEFUZ3JDVUk /
  []
 
-[3]
+[2]
 Missing character: There is no é in font ptmr7t!
- (./seminars_report.bbl)
+ [3] (./seminars_report.bbl)
 
 Package caption Warning: Unused \captionsetup[sub] on input line 39.
 See the caption package documentation for explanation.
@@ -1374,11 +1373,11 @@ See the caption package documentation for explanation.
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
  29998 strings out of 493591
- 647528 string characters out of 6143546
- 677612 words of memory out of 5000000
+ 647520 string characters out of 6143546
+ 678604 words of memory out of 5000000
  32872 multiletter control sequences out of 15000+600000
  17613 words of font info for 59 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 55i,10n,77p,10385b,2930s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,10n,77p,10385b,2931s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on seminars_report.pdf (4 pages).

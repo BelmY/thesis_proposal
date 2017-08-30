@@ -67,7 +67,7 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Introduction}
 	\label{section:introduction}		
-	The main purpose of this Thesis is to explore the applicability of Reinforcement Learning into the Spatial Reuse problem in Wireless Networks. Due to the variability in terms of user activity suffered at the kind of scenarios we aim to mostly focus (residential buildings, shopping malls, stadiums, trains, etc.), real-time mechanisms turn out to be necessary to dynamically configure devices so as to adjust parameters such as the frequency channel, the transmit power or the sensitivity threshold. To provide a reliable and flexible solution, we focus on Reinforcement Learning, so that wireless networks are empowered to act autonomously according to their requirements and possibilities.
+	The main purpose of this Thesis is to explore the applicability of Reinforcement Learning (RL) into the Spatial Reuse (SR) problem in Wireless Networks (WNs). Henceforth, it is sought the empowerment of WNs in order to let devices acting autonomously according to their requirements and possibilities. The matter of this Thesis is mainly motivated by the fact that the SR problem turns out to be NP-complete in dense scenarios (residential buildings, shopping malls, stadiums, trains, etc.). In addition, the variability in terms of user arrivals/departures and bandwidth requirements, adds an extra degree of complexity. Thus, real-time mechanisms turn out to be necessary to dynamically configure devices so as to adjust parameters such as the frequency channel, the transmit power or the sensitivity threshold.
 		
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Career development       								   %%%%%%%%%%%%%
@@ -80,14 +80,14 @@
 		\item Scholar: \url{https://scholar.google.es/citations?user=4EHXj4UAAAAJ&hl=ca&citsig=AMstHGShG4ofYlHpMmt1o34BA0qt08UFxQ}
 		\item Orcid: \url{http://orcid.org/0000-0003-3936-535X}
 	\end{itemize}		
-	For a proper career development, we attempt to generate valuable and rigorous work in order to publish in relevant journals (e.g. Computer Networks\footnote{\url{https://www.journals.elsevier.com/computer-networks/}}, IEEE Intelligent Systems\footnote{\url{http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&punumber=9670}}, etc.). Furthermore, working with other researchers is fundamental to constantly improve and gain knowledge. Finally, another important aspect for a proper career development in research, is to be an active reviewer. Hence, during the first year we have participated in some reviews, and even acting as TPC in the 2nd Workshop on Data Science for Internet of Things.\footnote{\url{https://ds-iot.org/}}
+	For a proper career development, we attempt to generate valuable and rigorous work in order to publish in relevant journals (e.g. Computer Networks\footnote{\url{https://www.journals.elsevier.com/computer-networks/}}, IEEE Intelligent Systems\footnote{\url{http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&punumber=9670}}, etc.). Furthermore, working with other researchers is fundamental to constantly improve and gain knowledge. Finally, another important aspect for a proper career development in research, is to be an active reviewer. Hence, during the first year we have participated in some reviews, even acting as TPC in the 2nd Workshop on Data Science for Internet of Things.\footnote{\url{https://ds-iot.org/}}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% General reproducibility aspects        								   %%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{General reproducibility aspects }
 	\label{section:reproducibility}		
-	To properly share the generated knowledge, and with the aim of making reproducible the production derived from our research activity, we have created a Github account for the Wireless Networking Research Group.\footnote{\url{https://github.com/orgs/wn-upf/dashboard}}. Furthermore, in relation to the research compendium provided under the MdM excellence unit, we have established a set of guidelines for reproducibility:
+	To properly share the generated knowledge, and with the aim of making reproducible the production derived from our research activity, we have created a Github account for the Wireless Networking Research Group.\footnote{\url{https://github.com/orgs/wn-upf/dashboard}} Furthermore, in relation to the research compendium provided by the Mar\'ia de Maeztu (MdM) excellence unit, we have established a set of guidelines for reproducibility:
 	\begin{itemize}
 		\item Publish the papers in arXiv for openness.
 		\item Publish the code in Github. Furthermore, we follow the Clean Architecture, so that our code can be completely understood by a third party.
@@ -97,18 +97,10 @@
 	As an example, for the conference publication submitted to PIMRC \cite{wilhelmi2017implications}, we provided the source code used for simulations, specifying the concrete commit for the provided results. In addition, the code was prepared in a such way that simulations can be easily executed to reproduce similar results\footnote{Results may slightly vary due to the randomness added to the proposed scenario} to the ones shown in the publication.
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Data Management       								   %%%%%%%%%%%%%
+	% Data Management & Ethical issues         %%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Data Management}
+	\section{Data Management and Ethical issues}
 	\label{section:data_mgm}	
-	The majority of the data I will use during the thesis will be generated by us through pro- grams and real testbeds. However, we expect some real data from FON, which may include some requirements regarding confidentiality that must be considered when the agreement is finished.
-	We expect to manage huge amounts of data. Thus, in the high performance computing (HPC) cluster, I will order and labeled data properly not only to facilitate the collaboration with group members, but also the work of the administrators. Similarly I continuously use both the personal and group’s GitHub account. In there, we are aimed to properly comment every piece of code and support material. Also, we use the issues functionality for tracking the updates on the different projects, asking for help, proposing new approaches, etc.
-
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Ethical issues       								   %%%%%%%%%%%%%
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Ethical issues}
-	\label{section:ethical}		
 	Most of the activities planned for this Thesis involve using analytical models and simulated data related to wireless communications. Therefore, personal data is not expected to be manipulated. However, as the WNRG is getting involved into a collaboration with FON\footnote{\url{www.fon.com}}, there is some data to be used that may indirectly tell something about someone. In this case, the enterprise is the entity that collected the data, so we are only being requested to firm confidentiality agreements and to act responsibly.
 		
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -130,14 +122,14 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Computing needs}
 	\label{section:computing}		
-	To the proper development of the experimental part of some of the ongoing projects involved in the Thesis, it is required a strong computational power. A really useful available tool is the (HPC)\footnote{\url{http://hpc.dtic.upf.edu/}}, which is composed by 15 nodes that provide high-performance calculation support to the DTIC community. In order to make use of the HPC, we have spiked on running advanced jobs in parallel. Some of our latest results (\cite{wilhelmi2017implications}) have been obtained from HPC executions with the Matlab parallel toolbox. In addition, to bring the usage of the HPC to the WNRG, we have created specific instructive material\footnote{Material available in \url{https://drive.google.com/file/d/0BzOhuzdX0br5b3pWMEFUZ3JDVUk/view?usp=sharing}.} to fulfil the needs of the group. Thus, HPC is introduced so that it can be rapidly used for the practical purposes of the Wireless Networking Research Group.	
+	To the proper development of the experimental part of some of the ongoing projects involved in the Thesis, a strong computational power is required. A really useful available tool is the High Performance Computing (HPC) cluster\footnote{\url{http://hpc.dtic.upf.edu/}}, which is composed by 15 nodes that provide high-performance calculation support to the DTIC community. In order to make use of the HPC, we have spiked on running advanced jobs in parallel. Some of our latest results (\cite{wilhelmi2017implications}) have been obtained from HPC executions with the Matlab parallel toolbox. In addition, to bring the usage of the HPC to the WNRG, we have created specific instructive material\footnote{Material available in \url{https://drive.google.com/file/d/0BzOhuzdX0br5b3pWMEFUZ3JDVUk/view?usp=sharing}.} to fulfil the needs of the group. Thus, HPC is introduced so that it can be rapidly used for the practical purposes of the Wireless Networking Research Group.	
 		
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Scientific and general dissemination   	    %%%%%%%%%%%%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Scientific and general disseminations}
 	\label{section:dissemination}			
-	The main activity performed so far regarding scientific dissemination is the participation on the 5th EITIC Doctoral Workshop\footnote{\url{https://www.upf.edu/web/etic_doctoral_workshop}}, which was held at UPF the last March, 5th 2017. In this event, we presented \cite{wilhelmi2017improving}, an introduction to the wireless networks coexistence issues and the techniques that we aim to study along the Thesis to solve them. The poster was prepared in order to be simple, readable and eye-catching, so that a diverse audience can comprehend the problem and get interested on it.
+	The main activity performed so far regarding scientific dissemination is the participation in the 5th EITIC Doctoral Workshop\footnote{\url{https://www.upf.edu/web/etic_doctoral_workshop}}, which was held at UPF the last March, 5th 2017. In this event, we presented \cite{wilhelmi2017improving}, an introduction to the wireless networks coexistence issues and the techniques that we aim to study along the Thesis to provide a solution. The poster was prepared in order to be simple, readable and eye-catching, so that a diverse audience can comprehend the problem and get interested on it.
 	
 	In parallel to the main research activity, we have also participated in the following dissemination activities:
 	\begin{itemize}

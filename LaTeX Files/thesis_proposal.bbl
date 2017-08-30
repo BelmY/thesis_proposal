@@ -11,6 +11,13 @@ Aditya Akella, Glenn Judd, Srinivasan Seshan, and Peter Steenkiste.
 \newblock Self-management in chaotic wireless deployments.
 \newblock {\em Wireless Networks}, 13(6):737--755, 2007.
 
+\bibitem{barcelo2009csma}
+Jaume Barcelo, Boris Bellalta, Anna Sfairopoulou, Cristina Cano, and Miquel
+  Oliver.
+\newblock Csma with enhanced collision avoidance: A performance assessment.
+\newblock In {\em Vehicular Technology Conference, 2009. VTC Spring 2009. IEEE
+  69th}, pages 1--5. IEEE, 2009.
+
 \bibitem{herzen2015csma}
 Julien Herzen, Albert Banchs, Vsevolod Shneer, and Patrick Thiran.
 \newblock Csma/ca in time and frequency domains.
@@ -59,6 +66,9 @@ Maria Papadopouli, Haipeng Shen, and Manolis Spanakis.
   networks.
 \newblock In {\em LANMAN}, 2005.
 
+\bibitem{tgax2016draft}
+{IEEE} p802.11ax/d1.0, November 2016.
+
 \bibitem{littman1993distributed}
 Michael Littman and Justin Boyan.
 \newblock A distributed reinforcement learning scheme for network routing.
@@ -89,9 +99,6 @@ Marco Miozzo, Lorenza Giupponi, Michele Rossi, and Paolo Dini.
 \newblock Distributed q-learning for energy harvesting heterogeneous networks.
 \newblock In {\em Communication Workshop (ICCW), 2015 IEEE International
   Conference on}, pages 2006--2011. IEEE, 2015.
-
-\bibitem{tgax2016draft}
-{IEEE} p802.11ax/d1.0, November 2016.
 
 \bibitem{kawadia2005principles}
 Vikas Kawadia and PR~Kumar.
@@ -309,6 +316,12 @@ Vivek~P Mhatre, Konstantina Papagiannaki, and Francois Baccelli.
   {WLANs}.
 \newblock In {\em INFOCOM 2007. 26th IEEE International Conference on Computer
   Communications. IEEE}, pages 535--543. IEEE, 2007.
+
+\bibitem{bremaud2013markov}
+Pierre Br{\'e}maud.
+\newblock {\em Markov chains: Gibbs fields, Monte Carlo simulation, and
+  queues}, volume~31.
+\newblock Springer Science \& Business Media, 2013.
 
 \bibitem{jamil2015preserving}
 Imad Jamil, Laurent Cariou, and Jean-Fran{\c{c}}ois H{\'e}lard.
@@ -652,19 +665,6 @@ Francesc Wilhelmi, Boris Bellalta, Jonsson Anders Neu~Gergely Cano, Cristina,
   multi-armed bandits: Possibilities, challenges and perils.
 \newblock {\em arXiv preprint arXiv:1705.10508}, 2017.
 
-\bibitem{bellalta2017learning}
-Cano Cristina Jonsson Anders Gómez Vicenç Neu Gergely Barrachina Sergio
-  Wilhelmi~Francesc Bellalta, Boris and Maddalena Nurchis.
-\newblock Learning from experience in future wireless networks: Big challenges
-  and opportunities.
-\newblock 2017.
-
-\bibitem{wilhelmi2017improving}
-Francesc Wilhelmi, Boris Bellalta, Cristina Cano, and Anders Jonsson.
-\newblock Improving spatial reuse in high-density wireless networks through
-  learning.
-\newblock {\em 5th EITIC Doctoral Workshop}, 2017.
-
 \bibitem{barrachina2017ctmn}
 Bellalta~Boris Barrachina, Sergio and Francesc Wilhelmi.
 \newblock Dynamic spectrum access in high-density wlans.
@@ -677,6 +677,19 @@ Boris Bellalta, Alessandro Zocca, Cristina Cano, Alessandro Checco, Jaume
   networks: a tutorial.
 \newblock In {\em Wireless Networking for Moving Objects}, pages 115--133.
   Springer, 2014.
+
+\bibitem{bellalta2017learning}
+Cano Cristina Jonsson Anders Gómez Vicenç Neu Gergely Barrachina Sergio
+  Wilhelmi~Francesc Bellalta, Boris and Maddalena Nurchis.
+\newblock Learning from experience in future wireless networks: Big challenges
+  and opportunities.
+\newblock 2017.
+
+\bibitem{wilhelmi2017improving}
+Francesc Wilhelmi, Boris Bellalta, Cristina Cano, and Anders Jonsson.
+\newblock Improving spatial reuse in high-density wireless networks through
+  learning.
+\newblock {\em 5th EITIC Doctoral Workshop}, 2017.
 
 \bibitem{bianchi2000performance}
 Giuseppe Bianchi.
