@@ -21,27 +21,28 @@
 \contentsline {subsection}{\numberline {3.1.4}Beamforming}{29}
 \contentsline {section}{\numberline {3.2}Dynamic Channel Allocation}{30}
 \contentsline {section}{\numberline {3.3}Reinforcement Learning}{35}
-\contentsline {subsection}{\numberline {3.3.1}Reinforcement Learning for improving Spatial Reuse in WNs}{37}
-\contentsline {chapter}{\numberline {4}{\MakeUppercase { Current Contributions and Ongoing Work}}}{41}
-\contentsline {section}{\numberline {4.1}Wireless Networking Through Learning}{41}
-\contentsline {section}{\numberline {4.2}Other Projects}{42}
-\contentsline {subsection}{\numberline {4.2.1}Analytical Models and Simulators}{42}
-\contentsline {subsection}{\numberline {4.2.2}Development of an IEEE 802.11ax Event-Based Simulator}{44}
-\contentsline {subsection}{\numberline {4.2.3}AP Association and Self-Managed Networks through Learning}{44}
-\contentsline {section}{\numberline {4.3}Preliminary Results}{44}
-\contentsline {chapter}{\numberline {5}{\MakeUppercase { Planning and Future Work}}}{47}
-\contentsline {section}{\numberline {5.1}Topic Understanding and State-of-the-Art Analysis}{47}
-\contentsline {paragraph}{Involved tasks:}{47}
-\contentsline {paragraph}{Expected output:}{47}
-\contentsline {section}{\numberline {5.2}Learning Feasibility in WNs}{48}
-\contentsline {paragraph}{Involved tasks:}{48}
-\contentsline {paragraph}{Expected output:}{48}
-\contentsline {section}{\numberline {5.3}Decentralised ML-based Solutions}{48}
-\contentsline {paragraph}{Involved tasks:}{48}
-\contentsline {paragraph}{Expected output:}{49}
-\contentsline {section}{\numberline {5.4}Centralised ML-based Solutions}{49}
+\contentsline {subsection}{\numberline {3.3.1}Multi-Armed Bandits}{37}
+\contentsline {subsection}{\numberline {3.3.2}Reinforcement Learning for improving Spatial Reuse in WNs}{38}
+\contentsline {chapter}{\numberline {4}{\MakeUppercase { Current Contributions and Ongoing Work}}}{43}
+\contentsline {section}{\numberline {4.1}Wireless Networking Through Learning}{43}
+\contentsline {section}{\numberline {4.2}Other Projects}{44}
+\contentsline {subsection}{\numberline {4.2.1}Analytical Models and Simulators}{44}
+\contentsline {subsection}{\numberline {4.2.2}Development of an IEEE 802.11ax Event-Based Simulator}{46}
+\contentsline {subsection}{\numberline {4.2.3}AP Association and Self-Managed Networks through Learning}{46}
+\contentsline {section}{\numberline {4.3}Preliminary Results}{46}
+\contentsline {chapter}{\numberline {5}{\MakeUppercase { Planning and Future Work}}}{49}
+\contentsline {section}{\numberline {5.1}Topic Understanding and State-of-the-Art Analysis}{49}
 \contentsline {paragraph}{Involved tasks:}{49}
 \contentsline {paragraph}{Expected output:}{49}
-\contentsline {section}{\numberline {5.5}Integration with Other Solutions}{49}
-\contentsline {paragraph}{Involved tasks:}{49}
-\contentsline {paragraph}{Expected output:}{49}
+\contentsline {section}{\numberline {5.2}Learning Feasibility in WNs}{50}
+\contentsline {paragraph}{Involved tasks:}{50}
+\contentsline {paragraph}{Expected output:}{50}
+\contentsline {section}{\numberline {5.3}Decentralised ML-based Solutions}{50}
+\contentsline {paragraph}{Involved tasks:}{50}
+\contentsline {paragraph}{Expected output:}{51}
+\contentsline {section}{\numberline {5.4}Centralised ML-based Solutions}{51}
+\contentsline {paragraph}{Involved tasks:}{51}
+\contentsline {paragraph}{Expected output:}{51}
+\contentsline {section}{\numberline {5.5}Integration with Other Solutions}{51}
+\contentsline {paragraph}{Involved tasks:}{51}
+\contentsline {paragraph}{Expected output:}{51}

@@ -603,6 +603,44 @@ Yotam Abramson and Yoav Freund.
 \newblock Active learning for visual object recognition.
 \newblock {\em Technical report, UCSD}, 2004.
 
+\bibitem{auer2002finite}
+Peter Auer, Nicolo Cesa, and Paul Fischer.
+\newblock Finite-time analysis of the multiarmed bandit problem.
+\newblock {\em Machine learning}, 47(2-3):235--256, 2002.
+
+\bibitem{katehakis1987multi}
+Michael~N Katehakis and Arthur~F Veinott~Jr.
+\newblock The multi-armed bandit problem: decomposition and computation.
+\newblock {\em Mathematics of Operations Research}, 12(2):262--268, 1987.
+
+\bibitem{auer1995gambling}
+Peter Auer, Nicolo Cesa-Bianchi, Yoav Freund, and Robert~E Schapire.
+\newblock Gambling in a rigged casino: The adversarial multi-armed bandit
+  problem.
+\newblock In {\em Foundations of Computer Science, 1995. Proceedings., 36th
+  Annual Symposium on}, pages 322--331. IEEE, 1995.
+
+\bibitem{kale2010non}
+Satyen Kale, Lev Reyzin, and Robert~E Schapire.
+\newblock Non-stochastic bandit slate problems.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  1054--1062, 2010.
+
+\bibitem{whittle1988restless}
+Peter Whittle.
+\newblock Restless bandits: Activity allocation in a changing world.
+\newblock {\em Journal of applied probability}, 25(A):287--298, 1988.
+
+\bibitem{abe2003reinforcement}
+Naoki Abe, Alan~W Biermann, and Philip~M Long.
+\newblock Reinforcement learning with immediate rewards and linear hypotheses.
+\newblock {\em Algorithmica}, 37(4):263--293, 2003.
+
+\bibitem{auer2002nonstochastic}
+Peter Auer, Nicolo Cesa-Bianchi, Yoav Freund, and Robert~E Schapire.
+\newblock The nonstochastic multiarmed bandit problem.
+\newblock {\em SIAM journal on computing}, 32(1):48--77, 2002.
+
 \bibitem{nie1999q}
 Junhong Nie and Simon Haykin.
 \newblock A q-learning-based dynamic channel assignment technique for mobile

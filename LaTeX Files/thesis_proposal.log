@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.12.1)  30 AUG 2017 11:59
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.12.1)  30 AUG 2017 20:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -670,6 +670,16 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
 
@@ -703,6 +713,18 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen190
 \l_MT_below_shortintertext_sep=\dimen191
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2016/02/27 v1.2a Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 142.
+LaTeX Info: Redefining \bm on input line 208.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count145
+)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/preprint/fullpage.sty
 Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip50
@@ -710,10 +732,10 @@ Package: fullpage 1999/02/23 1.1 (PWD)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count145
-\c@ALC@line=\count146
-\c@ALC@rem=\count147
-\c@ALC@depth=\count148
+\c@ALC@unique=\count146
+\c@ALC@line=\count147
+\c@ALC@rem=\count148
+\c@ALC@depth=\count149
 \ALC@tlm=\skip51
 \algorithmicindent=\skip52
 )
@@ -825,24 +847,24 @@ L3 Module: l3tl 2016/03/26 v6465 L3 Token lists
 L3 Module: l3str 2016/03/24 v6441 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2016/03/24 v6441 L3 Integers
-\c_max_int=\count149
-\l_tmpa_int=\count150
-\l_tmpb_int=\count151
-\g_tmpa_int=\count152
-\g_tmpb_int=\count153
+\c_max_int=\count150
+\l_tmpa_int=\count151
+\l_tmpb_int=\count152
+\g_tmpa_int=\count153
+\g_tmpb_int=\count154
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
 L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
-\g__prg_map_int=\count154
+\g__prg_map_int=\count155
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
 L3 Module: l3token 2016/04/03 v6470 L3 Experimental token manipulation
 L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
 L3 Module: l3msg 2016/03/26 v6464 L3 Messages
 L3 Module: l3file 2016/03/25 v6458 L3 File and I/O operations
-\l_iow_line_count_int=\count155
-\l__iow_target_count_int=\count156
-\l__iow_current_line_int=\count157
-\l__iow_current_word_int=\count158
-\l__iow_current_indentation_int=\count159
+\l_iow_line_count_int=\count156
+\l__iow_target_count_int=\count157
+\l__iow_current_line_int=\count158
+\l__iow_current_word_int=\count159
+\l__iow_current_indentation_int=\count160
 L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \c_zero_dim=\dimen193
 \c_max_dim=\dimen194
@@ -863,18 +885,18 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
 L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
-\g__keyval_level_int=\count160
-\l_keys_choice_int=\count161
+\g__keyval_level_int=\count161
+\l_keys_choice_int=\count162
 L3 Module: l3fp 2016/03/26 v6465 L3 Floating points
-\c__fp_leading_shift_int=\count162
-\c__fp_middle_shift_int=\count163
-\c__fp_trailing_shift_int=\count164
-\c__fp_big_leading_shift_int=\count165
-\c__fp_big_middle_shift_int=\count166
-\c__fp_big_trailing_shift_int=\count167
-\c__fp_Bigg_leading_shift_int=\count168
-\c__fp_Bigg_middle_shift_int=\count169
-\c__fp_Bigg_trailing_shift_int=\count170
+\c__fp_leading_shift_int=\count163
+\c__fp_middle_shift_int=\count164
+\c__fp_trailing_shift_int=\count165
+\c__fp_big_leading_shift_int=\count166
+\c__fp_big_middle_shift_int=\count167
+\c__fp_big_trailing_shift_int=\count168
+\c__fp_Bigg_leading_shift_int=\count169
+\c__fp_Bigg_middle_shift_int=\count170
+\c__fp_Bigg_trailing_shift_int=\count171
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \c_empty_box=\box60
 \l_tmpa_box=\box61
@@ -929,11 +951,11 @@ File: l3xdvidpfmx.def 2016/03/26 v6465 L3 Experimental driver: xdvipdfmx
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count171
-\l__xparse_m_args_int=\count172
-\l__xparse_mandatory_args_int=\count173
-\l__xparse_processor_int=\count174
-\l__xparse_v_nesting_int=\count175
+\l__xparse_current_arg_int=\count172
+\l__xparse_m_args_int=\count173
+\l__xparse_mandatory_args_int=\count174
+\l__xparse_processor_int=\count175
+\l__xparse_v_nesting_int=\count176
 )
 Package: siunitx 2016/03/01 v2.6q A comprehensive (SI) units package
 
@@ -950,27 +972,27 @@ Package: l3keys2e 2016/05/18 v6512 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box76
 \l__siunitx_tmp_dim=\dimen282
-\l__siunitx_tmp_int=\count176
-\l__siunitx_number_mantissa_length_int=\count177
-\l__siunitx_number_uncert_length_int=\count178
-\l__siunitx_round_int=\count179
-\l__siunitx_process_decimal_int=\count180
-\l__siunitx_process_uncertainty_int=\count181
-\l__siunitx_process_fixed_int=\count182
-\l__siunitx_process_integer_min_int=\count183
-\l__siunitx_process_precision_int=\count184
-\l__siunitx_group_min_int=\count185
+\l__siunitx_tmp_int=\count177
+\l__siunitx_number_mantissa_length_int=\count178
+\l__siunitx_number_uncert_length_int=\count179
+\l__siunitx_round_int=\count180
+\l__siunitx_process_decimal_int=\count181
+\l__siunitx_process_uncertainty_int=\count182
+\l__siunitx_process_fixed_int=\count183
+\l__siunitx_process_integer_min_int=\count184
+\l__siunitx_process_precision_int=\count185
+\l__siunitx_group_min_int=\count186
 \l__siunitx_angle_marker_box=\box77
 \l__siunitx_angle_unit_box=\box78
 \l__siunitx_angle_marker_dim=\dimen283
 \l__siunitx_angle_unit_dim=\dimen284
-\l__siunitx_unit_int=\count186
-\l__siunitx_unit_denominator_int=\count187
-\l__siunitx_unit_numerator_int=\count188
-\l__siunitx_unit_prefix_int=\count189
-\l__siunitx_unit_prefix_base_int=\count190
-\l__siunitx_unit_prefix_gram_int=\count191
-\l__siunitx_number_product_int=\count192
+\l__siunitx_unit_int=\count187
+\l__siunitx_unit_denominator_int=\count188
+\l__siunitx_unit_numerator_int=\count189
+\l__siunitx_unit_prefix_int=\count190
+\l__siunitx_unit_prefix_base_int=\count191
+\l__siunitx_unit_prefix_gram_int=\count192
+\l__siunitx_number_product_int=\count193
 \c__siunitx_one_fill_skip=\skip61
 \l__siunitx_table_unit_align_skip=\skip62
 \l__siunitx_table_exponent_dim=\dimen285
@@ -1186,11 +1208,7 @@ Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 Package: ifmtarg 2009/09/02 v1.2a check for an empty argument
-))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count193
-))
+)))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Invalid UTF-8 byte or sequence at line 275 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 290 replaced by U+FFFD.
@@ -1299,33 +1317,33 @@ File: pgfcalendar.code.tex 2007/07/23 v3.0.1a (rcs-revision 1.11)
 ) (./thesis_proposal.aux)
 \openout1 = `thesis_proposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 66.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 67.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 66.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 67.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-LaTeX Info: Redefining \l on input line 66.
-LaTeX Info: Redefining \L on input line 66.
-Package crop Info: using `pdftex' graphics driver on input line 66.
+LaTeX Info: Redefining \l on input line 67.
+LaTeX Info: Redefining \L on input line 67.
+Package crop Info: using `pdftex' graphics driver on input line 67.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1342,9 +1360,19 @@ Dictionary: translator-months-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
 )
 \c__siunitx_mathsf_int=\count294
+LaTeX Font Info:    Try loading font information for U+msa on input line 67.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 67.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 \c__siunitx_mathtt_int=\count295
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 70.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1phv.fd
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 71.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 File: images/upf_logo.png Graphic file (type QTm)
@@ -1360,7 +1388,7 @@ File: images/upf_logo.png Graphic file (type QTm)
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 78.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
  (./thesis_proposal.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
@@ -1379,15 +1407,15 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 ]
 Chapter 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 86.
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 92.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 87.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 93.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [3] [4]
 [5]
 File: images/techniques_wns.png Graphic file (type QTm)
  <use  "images/techniques_wns.png" >
-Overfull \hbox (1.97038pt too wide) in paragraph at lines 129--130
+Overfull \hbox (1.97038pt too wide) in paragraph at lines 130--131
 []\OT1/ptm/m/n/12 Understanding the chal-lenges and lim-i-ta-tions of fu-ture W
 LANs, thus al-low-ing re-searchers
  []
@@ -1416,7 +1444,7 @@ File: images/residential_ax_1.png Graphic file (type QTm)
 <use  "images/residential_ax_1.png" >
 File: images/residential_ax_2.png Graphic file (type QTm)
  <use  "images/residential_ax_2.png" >
-Overfull \hbox (0.20587pt too wide) in paragraph at lines 185--201
+Overfull \hbox (0.20587pt too wide) in paragraph at lines 186--202
 []\OT1/ptm/b/n/12 Residential Sce-nario: \OT1/ptm/m/n/12 this sce-nario aims to
  char-ac-terise a typ-i-cal un-co-or-di-nated WLANs
  []
@@ -1456,7 +1484,7 @@ File: images/beamforming2.png Graphic file (type QTm)
 ]
 Chapter 3.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 303.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 304.
 [17]
 File: images/basic.png Graphic file (type QTm)
  <use  "images/basic.png" >
@@ -1465,7 +1493,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: images/pcm.png Graphic file (type QTm)
 <use  "images/pcm.png" >
-Overfull \hbox (2.27618pt too wide) in paragraph at lines 337--338
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 338--339
  [][] 
  []
 
@@ -1481,11 +1509,11 @@ File: images/jamil2014_2.png Graphic file (type QTm)
 
 <use  "images/jamil2014_2.png" > [21]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 416.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 417.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 416.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 417.
 
-Overfull \hbox (16.26877pt too wide) in paragraph at lines 410--424
+Overfull \hbox (16.26877pt too wide) in paragraph at lines 411--425
 \OT1/ptm/m/n/12 where $[]$ is the STA's trans-mis-sion power in dBm at the an-t
 enna con-nec-tor, and $[][]$
  []
@@ -1527,52 +1555,56 @@ File: images/rl_scenario.png Graphic file (type QTm)
  <use  "images/rl_scenario.png" >
 File: images/rl_types.png Graphic file (type QTm)
 
-<use  "images/rl_types.png" > [35]
-File: images/rl_control_types.png Graphic file (type QTm)
- <use  "images/rl_control_types.png" >
+<use  "images/rl_types.png" >
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[36] [37]
+[35] [36]
+File: images/rl_control_types.png Graphic file (type QTm)
+ <use  "images/rl_control_types.png" > [37] [38]
 Missing character: There is no ’ in font ptmr7t!
 
 Underfull \vbox (badness 1360) has occurred while \output is active []
 
- [38]
+ [39]
 File: images/ANN.png Graphic file (type QTm)
 
-<use  "images/ANN.png" > [39] [40]
-Chapter 4.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 745.
+<use  "images/ANN.png" >
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [41
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[40] [41] [42
 
 
 ]
-Overfull \hbox (0.54321pt too wide) in paragraph at lines 749--750
+Chapter 4.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 764.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [43]
+Overfull \hbox (0.54321pt too wide) in paragraph at lines 768--769
 \OT1/ptm/m/n/12 the fea-si-bil-ity of pro-vid-ing a no-table en-hance-ment of W
 Ns per-for-mance through learning-
  []
 
-[42]
+[44]
 File: images/ctmn_direct.png Graphic file (type QTm)
  <use  "images/ctmn_direct.png" >
 File: images/ctmn_additive.png Graphic file (type QTm)
  <use  "images/ctmn_additive.png" >
 Underfull \vbox (badness 1975) has occurred while \output is active []
 
- [43]
+ [45]
 Missing character: There is no   in font ptmr7t!
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 805.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 824.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 805.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 824.
 File: images/e_1_a1_g095.eps Graphic file (type eps)
 
 <images/e_1_a1_g095.eps>
@@ -1580,7 +1612,7 @@ File: images/e_1_a1_g095_avg_tpt.eps Graphic file (type eps)
  <images/e_1_a1_g095_avg_tpt.eps>
 File: images/e_1_a1_g095_ind_tpt.eps Graphic file (type eps)
 
-<images/e_1_a1_g095_ind_tpt.eps> [44]
+<images/e_1_a1_g095_ind_tpt.eps> [46]
 File: images/proportional_fairness_qlearning_avg_tpt.eps Graphic file (type eps
 )
 
@@ -1588,54 +1620,54 @@ File: images/proportional_fairness_qlearning_avg_tpt.eps Graphic file (type eps
 File: images/proportional_fairness_qlearning_ind_tpt.png Graphic file (type QTm
 )
 
-<use  "images/proportional_fairness_qlearning_ind_tpt.png" > [45] [46]
+<use  "images/proportional_fairness_qlearning_ind_tpt.png" > [47] [48]
 Chapter 5.
-[47
+[49
 
 
 ]
-Overfull \hbox (7.16519pt too wide) in paragraph at lines 897--898
+Overfull \hbox (7.16519pt too wide) in paragraph at lines 916--917
 []\OT1/ptm/m/n/12 Finally, it is ex-pected to ex-plore co-or-di-nated ap-proach
 es for max-imis-ing the net-work through-
  []
 
 
-Overfull \hbox (4.1195pt too wide) in paragraph at lines 903--904
+Overfull \hbox (4.1195pt too wide) in paragraph at lines 922--923
 []\OT1/ptm/m/n/12 Extend pre-vi-ous work in de-cen-tralised learn-ing in or-der
  to pro-vide co-or-di-nated ap-proaches
  []
 
-[48] (./thesis_proposal.bbl [49] [50
+[50] (./thesis_proposal.bbl [51] [52
 
 
-] [51] [52]
+] [53] [54]
 Underfull \hbox (badness 1048) in paragraph at lines 188--193
 []\OT1/ptm/m/n/12 Ioannis Broustis, Kon-stantina Pa-pa-gian-naki, Srikanth V Kr
 -ish-na-murthy, Michalis
  []
 
-[53] [54] [55] [56]
+[55] [56] [57] [58]
 Underfull \hbox (badness 1342) in paragraph at lines 486--491
 []\OT1/ptm/m/n/12 Jeremy K Chen, Gus-tavo De Ve-ciana, and Theodore S Rap-pa-po
 rt.  Im-proved
  []
 
-[57] [58]
+[59] [60] [61]
 Missing character: There is no ó in font ptmr7t!
 Missing character: There is no ç in font ptmr7t!
- [59]) [60] (./thesis_proposal.aux) )
+) [62] (./thesis_proposal.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
- 30423 strings out of 493591
- 655133 string characters out of 6143546
- 688844 words of memory out of 5000000
- 33242 multiletter control sequences out of 15000+600000
- 21777 words of font info for 64 fonts, out of 8000000 for 9000
+ 30817 strings out of 493591
+ 659571 string characters out of 6143546
+ 690559 words of memory out of 5000000
+ 33598 multiletter control sequences out of 15000+600000
+ 29783 words of font info for 94 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 55i,17n,77p,10385b,3032s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,17n,77p,10385b,3031s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis_proposal.pdf (62 pages).
+Output written on thesis_proposal.pdf (64 pages).
