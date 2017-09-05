@@ -598,11 +598,6 @@ Richard~S Sutton.
 \newblock Learning to predict by the methods of temporal differences.
 \newblock {\em Machine learning}, 3(1):9--44, 1988.
 
-\bibitem{abramson2004active}
-Yotam Abramson and Yoav Freund.
-\newblock Active learning for visual object recognition.
-\newblock {\em Technical report, UCSD}, 2004.
-
 \bibitem{auer2002finite}
 Peter Auer, Nicolo Cesa, and Paul Fischer.
 \newblock Finite-time analysis of the multiarmed bandit problem.

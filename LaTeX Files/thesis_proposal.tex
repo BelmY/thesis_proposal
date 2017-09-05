@@ -254,8 +254,8 @@
 					& \begin{tabular}[c]{@{}c@{}}Parallel\\ Transmissions\end{tabular}  & Data Rate & \begin{tabular}[c]{@{}c@{}}Collisions probability\\ (by hidden node)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Energy\\ Consumption\end{tabular}\\ \hline
 					$\uparrow$ Power & $\downarrow$ & $\uparrow$ & $\downarrow$ & $\uparrow$ \\ \hline
 					$\downarrow$ Power & $\uparrow$ & $\downarrow$ & $\uparrow$ & $\downarrow$ \\ \hline
-					$\uparrow$ CCA & $\downarrow$ & - & $\downarrow$ & $\downarrow$* \\ \hline
-					$\downarrow$ CCA & $\uparrow$ & - & $\uparrow$ & $\uparrow$* \\ \hline
+					$\uparrow$ CCA & $\uparrow$ & - & $\uparrow$ & $\uparrow$* \\ \hline
+					$\downarrow$ CCA & $\downarrow$ & - & $\downarrow$ & $\downarrow$* \\ \hline
 				\end{tabular}
 				\caption{Effects of TPC and CST adjustment. \textit{*Adjusting CCA may indirectly affect to the energy consumption by requiring more/less power to be transmitted.}}
 				\label{tbl:cca_tpc_effects}
@@ -766,7 +766,7 @@
 				\item We are actively collaborating in a journal article \cite{barrachina2017ctmn}, which proposes a framework that computes Continuous Time Markov Networks (CTMNs) for throughput calculation in IEEE 802.11 WLANs \cite{bellalta2014throughput}. With that, we are going to be able to provide realistic results during the main research activity, since the CTMN framework allows computing the theoretical throughput for any given configuration (according to the distance between nodes, the transmit power, the CST, etc.).
 				\item An extension of \cite{wilhelmi2017implications} and \cite{wilhelmi2017enhancing} is being developed for exploring centralized approaches and to provide more realistic simulations. The main purpose is to show the behaviour of a set of WNs when sharing a performance-based reward, so that different metrics can be used for experimentation (e.g., fairness, aggregate throughput, etc.). Furthermore, the previous work is extended by using the CTMN framework developed in \cite{barrachina2017ctmn}, which would provide more realistic results. 
 				\item A journal article in collaboration with the Artificial Intelligence and Machine-Learning Research Group (AI-ML) is under construction \cite{bellalta2017learning}. The article aims to deeply study the feasibility of providing a notable enhancement of WNs performance through learning-based mechanisms. For that, several questions are addressed: $i)$ Can learning methods guarantee optimality in this setting? $ii)$ Are learning methods practical to wireless network optimisation? In terms of time to convergence and complexity? $iii)$ Can the system assume performance losses due to exploration? How can we amortise those?
-				\item A collaboration agreement was achieved with the Wireless Communications department at Universidad Aut\'onoma Nacional de M\'exico (UNAM). The subject of this collaboration is to work in a publication that considers the inference of the coexistent devices configurations for allowing intelligent self-adjustment in dense WNs, which extends the decentralised approaches shown in \cite{wilhelmi2017implications, wilhelmi2017enhancing}.
+					\item A collaboration agreement was achieved with the Wireless Communications department at Universidad Aut\'onoma Nacional de M\'exico (UNAM). The subject of this collaboration is to work in a publication that considers the inference of the coexistent devices configurations for allowing intelligent self-adjustment in dense WNs, which extends the decentralised approaches shown in \cite{wilhelmi2017implications, wilhelmi2017enhancing}.
 				\item A poster was presented on the 5th PhD Doctoral Workshop, held at the UPF \cite{wilhelmi2017improving}.
 			\end{itemize}	
 			
@@ -885,7 +885,7 @@
 		
 			\paragraph{Expected output:}		
 			\begin{itemize}
-				\item A journal publication collecting these techniques to provide an State-of-the-Art to the resource allocation problem in wireless networks.
+				\item A journal publication collecting spatial reuse techniques to provide an State-of-the-Art to the resource allocation problem in wireless networks.
 				\item The launching of Komondor's versions 2.1 and 2.2, which include intelligent agents to boost the network performance. 
 				\item A Komondor's technical report publication.	
 				\item A collaboration with Barrachina on the CTMN framework, which culminates in a publication.		

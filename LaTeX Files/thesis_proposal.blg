@@ -75,45 +75,45 @@ while executing---line 944 of file unsrt.bst
 Too many commas in name 1 of "Bellalta, Boris, Cano, Cristina, Jonsson, Anders, Gómez, Vicenç, Neu, Gergely, Barrachina, Sergio, Wilhelmi, Francesc and Nurchis, Maddalena" for entry bellalta2017learning
 while executing---line 944 of file unsrt.bst
 Warning--empty journal in bellalta2017learning
-You've used 122 entries,
+You've used 121 entries,
             1791 wiz_defined-function locations,
-            1065 strings with 27416 characters,
-and the built_in function-call counts, 36153 in all, are:
-= -- 3567
-> -- 1294
+            1061 strings with 27299 characters,
+and the built_in function-call counts, 36006 in all, are:
+= -- 3555
+> -- 1286
 < -- 81
-+ -- 478
-- -- 356
-* -- 2211
-:= -- 5090
-add.period$ -- 425
-call.type$ -- 122
-change.case$ -- 118
++ -- 475
+- -- 354
+* -- 2206
+:= -- 5063
+add.period$ -- 422
+call.type$ -- 121
+change.case$ -- 117
 chr.to.int$ -- 0
-cite$ -- 126
-duplicate$ -- 1816
-empty$ -- 3567
-format.name$ -- 356
-if$ -- 8634
+cite$ -- 125
+duplicate$ -- 1808
+empty$ -- 3553
+format.name$ -- 354
+if$ -- 8602
 int.to.chr$ -- 0
-int.to.str$ -- 122
-missing$ -- 123
-newline$ -- 611
-num.names$ -- 121
-pop$ -- 511
+int.to.str$ -- 121
+missing$ -- 122
+newline$ -- 606
+num.names$ -- 120
+pop$ -- 508
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1061
+skip$ -- 1057
 stack$ -- 0
 substring$ -- 2639
-swap$ -- 741
+swap$ -- 740
 text.length$ -- 81
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 376
-width$ -- 125
-write$ -- 1396
+while$ -- 375
+width$ -- 124
+write$ -- 1386
 (There were 24 error messages)
